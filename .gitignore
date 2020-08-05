@@ -1,0 +1,6 @@
+data/GeoNet/*.csv
+data/PANGA/cleaned/*
+data/PANGA/detrended/*
+data/PANGA/raw/*
+src/vespagram/*
+
