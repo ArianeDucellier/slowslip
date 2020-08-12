@@ -15,8 +15,8 @@ import date
 import DWT
 from MODWT import get_DS, get_scaling, pyramid
 
-def vespagram(station_file, lat0, lon0, radius, direction, dataset, wavelet, \
-    J, slowness):
+def vespagram(station_file, lat0, lon0, name, radius, direction, dataset, \
+    wavelet, J, slowness):
     """
     """
     # Read station file
@@ -147,14 +147,13 @@ def vespagram(station_file, lat0, lon0, radius, direction, dataset, wavelet, \
         plt.xlabel('Time (year)')
         plt.ylabel('Slowness (day / km)')
         plt.colorbar(orientation='horizontal')
-        plt.savefig('vespagram/D' + str(j + 1) + '.eps', format='eps')
+        plt.savefig('vespagram/D' + str(j + 1) + '_' + name + '.eps', \
+            format='eps')
         plt.close(1)
 
 if __name__ == '__main__':
 
     station_file = '../data/PANGA/stations.txt'
-    lat0 = 48.1168
-    lon0 = -123.4943
     radius = 100
     direction = 'lon'
     dataset = 'cleaned'
@@ -162,5 +161,9 @@ if __name__ == '__main__':
     J = 6
     slowness = np.arange(-0.1, 0.105, 0.005)
 
-    vespagram(station_file, lat0, lon0, radius, direction, dataset, wavelet, \
-    J, slowness)
+    for i in range(0, 10):
+        lat0 = 47 + 0.2 * i
+        lon0 = -123
+        name = str(i)
+        vespagram(station_file, lat0, lon0, name, radius, direction, \
+            dataset, wavelet, J, slowness)
