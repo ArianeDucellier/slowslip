@@ -1,16 +1,16 @@
 #!/bin/csh -f
 
-set output = station_locations.eps
+set output = stations_locations.eps
 
 # Small map
 set x1 = -126
 set x2 = -121
-set y1 = 46.5
-set y2 = 50
+set y1 = 47
+set y2 = 49.5
 set Rop = $x1/$x2/$y1/$y2
 set Jop = m-123.5/48.25/5.0
 
-gmt pscoast -R$Rop -J$Jop -Ba0.25f0.125::WESN -W0.1p -G255/255/224 -S224/255/255 -Lf-123/47.75/48/50 -Df -Na -Y5 -P -K >! $output
+gmt pscoast -R$Rop -J$Jop -Ba0.5f0.25::WESN -W0.1p -G255/255/224 -S224/255/255 -Lf-125/47.25/48.25/100 -Df -Na -Y5 -P -K >! $output
 
 gmt psxy tremor.dat -R$Rop -J$Jop -Sc0.03 -Ggrey -O -K >> $output
 
