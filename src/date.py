@@ -3,6 +3,7 @@ This module contains function to convert dates in appropriate format
 """
 
 from datetime import datetime, timedelta
+from math import floor
 
 def matlab2ymdhms(time, roundsec=True):
     """
@@ -74,6 +75,74 @@ def ymdhms2matlab(year, month, day, hour, minute, second):
     myday = myday.toordinal() + frac
     return(myday) 
 
+def ymdhms2day(year, month, day, hour, minute, second):
+    """
+    Convert year/month/day/hour/minute/second
+    to number of years since 0 AD
+
+    Input:
+        type input = 6 integers
+        input = year, month, day, hour, minute, second
+    Output:
+        type date = float
+        date = Numbers of years since 0 AD
+    """
+    ndays = 0.0
+    for i in range(1, month):
+        if (i in [1, 3, 5, 7, 8, 10, 12]):
+            ndays = ndays + 31.0
+        elif (i in [4, 6, 9, 11]):
+            ndays = ndays + 30.0
+        else:
+            if (year % 4 == 0):
+                ndays = ndays + 29.0
+            else:
+                ndays = ndays + 28.0
+    ndays = ndays + day - 1
+    fracday = ((hour - 1) * 3600.0 + (minute - 1) * 60.0 + second) / 86400.0
+    ndays = ndays + fracday
+    if (year % 4 == 0):
+        fracyear = ndays / 366.0
+    else:
+        fracyear = ndays / 365.0
+    mydate = year + fracyear
+    return mydate
+
+def day2ymdhms(date):
+    """
+    Convert number of years since 0 AD
+    to year/month/day/hour/minute/second
+
+    Input:
+        type date = float
+        date = Numbers of years since 0 AD
+    Output:
+        type input = 6 integers
+        input = year, month, day, hour, minute, second        
+    """
+    year = int(floor(date))
+    days_per_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if (year % 4 == 0):
+        days[1] = 29
+        ndays = int(floor(366.0 * (date - year)))
+        hours = (366.0 * (date - year) - ndays) * 24.0
+    else:
+        ndays = int(floor(365.0 * (date - year)))
+        hours = (365.0 * (date - year) - ndays) * 24.0
+    month = 1
+    for nb_days in days_per_month:
+        if ndays < nb_days:
+            day = ndays + 1
+            break
+        else:
+            month = month + 1
+            ndays = ndays - nb_days
+    hour = int(floor(hours))
+    minutes = (hours - hour) * 60.0
+    minute = int(floor(minutes))
+    second = int(floor((minutes - minute) * 60.0))
+    return(year, month, day, hour, minute, second)
+    
 def string2day(day, hour):
     """
     Convert strings to number of years since 0 AD
@@ -93,23 +162,5 @@ def string2day(day, hour):
     HH = int(hour[0 : 2])
     mm = int(hour[3 : 5])
     ss = int(hour[6 : 8])
-    ndays = 0.0
-    for i in range(1, MM):
-        if (i in [1, 3, 5, 7, 8, 10, 12]):
-            ndays = ndays + 31.0
-        elif (i in [4, 6, 9, 11]):
-            ndays = ndays + 30.0
-        else:
-            if (YY % 4 == 0):
-                ndays = ndays + 29.0
-            else:
-                ndays = ndays + 28.0
-    ndays = ndays + DD - 1
-    fracday = ((HH - 1) * 3600.0 + (mm - 1) * 60.0 + ss) / 86400.0
-    ndays = ndays + fracday
-    if (YY % 4 == 0):
-        fracyear = ndays / 366.0
-    else:
-        fracyear = ndays / 365.0
-    date = YY + fracyear
+    date = ymdhms2day(YY, MM, DD, HH, mm, ss)
     return date

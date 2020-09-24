@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import pickle
 
-from math import cos, pi, sin, sqrt
+from math import cos, floor, pi, sin, sqrt
 from scipy.io import loadmat
 
 import date
@@ -104,6 +104,11 @@ def vespagram(station_file, tremor_file, lats, lons, names, radius_GPS, \
     data = loadmat(tremor_file)
     mbbp = data['mbbp_cat_d']
 
+    (year, month, day, hour, minute, second) = date.day2ymdhms(xmin)
+    day_begin = int(floor(date.ymdhms2matlab(year, month, day, hour, minute, second)))
+    (year, month, day, hour, minute, second) = date.day2ymdhms(xmax)
+    day_end = int(floor(date.ymdhms2matlab(year, month, day, hour, minute, second)))
+    
     # Loop on latitude and longitude
     a = 6378.136
     e = 0.006694470
@@ -130,23 +135,24 @@ def vespagram(station_file, tremor_file, lats, lons, names, radius_GPS, \
         tremor = mbbp[find, :][0, :, :]
 
         # Keep only tremor within time limits
-        find = np.where((tremor[:, 0] >= 734139) & (tremor[:, 0] < 734320))
+        find = np.where((tremor[:, 0] >= day_begin) & (tremor[:, 0] < day_end))
         tremor_sub = tremor[find, :][0, :, :]
 
         # Number of tremors per day
         nt = np.shape(tremor_sub)[0]
-        time_tremor = np.zeros(nt)
-        for i in range(0, nt):
-            myday = date.matlab2ymdhms(tremor_sub[i, 0])
-            t1 = datetime.date(myday[0], myday[1], myday[2])
-            t2 = datetime.date(myday[0], 1, 1)
-            time_tremor[i] = myday[0] + (t1 - t2).days / 365
+#        time_tremor = np.zeros(nt)
+#        for i in range(0, nt):
+#            (year, month, day, hour, minute, second) = date.matlab2ymdhms(tremor_sub[i, 0])
+#            time_tremor[i] = date.ymdhms2day(year, month, day, hour, minute, second)
 
-        ntremor = np.zeros(734320 - 734139)
+        ntremor = np.zeros(day_end - day_begin)
         for i in range(0, len(ntremor)):
-            for j in range (0, len(time_tremor)):
-                if ((time_tremor[j] >= xmin + (i - 0.5) / 365.0) and \
-                    (time_tremor[j] <= xmin + (i + 0.5) / 365.0)):
+            for j in range(0, nt):
+                if ((tremor_sub[i, 0] >= day_begin + i - 0.5)  and \
+                    (tremor_sub[i, 0] <= day_begin + i + 0.5)):
+#            for j in range (0, len(time_tremor)):
+#                if ((time_tremor[j] >= xmin + (i - 0.5) / 365.0) and \
+#                    (time_tremor[j] <= xmin + (i + 0.5) / 365.0)):
                     ntremor[i] = ntremor[i] + 1
 
         # Wavelet vectors initialization
@@ -231,7 +237,8 @@ def vespagram(station_file, tremor_file, lats, lons, names, radius_GPS, \
                 plt.ylabel('Number of stations')
                 plt.xlim([xmin, xmax])
                 plt.subplot(312)
-                plt.plot(xmin + np.arange(0, len(ntremor)), ntremor, 'k-')
+                plt.plot(xmin + (1.0 / 365.0) * np.arange(0, len(ntremor)), \
+                    ntremor, 'k-')
                 plt.ylabel('Number of tremor')
                 plt.xlim([xmin, xmax])
                 plt.subplot(313)
@@ -251,7 +258,7 @@ if __name__ == '__main__':
     station_file = '../data/PANGA/stations.txt'
     tremor_file = '../data/tremor/mbbp_cat_d_forHeidi'
     radius_GPS = 100
-    radius_tremor = 20
+    radius_tremor = 50
     direction = 'lon'
     dataset = 'cleaned'
     wavelet = 'LA8'
