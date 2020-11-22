@@ -123,7 +123,7 @@ def day2ymdhms(date):
     year = int(floor(date))
     days_per_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if (year % 4 == 0):
-        days[1] = 29
+        days_per_month[1] = 29
         ndays = int(floor(366.0 * (date - year)))
         hours = (366.0 * (date - year) - ndays) * 24.0
     else:

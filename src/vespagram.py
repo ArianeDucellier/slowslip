@@ -106,6 +106,7 @@ def vespagram(station_file, tremor_file, lats, lons, names, radius_GPS, \
     data = loadmat(tremor_file)
     mbbp = data['mbbp_cat_d']
 
+    # Convert begin and end times
     (year, month, day, hour, minute, second) = date.day2ymdhms(xmin)
     day_begin = int(floor(date.ymdhms2matlab(year, month, day, hour, minute, second)))
     (year, month, day, hour, minute, second) = date.day2ymdhms(xmax)
@@ -142,19 +143,11 @@ def vespagram(station_file, tremor_file, lats, lons, names, radius_GPS, \
 
         # Number of tremors per day
         nt = np.shape(tremor_sub)[0]
-#        time_tremor = np.zeros(nt)
-#        for i in range(0, nt):
-#            (year, month, day, hour, minute, second) = date.matlab2ymdhms(tremor_sub[i, 0])
-#            time_tremor[i] = date.ymdhms2day(year, month, day, hour, minute, second)
-
         ntremor = np.zeros(day_end - day_begin)
         for i in range(0, len(ntremor)):
             for j in range(0, nt):
                 if ((tremor_sub[i, 0] >= day_begin + i - 0.5)  and \
                     (tremor_sub[i, 0] <= day_begin + i + 0.5)):
-#            for j in range (0, len(time_tremor)):
-#                if ((time_tremor[j] >= xmin + (i - 0.5) / 365.0) and \
-#                    (time_tremor[j] <= xmin + (i + 0.5) / 365.0)):
                     ntremor[i] = ntremor[i] + 1
 
         # Wavelet vectors initialization
@@ -437,6 +430,194 @@ def stack_map(station_file, tremor_file, lats, lons, names, radius_GPS, \
     plt.savefig('vespagram/map_' + str(J + 1) + '.pdf')
     plt.close(1)
 
+def vesp_map(station_file, tremor_file, lats, lons, names, radius_GPS, \
+    radius_tremor, direction, dataset, J, slowness, tmin_GPS, tmax_GPS, tmin_tremor, tmax_tremor):
+    """
+    """
+    # Read station file
+    stations = pd.read_csv(station_file, sep=r'\s{1,}', header=None, engine='python')
+    stations.columns = ['name', 'longitude', 'latitude']
+
+    # Read tremor file
+    data = loadmat(tremor_file)
+    mbbp = data['mbbp_cat_d']
+
+    # Convert begin and end times for tremor
+    (year, month, day, hour, minute, second) = date.day2ymdhms(tmin_tremor)
+    day_begin = int(floor(date.ymdhms2matlab(year, month, day, hour, minute, second)))
+    (year, month, day, hour, minute, second) = date.day2ymdhms(tmax_tremor)
+    day_end = int(floor(date.ymdhms2matlab(year, month, day, hour, minute, second)))
+
+    # Start figure
+    plt.style.use('bmh')
+    WASHINGTON_NORTH = 2926
+    fig = plt.figure()
+    a = 6378.136
+    e = 0.006694470
+
+    # Part 1: vespagrams
+
+    # Stations used for figure
+    lon_stas = []
+    lat_stas = []
+
+    # Loop on latitude and longitude
+    for index, (lat, lon) in enumerate(zip(lats, lons)):
+        ax1 = plt.subplot2grid((len(lats), 3), (len(lats) - index - 1, 0))
+
+        # Keep only stations in a given radius
+        dx = (pi / 180.0) * a * cos(lat * pi / 180.0) / sqrt(1.0 - e * e * \
+            sin(lat * pi / 180.0) * sin(lat * pi / 180.0))
+        dy = (3.6 * pi / 648.0) * a * (1.0 - e * e) / ((1.0 - e * e * \
+            sin(lat * pi / 180.0) * sin(lat * pi / 180.0)) ** 1.5)
+        x = dx * (stations['longitude'] - lon)
+        y = dy * (stations['latitude'] - lat)
+        stations['distance'] = np.sqrt(np.power(x, 2.0) + np.power(y, 2.0))
+        mask = stations['distance'] <= radius_GPS
+        stations = stations.loc[mask]
+
+        # Keep only stations within time interval
+        stations['tmin'] = np.zeros(len(stations))
+        stations['tmax'] = np.zeros(len(stations))
+        for index, station in enumerate(stations['name']):
+            filename = 'tmp/' + dataset + '_' + station + '_' + direction + '.pkl'
+            (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
+            stations.at[index, 'tmin'] = np.min(time)
+            stations.at[index, 'tmax'] = np.max(time)
+        mask = (stations['tmin'] <= tmin_GPS) & (stations['tmax'] >= tmax_GPS)
+        stations = stations.loc[mask]
+        print(stations)
+        # Wavelet vectors initialization
+        times = []
+        disps = []
+        Ws = []
+        Vs = []
+        Ds = []
+        Ss = []
+
+        # Read output files from wavelet transform
+        for (station, lon_sta, lat_sta) in zip(stations['name'], stations['longitude'], stations['latitude']):
+            filename = 'tmp/' + dataset + '_' + station + '_' + direction + '.pkl'
+            (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
+            if ((np.min(time) <= tmin_GPS) and (np.max(time) >= tmax_GPS)):
+                lon_stas.append(lon_sta)
+                lat_stas.append(lat_sta)
+                times.append(time)
+                disps.append(disp)
+                Ws.append(W)
+                Vs.append(V)
+                Ds.append(D)
+                Ss.append(S)
+
+        # Divide into time blocks
+        tblocks = []
+        for time in times:
+            tblocks.append(np.min(time))
+            tblocks.append(np.max(time))
+        tblocks = sorted(set(tblocks))
+        tbegin = tblocks[0 : -1]
+        tend = tblocks[1 : ]
+
+        # Initializations
+        time_vesps = []
+        vesps = []
+        if len(tblocks) > 0:
+            time_sta = np.zeros(2 * (len(tblocks) - 1))
+            nb_sta = np.zeros(2 * (len(tblocks) - 1))
+
+        # Loop on time blocks
+        for t in range(0, len(tblocks) - 1):
+
+            # Find time period
+            for time in times:
+                indices = np.where((time >= tbegin[t]) & (time < tend[t]))[0]
+                if (len(indices) > 0):
+                    time_subset = time[indices]
+                    break
+            time_vesps.append(time_subset)
+
+            # Initialize vespagram
+            vespagram = np.zeros((len(slowness), len(time_subset)))      
+
+            # Loop on time scales
+            nsta = 0
+            for (time, D, lat_sta) in zip(times, Ds, stations['latitude']):
+                indices = np.where((time >= tbegin[t]) & (time < tend[t]))[0]
+                if (len(indices) > 0):
+                    nsta = nsta + 1
+                    tj = time[indices]
+                    Dj = D[J][indices]
+                    for i in range(0, len(slowness)):
+                        Dj_interp = np.interp(time_subset + \
+                            slowness[i] * (lat_sta - lat), tj, Dj)
+                        vespagram[i, :] = vespagram[i, :] + Dj_interp
+            vespagram[:, :] = vespagram[:, :] / nsta
+            time_sta[2 * t] = tbegin[t]
+            time_sta[2 * t + 1] = tend[t]
+            nb_sta[2 * t] = nsta
+            nb_sta[2 * t + 1] = nsta
+            vesps.append(vespagram)
+        print(nb_sta)
+
+        # Figure
+        if len(time_vesps) > 0:
+            time_subset = np.concatenate(time_vesps)
+            vespagram = np.concatenate(vesps, axis=1)
+            plt.contourf(time_subset, slowness * 365.25 / dy, \
+                vespagram[:, :], cmap=plt.get_cmap('seismic'), \
+                vmin=-2.0, vmax=2.0)
+        plt.xlim([tmin_GPS, tmax_GPS])
+        plt.grid(b=None)
+        if index == 0:
+            plt.xlabel('Time (year)')
+        if index != 0:    
+            ax1.axes.xaxis.set_ticks([])
+        ax1.axes.yaxis.set_ticks([])
+
+    # Part 2: map of tremor
+    ax2 = plt.subplot2grid((len(lats), 3), (0, 1), rowspan=len(lats), colspan=2, projection=ccrs.epsg(WASHINGTON_NORTH))
+    shapename = 'ocean'
+    ocean_shp = shapereader.natural_earth(resolution='10m',
+                                          category='physical',
+                                          name=shapename)
+    shapename = 'land'
+    land_shp = shapereader.natural_earth(resolution='10m',
+                                       category='physical',
+                                       name=shapename)
+    ax2.set_extent([lonmin, lonmax, latmin, latmax], ccrs.Geodetic())
+    ax2.set_title("Tremor as function of time")
+    ax2.gridlines(linestyle=":")
+    for myfeature in shapereader.Reader(ocean_shp).geometries(): 
+        ax2.add_geometries([myfeature], ccrs.PlateCarree(), facecolor='#E0FFFF', edgecolor='black', alpha=0.5)
+    for myfeature in shapereader.Reader(land_shp).geometries(): 
+        ax2.add_geometries([myfeature], ccrs.PlateCarree(), facecolor='#FFFFE0', edgecolor='black', alpha=0.5)
+
+    # Keep only tremor on map
+    lat_tremor = mbbp[:, 2]
+    lon_tremor = mbbp[:, 3]
+    find = np.where((lat_tremor >= latmin) & (lat_tremor <= latmax) \
+                  & (lon_tremor >= lonmin) & (lon_tremor <= lonmax))
+    tremor = mbbp[find, :][0, :, :]
+
+    # Keep only tremor in time interval
+    find = np.where((tremor[:, 0] >= day_begin) & (tremor[:, 0] < day_end))
+    tremor_sub = tremor[find, :][0, :, :]
+
+    # Convert tremor time
+    nt = np.shape(tremor_sub)[0]
+    time_tremor = np.zeros(nt)
+    for i in range(0, nt):
+        (year, month, day, hour, minute, second) = date.matlab2ymdhms(tremor_sub[i, 0])
+        time_tremor[i] = date.ymdhms2day(year, month, day, hour, minute, second)
+
+    # Plot tremor on map
+    ax2.scatter(tremor_sub[:, 3], tremor_sub[:, 2], c=time_tremor, s=2, transform=ccrs.PlateCarree())
+    # Plot GPS stations on map
+    ax2.scatter(np.array(lon_stas), np.array(lat_stas), c='k', marker='^', s=20, transform=ccrs.PlateCarree())
+
+    plt.savefig('vespagram_' + str(J + 1) + '.pdf', format='pdf')
+    plt.close(1)
+
 if __name__ == '__main__':
 
     station_file = '../data/PANGA/stations.txt'
@@ -448,28 +629,34 @@ if __name__ == '__main__':
     wavelet = 'LA8'
     J = 6
     slowness = np.arange(-0.1, 0.105, 0.005)
-    lats = [47.20000, 47.30000, 47.40000, 47.50000, 47.60000, 47.70000, \
-        47.80000, 47.90000, 48.00000, 48.10000, 48.20000, 48.30000, 48.40000, \
-        48.50000, 48.60000, 48.70000]
-    lons = [-122.74294, -122.73912, -122.75036, -122.77612, -122.81591, \
-        -122.86920, -122.93549, -123.01425, -123.10498, -123.20716, \
-        -123.32028, -123.44381, -123.57726, -123.72011, -123.87183, \
-        -124.03193]
+#    lats = [47.20000, 47.30000, 47.40000, 47.50000, 47.60000, 47.70000, \
+#        47.80000, 47.90000, 48.00000, 48.10000, 48.20000, 48.30000, 48.40000, \
+#        48.50000, 48.60000, 48.70000]
+    lats = [47.9]
+#    lons = [-122.74294, -122.73912, -122.75036, -122.77612, -122.81591, \
+#        -122.86920, -122.93549, -123.01425, -123.10498, -123.20716, \
+#        -123.32028, -123.44381, -123.57726, -123.72011, -123.87183, \
+#        -124.03193]
+    lons = [-123.01425]
     names = []
-    for i in range(0, 16):
+    for i in range(0, 1):
         name = str(i)
         names.append(name)
-    tmin = 2009.5
-    tmax = 2010.0
+    tmin_GPS = 2009.95
+    tmax_GPS = 2010.45
+    tmin_tremor = 2010.15
+    tmax_tremor = 2010.25
     lonmin = -124.1
     lonmax = -122.6
-    latmin = 47.1
-    latmax = 48.8
-    j = 3
+    latmin = 47.2
+    latmax = 48.7
+    j = 4
 
 #    compute_wavelets(station_file, lats, lons, radius_GPS, direction, dataset, \
 #        wavelet, J)
 #    vespagram(station_file, tremor_file, lats, lons, names, radius_GPS, \
 #        radius_tremor, direction, dataset, wavelet, J, slowness, xmin, xmax)
-    stack_map(station_file, tremor_file, lats, lons, names, radius_GPS, \
-        radius_tremor, direction, dataset, j - 1, tmin, tmax, lonmin, lonmax, latmin, latmax)
+#    stack_map(station_file, tremor_file, lats, lons, names, radius_GPS, \
+#        radius_tremor, direction, dataset, j - 1, tmin, tmax, lonmin, lonmax, latmin, latmax)
+    vesp_map(station_file, tremor_file, lats, lons, names, radius_GPS, \
+       radius_tremor, direction, dataset, j - 1, slowness, tmin_GPS, tmax_GPS, tmin_tremor, tmax_tremor)
