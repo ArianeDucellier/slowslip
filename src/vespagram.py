@@ -715,15 +715,15 @@ if __name__ == '__main__':
     for i in range(0, 16):
         name = str(i)
         names.append(name)
-    tmin_GPS = 2009.99
-    tmax_GPS = 2010.49
-    tmin_tremor = 2010.23
-    tmax_tremor = 2010.25
+    tmin_GPS = 2013.14
+    tmax_GPS = 2013.63
+    tmin_tremor = 2013.37
+    tmax_tremor = 2013.39
     lonmin = -125.4
     lonmax = -121.4
     latmin = 46.3
     latmax = 49.6
-    j = 5
+    j = 4
 
 #    compute_wavelets(station_file, lats, lons, radius_GPS, direction, dataset, \
 #        wavelet, J)

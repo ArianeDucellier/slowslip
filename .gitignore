@@ -4,6 +4,7 @@ data/PANGA/detrended/*
 data/PANGA/raw/*
 data/tremor/
 src/tmp/*
+src/synthetics/*
 src/vespagram/*
 src/*.pdf
 
