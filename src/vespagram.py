@@ -604,6 +604,7 @@ def vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
             plt.contourf(time_subset, slowness * 365.25 / dy, \
                 vespagram[:, :], cmap=plt.get_cmap('seismic'), \
                 vmin=-2.0, vmax=2.0)
+#                levels = np.linspace(-2.0, 2.0, 21))
             plt.axvline(0.5 * (tmin_GPS + tmax_GPS), color='grey')
             plt.annotate('{:d} stations'.format(int(nb_sta[2 * t0])), \
                 (tmin_GPS + 0.7 * (tmax_GPS - tmin_GPS), 0), fontsize=5)
@@ -650,8 +651,8 @@ def vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
 #    tremor_sub = tremor[find, :][0, :, :]
 
    # Keep only tremor in time interval (A. Wech)
-    mask = ((data['time '] >= datetime(year1, month1, day1, hour1, minute1, second1)) \
-          & (data['time '] <= datetime(year2, month2, day2, hour2, minute2, second2)))
+    mask = ((tremor['time '] >= datetime(year1, month1, day1, hour1, minute1, second1)) \
+          & (tremor['time '] <= datetime(year2, month2, day2, hour2, minute2, second2)))
     tremor_sub = tremor.loc[mask].copy()
     tremor_sub.reset_index(drop=True, inplace=True)
 
@@ -715,10 +716,10 @@ if __name__ == '__main__':
     for i in range(0, 16):
         name = str(i)
         names.append(name)
-    tmin_GPS = 2013.14
-    tmax_GPS = 2013.63
-    tmin_tremor = 2013.37
-    tmax_tremor = 2013.39
+    tmin_GPS = 2016.64
+    tmax_GPS = 2017.14
+    tmin_tremor = 2016.88
+    tmax_tremor = 2016.90
     lonmin = -125.4
     lonmax = -121.4
     latmin = 46.3
