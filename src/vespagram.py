@@ -13,6 +13,7 @@ import pickle
 
 from datetime import datetime
 from math import cos, floor, pi, sin, sqrt
+from matplotlib.colors import Normalize
 from scipy.io import loadmat
 
 import date
@@ -510,16 +511,16 @@ def vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
         sub_stations.reset_index(drop=True, inplace=True)
 
         # Keep only stations within time interval
-        sub_stations['tmin'] = np.zeros(len(sub_stations))
-        sub_stations['tmax'] = np.zeros(len(sub_stations))
-        for i, station in enumerate(sub_stations['name']):
-            filename = 'tmp/' + dataset + '_' + station + '_' + direction + '.pkl'
-            (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
-            sub_stations.at[i, 'tmin'] = np.min(time)
-            sub_stations.at[i, 'tmax'] = np.max(time)
-        mask = (sub_stations['tmin'] < tmax_GPS) & (sub_stations['tmax'] > tmin_GPS)
-        sub_stations = sub_stations.loc[mask].copy()
-        sub_stations.reset_index(drop=True, inplace=True)
+#        sub_stations['tmin'] = np.zeros(len(sub_stations))
+#        sub_stations['tmax'] = np.zeros(len(sub_stations))
+#        for i, station in enumerate(sub_stations['name']):
+#            filename = 'tmp/' + dataset + '_' + station + '_' + direction + '.pkl'
+#            (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
+#            sub_stations.at[i, 'tmin'] = np.min(time)
+#            sub_stations.at[i, 'tmax'] = np.max(time)
+#        mask = (sub_stations['tmin'] < tmax_GPS) & (sub_stations['tmax'] > tmin_GPS)
+#        sub_stations = sub_stations.loc[mask].copy()
+#        sub_stations.reset_index(drop=True, inplace=True)
 
         # Wavelet vectors initialization
         times = []
@@ -601,11 +602,20 @@ def vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
         if len(time_vesps) > 0:
             time_subset = np.concatenate(time_vesps)
             vespagram = np.concatenate(vesps, axis=1)
-            plt.contourf(time_subset, slowness * 365.25 / dy, \
-                vespagram[:, :], cmap=plt.get_cmap('seismic'), \
-                vmin=-2.0, vmax=2.0)
-#                levels = np.linspace(-2.0, 2.0, 21))
-            plt.axvline(0.5 * (tmin_GPS + tmax_GPS), color='grey')
+
+            max_value = np.max(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
+            min_value = np.min(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
+            max_index = np.argmax(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
+            min_index = np.argmin(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
+            (imax, jmax) = np.unravel_index(max_index, np.array(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)]).shape)
+            (imin, jmin) = np.unravel_index(min_index, np.array(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)]).shape)
+            print(index, max_value, min_value, time_subset[(time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)][jmax], time_subset[(time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)][jmin])
+
+            plt.contourf(time_subset[(time_subset >= 2009.25) & (time_subset <= 2020.25)], slowness * 365.25 / dy, \
+                vespagram[:, (time_subset >= 2009.25) & (time_subset <= 2020.25)], cmap=plt.get_cmap('seismic'), \
+                norm=Normalize(vmin=-1.5, vmax=1.5))
+#                levels = np.linspace(-1.2, 1.2, 25))
+#            plt.axvline(0.5 * (tmin_GPS + tmax_GPS), color='grey')
             plt.annotate('{:d} stations'.format(int(nb_sta[2 * t0])), \
                 (tmin_GPS + 0.7 * (tmax_GPS - tmin_GPS), 0), fontsize=5)
         plt.xlim([tmin_GPS, tmax_GPS])
@@ -703,7 +713,7 @@ if __name__ == '__main__':
     direction = 'lon'
     dataset = 'cleaned'
     wavelet = 'LA8'
-    J = 6
+    J = 8
     slowness = np.arange(-0.1, 0.105, 0.005)
     lats = [47.20000, 47.30000, 47.40000, 47.50000, 47.60000, 47.70000, \
         47.80000, 47.90000, 48.00000, 48.10000, 48.20000, 48.30000, 48.40000, \
@@ -716,15 +726,15 @@ if __name__ == '__main__':
     for i in range(0, 16):
         name = str(i)
         names.append(name)
-    tmin_GPS = 2016.64
-    tmax_GPS = 2017.14
-    tmin_tremor = 2016.88
-    tmax_tremor = 2016.90
+    tmin_GPS = 2019.78
+    tmax_GPS = 2019.98
+    tmin_tremor = 2019.78
+    tmax_tremor = 2019.98
     lonmin = -125.4
     lonmax = -121.4
     latmin = 46.3
     latmax = 49.6
-    j = 4
+    j = 5
 
 #    compute_wavelets(station_file, lats, lons, radius_GPS, direction, dataset, \
 #        wavelet, J)
