@@ -603,19 +603,19 @@ def vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
             time_subset = np.concatenate(time_vesps)
             vespagram = np.concatenate(vesps, axis=1)
 
-            max_value = np.max(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
-            min_value = np.min(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
-            max_index = np.argmax(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
-            min_index = np.argmin(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
-            (imax, jmax) = np.unravel_index(max_index, np.array(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)]).shape)
-            (imin, jmin) = np.unravel_index(min_index, np.array(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)]).shape)
-            print(index, max_value, min_value, time_subset[(time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)][jmax], time_subset[(time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)][jmin])
+#            max_value = np.max(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
+#            min_value = np.min(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
+#            max_index = np.argmax(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
+#            min_index = np.argmin(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
+#            (imax, jmax) = np.unravel_index(max_index, np.array(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)]).shape)
+#            (imin, jmin) = np.unravel_index(min_index, np.array(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)]).shape)
+#            print(index, max_value, min_value, time_subset[(time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)][jmax], time_subset[(time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)][jmin])
 
             plt.contourf(time_subset[(time_subset >= 2009.25) & (time_subset <= 2020.25)], slowness * 365.25 / dy, \
                 vespagram[:, (time_subset >= 2009.25) & (time_subset <= 2020.25)], cmap=plt.get_cmap('seismic'), \
                 norm=Normalize(vmin=-1.5, vmax=1.5))
 #                levels = np.linspace(-1.2, 1.2, 25))
-#            plt.axvline(0.5 * (tmin_GPS + tmax_GPS), color='grey')
+            plt.axvline(0.5 * (tmin_GPS + tmax_GPS), color='grey', linewidth=1)
             plt.annotate('{:d} stations'.format(int(nb_sta[2 * t0])), \
                 (tmin_GPS + 0.7 * (tmax_GPS - tmin_GPS), 0), fontsize=5)
         plt.xlim([tmin_GPS, tmax_GPS])
@@ -726,10 +726,10 @@ if __name__ == '__main__':
     for i in range(0, 16):
         name = str(i)
         names.append(name)
-    tmin_GPS = 2019.78
-    tmax_GPS = 2019.98
-    tmin_tremor = 2019.78
-    tmax_tremor = 2019.98
+    tmin_GPS = 2011.81
+    tmax_GPS = 2012.31
+    tmin_tremor = 2012.03
+    tmax_tremor = 2012.09
     lonmin = -125.4
     lonmax = -121.4
     latmin = 46.3
