@@ -339,7 +339,7 @@ def vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
 
     # Loop on latitude and longitude
     for index, (lat, lon) in enumerate(zip(lats, lons)):
-        ax1 = plt.subplot2grid((len(lats) + 2, 1), (len(lats) - index - 1, 0))
+        ax1 = plt.subplot2grid((len(lats) + 5, 1), (len(lats) - index - 1, 0))
 
         # Keep only stations in a given radius
         dx = (pi / 180.0) * a * cos(lat * pi / 180.0) / sqrt(1.0 - e * e * \
@@ -445,7 +445,7 @@ def vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
         ax1.axes.yaxis.set_ticks([])
 
     # Part 2: tremor
-    ax1 = plt.subplot2grid((len(lats) + 2, 1), (len(lats), 0), rowspan=2)
+    ax1 = plt.subplot2grid((len(lats) + 5, 1), (len(lats), 0), rowspan=5)
 
     # Loop on latitude and longitude
     for index, (lat, lon) in enumerate(zip(lats, lons)):
@@ -484,7 +484,8 @@ def vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
                     (time_tremor[j] <= tmin_GPS + (i + 0.5) /365.25)):
                     ntremor[i] = ntremor[i] + 1
 
-        plt.plot(tmin_GPS + (1.0 / 365.0) * np.arange(0, len(ntremor)), ntremor, color=(0.5, 0.5, index / len(lats)))
+        plt.plot(tmin_GPS + (1.0 / 365.0) * np.arange(0, len(ntremor)), ntremor, \
+            linewidth=0.5, color=(1 - index / len(lats), 0.8, index / len(lats)))
         plt.ylabel('Number of tremor')
     plt.xlim([tmin_GPS, tmax_GPS])
     plt.xlabel('Time (year)')
@@ -770,15 +771,15 @@ if __name__ == '__main__':
         -122.86920, -122.93549, -123.01425, -123.10498, -123.20716, \
         -123.32028, -123.44381, -123.57726, -123.72011, -123.87183, \
         -124.03193]
-    tmin_GPS = 2019.25
-    tmax_GPS = 2020.25
-    tmin_tremor = 2019.25
-    tmax_tremor = 2020.25
+    tmin_GPS = 2015.25
+    tmax_GPS = 2018.25
+    tmin_tremor = 2019.18
+    tmax_tremor = 2019.24
     lonmin = -125.4
     lonmax = -121.4
     latmin = 46.3
     latmax = 49.6
-    j = 6
+    j = 8
 
 #    compute_wavelets(station_file, lats, lons, radius_GPS, direction, dataset, \
 #        wavelet, J)
