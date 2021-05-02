@@ -595,10 +595,10 @@ if __name__ == '__main__':
         -122.86920, -122.93549, -123.01425, -123.10498, -123.20716, \
         -123.32028, -123.44381, -123.57726, -123.72011, -123.87183, \
         -124.03193]
-    tmin_GPS = 2018.25
-    tmax_GPS = 2021.25
-    tmin_tremor = 2018.25
-    tmax_tremor = 2021.25
+    tmin_GPS = 2012.25
+    tmax_GPS = 2015.25
+    tmin_tremor = 2012.25
+    tmax_tremor = 2015.25
     lonmin = -125.4
     lonmax = -121.4
     latmin = 46.3
@@ -608,9 +608,9 @@ if __name__ == '__main__':
 #    compute_wavelets(station_file, lats, lons, radius_GPS, direction, dataset, \
 #        wavelet, J)
 
-#    vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
-#        radius_GPS, radius_tremor, tmin_GPS, tmax_GPS, j - 1, slowness)
+    vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
+        radius_GPS, radius_tremor, tmin_GPS, tmax_GPS, j - 1, slowness)
 
-    vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
-        dataset, direction, radius_GPS, tmin_GPS, tmax_GPS, latmin, latmax, lonmin, lonmax, \
-        j - 1, slowness)
+#    vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
+#        dataset, direction, radius_GPS, tmin_GPS, tmax_GPS, latmin, latmax, lonmin, lonmax, \
+#        j - 1, slowness)
