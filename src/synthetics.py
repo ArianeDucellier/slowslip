@@ -6,19 +6,16 @@ import matplotlib.pylab as pylab
 import matplotlib.pyplot as plt
 import numpy as np
 
-from math import log, sqrt
-from scipy.signal import butter, lfilter
-
 import MODWT
 
+# Time between events
+timesteps = [100, 300, 500]
 # Durations of slow slip events
 durations = [2, 5, 10, 20, 50, 100]
-# Signal-to-noise ratios
-SNRs = [0, 1, 2 , 4]
 # MODWT wavelet filter
 name = 'LA8'
 # Duration of recording
-N = 500
+N = 5000
 # MODWT level
 J = 8
 
@@ -28,15 +25,8 @@ time = np.arange(0, N + 1)
 # Set random seed
 np.random.seed(0)
 
-# Create low-pass filter
-b, a = butter(4, 0.1, btype='low')
-
-# Loop on signal-to-noise ratios
-for SNR in SNRs:
-    if SNR != 0:
-        noise = np.random.normal(0.0, 1.0 / SNR, N + 1)
-    else:
-        noise = np.zeros(N + 1)
+# Loop on time between events
+for timestep in timesteps:
     # Loop on duration
     for duration in durations:
         # Create displacements vectors
