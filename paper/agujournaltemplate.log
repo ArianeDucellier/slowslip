@@ -1,0 +1,1259 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 JUL 2021 17:13
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**agujournaltemplate.tex
+(./agujournaltemplate.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(./agujournal2018.cls
+Document Class: agujournal2018 08/23/2018
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count79
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (./trackchanges.sty
+Package: trackchanges 2009/04/22 v0.7.0 TrackChanges file 
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count80
+\calc@Bcount=\count81
+\calc@Adimen=\dimen104
+\calc@Bdimen=\dimen105
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count82
+\calc@Cskip=\skip43
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks15
+\SOUL@lasttoken=\toks16
+\SOUL@cmds=\toks17
+\SOUL@buffer=\toks18
+\SOUL@token=\toks19
+\SOUL@spaceskip=\skip44
+\SOUL@ttwidth=\dimen106
+\SOUL@uldp=\dimen107
+\SOUL@ulht=\dimen108
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/morefloats/morefloats.sty
+Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package morefloats Info: Maximum number of possible floats asked for: 36
+(morefloats)             (i.e. 18 more floats).
+(morefloats)             LaTeX might run out of memory before this
+(morefloats)             (in which case it will notify you).
+)
+\c@userid=\count83
+\c@changenumber=\count84
+\c@storefootnote=\count85
+\c@numeditors=\count86
+\c@maxeditors=\count87
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count88
+\output=\toks20
+\linenoprevgraf=\count89
+\linenumbersep=\dimen109
+\linenumberwidth=\dimen110
+\c@linenumber=\count90
+\c@pagewiselinenumber=\count91
+\c@LN@truepage=\count92
+\c@internallinenumber=\count93
+\c@internallinenumbers=\count94
+\quotelinenumbersep=\dimen111
+\bframerule=\dimen112
+\bframesep=\dimen113
+\bframebox=\box26
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip45
+\RaggedLeftLeftskip=\skip46
+\RaggedRightLeftskip=\skip47
+\CenteringRightskip=\skip48
+\RaggedLeftRightskip=\skip49
+\RaggedRightRightskip=\skip50
+\CenteringParfillskip=\skip51
+\RaggedLeftParfillskip=\skip52
+\RaggedRightParfillskip=\skip53
+\JustifyingParfillskip=\skip54
+\CenteringParindent=\skip55
+\RaggedLeftParindent=\skip56
+\RaggedRightParindent=\skip57
+\JustifyingParindent=\skip58
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count95
+\rotFPtop=\skip59
+\rotFPbot=\skip60
+\rot@float@box=\box27
+\rot@mess@toks=\toks21
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box28
+\UL@hyphenbox=\box29
+\UL@skip=\skip61
+\UL@hook=\toks22
+\UL@height=\dimen114
+\UL@pe=\count96
+\UL@pixel=\dimen115
+\ULC@box=\box30
+Package: ulem 2012/05/18
+\ULdepth=\dimen116
+)
+\draftskip=\count97
+\c@section=\count98
+\c@subsection=\count99
+\c@subsubsection=\count100
+\c@paragraph=\count101
+\c@subparagraph=\count102
+\c@figure=\count103
+\c@table=\count104
+\abovecaptionskip=\skip62
+\belowcaptionskip=\skip63
+\c@appendnum=\count105
+\bibindent=\dimen117
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/apacite/apacite.sty
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count106
+\bibleftmargin=\skip64
+\bibindent=\skip65
+\bibparsep=\skip66
+\bibitemsep=\skip67
+\biblabelsep=\skip68
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip69
+\bibsep=\skip70
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count107
+)
+LaTeX Info: Redefining \BBA on input line 1149.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip71
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen118
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen119
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count108
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count109
+\leftroot@=\count110
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count111
+\DOTSCASE@=\count112
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count113
+\c@MaxMatrixCols=\count114
+\dotsspace@=\muskip11
+\c@parentequation=\count115
+\dspbrk@lvl=\count116
+\tag@help=\toks24
+\row@=\count117
+\column@=\count118
+\maxfields@=\count119
+\andhelp@=\toks25
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
+\@envbody=\toks26
+\multlinegap=\skip72
+\multlinetaggap=\skip73
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(./agujournaltemplate.aux)
+\openout1 = `agujournaltemplate.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count120
+\scratchdimen=\dimen127
+\scratchbox=\box33
+\nofMPsegments=\count121
+\nofMParguments=\count122
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen128
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
+\everyMPtoPDFconversion=\toks29
+) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+
+Package trackchanges Warning: TrackChanges is not compatable with the 
+(trackchanges)                'ulem' package.
+(trackchanges)                Use the 'soul' package instead.
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 75.
+\c@maskedRefs=\count126
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/apacite/english.apc
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 118.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 118.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 201.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 201.
+
+
+Package natbib Warning: Citation `BER_2011' on page 2 undefined on input line 2
+03.
+
+
+Overfull \hbox (13.3767pt too wide) in paragraph at lines 203--204
+[]\OT1/cmr/m/n/10 The largest earth-quakes on Earth oc-cur in sub-duc-tion zone
+s, where large seg-ments 
+ []
+
+
+Overfull \hbox (14.21017pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 of the bound-ary be-tween the sub-duct-ing tec-tonic plate and 
+the over-ly-ing plate can store 
+ []
+
+
+Overfull \hbox (7.21005pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 en-ergy for cen-turies and then re-lease it in min-utes dur-ing
+ an earth-quake. To bet-ter as- 
+ []
+
+
+Overfull \hbox (18.09898pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 sess seis-mic haz-ard, it is thus nec-es-sary to im-prove our u
+n-der-stand-ing of sub-duc-tion zone 
+ []
+
+
+Overfull \hbox (12.34885pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 pro-cesses. Slow slip events are a new fea-ture dis-cov-ered in
+ the last two decades in many 
+ []
+
+
+Overfull \hbox (3.87679pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 sub-duc-tion zones thanks to record-ings of the dis-place-ment 
+of Earth's sur-face by dense 
+ []
+
+
+Overfull \hbox (5.04349pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 Global Nav-i-ga-tion Satel-lite Sys-tem (GNSS) net-works. Slow 
+slip events can last from a 
+ []
+
+
+Overfull \hbox (12.62672pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 few days to sev-eral years, and have a rel-a-tively short re-cu
+r-rence time (months to years), 
+ []
+
+
+Overfull \hbox (20.34898pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 com-pared to the re-cur-rence time of reg-u-lar earth-quakes (u
+p to sev-eral hun-dreds of years), 
+ []
+
+
+Overfull \hbox (6.65453pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 al-low-ing sci-en-tists to ob-serve and study many com-plete ev
+ent cy-cles, which is typ-i-cally 
+ []
+
+
+Overfull \hbox (5.97404pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 not pos-si-ble to ex-plore with tra-di-tional earth-quake cat-a
+-logs (Beroza and Ide, 2011  \OT1/cmr/bx/n/10 ?\OT1/cmr/m/n/10 ). 
+ []
+
+
+Overfull \hbox (11.76556pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 More-over, whereas reg-u-lar earth-quakes oc-cur in the seis-mo
+-genic / locked zone, slow slip 
+ []
+
+
+Overfull \hbox (13.73785pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 events oc-cur downdip of the locked sec-tion of the sub-duc-tio
+n zone. In-ter-ac-tions be-tween 
+ []
+
+
+Overfull \hbox (8.84898pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 the slow slip zone and the seis-mo-genic zone could po-ten-tial
+ly trig-ger large earth-quakes. 
+ []
+
+
+Overfull \hbox (20.84909pt too wide) in paragraph at lines 203--204
+\OT1/cmr/m/n/10 Through fu-ture study, this in-ter-ac-tion may im-prove our un-
+der-stand-ing of the seis-mic haz- 
+ []
+
+
+Overfull \hbox (10.6822pt too wide) in paragraph at lines 205--206
+[]\OT1/cmr/m/n/10 Wavelets meth-ods such as the Dis-crete Wavelet Trans-form (D
+WT) are math-e-mat- 
+ []
+
+
+Overfull \hbox (12.43242pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10 i-cal tools for an-a-lyz-ing time se-ries si-mul-ta-ne-ously in
+ the time and the fre-quency do-main 
+ []
+
+
+Overfull \hbox (5.82123pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10 by ob-serv-ing how weighted av-er-ages of a time se-ries vary f
+rom one av-er-ag-ing pe-riod to 
+ []
+
+
+Overfull \hbox (4.26566pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10 the next. They have been widely used for geo-phys-i-cal ap-pli-
+ca-tions. How-ever, very few 
+ []
+
+
+Overfull \hbox (0.3489pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10 stud-ies have used wavelet meth-ods to an-a-lyze record-ings of
+ slow slip events. The aim 
+ []
+
+
+Overfull \hbox (20.76093pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10 of this project is thus to use \OT1/cmr/bx/n/10 wavelet meth-od
+s to an-a-lyze GNSS record-ings of slow 
+ []
+
+
+Overfull \hbox (14.40018pt too wide) in paragraph at lines 205--206
+\OT1/cmr/bx/n/10 slip events in Cas-ca-dia and New Zealand\OT1/cmr/m/n/10 . The
+se ad-vanced sig-nal pro-cess-ing meth- 
+ []
+
+
+Overfull \hbox (7.64076pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10 ods will en-able ex-tract-ing much more in-for-ma-tion from the
+ GNSS data cur-rently avail- 
+ []
+
+
+Overfull \hbox (1.1546pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10 able and will im-prove our knowl-edge of this newly dis-cov-ere
+d ge-o-log-i-cal phe-nomenon. 
+ []
+
+
+Overfull \hbox (2.06442pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10 Specif-i-cally, as a re-sult of the project, I will be able to 
+\OT1/cmr/m/it/10 de-tect pos-si-ble smaller (mag-ni- 
+ []
+
+
+Overfull \hbox (23.05234pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/it/10 tude 5) slow slip events \OT1/cmr/m/n/10 in Zealand that may b
+e cur-rently un-de-tected with stan-dard meth- 
+ []
+
+
+Overfull \hbox (1.09018pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10 ods and \OT1/cmr/m/it/10 de-tect longer (months to years) slow 
+slip events \OT1/cmr/m/n/10 that are more dif-fi-cult to de- 
+ []
+
+
+Overfull \hbox (15.51569pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10 tect than slow slip events with a short du-ra-tion (days to wee
+ks). Ad-di-tion-ally, the meth- 
+ []
+
+
+Overfull \hbox (7.18236pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10 ods de-vel-oped for the study of slow slip events can have a br
+oader po-ten-tial im-pact for 
+ []
+
+
+Overfull \hbox (14.19617pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10 the de-tec-tion of tran-sient sig-nals in GNSS time se-ries. Th
+e codes de-vel-oped will be pub- 
+ []
+
+
+Package natbib Warning: Citation `BER_2011' on page 2 undefined on input line 2
+09.
+
+
+Package natbib Warning: Citation `AUD_2016' on page 2 undefined on input line 2
+09.
+
+
+Overfull \hbox (6.3489pt too wide) in paragraph at lines 209--210
+[]\OT1/cmr/m/n/10 As with or-di-nary earth-quakes, slow slip events are caused 
+by slip on a fault, such 
+ []
+
+
+Overfull \hbox (14.48795pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 as the plate bound-ary be-tween a tec-tonic plate sub-duct-ing 
+un-der an-other tec-tonic plate. 
+ []
+
+
+Overfull \hbox (2.73781pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 How-ever, they take a much longer time (sev-eral days to sev-er
+al years) to hap-pen rel-a- 
+ []
+
+
+Overfull \hbox (19.73781pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 tive to or-di-nary earth-quakes. More-over, the seis-mic waves 
+they gen-er-ate are much weaker 
+ []
+
+
+Overfull \hbox (7.12679pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 than the seis-mic waves gen-er-ated by or-di-nary earth-quakes,
+ and may not be de-tectable. 
+ []
+
+
+Overfull \hbox (3.34894pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 A slow slip event on the plate bound-ary is in-ferred to hap-pe
+n when there is a re-ver-sal 
+ []
+
+
+Overfull \hbox (3.64067pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 of the di-rec-tion of mo-tion at GNSS sta-tions, com-pared to t
+he sec-u-lar in-ter-seis-mic mo- 
+ []
+
+
+Overfull \hbox (7.54341pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 tion. Slow slip events have been ob-served in many sub-duc-tion
+ zones, such as Cas-ca-dia, 
+ []
+
+
+Overfull \hbox (6.07127pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 Nankai (south-west Japan), Alaska, Costa Rica, Mex-ico, and New
+ Zealand (Beroza and 
+ []
+
+
+Package natbib Warning: Citation `SHE_2007_nature' on page 2 undefined on input
+ line 211.
+
+
+Package natbib Warning: Citation `OBA_2002' on page 2 undefined on input line 2
+11.
+
+
+Package natbib Warning: Citation `ROG_2003' on page 2 undefined on input line 2
+11.
+
+
+Overfull \hbox (7.93224pt too wide) in paragraph at lines 211--212
+[]\OT1/cmr/m/n/10 In many places, tec-tonic tremor are also ob-served in re-la-
+tion to slow slip. Tremor 
+ []
+
+
+Overfull \hbox (0.90451pt too wide) in paragraph at lines 211--212
+\OT1/cmr/m/n/10 is a long (sev-eral sec-onds to many min-utes), low am-pli-tude
+ seis-mic sig-nal, with emer- 
+ []
+
+
+Overfull \hbox (28.04343pt too wide) in paragraph at lines 211--212
+\OT1/cmr/m/n/10 gent on-sets, and an ab-sence of clear im-pul-sive phases. Tec-
+tonic tremor have been ex-plained 
+ []
+
+
+Overfull \hbox (3.06819pt too wide) in paragraph at lines 211--212
+\OT1/cmr/m/n/10 as a swarm of small, low-frequency earth-quakes (LFEs ; Shelly 
+\OT1/cmr/m/it/10 et al.\OT1/cmr/m/n/10 , 2007  \OT1/cmr/bx/n/10 ?\OT1/cmr/m/n/1
+0 ), that is 
+ []
+
+
+Overfull \hbox (2.34897pt too wide) in paragraph at lines 211--212
+\OT1/cmr/m/n/10 small mag-ni-tude earth-quakes (M $\OMS/cmsy/m/n/10 ^^X$ \OT1/c
+mr/m/n/10 1), for which fre-quency con-tent (1-10 Hz) is lower 
+ []
+
+
+Overfull \hbox (3.29352pt too wide) in paragraph at lines 211--212
+\OT1/cmr/m/n/10 than for or-di-nary earth-quakes (up to 20 Hz). In sub-duc-tion
+ zones such as Nankai and 
+ []
+
+
+Overfull \hbox (14.48796pt too wide) in paragraph at lines 211--212
+\OT1/cmr/m/n/10 Cas-ca-dia, tec-tonic tremor ob-ser-va-tions are spa-tially and
+ tem-po-rally cor-re-lated with slow 
+ []
+
+
+Overfull \hbox (15.21008pt too wide) in paragraph at lines 211--212
+\OT1/cmr/m/n/10 slip ob-ser-va-tions (Obara, 2002  \OT1/cmr/bx/n/10 ?\OT1/cmr/m
+/n/10 ; Rogers and Dragert, 2003  \OT1/cmr/bx/n/10 ?\OT1/cmr/m/n/10 ). Due to t
+his cor-re-la-tion, 
+ []
+
+
+Overfull \hbox (18.46011pt too wide) in paragraph at lines 211--212
+\OT1/cmr/m/n/10 these paired phe-nom-ena have been called Episodic Tremor and S
+lip (ETS). How-ever, this 
+ []
+
+
+Overfull \hbox (17.34894pt too wide) in paragraph at lines 211--212
+\OT1/cmr/m/n/10 is not al-ways the case. For in-stance, in north-ern New Zealan
+d, tremor are more chal-leng- 
+ []
+
+
+Overfull \hbox (1.71013pt too wide) in paragraph at lines 211--212
+\OT1/cmr/m/n/10 ing to de-tect, and seem to be lo-cated downdip of the slow sli
+p on the plate bound-ary.  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+
+Package natbib Warning: Citation `WAL_2010' on page 3 undefined on input line 2
+13.
+
+
+Package natbib Warning: Citation `TOD_2016' on page 3 undefined on input line 2
+13.
+
+
+Overfull \hbox (1.1267pt too wide) in paragraph at lines 213--214
+[]\OT1/cmr/m/n/10 New Zealand ex-hibits a wide range of slow slip be-hav-ior, a
+nd is there-fore an ex- 
+ []
+
+
+Overfull \hbox (14.9323pt too wide) in paragraph at lines 213--214
+\OT1/cmr/m/n/10 cit-ing site for re-search. The tec-ton-ics of the North Is-lan
+d of New Zealand are dom-i-nated 
+ []
+
+
+Overfull \hbox (14.68234pt too wide) in paragraph at lines 213--214
+\OT1/cmr/m/n/10 by the west-ward sub-duc-tion of the Pa-cific Plate un-der the 
+Aus-tralian Plate at the Hiku- 
+ []
+
+
+Overfull \hbox (4.98781pt too wide) in paragraph at lines 213--214
+\OT1/cmr/m/n/10 rangi Trench. Two types of slow slip events have been ob-served
+ at the Hiku-rangi mar- 
+ []
+
+
+Overfull \hbox (0.71017pt too wide) in paragraph at lines 213--214
+\OT1/cmr/m/n/10 gin. Shal-low (10-15 km depth), shorter (1-3 weeks), and usu-al
+ly smaller (Mw 6.3-6.8) 
+ []
+
+
+Overfull \hbox (14.46007pt too wide) in paragraph at lines 213--214
+\OT1/cmr/m/n/10 slow slip events have been ob-served ev-ery 18-24 months in the
+ north-ern part of the mar- 
+ []
+
+
+Overfull \hbox (25.0435pt too wide) in paragraph at lines 213--214
+\OT1/cmr/m/n/10 gin. Deeper (35-60 km depth), longer (12-18 months), and larger
+ (Mw 7.0) slow slip events 
+ []
+
+
+Overfull \hbox (9.48787pt too wide) in paragraph at lines 213--214
+\OT1/cmr/m/n/10 have been ob-served ev-ery 5 years in the south-ern part of the
+ mar-gin (Wal-lace and Bea- 
+ []
+
+
+Package natbib Warning: Citation `DEL_2009' on page 3 undefined on input line 2
+15.
+
+
+Package natbib Warning: Citation `KIM_2011' on page 3 undefined on input line 2
+15.
+
+
+Package natbib Warning: Citation `IDE_2012' on page 3 undefined on input line 2
+15.
+
+
+Package natbib Warning: Citation `WAL_2013' on page 3 undefined on input line 2
+15.
+
+
+Package natbib Warning: Citation `TOD_2016' on page 3 undefined on input line 2
+15.
+
+
+Package natbib Warning: Citation `AGU_2009' on page 3 undefined on input line 2
+15.
+
+
+Package natbib Warning: Citation `FRA_2016' on page 3 undefined on input line 2
+15.
+
+
+Overfull \hbox (2.34886pt too wide) in paragraph at lines 215--216
+[]\OT1/cmr/m/n/10 It used to be thought that there were no tremor as-so-ci-ated
+ with slow slip events 
+ []
+
+
+Overfull \hbox (12.096pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 in north-ern Hiku-rangi. De-la-haye \OT1/cmr/m/it/10 et al. \OT
+1/cmr/m/n/10 (2009  \OT1/cmr/bx/n/10 ?\OT1/cmr/m/n/10 ) ob-served an in-crease 
+in the rate of mi- 
+ []
+
+
+Overfull \hbox (16.72395pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 cro-seis-mic-ity downdip of the 2004 Gis-borne slow slip event.
+ More re-cently, how-ever, Kim 
+ []
+
+
+Overfull \hbox (1.29042pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/it/10 et al. \OT1/cmr/m/n/10 (2011  \OT1/cmr/bx/n/10 ?\OT1/cmr/m/n/1
+0 ) de-tected a low level of tremor ac-tiv-ity that in-creased dur-ing the 2010
+ 
+ []
+
+
+Overfull \hbox (0.77942pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 Gis-borne slow slip event. As was the case for the mi-croearthq
+uakes, the source of the 
+ []
+
+
+Overfull \hbox (23.25183pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 tremor was lo-cated downdip of the slow slip patch de-ter-mined
+ from GNSS data. Ide (2012 
+ []
+
+
+Overfull \hbox (20.02946pt too wide) in paragraph at lines 215--216
+\OT1/cmr/bx/n/10 ?\OT1/cmr/m/n/10 ) de-tected tremor downdip of the lo-ca-tion 
+of two deep slow slip events ob-served by Wal- 
+ []
+
+
+Overfull \hbox (3.44626pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 lace and Eberhart-Phillips (2013  \OT1/cmr/bx/n/10 ?\OT1/cmr/m/
+n/10 ) in 2006 and 2008. How-ever, con-trary to Episodic 
+ []
+
+
+Overfull \hbox (11.5157pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 Tremor and Slip events in Cas-ca-dia and Nankai, the tremor ac-
+tiv-ity did not seem to in- 
+ []
+
+
+Overfull \hbox (6.02939pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 crease dur-ing the slow slip events. Todd and Schwartz (2016  \
+OT1/cmr/bx/n/10 ?\OT1/cmr/m/n/10 ) de-tected tremor as-so- 
+ []
+
+
+Overfull \hbox (36.51572pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 ci-ated with most of the shal-low slow slip events be-tween 201
+0 and 2015, and lo-cated downdip 
+ []
+
+
+Overfull \hbox (9.84897pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 of the geode-t-i-cally in-ferred slip area. They also de-tected
+ deeper tremor be-tween 20 and 
+ []
+
+
+Overfull \hbox (6.21016pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 50 km depth with un-clear ori-gin. They hy-poth-e-sized that th
+ese tremor may be re-lated 
+ []
+
+
+Overfull \hbox (25.29343pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 to cur-rently un-de-tected deep long-term slow slip events. In 
+other sub-duc-tion zones, tremor 
+ []
+
+
+Overfull \hbox (6.73781pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 has been used as a proxy to ob-serve slow slip events that are 
+not di-rectly de-tectable in 
+ []
+
+
+Overfull \hbox (4.51256pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 the GNSS data (Aguiar \OT1/cmr/m/it/10 et al.\OT1/cmr/m/n/10 , 
+2009  \OT1/cmr/bx/n/10 ? \OT1/cmr/m/n/10 ; Frank, 2016  \OT1/cmr/bx/n/10 ?\OT1/
+cmr/m/n/10 ). How-ever, as there is no clear 
+ []
+
+
+Overfull \hbox (9.30258pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 re-la-tion-ship be-tween tremor and slow slip oc-cur-rence in N
+ew Zealand, \OT1/cmr/bx/n/10 these meth-ods 
+ []
+
+
+Overfull \hbox (0.69499pt too wide) in paragraph at lines 215--216
+\OT1/cmr/bx/n/10 can-not be ap-plied, and we need other meth-ods to be able to 
+bet-ter de-tect 
+ []
+
+
+Package natbib Warning: Citation `KUM_1997' on page 3 undefined on input line 2
+17.
+
+
+Package natbib Warning: Citation `ALB_2019' on page 3 undefined on input line 2
+17.
+
+
+Package natbib Warning: Citation `SZE_2008' on page 3 undefined on input line 2
+17.
+
+
+Package natbib Warning: Citation `OHT_2010' on page 3 undefined on input line 2
+17.
+
+
+Package natbib Warning: Citation `WEI_2012' on page 3 undefined on input line 2
+17.
+
+
+Overfull \hbox (7.46014pt too wide) in paragraph at lines 217--218
+[]\OT1/cmr/m/n/10 Wavelet meth-ods have been widely used for geo-phys-i-cal ap-
+pli-ca-tions (Ku-mar and 
+ []
+
+
+Overfull \hbox (3.82115pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 Foufoula-Georgiou, 1997  \OT1/cmr/bx/n/10 ?\OT1/cmr/m/n/10 ). H
+ow-ever, few stud-ies have used wavelet meth-ods to an-a- 
+ []
+
+
+Overfull \hbox (0.79338pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 lyze record-ings of slow slip, and their scope was lim-ited to 
+the de-tec-tion of the big-ger 
+ []
+
+
+Overfull \hbox (17.48788pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 (mag-ni-tude 6-7) short-term (a few weeks) events with a signal
+-to-noise ra-tio greater than 
+ []
+
+
+Overfull \hbox (29.92934pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 1. Alba \OT1/cmr/m/it/10 et al. \OT1/cmr/m/n/10 (2019  \OT1/cmr
+/bx/n/10 ?\OT1/cmr/m/n/10 ) an-a-lyzed tidal records at four dif-fer-ent sites 
+dur-ing slow slip events. 
+ []
+
+
+Overfull \hbox (4.40445pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 They ap-plied a Dis-crete Wavelet Trans-form (DWT) to each of t
+he sites stud-ied, in or- 
+ []
+
+
+Overfull \hbox (25.15448pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 der to re-trieve the noise sig-nal shared by all sites and re-m
+ove it from the time se-ries. They 
+ []
+
+
+Overfull \hbox (3.51556pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 could then clearly see a dif-fer-ence in up-lift be-tween the t
+wo tide gauges at Port An-ge- 
+ []
+
+
+Overfull \hbox (8.84595pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 les and Port Townsend. Szeliga \OT1/cmr/m/it/10 et al. \OT1/cmr
+/m/n/10 (2008  \OT1/cmr/bx/n/10 ?\OT1/cmr/m/n/10 ) used a con-tin-u-ous wavelet
+ trans-form of 
+ []
+
+
+Overfull \hbox (23.52951pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 the GPS time se-ries to pick the on-set of the ETS events. Fi-n
+ally, in-stead of us-ing wavelets 
+ []
+
+
+Overfull \hbox (13.65158pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 in the time do-main, Ohtani \OT1/cmr/m/it/10 et al. \OT1/cmr/m/
+n/10 (2010  \OT1/cmr/bx/n/10 ?\OT1/cmr/m/n/10 ) used 2D wavelet func-tions in t
+he spa-tial do- 
+ []
+
+
+Overfull \hbox (22.0156pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 main to de-tect slow slip events. Their method has been suc-ces
+s-fully used to de-tect a tran- 
+ []
+
+
+Overfull \hbox (13.57126pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 sient event in the Boso penin-sula, Japan, and a slow slip even
+t in the Alaska sub-duc-tion 
+ []
+
+
+Overfull \hbox (5.67934pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 zone (Wei \OT1/cmr/m/it/10 et al.\OT1/cmr/m/n/10 , 2012  \OT1/c
+mr/bx/n/10 ?\OT1/cmr/m/n/10 ). While wavelet meth-ods have a great po-ten-tial 
+for an-a-lyz-ing 
+ []
+
+
+Overfull \hbox (1.84901pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 slow slip, their po-ten-tial for the de-tec-tion of small size 
+(mag-ni-tude 5) events and long 
+ []
+
+
+Overfull \hbox (8.65453pt too wide) in paragraph at lines 217--218
+\OT1/cmr/m/n/10 term (sev-eral months) events with signal-to-noise ra-tio lower
+ than 1 has been rel-a-tively 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+
+Package natbib Warning: Citation `PER_2000' on page 4 undefined on input line 2
+23.
+
+
+Overfull \hbox (10.6267pt too wide) in paragraph at lines 223--223
+[]\OT1/cmr/m/n/10 The wavelet meth-ods for time se-ries anal-y-sis are ex-plain
+ed in a more de-tailed way 
+ []
+
+
+Overfull \hbox (6.84895pt too wide) in paragraph at lines 227--227
+[]\OT1/cmr/m/n/10 The Dis-crete Wavelet Trans-form (DWT) is an or-thonor-mal tr
+ans-form that trans- 
+ []
+
+
+Overfull \hbox (48.65038pt too wide) in paragraph at lines 227--227
+\OT1/cmr/m/n/10 forms a time se-ries $\OML/cmm/m/it/10 X[] []$ \OT1/cmr/m/n/10 
+into a vec-tor of wavelet co-ef-fi-cients $\OML/cmm/m/it/10 W[] []$\OT1/cmr/m/n
+/10 . 
+ []
+
+
+Overfull \hbox (4.01553pt too wide) in paragraph at lines 227--227
+\OT1/cmr/m/n/10 n is some in-te-ger higher or equal to 1, the vec-tor of wavele
+t co-ef-fi-cients can be de-com- 
+ []
+
+
+Overfull \hbox (8.01657pt too wide) in paragraph at lines 227--227
+\OT1/cmr/m/n/10 posed into $\OML/cmm/m/it/10 J$ \OT1/cmr/m/n/10 wavelet vec-tor
+s $\OML/cmm/m/it/10 W[]$ \OT1/cmr/m/n/10 of lengths $[]$, $[]$, ... , $[]$, and
+ one scal-ing vec-tor $\OML/cmm/m/it/10 V[]$ \OT1/cmr/m/n/10 of 
+ []
+
+
+Overfull \hbox (16.0816pt too wide) in paragraph at lines 229--229
+\OML/cmm/m/it/10 dt$ \OT1/cmr/m/n/10 is the time step of the time se-ries, and 
+cor-re-sponds to the fil-ter-ing of the orig-i-nal time 
+ []
+
+
+Overfull \hbox (6.11452pt too wide) in paragraph at lines 229--229
+\OT1/cmr/m/n/10 se-ries with a fil-ter with nom-i-nal fre-quency in-ter-val $[[
+]; []]$. The scal-ing vec-tor $\OML/cmm/m/it/10 V[]$ 
+ []
+
+
+Overfull \hbox (2.11813pt too wide) in paragraph at lines 231--232
+[]\OT1/cmr/m/n/10 We can also de-fine for $\OML/cmm/m/it/10 j \OT1/cmr/m/n/10 =
+ 1\OML/cmm/m/it/10 ; :::; J$ \OT1/cmr/m/n/10 the $\OML/cmm/m/it/10 j$\OT1/cmr/m
+/n/10 th wavelet de-tail $\OML/cmm/m/it/10 D[]$\OT1/cmr/m/n/10 , which is a vec
+-tor of 
+ []
+
+
+Overfull \hbox (11.46619pt too wide) in paragraph at lines 231--232
+\OT1/cmr/m/n/10 length $\OML/cmm/m/it/10 N$\OT1/cmr/m/n/10 , and is as-so-ci-at
+ed to scale $\OML/cmm/m/it/10 ^^\[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 dt\OT1/c
+mr/m/n/10 2[]$. Sim-i-larly, we can de-fine for $\OML/cmm/m/it/10 j \OT1/cmr/m/
+n/10 = 1\OML/cmm/m/it/10 ; :::; J$ 
+ []
+
+
+Overfull \hbox (29.2477pt too wide) in paragraph at lines 231--232
+\OT1/cmr/m/n/10 the $\OML/cmm/m/it/10 j$\OT1/cmr/m/n/10 th wavelet smooth $\OML
+/cmm/m/it/10 S[]$\OT1/cmr/m/n/10 , which is a vec-tor of length $\OML/cmm/m/it/
+10 N$\OT1/cmr/m/n/10 , and is as-so-ci-ated to scales $\OML/cmm/m/it/10 ^^\[] \
+OT1/cmr/m/n/10 = 
+ []
+
+
+Overfull \hbox (18.58694pt too wide) in paragraph at lines 231--232
+\OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 2[]$ and higher. To-gether, the de-tails and
+ the smooths de-fine the mul-tires-o-lu-tion anal- 
+ []
+
+
+Overfull \hbox (10.4324pt too wide) in paragraph at lines 237--238
+[]\OT1/cmr/m/n/10 One main ad-van-tage of the DWT is that it is an or-thonor-ma
+l trans-form, and thus 
+ []
+
+
+Overfull \hbox (9.10715pt too wide) in paragraph at lines 248--249
+[]\OT1/cmr/m/n/10 The length of the time se-ries must be a mul-ti-ple of $2[]$ 
+where $\OML/cmm/m/it/10 J$ \OT1/cmr/m/n/10 is the level of the 
+ []
+
+
+Overfull \hbox (9.50859pt too wide) in paragraph at lines 249--250
+[]\OT1/cmr/m/n/10 The time step of the wavelet vec-tor $\OML/cmm/m/it/10 W[]$ \
+OT1/cmr/m/n/10 is $\OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 2[]$, which may not cor-r
+e-spond to the 
+ []
+
+
+Overfull \hbox (1.87663pt too wide) in paragraph at lines 250--251
+[]\OT1/cmr/m/n/10 When we cir-cu-larly shift the time se-ries, the cor-re-spond
+-ing wavelet co-ef-fi-cients, 
+ []
+
+
+Overfull \hbox (12.73784pt too wide) in paragraph at lines 250--251
+\OT1/cmr/m/n/10 de-tails and smooths are not a cir-cu-larly shifted ver-sion of
+ the wavelet co-ef-fi-cients, 
+ []
+
+
+Overfull \hbox (15.23781pt too wide) in paragraph at lines 250--251
+\OT1/cmr/m/n/10 de-tails and smooths of the orig-i-nal time se-ries. Thus, the 
+val-ues of the wavelet co- 
+ []
+
+
+Overfull \hbox (7.71004pt too wide) in paragraph at lines 250--251
+\OT1/cmr/m/n/10 ef-fi-cients, de-tails and smooths are strongly de-pen-dent on 
+the time when we start 
+ []
+
+
+Overfull \hbox (7.09889pt too wide) in paragraph at lines 251--252
+[]\OT1/cmr/m/n/10 When we fil-ter the time se-ries to ob-tain the de-tails and 
+smooths, we in-tro-duce a 
+ []
+
+
+Overfull \hbox (15.46013pt too wide) in paragraph at lines 251--252
+\OT1/cmr/m/n/10 phase shift, which makes dif-fi-cult to line up mean-ing-fully 
+the fea-tures of the MRA 
+ []
+
+
+Overfull \hbox (15.40446pt too wide) in paragraph at lines 256--256
+[]\OT1/cmr/m/n/10 To get rid of these prob-lems, we in-tro-duce the Max-i-mum O
+ver-lap Dis-crete Wavelet 
+ []
+
+
+Overfull \hbox (20.08472pt too wide) in paragraph at lines 256--256
+\OT1/cmr/m/n/10 Trans-form (MODWT). The MODWT trans-forms the time se-ries $\OM
+L/cmm/m/it/10 X[] []$ \OT1/cmr/m/n/10 into 
+ []
+
+
+Overfull \hbox (7.23314pt too wide) in paragraph at lines 256--256
+\OT1/cmr/m/n/10 J wavelet vec-tors $[] []$ of length $\OML/cmm/m/it/10 N$ \OT1/
+cmr/m/n/10 and a scal-ing vec-tor $[]$ of length $\OML/cmm/m/it/10 N$\OT1/cmr/m
+/n/10 . As 
+ []
+
+
+Overfull \hbox (17.95293pt too wide) in paragraph at lines 256--256
+\OT1/cmr/m/n/10 is the case for the DWT, each wavelet vec-tor $[]$ is as-so-ci-
+ated with changes on scale $\OML/cmm/m/it/10 ^^\[] \OT1/cmr/m/n/10 = 
+ []
+
+
+Overfull \hbox (16.28133pt too wide) in paragraph at lines 256--256
+\OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 2[]$, and cor-re-sponds to the fil-ter-ing o
+f the orig-i-nal time se-ries with a fil-ter with nom- 
+ []
+
+
+Overfull \hbox (2.8645pt too wide) in paragraph at lines 256--256
+\OT1/cmr/m/n/10 i-nal fre-quency in-ter-val $[[]; []]$. The scal-ing vec-tor $[
+]$ is as-so-ci-ated with av-er-ages 
+ []
+
+[4]
+Overfull \hbox (10.9804pt too wide) in paragraph at lines 274--275
+[]\OT1/cmr/m/n/10 The time step of the wavelet vec-tors $[]$ and the scal-ing v
+ec-tor $[]$ is equal to the 
+ []
+
+
+Overfull \hbox (8.07106pt too wide) in paragraph at lines 275--276
+[]\OT1/cmr/m/n/10 When we cir-cu-larly shift the time se-ries, the cor-re-spond
+-ing wavelet vec-tors, scal- 
+ []
+
+
+Overfull \hbox (0.54338pt too wide) in paragraph at lines 276--277
+[]\OT1/cmr/m/n/10 The de-tails and smooths are as-so-ci-ated with a zero phase 
+fil-ter, mak-ing it easy 
+ []
+
+
+Package natbib Warning: There were undefined citations.
+
+[5] (./agujournaltemplate.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.45pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4579 strings out of 493014
+ 60133 string characters out of 6133351
+ 138603 words of memory out of 5000000
+ 8025 multiletter control sequences out of 15000+600000
+ 11836 words of font info for 46 fonts, out of 8000000 for 9000
+ 1147 hyphenation exceptions out of 8191
+ 50i,8n,37p,1744b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on agujournaltemplate.pdf (5 pages, 214450 bytes).
+PDF statistics:
+ 100 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
