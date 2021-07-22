@@ -100,114 +100,6 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
         filename = 'tmp/' + dataset + '_' + station + '_' + direction + '.pkl'
         pickle.dump([time, disp, W, V, D, S], open(filename, 'wb'))
 
-def compute_wavelets_tremor(lats, lons, radius_tremor, wavelet, J):
-    """
-    """
-    # Read tremor files (A. Wech)
-    data_2009 = pd.read_csv('../data/tremor/tremor_events-2009-08-06T00 00 00-2009-12-31T23 59 59.csv')
-    data_2009['time '] = pd.to_datetime(data_2009['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2010 = pd.read_csv('../data/tremor/tremor_events-2010-01-01T00 00 00-2010-12-31T23 59 59.csv')
-    data_2010['time '] = pd.to_datetime(data_2010['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2011 = pd.read_csv('../data/tremor/tremor_events-2011-01-01T00 00 00-2011-12-31T23 59 59.csv')
-    data_2011['time '] = pd.to_datetime(data_2011['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2012 = pd.read_csv('../data/tremor/tremor_events-2012-01-01T00 00 00-2012-12-31T23 59 59.csv')
-    data_2012['time '] = pd.to_datetime(data_2012['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2013 = pd.read_csv('../data/tremor/tremor_events-2013-01-01T00 00 00-2013-12-31T23 59 59.csv')
-    data_2013['time '] = pd.to_datetime(data_2013['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2014 = pd.read_csv('../data/tremor/tremor_events-2014-01-01T00 00 00-2014-12-31T23 59 59.csv')
-    data_2014['time '] = pd.to_datetime(data_2014['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2015 = pd.read_csv('../data/tremor/tremor_events-2015-01-01T00 00 00-2015-12-31T23 59 59.csv')
-    data_2015['time '] = pd.to_datetime(data_2015['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2016 = pd.read_csv('../data/tremor/tremor_events-2016-01-01T00 00 00-2016-12-31T23 59 59.csv')
-    data_2016['time '] = pd.to_datetime(data_2016['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2017 = pd.read_csv('../data/tremor/tremor_events-2017-01-01T00 00 00-2017-12-31T23 59 59.csv')
-    data_2017['time '] = pd.to_datetime(data_2017['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2018 = pd.read_csv('../data/tremor/tremor_events-2018-01-01T00 00 00-2018-12-31T23 59 59.csv')
-    data_2018['time '] = pd.to_datetime(data_2018['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2019 = pd.read_csv('../data/tremor/tremor_events-2019-01-01T00 00 00-2019-12-31T23 59 59.csv')
-    data_2019['time '] = pd.to_datetime(data_2019['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2020 = pd.read_csv('../data/tremor/tremor_events-2020-01-01T00 00 00-2020-12-31T23 59 59.csv')
-    data_2020['time '] = pd.to_datetime(data_2020['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2021 = pd.read_csv('../data/tremor/tremor_events-2021-01-01T00 00 00-2021-04-29T23 59 59.csv')
-    data_2021['time '] = pd.to_datetime(data_2020['time '], format='%Y-%m-%d %H:%M:%S')
-    data = pd.concat([data_2009, data_2010, data_2011, data_2012, data_2013, \
-        data_2014, data_2015, data_2016, data_2017, data_2018, data_2019, \
-        data_2020, data_2021])
-    data.reset_index(drop=True, inplace=True)
-
-    # To convert lat/lon into kilometers
-    a = 6378.136
-    e = 0.006694470
-
-    # Time vector
-    time = pickle.load(open('tmp/time.pkl', 'rb'))
-
-    # Loop on latitude and longitude
-    for index, (lat, lon) in enumerate(zip(lats, lons)):
-
-        # Keep only tremor in a given radius
-        dx = (pi / 180.0) * a * cos(lat * pi / 180.0) / sqrt(1.0 - e * e * \
-            sin(lat * pi / 180.0) * sin(lat * pi / 180.0))
-        dy = (3.6 * pi / 648.0) * a * (1.0 - e * e) / ((1.0 - e * e * \
-            sin(lat * pi / 180.0) * sin(lat * pi / 180.0)) ** 1.5)
-        x = dx * (data['lon'] - lon)
-        y = dy * (data['lat'] - lat)
-        distance = np.sqrt(np.power(x, 2.0) + np.power(y, 2.0))
-        data['distance'] = distance
-        tremor = data.loc[data['distance'] <= radius_tremor].copy()
-        tremor.reset_index(drop=True, inplace=True)
- 
-        # Convert tremor time
-        nt = len(tremor)
-        time_tremor = np.zeros(nt)
-        for i in range(0, nt):
-            year = tremor['time '].loc[i].year
-            month = tremor['time '].loc[i].month
-            day = tremor['time '].loc[i].day
-            hour = tremor['time '].loc[i].hour
-            minute = tremor['time '].loc[i].minute
-            second = tremor['time '].loc[i].second
-            time_tremor[i] = date.ymdhms2day(year, month, day, hour, minute, second)
-
-        # Interpolate
-        tremor = np.interp(time, np.sort(time_tremor), (1.0 / nt) * np.arange(0, len(time_tremor)))
-        tremor_detrend = detrend(tremor)
-
-        # MODWT
-        (W, V) = pyramid(tremor_detrend, wavelet, J)
-        (D, S) = get_DS(tremor_detrend, W, wavelet, J)
-
-        # Save wavelets
-        pickle.dump([time, tremor_detrend, W, V, D, S], \
-            open('tmp/tremor_' + str(index) + '.pkl', 'wb'))
-        
-        maxD = max([np.max(Dj) for Dj in D])
-        minD = min([np.min(Dj) for Dj in D])
-
-        # Plot MODWT
-        params = {'xtick.labelsize':24,
-                  'ytick.labelsize':24}
-        pylab.rcParams.update(params)   
-        fig = plt.figure(1, figsize=(15, 5 * (J + 3)))
-        # Plot data
-        plt.subplot2grid((J + 2, 1), (J + 1, 0))
-        plt.plot(time, tremor_detrend, 'k', label='Data')
-        plt.legend(loc=3, fontsize=14)
-        # Plot details
-        for j in range(0, J):
-            plt.subplot2grid((J + 2, 1), (J - j, 0))
-            plt.plot(time, D[j], 'k', label='D' + str(j + 1))
-            plt.ylim(minD, maxD)
-            plt.legend(loc=3, fontsize=14)
-        # Plot smooth
-        plt.subplot2grid((J + 2, 1), (0, 0))
-        plt.plot(time, S[J], 'k', label='S' + str(J))
-        plt.ylim(minD, maxD)
-        plt.legend(loc=3, fontsize=14)
-        # Save figure
-        plt.savefig('tremor_' + str(index) + '.pdf', format='pdf')
-        plt.close(1)
-
 def vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
     radius_GPS, radius_tremor, tmin_GPS, tmax_GPS, J, slowness):
     """
@@ -258,7 +150,7 @@ def vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
 
     # Start figure
     plt.style.use('bmh')
-    fig = plt.figure()
+    fig = plt.figure(figsize=(5, 16))
     a = 6378.136
     e = 0.006694470
 
@@ -270,7 +162,7 @@ def vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
 
     # Loop on latitude and longitude
     for index, (lat, lon) in enumerate(zip(lats, lons)):
-        ax1 = plt.subplot2grid((len(lats) + 5, 1), (len(lats) - index - 1, 0))
+        ax1 = plt.subplot2grid((len(lats), 1), (len(lats) - index - 1, 0))
 
         # Keep only stations in a given radius
         dx = (pi / 180.0) * a * cos(lat * pi / 180.0) / sqrt(1.0 - e * e * \
@@ -360,6 +252,11 @@ def vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
             nb_sta[2 * t + 1] = nsta
             vesps.append(vespagram)
 
+        # Add tremor on plot
+        wavelet = pickle.load(open('tmp/tremor_' + str(index) + '.pkl', 'rb'))
+        time = wavelet[0]
+        D = wavelet[4]
+        
         # Figure
         if len(time_vesps) > 0:
             time_subset = np.concatenate(time_vesps)
@@ -367,59 +264,65 @@ def vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
             plt.contourf(time_subset[(time_subset >= 2009.25) & (time_subset <= 2021.25)], slowness * 365.25 / dy, \
                 vespagram[:, (time_subset >= 2009.25) & (time_subset <= 2021.25)], cmap=plt.get_cmap('seismic'), \
                 norm=Normalize(vmin=-1.5, vmax=1.5))
-            plt.axvline(0.5 * (tmin_GPS + tmax_GPS), color='grey', linewidth=1)
+            norm_min = np.min(slowness * 365.25 / dy) / np.min(D[J])
+            norm_max = np.max(slowness * 365.25 / dy) / np.max(D[J])
+            plt.plot(time, min(norm_min, norm_max) * D[J], color='grey', linewidth=1)
+#            plt.axvline(0.5 * (tmin_GPS + tmax_GPS), color='grey', linewidth=1)
             plt.annotate('{:d} stations'.format(int(nb_sta[2 * t0])), \
-                (tmin_GPS + 0.7 * (tmax_GPS - tmin_GPS), 0), fontsize=5)
+                (tmin_GPS + 0.8 * (tmax_GPS - tmin_GPS), 0), fontsize=5)
         plt.xlim([tmin_GPS, tmax_GPS])
         plt.grid(b=None)
-        ax1.axes.xaxis.set_ticks([])
+        if index == 0:
+            plt.xlabel('Time (year)')
+        if index != 0:    
+            ax1.axes.xaxis.set_ticks([])
         ax1.axes.yaxis.set_ticks([])
 
     # Part 2: tremor
-    ax1 = plt.subplot2grid((len(lats) + 5, 1), (len(lats), 0), rowspan=5)
+#    ax1 = plt.subplot2grid((len(lats) + 5, 1), (len(lats), 0), rowspan=5)
 
     # Loop on latitude and longitude
-    for index, (lat, lon) in enumerate(zip(lats, lons)):
+#    for index, (lat, lon) in enumerate(zip(lats, lons)):
     
         # Keep only tremor in a given radius
-        x = dx * (data['lon'] - lon)
-        y = dy * (data['lat'] - lat)
-        distance = np.sqrt(np.power(x, 2.0) + np.power(y, 2.0))
-        data['distance'] = distance
-        tremor = data.loc[data['distance'] <= radius_tremor].copy()
-        tremor.reset_index(drop=True, inplace=True)
+#        x = dx * (data['lon'] - lon)
+#        y = dy * (data['lat'] - lat)
+#        distance = np.sqrt(np.power(x, 2.0) + np.power(y, 2.0))
+#        data['distance'] = distance
+#        tremor = data.loc[data['distance'] <= radius_tremor].copy()
+#        tremor.reset_index(drop=True, inplace=True)
  
         # Keep only tremor in time interval (A. Wech)
-        mask = ((tremor['time '] >= datetime(year1, month1, day1, hour1, minute1, second1)) \
-             & (tremor['time '] <= datetime(year2, month2, day2, hour2, minute2, second2)))
-        tremor_sub = tremor.loc[mask].copy()
-        tremor_sub.reset_index(drop=True, inplace=True)
+#        mask = ((tremor['time '] >= datetime(year1, month1, day1, hour1, minute1, second1)) \
+#             & (tremor['time '] <= datetime(year2, month2, day2, hour2, minute2, second2)))
+#        tremor_sub = tremor.loc[mask].copy()
+#        tremor_sub.reset_index(drop=True, inplace=True)
 
         # Convert tremor time
-        nt = len(tremor_sub)
-        time_tremor = np.zeros(nt)
-        for i in range(0, nt):
-            year = tremor_sub['time '].loc[i].year
-            month = tremor_sub['time '].loc[i].month
-            day = tremor_sub['time '].loc[i].day
-            hour = tremor_sub['time '].loc[i].hour
-            minute = tremor_sub['time '].loc[i].minute
-            second = tremor_sub['time '].loc[i].second
-            time_tremor[i] = date.ymdhms2day(year, month, day, hour, minute, second)    
+#        nt = len(tremor_sub)
+#        time_tremor = np.zeros(nt)
+#        for i in range(0, nt):
+#            year = tremor_sub['time '].loc[i].year
+#            month = tremor_sub['time '].loc[i].month
+#            day = tremor_sub['time '].loc[i].day
+#            hour = tremor_sub['time '].loc[i].hour
+#            minute = tremor_sub['time '].loc[i].minute
+#            second = tremor_sub['time '].loc[i].second
+#            time_tremor[i] = date.ymdhms2day(year, month, day, hour, minute, second)    
 
         # Number of tremors per day
-        ntremor = np.zeros(int(floor((tmax_GPS - tmin_GPS) * 365.25)))
-        for i in range(0, len(ntremor)):
-            for j in range(0, nt):
-                if ((time_tremor[j] >= tmin_GPS + (i - 0.5) / 365.25)  and \
-                    (time_tremor[j] <= tmin_GPS + (i + 0.5) /365.25)):
-                    ntremor[i] = ntremor[i] + 1
+#        ntremor = np.zeros(int(floor((tmax_GPS - tmin_GPS) * 365.25)))
+#        for i in range(0, len(ntremor)):
+#            for j in range(0, nt):
+#                if ((time_tremor[j] >= tmin_GPS + (i - 0.5) / 365.25)  and \
+#                    (time_tremor[j] <= tmin_GPS + (i + 0.5) /365.25)):
+#                    ntremor[i] = ntremor[i] + 1
 
-        plt.plot(tmin_GPS + (1.0 / 365.0) * np.arange(0, len(ntremor)), ntremor, \
-            linewidth=0.5, color=(1 - index / len(lats), 0.8, index / len(lats)))
-        plt.ylabel('Number of tremor')
-    plt.xlim([tmin_GPS, tmax_GPS])
-    plt.xlabel('Time (year)')
+#        plt.plot(tmin_GPS + (1.0 / 365.0) * np.arange(0, len(ntremor)), ntremor, \
+#            linewidth=0.5, color=(1 - index / len(lats), 0.8, index / len(lats)))
+#        plt.ylabel('Number of tremor')
+#    plt.xlim([tmin_GPS, tmax_GPS])
+#    plt.xlabel('Time (year)')
 
     plt.suptitle('Slow slip and tremor from {} to {}'.format(tmin_GPS, tmax_GPS))
     plt.savefig('vespagram_' + str(J + 1) + '_tremor.pdf', format='pdf')
@@ -591,7 +494,10 @@ def vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
             min_index = np.argmin(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)])
             (imax, jmax) = np.unravel_index(max_index, np.array(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)]).shape)
             (imin, jmin) = np.unravel_index(min_index, np.array(vespagram[:, (time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)]).shape)
-            print(index, max_value, min_value, time_subset[(time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)][jmax], time_subset[(time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)][jmin])
+            t1 = time_subset[(time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)][jmax]
+            t2 = time_subset[(time_subset >= tmin_GPS) & (time_subset <= tmax_GPS)][jmin]
+            print('{:d} {:.3f} {:.3f} {:.3f} {:.3f} {:.3f}'. \
+                  format(index, max_value, min_value, t1, t2, 0.5 * (t1 + t2)))
 
             plt.contourf(time_subset[(time_subset >= 2009.25) & (time_subset <= 2021.25)], slowness * 365.25 / dy, \
                 vespagram[:, (time_subset >= 2009.25) & (time_subset <= 2021.25)], cmap=plt.get_cmap('seismic'), \
@@ -705,24 +611,24 @@ if __name__ == '__main__':
         -122.86920, -122.93549, -123.01425, -123.10498, -123.20716, \
         -123.32028, -123.44381, -123.57726, -123.72011, -123.87183, \
         -124.03193]
-    tmin_GPS = 2017.28
-    tmax_GPS = 2018.28
-    tmin_tremor = 2017.75
-    tmax_tremor = 2017.81
+    tmin_GPS = 2019.50
+    tmax_GPS = 2020.00
+    tmin_tremor = 2019.50
+    tmax_tremor = 2020.00
     lonmin = -125.4
     lonmax = -121.4
     latmin = 46.3
     latmax = 49.6
-    j = 4
+    j = 7
 
 #    compute_wavelets(station_file, lats, lons, radius_GPS, direction, dataset, \
 #        wavelet, J)
 
-    compute_wavelets_tremor(lats, lons, radius_tremor, wavelet, J)
+#    compute_wavelets_tremor(lats, lons, radius_tremor, wavelet, J)
 
 #    vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
 #        radius_GPS, radius_tremor, tmin_GPS, tmax_GPS, j - 1, slowness)
 
-#    vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
-#        dataset, direction, radius_GPS, tmin_GPS, tmax_GPS, latmin, latmax, lonmin, lonmax, \
-#        j - 1, slowness)
+    vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
+        dataset, direction, radius_GPS, tmin_GPS, tmax_GPS, latmin, latmax, lonmin, lonmax, \
+        j - 1, slowness)
