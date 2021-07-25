@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 JUL 2021 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 JUL 2021 18:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1214,46 +1214,227 @@ fil-ter, mak-ing it easy
  []
 
 
+Overfull \hbox (0.98782pt too wide) in paragraph at lines 291--291
+[]\OT1/cmr/m/n/10 To il-lus-trate the wavelet trans-form method, we first ap-pl
+y the MODWT to syn- 
+ []
+
+
+Overfull \hbox (1.23776pt too wide) in paragraph at lines 291--291
+\OT1/cmr/m/n/10 thet-ics data. As slow slip events oc-cur in Cas-ca-dia on a re
+g-u-lar ba-sis, ev-ery twelve to 
+ []
+
+
+Overfull \hbox (19.8352pt too wide) in paragraph at lines 291--291
+\OT1/cmr/m/n/10 the ground dis-place-ment ob-served on the lon-gi-tu-di-nal com
+-po-nent of GPS sta-tions in Cas- 
+ []
+
+
+Overfull \hbox (9.28992pt too wide) in paragraph at lines 291--291
+\OT1/cmr/m/n/10 ca-dia, we di-vide each pe-riod into two parts: In the first pa
+rt of du-ra-tion $\OML/cmm/m/it/10 T \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 N$\O
+T1/cmr/m/n/10 , the dis- 
+ []
+
+
+Overfull \hbox (12.26566pt too wide) in paragraph at lines 291--291
+\OT1/cmr/m/n/10 place-ment is lin-early in-creas-ing and cor-re-sponds to the s
+ec-u-lar plate mo-tion in the east- 
+ []
+
+
+Overfull \hbox (6.30728pt too wide) in paragraph at lines 291--291
+\OT1/cmr/m/n/10 ern di-rec-tion; in the sec-ond part of du-ra-tion $\OML/cmm/m/
+it/10 N$\OT1/cmr/m/n/10 , the dis-place-ment is lin-early de-creas-ing 
+ []
+
+
+Overfull \hbox (11.48787pt too wide) in paragraph at lines 291--291
+\OT1/cmr/m/n/10 and cor-re-sponds to a slow slip event on a re-verse fault at d
+epth trig-ger-ing a ground dis- 
+ []
+
+
+Overfull \hbox (3.18222pt too wide) in paragraph at lines 291--291
+\OT1/cmr/m/n/10 place-ment in the west-ern di-rec-tion. To see the ef-fect of t
+he mag-ni-tude of the slow slip 
+ []
+
+
+Overfull \hbox (2.6403pt too wide) in paragraph at lines 291--291
+\OT1/cmr/m/n/10 event, we use dif-fer-ent val-ues for $\OML/cmm/m/it/10 N \OT1/
+cmr/m/n/10 = 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5\OML/cmm/m/it/10 ; \OT1/cmr/m
+/n/10 10\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 20$ days. Fig-ure X shows the syn-th
+et-ics, 
+ []
+
+
+Overfull \hbox (1.26569pt too wide) in paragraph at lines 291--291
+\OT1/cmr/m/n/10 the de-tails of the wavelet de-com-po-si-tion for lev-els 1 to 
+8, and the smooth for the four 
+ []
+
+<figures/500_DS.pdf, id=35, 1445.4pt x 2384.91pt>
+File: figures/500_DS.pdf Graphic file (type pdf)
+ <use figures/500_DS.pdf>
+Package pdftex.def Info: figures/500_DS.pdf used on input line 294.
+(pdftex.def)             Requested size: 397.48499pt x 670.47237pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]\OT1/cmr/bx/n/9 Figure  1. \OT1/cmr/m/n/9 De-tails and smooth of the wavelet 
+de-com-po-si-tion of a syn-thet-ics sig-nal with pe-riod
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+\OT1/cmr/m/n/9 500 days and du-ra-tion of the slow slip event equal to 2 days (
+left), 5 days, 10 days, and 20 days
+ []
+
+
+LaTeX Warning: Float too large for page by 56.22487pt on input line 297.
+
+
+Overfull \hbox (7.79343pt too wide) in paragraph at lines 299--299
+[]\OT1/cmr/m/n/10 The ramp-like sig-nal is trans-formed through the wavelet fil
+-ter-ing into a wave-form 
+ []
+
+
+Overfull \hbox (17.65459pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 with first a pos-i-tive peak and then a neg-a-tive peak. The wi
+dth of the wave-form in-creases 
+ []
+
+
+Overfull \hbox (24.2934pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 with the scale level. For the 8th level of the wavelet de-com-p
+o-si-tion, the width of the wave- 
+ []
+
+
+Overfull \hbox (13.93222pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 form is nearly as large as the time be-tween two events. We do 
+not show de-tails at larger 
+ []
+
+
+Overfull \hbox (2.93224pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 scales as the cor-re-spond-ing wave-forms would start to merge 
+two con-tigu-ous events to- 
+ []
+
+
+Overfull \hbox (12.51569pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 gether, and make the wavelet de-com-po-si-tion less in-ter-pret
+able. For an event of du-ra-tion 
+ []
+
+
+Overfull \hbox (25.93233pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 2 days, the wavelet de-tails at lev-els higher than 2 have a la
+rger am-pli-tude than the wavelet 
+ []
+
+
+Overfull \hbox (19.68234pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 de-tail at level 1. For an event of du-ra-tion 5 days, the wave
+let de-tails at lev-els higher than 
+ []
+
+
+Overfull \hbox (3.8767pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 3 have a larger am-pli-tude than the wavelet de-tails at lower 
+scales. For an event of du- 
+ []
+
+
+Overfull \hbox (7.6268pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 ra-tion 10 days, the wavelet de-tails at lev-els higher than 5 
+have a larger am-pli-tude than 
+ []
+
+
+Overfull \hbox (11.46002pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 the wavelet de-tails at lower scales. For an event of du-ra-tio
+n 20 days, the wavelet de-tails 
+ []
+
+
+Overfull \hbox (8.23782pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 at lev-els higher than 6 have a larger am-pli-tude than the wav
+elet de-tails at lower scales. 
+ []
+
+
+Overfull \hbox (2.45993pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 Thus, the scale lev-els at which an event is be-ing seen in the
+ wavelet de-tails give us an 
+ []
+
+
+Overfull \hbox (15.54353pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 in-di-ca-tion about the du-ra-tion (and the mag-ni-tude) of the
+ slow slip event. We ex-pect the 
+ []
+
+
+Overfull \hbox (3.6546pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 big slow slip events of mag-ni-tude 6-7 that lasts about 10 day
+s to start be-ing vis-i-ble at 
+ []
+
+
+Overfull \hbox (5.32117pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 the level 5 of the wavelet de-com-po-si-tion, but to not be no-
+tice-able at lower time scales.  
+ []
+
+[5] [6 <./figures/500_DS.pdf>]
+
 Package natbib Warning: There were undefined citations.
 
-[5] (./agujournaltemplate.aux)
+[7] (./agujournaltemplate.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 4579 strings out of 493014
- 60133 string characters out of 6133351
- 138603 words of memory out of 5000000
- 8025 multiletter control sequences out of 15000+600000
- 11836 words of font info for 46 fonts, out of 8000000 for 9000
+ 4588 strings out of 493014
+ 60278 string characters out of 6133351
+ 138611 words of memory out of 5000000
+ 8031 multiletter control sequences out of 15000+600000
+ 12144 words of font info for 47 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 50i,8n,37p,1744b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,8n,37p,1744b,273s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on agujournaltemplate.pdf (5 pages, 214450 bytes).
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on agujournaltemplate.pdf (7 pages, 296022 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 155 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 12 words of extra memory for PDF output out of 10000 (max. 10000000)
 
