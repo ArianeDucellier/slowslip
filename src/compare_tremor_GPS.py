@@ -4,6 +4,7 @@ Script to cross-correlate GPS and tremor MODWT
 
 import datetime
 import matplotlib.cm as cm
+from matplotlib.patches import Rectangle
 import matplotlib.pylab as pylab
 import matplotlib.pyplot as plt
 import numpy as np
@@ -415,7 +416,201 @@ def plot_correlations():
         plt.title('Correlations for level {:d}'.format(level))
         plt.savefig('events_' + str(level) + '.pdf', format='pdf')
         plt.close(1)        
+
+def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, threshold):
+    """
+    """
+    # Read station file
+    stations = pd.read_csv(station_file, sep=r'\s{1,}', header=None, engine='python')
+    stations.columns = ['name', 'longitude', 'latitude']
+
+    a = 6378.136
+    e = 0.006694470
+
+    # Start figure
+#    fig = plt.figure(1, figsize=(16, 8))
+    fig, ax = plt.subplots(figsize=(16, 8))
+    params = {'xtick.labelsize':24,
+              'ytick.labelsize':24}
+    pylab.rcParams.update(params)
+
+    # Loop on latitude and longitude
+    for index, (lat, lon) in enumerate(zip(lats, lons)):
+
+        # Keep only stations in a given radius
+        dx = (pi / 180.0) * a * cos(lat * pi / 180.0) / sqrt(1.0 - e * e * \
+            sin(lat * pi / 180.0) * sin(lat * pi / 180.0))
+        dy = (3.6 * pi / 648.0) * a * (1.0 - e * e) / ((1.0 - e * e * \
+            sin(lat * pi / 180.0) * sin(lat * pi / 180.0)) ** 1.5)
+        x = dx * (stations['longitude'] - lon)
+        y = dy * (stations['latitude'] - lat)
+        stations['distance'] = np.sqrt(np.power(x, 2.0) + np.power(y, 2.0))
+        mask = stations['distance'] <= radius_GPS
+        sub_stations = stations.loc[mask].copy()
+        sub_stations.reset_index(drop=True, inplace=True)
+
+        # Wavelet vectors initialization
+        times = []
+        disps = []
+        Ws = []
+        Vs = []
+        Ds = []
+        Ss = []
+
+        # Read output files from wavelet transform
+        for (station, lon_sta, lat_sta) in zip(sub_stations['name'], sub_stations['longitude'], sub_stations['latitude']):
+            filename = 'tmp/' + dataset + '_' + station + '_' + direction + '.pkl'
+            (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
+            if ((np.min(time) <= 2021.25) and (np.max(time) >= 2009.25)):
+                times.append(time)
+                disps.append(disp)
+                Ws.append(W)
+                Vs.append(V)
+                Ds.append(D)
+                Ss.append(S)
+
+        # Divide into time blocks
+        tblocks = []
+        for time in times:
+            tblocks.append(np.min(time))
+            tblocks.append(np.max(time))
+        tblocks = sorted(set(tblocks))
+        tbegin = tblocks[0 : -1]
+        tend = tblocks[1 : ]
+
+        # Initializations
+        times_stacked = []
+        disps_stacked = []
+        vesps = []
+
+        # Loop on time blocks
+        for t in range(0, len(tblocks) - 1):
+
+            # Find time period
+            for time in times:
+                indices = np.where((time >= tbegin[t]) & (time < tend[t]))[0]
+                if (len(indices) > 0):
+                    time_subset = time[indices]
+                    break
+            times_stacked.append(time_subset)
+
+            # Loop on stations
+            nsta = 0
+            Dj_stacked = np.zeros(len(time_subset))
+            for (time, D, lat_sta) in zip(times, Ds, sub_stations['latitude']):
+                indices = np.where((time >= tbegin[t]) & (time < tend[t]))[0]
+                if (len(indices) > 0):
+                    nsta = nsta + 1
+                    tj = time[indices]
+                    Dj = D[J][indices]
+                    Dj_interp = np.interp(time_subset, tj, Dj)
+                    Dj_stacked =  Dj_stacked + Dj_interp
+            Dj_stacked = Dj_stacked / nsta
+            disps_stacked.append(Dj_stacked)
+
+        # Concatenate times and disps
+        times_stacked = np.concatenate(times_stacked)
+        disps_stacked = np.concatenate(disps_stacked)
+
+        # Filter displacement
+        disps_stacked = disps_stacked[(times_stacked  >= 2009.25) & (times_stacked <= 2021.25)]
+        times_stacked = times_stacked[(times_stacked  >= 2009.25) & (times_stacked  <= 2021.25)]
+
+        # Figure
+        if len(times_stacked) > 0:
             
+#            filename = 'level8/times' + str(index) + '_sup.txt'
+            slowslip = np.where(np.abs(disps_stacked) >= threshold)[0]
+            times_slowslip = times_stacked[slowslip]
+            disps_slowslip = disps_stacked[slowslip]
+#            np.savetxt(filename, times_stacked[slowslip], fmt='%.4f')
+#            filename = 'level8/times' + str(index) + '_diff.txt'
+            difference = np.diff(times_slowslip)
+#            np.savetxt(filename, np.stack((times_slowslip[:-1], difference)).T, fmt='%.4f')
+#            filename = 'level8/times' + str(index) + '_times.txt'
+            jumps = np.where(difference > 1.5 / 365.25)[0]
+            begin_jumps = np.insert(jumps + 1, 0, 0)
+            end_jumps = np.append(jumps, len(times_slowslip) - 1)
+#            begin_times = np.insert(times_slowslip[jumps + 1], 0, times_slowslip[0])
+#            end_times = np.insert(times_slowslip[jumps], -1, times_slowslip[-1])
+            begin_times = times_slowslip[begin_jumps]
+            end_times = times_slowslip[end_jumps]
+#            np.savetxt(filename, np.stack((begin_times, end_times, \
+#                disps_slowslip[begin_jumps], disps_slowslip[end_jumps])).T, fmt='%.4f')
+
+            for i in range(0, len(jumps) + 1):
+                x0 = begin_times[i]
+                dx = end_times[i] - begin_times[i]
+                if disps_slowslip[begin_jumps[i]] > 0:
+                    ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
+                else:
+                    ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
+
+            plt.plot(times_stacked, lat + 0.1 * disps_stacked, color='black')
+
+    plt.xlim([2009.25, 2021.25])
+    plt.xlabel('Time (years)', fontsize=24)
+    plt.xticks(fontsize=24)
+    plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
+    plt.ylabel('Latitude', fontsize=24)
+    plt.yticks(fontsize=24)
+    plt.title('Detail at level {:d} of MODWT of GPS data'. \
+        format(J + 1), fontsize=24)
+    plt.savefig('GPS_detail_' + str(J + 1) + '.pdf', format='pdf')
+    plt.close(1)
+
+def plot_tremor(lats, J, threshold):
+    """
+    """
+
+    # Start figure
+    fig, ax = plt.subplots(figsize=(16, 8))
+    params = {'xtick.labelsize':24,
+              'ytick.labelsize':24}
+    pylab.rcParams.update(params)
+
+    # Loop on latitude and longitude
+    for index, lat in enumerate(lats):
+
+        # Read MODWT of tremor
+        filename = 'tremor/loc' + str(index) + '.pkl'
+        MODWT_tremor = pickle.load(open(filename, 'rb'))
+        times_stacked = MODWT_tremor[0]
+        D_tremor = MODWT_tremor[5][J]
+        
+        # Figure
+        if len(times_stacked) > 0:
+            
+            slowslip = np.where(np.abs(D_tremor) >= threshold)[0]
+            times_slowslip = times_stacked[slowslip]
+            D_slowslip = D_tremor[slowslip]
+            difference = np.diff(times_slowslip)
+            jumps = np.where(difference > 1.5 / 365.25)[0]
+            begin_jumps = np.insert(jumps + 1, 0, 0)
+            end_jumps = np.append(jumps, len(times_slowslip) - 1)
+            begin_times = times_slowslip[begin_jumps]
+            end_times = times_slowslip[end_jumps]
+
+            for i in range(0, len(jumps) + 1):
+                x0 = begin_times[i]
+                dx = end_times[i] - begin_times[i]
+                if D_slowslip[begin_jumps[i]] < 0:
+                    ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
+                else:
+                    ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
+
+            plt.plot(times_stacked, lat - 5.0 * D_tremor, color='black')
+
+    plt.xlim([2009.25, 2021.25])
+    plt.xlabel('Time (years)', fontsize=24)
+    plt.xticks(fontsize=24)
+    plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
+    plt.ylabel('Latitude', fontsize=24)
+    plt.yticks(fontsize=24)
+    plt.title('Detail at level {:d} of MODWT of tremor data'. \
+        format(J + 1), fontsize=24)
+    plt.savefig('tremor_detail_' + str(J + 1) + '.pdf', format='pdf')
+    plt.close(1)
 if __name__ == '__main__':
 
     station_file = '../data/PANGA/stations.txt'
@@ -438,10 +633,20 @@ if __name__ == '__main__':
 #        radius_GPS, radius_tremor, slowness, wavelet, j - 1, J)
 
     t0 = 2021.118
-    J = 4
+    J = 5
     nt = 16
 
 #    correlate_tremor_GPS(station_file, lats, lons, dataset, direction, \
 #        radius_GPS, J - 1, t0, nt)
 
-    plot_correlations()
+#    plot_correlations()
+
+    # For GPS data
+    # Level 8: 0.5 - Level 7: 0.4 - Level 6: 0.3 - Level 5: 0.3
+    # For tremor data
+    # Level 8: 0.008 - Level 7: 0.006 - Level 6: 0.005
+    threshold = 0.005
+
+#    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J - 1, threshold)
+    plot_tremor(lats, J - 1, threshold)
+
