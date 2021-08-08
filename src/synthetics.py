@@ -77,5 +77,5 @@ for timestep in timesteps:
     # Save figure
     title = 'Time between events = ' + str(timestep)
     plt.suptitle(title, fontsize=30)
-    plt.savefig('synthetics/' + str(timestep) + '_DS.pdf', format='pdf')
+    plt.savefig('synthetics/' + str(timestep) + '_DS.eps', format='eps')
     plt.close(1)
