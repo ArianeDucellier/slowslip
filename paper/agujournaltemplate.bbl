@@ -300,6 +300,35 @@ Shelly, D.%
 \bibitem [\protect \citeauthoryear {%
 Szeliga%
 , Melbourne%
+, Miller%
+\BCBL {}\ \BBA {} Santillan%
+}{%
+Szeliga%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+}]{%
+SZE_2004}
+\APACinsertmetastar {%
+SZE_2004}%
+\begin{APACrefauthors}%
+Szeliga, W.%
+, Melbourne, T.%
+, Miller, M.%
+\BCBL {}\ \BBA {} Santillan, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Southern {Cascadia} episodic slow earthquakes} {Southern
+  {Cascadia} episodic slow earthquakes}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geophysical Research Letters}{31}{}{L16602}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Szeliga%
+, Melbourne%
 , Santillan%
 \BCBL {}\ \BBA {} Miller%
 }{%
@@ -325,6 +354,29 @@ Szeliga, W.%
   events within the {Cascadia} subduction zone, 1997-2005}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Geophysical Research}{113}{}{B04404}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wech%
+}{%
+Wech%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+WEC_2010}
+\APACinsertmetastar {%
+WEC_2010}%
+\begin{APACrefauthors}%
+Wech, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Interactive tremor monitoring} {Interactive tremor
+  monitoring}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Seismological Research Letters}{81}{4}{664-669}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

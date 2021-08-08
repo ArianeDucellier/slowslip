@@ -5,7 +5,9 @@ data/PANGA/raw/*
 data/tremor/*
 src/events/*
 src/level*
-src/tmp/*
+src/MODWT_tremor/tremor_filter_*.pdf
+src/MODWT_tremor/tremor_ma_*.pdf
+src/MODWT_tremor/tremor_poly_*.pdf
 src/vespagram/*
 src/*.pdf
 
