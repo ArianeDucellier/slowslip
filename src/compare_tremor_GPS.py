@@ -573,10 +573,10 @@ def plot_tremor(lats, J, threshold):
     for index, lat in enumerate(lats):
 
         # Read MODWT of tremor
-        filename = 'tremor/loc' + str(index) + '.pkl'
+        filename = 'MODWT_tremor/tremor_' + str(index) + '.pkl'
         MODWT_tremor = pickle.load(open(filename, 'rb'))
         times_stacked = MODWT_tremor[0]
-        D_tremor = MODWT_tremor[5][J]
+        D_tremor = MODWT_tremor[4][J]
         
         # Figure
         if len(times_stacked) > 0:
@@ -611,6 +611,7 @@ def plot_tremor(lats, J, threshold):
         format(J + 1), fontsize=24)
     plt.savefig('tremor_detail_' + str(J + 1) + '.pdf', format='pdf')
     plt.close(1)
+
 if __name__ == '__main__':
 
     station_file = '../data/PANGA/stations.txt'
@@ -644,7 +645,7 @@ if __name__ == '__main__':
     # For GPS data
     # Level 8: 0.5 - Level 7: 0.4 - Level 6: 0.3 - Level 5: 0.3
     # For tremor data
-    # Level 8: 0.008 - Level 7: 0.006 - Level 6: 0.005
+    # Level 8: 0.008 - Level 7: 0.006 - Level 6: 0.005 - Level 5: 0.005
     threshold = 0.005
 
 #    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J - 1, threshold)

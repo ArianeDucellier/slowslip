@@ -1,86 +1,86 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  8 AUG 2021 12:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  10 AUG 2021 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **agujournaltemplate.tex
 (./agujournaltemplate.tex
-LaTeX2e <2016/03/31>
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (./agujournal2018.cls
 Document Class: agujournal2018 08/23/2018
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 96.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count79
 ))
 \Gin@req@height=\dimen102
 \Gin@req@width=\dimen103
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (./trackchanges.sty
 Package: trackchanges 2009/04/22 v0.7.0 TrackChanges file 
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count80
 \calc@Bcount=\count81
 \calc@Adimen=\dimen104
 \calc@Bdimen=\dimen105
 \calc@Askip=\skip41
 \calc@Bskip=\skip42
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
 \calc@Ccount=\count82
 \calc@Cskip=\skip43
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/soul/soul.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks15
 \SOUL@lasttoken=\toks16
@@ -92,20 +92,21 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen107
 \SOUL@ulht=\dimen108
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/morefloats/morefloats.sty
-Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/morefloats/morefloats.sty
+Package: morefloats 2012/01/28 v1.0f Raise limit of unprocessed floats (HMM; DH
+)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
 Package etexcmds Info: Could not find \expanded.
@@ -113,10 +114,28 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-Package morefloats Info: Maximum number of possible floats asked for: 36
-(morefloats)             (i.e. 18 more floats).
+Package morefloats Info: Maximum number of possible floats asked for: 36.
 (morefloats)             LaTeX might run out of memory before this
 (morefloats)             (in which case it will notify you).
+(morefloats)              on input line 171.
+\bx@S=\insert233
+\bx@T=\insert232
+\bx@U=\insert231
+\bx@V=\insert230
+\bx@W=\insert229
+\bx@X=\insert228
+\bx@Y=\insert227
+\bx@Z=\insert226
+\bx@AA=\insert225
+\bx@AB=\insert224
+\bx@AC=\insert223
+\bx@AD=\insert222
+\bx@AE=\insert221
+\bx@AF=\insert220
+\bx@AG=\insert219
+\bx@AH=\insert218
+\bx@AI=\insert217
+\bx@AJ=\insert216
 )
 \c@userid=\count83
 \c@changenumber=\count84
@@ -124,7 +143,7 @@ Package morefloats Info: Maximum number of possible floats asked for: 36
 \c@numeditors=\count86
 \c@maxeditors=\count87
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count88
 \output=\toks20
@@ -142,13 +161,13 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box26
 LaTeX Info: Redefining \\ on input line 3056.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/indentfirst.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/ms/ragged2e.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/ms/ragged2e.sty
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/ms/everysel.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/ms/everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 \CenteringLeftskip=\skip45
@@ -166,7 +185,7 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedRightParindent=\skip57
 \JustifyingParindent=\skip58
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/rotating/rotating.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \c@r@tfl@t=\count95
 \rotFPtop=\skip59
@@ -174,7 +193,7 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \rot@float@box=\box27
 \rot@mess@toks=\toks21
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/ulem/ulem.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box28
 \UL@hyphenbox=\box29
 \UL@skip=\skip61
@@ -199,7 +218,7 @@ Package: ulem 2012/05/18
 \c@appendnum=\count105
 \bibindent=\dimen117
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/apacite/apacite.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/apacite/apacite.sty
 Package: apacite 2013/07/21 v6.03 APA citation
 \c@BibCnt=\count106
 \bibleftmargin=\skip64
@@ -208,7 +227,7 @@ Package: apacite 2013/07/21 v6.03 APA citation
 \bibitemsep=\skip67
 \biblabelsep=\skip68
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip69
 \bibsep=\skip70
@@ -217,41 +236,41 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 LaTeX Info: Redefining \BBA on input line 1149.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/10 v2.15b AMS math features
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip71
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks23
 \ex@=\dimen118
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen119
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count108
-LaTeX Info: Redefining \frac on input line 199.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count109
 \leftroot@=\count110
-LaTeX Info: Redefining \overline on input line 297.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count111
 \DOTSCASE@=\count112
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box31
 \strutbox@=\box32
 \big@size=\dimen120
-LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count113
 \c@MaxMatrixCols=\count114
 \dotsspace@=\muskip11
@@ -272,20 +291,24 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \multlinegap=\skip72
 \multlinetaggap=\skip73
 \mathdisplay@stack=\toks27
-LaTeX Info: Redefining \[ on input line 2739.
-LaTeX Info: Redefining \] on input line 2740.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(./agujournaltemplate.aux)
+(./agujournaltemplate.aux
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
+)
 \openout1 = `agujournaltemplate.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
@@ -300,8 +323,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
 LaTeX Font Info:    ... okay on input line 75.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
 LaTeX Font Info:    ... okay on input line 75.
-
-(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen127
@@ -314,33 +336,34 @@ LaTeX Font Info:    ... okay on input line 75.
 \MPnumerator=\count124
 \makeMPintoPDFobject=\count125
 \everyMPtoPDFconversion=\toks29
-) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+(grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -353,21 +376,21 @@ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 75.
 \c@maskedRefs=\count126
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/apacite/english.apc
+(/usr/local/texlive/2014/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 118.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 118.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+) [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
 (Font)              size <10.95> substituted on input line 201.
@@ -1019,9 +1042,9 @@ wavelet-based de-tec-tion
  []
 
 
-Overfull \hbox (20.48795pt too wide) in paragraph at lines 221--221
-\OT1/cmr/m/n/10 method can be ap-plied to de-tect pos-si-ble smaller (mag-ni-tu
-de 5) slow slip events that may 
+Overfull \hbox (13.12677pt too wide) in paragraph at lines 221--221
+\OT1/cmr/m/n/10 method can be ap-plied to de-tect slow slip events that may be 
+cur-rently un-de-tected with 
  []
 
 
@@ -1382,10 +1405,10 @@ Overfull \hbox (1.26569pt too wide) in paragraph at lines 253--253
  []
 
 Package epstopdf Info: Source file: <figures/500_DS.eps>
-(epstopdf)                    date: 2021-08-08 12:33:07
+(epstopdf)                    date: 2021-08-08 16:24:19
 (epstopdf)                    size: 259218 bytes
 (epstopdf)             Output file: <figures/500_DS-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-08-08 12:34:24
+(epstopdf)                    date: 2021-08-08 16:24:19
 (epstopdf)                    size: 65904 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/500_DS-eps-convert
 ed-to.pdf figures/500_DS.eps>
@@ -1509,7 +1532,235 @@ Overfull \hbox (5.32117pt too wide) in paragraph at lines 261--261
 tice-able at lower time scales.  
  []
 
-[5] [6 <./figures/500_DS-eps-converted-to.pdf>] (./agujournaltemplate.bbl
+[5] [6 <./figures/500_DS-eps-converted-to.pdf>]
+Overfull \hbox (7.72392pt too wide) in paragraph at lines 265--265
+[]\OT1/cmr/m/n/10 We then ap-plied the wavelet fil-ter-ing to real GPS data. Fi
+g-ure 2 shows the lon-gi- 
+ []
+
+
+Overfull \hbox (8.90462pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 tu-di-nal dis-place-ment for GPS sta-tion PGC5, lo-cated in sou
+th-ern Van-cou-ver Is-land, the 
+ []
+
+
+Overfull \hbox (4.54344pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 de-tails of the wavelet de-com-po-si-tion for lev-els 1 to 8, a
+nd the smooth. In the data, we 
+ []
+
+
+Overfull \hbox (11.9044pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 can see a sharp drop in dis-place-ment when-ever there is a slo
+w slip event. For lev-els 5 to 
+ []
+
+
+Overfull \hbox (7.0156pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 8, we can see in the de-tails a pos-i-tive peak fol-lowed by a 
+neg-a-tive peak when-ever there 
+ []
+
+
+Overfull \hbox (4.79341pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 is a drop in dis-place-ment in the data. We thus ver-ify that t
+he wavelet method can de- 
+ []
+
+Package epstopdf Info: Source file: <figures/cleaned_PGC5_lon.eps>
+(epstopdf)                    date: 2021-08-08 16:24:19
+(epstopdf)                    size: 487189 bytes
+(epstopdf)             Output file: <figures/cleaned_PGC5_lon-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2021-08-10 10:56:37
+(epstopdf)                    size: 142724 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/cleaned_PGC5_lon-e
+ps-converted-to.pdf figures/cleaned_PGC5_lon.eps>
+(epstopdf)             \includegraphics on input line 268.
+Package epstopdf Info: Output file is already uptodate.
+<figures/cleaned_PGC5_lon-eps-converted-to.pdf, id=81, 722.7pt x 2384.91pt>
+File: figures/cleaned_PGC5_lon-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/cleaned_PGC5_lon-eps-converted-to.pdf>
+Package pdftex.def Info: figures/cleaned_PGC5_lon-eps-converted-to.pdf used on 
+input line 268.
+(pdftex.def)             Requested size: 142.26378pt x 469.47707pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
+[]\OT1/cmr/bx/n/9 Figure  2. \OT1/cmr/m/n/9 De-tails and smooth of the wavelet 
+de-com-po-si-tion of the lon-gi-tu-di-nal dis-place-ment
+ []
+
+
+Overfull \hbox (6.20996pt too wide) in paragraph at lines 273--273
+[]\OT1/cmr/m/n/10 To in-crease the signal-to-noise ra-tio and be able to bet-te
+r de-tect slow slip events, 
+ []
+
+
+Overfull \hbox (4.15445pt too wide) in paragraph at lines 273--273
+\OT1/cmr/m/n/10 we stack the sig-nal over sev-eral GPS sta-tions. We choose to 
+fo-cus on GPS sta-tions lo- 
+ []
+
+
+Overfull \hbox (0.62675pt too wide) in paragraph at lines 273--273
+\OT1/cmr/m/n/10 cated close enough to the tremor zone to get a suf-fi-ciently h
+igh am-pli-tude of the slow 
+ []
+
+
+Overfull \hbox (14.82129pt too wide) in paragraph at lines 273--273
+\OT1/cmr/m/n/10 slip sig-nal. We choose 16 points lo-cated on the 40 km depth c
+on-tour of the plate bound- 
+ []
+
+
+Overfull \hbox (3.93236pt too wide) in paragraph at lines 273--273
+\OT1/cmr/m/n/10 ary (model from  Pre-ston, Crea-ger, Crosson, Brocher, and Treh
+u (2003)) with spac-ing 
+ []
+
+
+Overfull \hbox (6.80731pt too wide) in paragraph at lines 273--273
+\OT1/cmr/m/n/10 equal 0.1 de-gree in lat-i-tude (red tri-an-gles on Fig-ure 3).
+ Then we took all the GPS sta- 
+ []
+
+
+Overfull \hbox (18.98795pt too wide) in paragraph at lines 273--273
+\OT1/cmr/m/n/10 tions lo-cated in a 50 km ra-dius for a given point, com-pute t
+he wavelet de-tails for the lon- 
+ []
+
+
+Overfull \hbox (11.19623pt too wide) in paragraph at lines 273--273
+\OT1/cmr/m/n/10 gi-tu-di-nal dis-place-ment of each sta-tion, and stack each de
+-tail over the GPS sta-tions. We 
+ []
+
+Package epstopdf Info: Source file: <figures/map_GPS_stations.eps>
+(epstopdf)                    date: 2021-08-08 16:24:19
+(epstopdf)                    size: 2802307 bytes
+(epstopdf)             Output file: <figures/map_GPS_stations-eps-converted-to.
+pdf>
+(epstopdf)             Command: <repstopdf --outfile=figures/map_GPS_stations-e
+ps-converted-to.pdf figures/map_GPS_stations.eps>
+(epstopdf)             \includegraphics on input line 276.
+runsystem(repstopdf --outfile=figures/map_GPS_stations-eps-converted-to.pdf fig
+ures/map_GPS_stations.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/map_GPS_stations-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2021-08-10 11:25:57
+(epstopdf)                    size: 7406578 bytes.
+
+<figures/map_GPS_stations-eps-converted-to.pdf, id=83, 597.23125pt x 845.1575pt
+>
+File: figures/map_GPS_stations-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/map_GPS_stations-eps-converted-to.pdf>
+Package pdftex.def Info: figures/map_GPS_stations-eps-converted-to.pdf used on 
+input line 276.
+(pdftex.def)             Requested size: 397.48499pt x 562.49985pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+[]\OT1/cmr/bx/n/9 Figure  3. \OT1/cmr/m/n/9 GPS sta-tions used in this study (b
+lack tri-an-gles). The black line rep-re-sents the 40
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+\OT1/cmr/m/n/9 km depth con-tour of the plate bound-ary model by  Pre-ston et a
+l.[] (2003). The red tri-an-gles are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+\OT1/cmr/m/n/9 the lo-ca-tions where we stack the GPS data. The small grey dots
+ are all the tremor lo-ca-tions from
+ []
+
+
+Overfull \hbox (11.91827pt too wide) in paragraph at lines 281--282
+[]\OT1/cmr/m/n/10 To com-pare slow slip events de-tected with GPS data and slow
+ slip events de-tected 
+ []
+
+
+Overfull \hbox (9.07118pt too wide) in paragraph at lines 281--282
+\OT1/cmr/m/n/10 with seis-mic data, we took all the tremor epi-cen-ters lo-cate
+d within a 50 km ra-dius cen- 
+ []
+
+
+Overfull \hbox (16.90457pt too wide) in paragraph at lines 281--282
+\OT1/cmr/m/n/10 tered on one of the 16 lo-ca-tions marked by red tri-an-gles on
+ Fig-ure 3. Then we com-puted 
+ []
+
+
+Overfull \hbox (5.79344pt too wide) in paragraph at lines 281--282
+\OT1/cmr/m/n/10 the cu-mu-la-tive num-ber of tremor within this cir-cle. Fi-nal
+ly, we re-moved a lin-ear trend 
+ []
+
+
+Overfull \hbox (3.65459pt too wide) in paragraph at lines 281--282
+\OT1/cmr/m/n/10 from the cu-mu-la-tive tremor count, and ap-plied the wavelet t
+rans-form. Fig-ure 4 shows 
+ []
+
+
+Overfull \hbox (9.68245pt too wide) in paragraph at lines 281--282
+\OT1/cmr/m/n/10 an ex-am-ple of the wavelet de-com-po-si-tion for the third nor
+th-ern-most lo-ca-tion on Fig-ure 
+ []
+
+
+Overfull \hbox (13.89069pt too wide) in paragraph at lines 281--282
+\OT1/cmr/m/n/10 3 (which is clos-est to GPS sta-tion PGC5). Con-trary to what h
+ap-pens for the GPS data, 
+ []
+
+
+Overfull \hbox (12.37662pt too wide) in paragraph at lines 281--282
+\OT1/cmr/m/n/10 we see a sharp in-crease in the data when-ever there is a tremo
+r episode, which trans-lates 
+ []
+
+Package epstopdf Info: Source file: <figures/tremor_13.eps>
+(epstopdf)                    date: 2021-08-08 16:24:19
+(epstopdf)                    size: 258566 bytes
+(epstopdf)             Output file: <figures/tremor_13-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figures/tremor_13-eps-conv
+erted-to.pdf figures/tremor_13.eps>
+(epstopdf)             \includegraphics on input line 284.
+runsystem(repstopdf --outfile=figures/tremor_13-eps-converted-to.pdf figures/tr
+emor_13.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/tremor_13-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-08-10 11:25:58
+(epstopdf)                    size: 71879 bytes.
+<figures/tremor_13-eps-converted-to.pdf, id=85, 722.7pt x 2384.91pt>
+File: figures/tremor_13-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/tremor_13-eps-converted-to.pdf>
+Package pdftex.def Info: figures/tremor_13-eps-converted-to.pdf used on input l
+ine 284.
+(pdftex.def)             Requested size: 142.26378pt x 469.47707pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+[]\OT1/cmr/bx/n/9 Figure  4. \OT1/cmr/m/n/9 De-tails and smooth of the wavelet 
+de-com-po-si-tion of the de-trended cu-mu-la-tive
+ []
+
+(./agujournaltemplate.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+[8 <./figures/cleaned_PGC5_lon-eps-converted-to.pdf>] [9 <./figures/map_GPS_sta
+tions-eps-converted-to.pdf>] [10 <./figures/tremor_13-eps-converted-to.pdf>]
 Underfull \hbox (badness 1902) in paragraph at lines 45--61
 \OT1/cmr/m/n/10 events seen in tidal records (1980--2011).  \OT1/cmr/m/it/10 Bu
 l-letin of the Seis-mo-log-i-cal So-ci-ety 
@@ -1528,50 +1779,59 @@ re-arcs: A re-view.
  []
 
 
-Underfull \hbox (badness 3668) in paragraph at lines 286--299
+Underfull \hbox (badness 1688) in paragraph at lines 261--276
+[]\OT1/cmr/m/n/10 Preston, L., Crea-ger, K., Crosson, R., Brocher, T., & Trehu,
+ A.  (2003).  In-traslab 
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 317--330
 []\OT1/cmr/m/n/10 Shelly, D., Beroza, G., & Ide, S.  (2007).  Non-volcanic trem
 or and low-frequency 
  []
 
-[7]) [8] (./agujournaltemplate.aux)
+) [11] (./agujournaltemplate.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 4649 strings out of 493014
- 61395 string characters out of 6133351
- 139505 words of memory out of 5000000
- 8088 multiletter control sequences out of 15000+600000
+ 4666 strings out of 493117
+ 61928 string characters out of 6135433
+ 139154 words of memory out of 5000000
+ 8023 multiletter control sequences out of 15000+600000
  12144 words of font info for 47 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 50i,9n,37p,1998b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist/f
+ 50i,9n,37p,1998b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2014/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on agujournaltemplate.pdf (8 pages, 299096 bytes).
+Output written on agujournaltemplate.pdf (11 pages, 7917470 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 239 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 12 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

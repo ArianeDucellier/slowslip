@@ -218,7 +218,7 @@ Wavelets methods such as the Discrete Wavelet Transform (DWT) are mathematical t
 
 Finally, instead of using wavelets in the time domain, ~\citet{OHT_2010} used 2D wavelet functions in the spatial domain to detect slow slip events. They designed the Network Stain Filter (NSF) to detect transient deformation signals from large-scale geodetic arrays. Contrary to their previous work on the Network Inversion Filter (NIF), there is no need to specify potential sources of deformation. They modeled the position of the GPS station by the sum of the secular velocity, a spatially coherent field, site-specific noise, reference frame errors, and observation errors. The spatial displacement field is modeled by the sum of basis wavelets (the Deslauriers-Dubuc wavelet of degree 3) with time-varying weights. The transient is considered to be nearly steady-sate, so that it has spatial weights for the displacement and the velocity, but the acceleration is modeled by a random walk with a time-varying variance. All the time varying coefficients are estimated using Kalman filtering, and the optimization problem is regularized with the spatial sum of the transient strain rate field. Their method has been successfully used to detect a transient event in the Boso peninsula, Japan, and a slow slip event in the Alaska subduction zone ~\citep{WEI_2012}. \\
 
-In this study, we use wavelet methods to analyze GPS and seismic recordings of slow slip events in Cascadia. Our objective is to verify that there is a good correlation between slow slip events detected with only GNSS data, and slow slip events detected with only seismic data. We thus want to demonstrate that the wavelet-based detection method can be applied to detect possible smaller (magnitude 5) slow slip events that may be currently undetected with standard methods. \\
+In this study, we use wavelet methods to analyze GPS and seismic recordings of slow slip events in Cascadia. Our objective is to verify that there is a good correlation between slow slip events detected with only GNSS data, and slow slip events detected with only seismic data. We thus want to demonstrate that the wavelet-based detection method can be applied to detect slow slip events that may be currently undetected with standard methods. \\
 
 \section{Data}
 
@@ -261,6 +261,30 @@ To illustrate the wavelet transform method, we first apply the MODWT to syntheti
 The ramp-like signal is transformed through the wavelet filtering into a waveform with first a positive peak and then a negative peak. The width of the waveform increases with the scale level. For the 8th level of the wavelet decomposition, the width of the waveform is nearly as large as the time between two events. We do not show details at larger scales as the corresponding waveforms would start to merge two contiguous events together, and make the wavelet decomposition less interpretable. For an event of duration 2 days, the wavelet details at levels higher than 2 have a larger amplitude than the wavelet detail at level 1. For an event of duration 5 days, the wavelet details at levels higher than 3 have a larger amplitude than the wavelet details at lower scales. For an event of duration 10 days, the wavelet details at levels higher than 5 have a larger amplitude than the wavelet details at lower scales. For an event of duration 20 days, the wavelet details at levels higher than 6 have a larger amplitude than the wavelet details at lower scales. Thus, the scale levels at which an event is being seen in the wavelet details give us an indication about the duration (and the magnitude) of the slow slip event. We expect the big slow slip events of magnitude 6-7 that lasts about 10 days to start being visible at the level 5 of the wavelet decomposition, but to not be noticeable at lower time scales. \\
 
 \subsection{MODWT of GPS and tremor data}
+
+We then applied the wavelet filtering to real GPS data. Figure 2 shows the longitudinal displacement for GPS station PGC5, located in southern Vancouver Island, the details of the wavelet decomposition for levels 1 to 8, and the smooth. In the data, we can see a sharp drop in displacement whenever there is a slow slip event. For levels 5 to 8, we can see in the details a positive peak followed by a negative peak whenever there is a drop in displacement in the data. We thus verify that the wavelet method can detect slow slip events. \\
+
+\begin{figure}
+\noindent\includegraphics[width=5cm, trim={0cm 0cm 0cm 0cm},clip]{figures/cleaned_PGC5_lon.eps}
+\caption{Details and smooth of the wavelet decomposition of the longitudinal displacement recorded at GPS station PGC5.}
+\label{pngfiguresample}
+\end{figure}
+
+To increase the signal-to-noise ratio and be able to better detect slow slip events, we stack the signal over several GPS stations. We choose to focus on GPS stations located close enough to the tremor zone to get a sufficiently high amplitude of the slow slip signal. We choose 16 points located on the 40 km depth contour of the plate boundary (model from ~\citet{PRE_2003}) with spacing equal 0.1 degree in latitude (red triangles on Figure 3). Then we took all the GPS stations located in a 50 km radius for a given point, compute the wavelet details for the longitudinal displacement of each station, and stack each detail over the GPS stations. We thus have a stacked detail for each level 1 to 8 of the wavelet decomposition. \\
+
+\begin{figure}
+\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/map_GPS_stations.eps}
+\caption{GPS stations used in this study (black triangles). The black line represents the 40 km depth contour of the plate boundary model by ~\citet{PRE_2003}. The red triangles are the locations where we stack the GPS data. The small grey dots are all the tremor locations from the PNSN catalog.}
+\label{pngfiguresample}
+\end{figure}
+
+To compare slow slip events detected with GPS data and slow slip events detected with seismic data, we took all the tremor epicenters located within a 50 km radius centered on one of the 16 locations marked by red triangles on Figure 3. Then we computed the cumulative number of tremor within this circle. Finally, we removed a linear trend from the cumulative tremor count, and applied the wavelet transform. Figure 4 shows an example of the wavelet decomposition for the third northernmost location on Figure 3 (which is closest to GPS station PGC5). Contrary to what happens for the GPS data, we see a sharp increase in the data whenever there is a tremor episode, which translates into a negative peak followed by a positive peak in the wavelet details.
+
+\begin{figure}
+\noindent\includegraphics[width=5cm, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_13.eps}
+\caption{Details and smooth of the wavelet decomposition of the detrended cumulative tremor count around the third northernmost location on Figure 3.}
+\label{pngfiguresample}
+\end{figure}
 
 \section{Results}
 

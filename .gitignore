@@ -8,6 +8,8 @@ src/level*
 src/MODWT_tremor/tremor_filter_*.pdf
 src/MODWT_tremor/tremor_ma_*.pdf
 src/MODWT_tremor/tremor_poly_*.pdf
-src/vespagram/*
+src/new_events/*
+src/old_events/*
+src/vespagrams/*
 src/*.pdf
 
