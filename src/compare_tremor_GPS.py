@@ -612,6 +612,119 @@ def plot_tremor(lats, J, threshold):
     plt.savefig('tremor_detail_' + str(J + 1) + '.pdf', format='pdf')
     plt.close(1)
 
+def find_threshold(station_file, lats, lons, dataset, direction, radius_GPS, \
+    J, thresh_GPS, thresh_tremor):
+    """
+    """
+    # Read station file
+    stations = pd.read_csv(station_file, sep=r'\s{1,}', header=None, engine='python')
+    stations.columns = ['name', 'longitude', 'latitude']
+
+    a = 6378.136
+    e = 0.006694470
+
+    # Loop on latitude and longitude
+    for index, (lat, lon) in enumerate(zip(lats, lons)):
+
+        # Keep only stations in a given radius
+        dx = (pi / 180.0) * a * cos(lat * pi / 180.0) / sqrt(1.0 - e * e * \
+            sin(lat * pi / 180.0) * sin(lat * pi / 180.0))
+        dy = (3.6 * pi / 648.0) * a * (1.0 - e * e) / ((1.0 - e * e * \
+            sin(lat * pi / 180.0) * sin(lat * pi / 180.0)) ** 1.5)
+        x = dx * (stations['longitude'] - lon)
+        y = dy * (stations['latitude'] - lat)
+        stations['distance'] = np.sqrt(np.power(x, 2.0) + np.power(y, 2.0))
+        mask = stations['distance'] <= radius_GPS
+        sub_stations = stations.loc[mask].copy()
+        sub_stations.reset_index(drop=True, inplace=True)
+
+        # Wavelet vectors initialization
+        times = []
+        disps = []
+        Ws = []
+        Vs = []
+        Ds = []
+        Ss = []
+
+        # Read output files from wavelet transform
+        for (station, lon_sta, lat_sta) in zip(sub_stations['name'], sub_stations['longitude'], sub_stations['latitude']):
+            filename = 'tmp/' + dataset + '_' + station + '_' + direction + '.pkl'
+            (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
+            if ((np.min(time) <= 2021.25) and (np.max(time) >= 2009.25)):
+                times.append(time)
+                disps.append(disp)
+                Ws.append(W)
+                Vs.append(V)
+                Ds.append(D)
+                Ss.append(S)
+
+        # Divide into time blocks
+        tblocks = []
+        for time in times:
+            tblocks.append(np.min(time))
+            tblocks.append(np.max(time))
+        tblocks = sorted(set(tblocks))
+        tbegin = tblocks[0 : -1]
+        tend = tblocks[1 : ]
+
+        # Initializations
+        times_stacked = []
+        disps_stacked = []
+        vesps = []
+
+        # Loop on time blocks
+        for t in range(0, len(tblocks) - 1):
+
+            # Find time period
+            for time in times:
+                indices = np.where((time >= tbegin[t]) & (time < tend[t]))[0]
+                if (len(indices) > 0):
+                    time_subset = time[indices]
+                    break
+            times_stacked.append(time_subset)
+
+            # Loop on stations
+            nsta = 0
+            Dj_stacked = np.zeros(len(time_subset))
+            for (time, D, lat_sta) in zip(times, Ds, sub_stations['latitude']):
+                indices = np.where((time >= tbegin[t]) & (time < tend[t]))[0]
+                if (len(indices) > 0):
+                    nsta = nsta + 1
+                    tj = time[indices]
+                    Dj = D[J][indices]
+                    Dj_interp = np.interp(time_subset, tj, Dj)
+                    Dj_stacked =  Dj_stacked + Dj_interp
+            Dj_stacked = Dj_stacked / nsta
+            disps_stacked.append(Dj_stacked)
+
+        # Concatenate times and disps
+        times_stacked = np.concatenate(times_stacked)
+        disps_stacked = np.concatenate(disps_stacked)
+
+        # Filter displacement
+        disps_stacked = disps_stacked[(times_stacked  >= 2009.25) & (times_stacked <= 2021.25)]
+        times_stacked = times_stacked[(times_stacked  >= 2009.25) & (times_stacked  <= 2021.25)]
+
+        # Read MODWT of tremor
+        filename = 'MODWT_tremor/tremor_' + str(index) + '.pkl'
+        MODWT_tremor = pickle.load(open(filename, 'rb'))
+        D_tremor = MODWT_tremor[4][J]
+
+        # Correlation
+        if len(times_stacked) > 0:
+            
+            pos_GPS = np.where(disps_stacked >= thresh_GPS)[0]
+            neg_GPS = np.where(disps_stacked <= - thresh_GPS)[0]
+            pos_tremor = np.where(D_tremor >= threshold)[0]
+            neg_tremor = np.where(D_tremor <= - threshold)[0]
+            input1 = np.zeros(len(times_stacked))
+            input1[pos_GPS] = 1
+            input1[neg_GPS] = -1
+            input2 = np.zeros(len(times_stacked))
+            input2[pos_tremor] = 1
+            input2[neg_tremor] = -1
+
+
 if __name__ == '__main__':
 
     station_file = '../data/PANGA/stations.txt'
