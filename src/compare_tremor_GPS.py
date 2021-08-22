@@ -459,7 +459,7 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
 
         # Read output files from wavelet transform
         for (station, lon_sta, lat_sta) in zip(sub_stations['name'], sub_stations['longitude'], sub_stations['latitude']):
-            filename = 'tmp/' + dataset + '_' + station + '_' + direction + '.pkl'
+            filename = 'MODWT_GPS/' + dataset + '_' + station + '_' + direction + '.pkl'
             (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
             if ((np.min(time) <= 2021.25) and (np.max(time) >= 2009.25)):
                 times.append(time)
@@ -651,7 +651,7 @@ def find_threshold(station_file, lats, lons, dataset, direction, radius_GPS, \
 
         # Read output files from wavelet transform
         for (station, lon_sta, lat_sta) in zip(sub_stations['name'], sub_stations['longitude'], sub_stations['latitude']):
-            filename = 'tmp/' + dataset + '_' + station + '_' + direction + '.pkl'
+            filename = 'MODWT_GPS/' + dataset + '_' + station + '_' + direction + '.pkl'
             (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
             if ((np.min(time) <= 2021.25) and (np.max(time) >= 2009.25)):
                 times.append(time)
@@ -714,22 +714,21 @@ def find_threshold(station_file, lats, lons, dataset, direction, radius_GPS, \
         time = MODWT_tremor[0]
         D_tremor = - MODWT_tremor[4][J]
 
-        print(index, len(times_stacked))
         # Correlation
-#        if len(times_stacked) > 0:
+        if len(times_stacked) > 0:
 
-#            pos_GPS = np.where(disps_stacked >= thresh_GPS)[0]
-#            neg_GPS = np.where(disps_stacked <= - thresh_GPS)[0]
-#            pos_tremor = np.where(D_tremor >= thresh_tremor)[0]
-#            neg_tremor = np.where(D_tremor <= - thresh_tremor)[0]
-#            input1 = np.zeros(len(times_stacked))
-#            input1[pos_GPS] = 1
-#            input1[neg_GPS] = -1
-#            input2 = np.zeros(len(times_stacked))
-#            input2[pos_tremor] = 1
-#            input2[neg_tremor] = -1
-#            nonzeros[index] = np.mean(input1 * input2 == 1)
-#            equals[index] = np.mean(input1 == input2)
+            pos_GPS = np.where(disps_stacked >= thresh_GPS)[0]
+            neg_GPS = np.where(disps_stacked <= - thresh_GPS)[0]
+            pos_tremor = np.where(D_tremor >= thresh_tremor)[0]
+            neg_tremor = np.where(D_tremor <= - thresh_tremor)[0]
+            input1 = np.zeros(len(times_stacked))
+            input1[pos_GPS] = 1
+            input1[neg_GPS] = -1
+            input2 = np.zeros(len(times_stacked))
+            input2[pos_tremor] = 1
+            input2[neg_tremor] = -1
+            nonzeros[index] = np.mean(input1 * input2 == 1)
+            equals[index] = np.mean(input1 == input2)
     return (np.mean(nonzeros), np.mean(equals))
 
 if __name__ == '__main__':
@@ -745,7 +744,7 @@ if __name__ == '__main__':
     dataset = 'cleaned'
     direction = 'lon'
     radius_GPS = 50
-    J = 7
+    J = 5
 #    radius_tremor = 50
 #    wavelet = 'LA8'
 #    j = 4
@@ -762,22 +761,21 @@ if __name__ == '__main__':
 #    plot_correlations()
 
     # For GPS data
-    # Level 8: 0.3 - Level 7: 0.4 - Level 6: 0.3 - Level 5: 0.3
+    # Level 8: 0.3 - Level 7: 0.5 - Level 6: 0.3 - Level 5: 0.2
     # For tremor data
-    # Level 8: 0.006 - Level 7: 0.006 - Level 6: 0.005 - Level 5: 0.005
+    # Level 8: 0.006 - Level 7: 0.007 - Level 6: 0.005 - Level 5: 0.002
 
     thresh_GPS = np.linspace(0.1, 1.5, 15)
     thresh_tremor = np.linspace(0.001, 0.020, 20)
     nonzeros = np.zeros((len(thresh_GPS), len(thresh_tremor)))
     equals = np.zeros((len(thresh_GPS), len(thresh_tremor)))
-    for i in range(0, 1): #len(thresh_GPS)):
-        for j in range(0, 1): #len(thresh_tremor)):
-            print(thresh_GPS[i], thresh_tremor[j])
+    for i in range(0, len(thresh_GPS)):
+        for j in range(0, len(thresh_tremor)):
             nonzeros[i, j], equals[i, j] = find_threshold(station_file, lats, \
                 lons, dataset, direction, radius_GPS, J - 1, thresh_GPS[i], thresh_tremor[j])
-    equals = np.where((nonzeros > 0.30) & (nonzeros < 0.50), equals, 0)
+    equals = np.where((nonzeros > 0.10) & (nonzeros < 0.40), equals, 0)
     i0, j0 = np.unravel_index(np.argmax(equals), np.array(equals).shape)
-#    print(thresh_GPS[i0], thresh_tremor[j0], nonzeros[i0, j0], equals[i0, j0])
+    print(thresh_GPS[i0], thresh_tremor[j0], nonzeros[i0, j0], equals[i0, j0])
 
-#    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J - 1, thresh_GPS[i0])
-#    plot_tremor(lats, J - 1, thresh_tremor[j0])
+    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J - 1, thresh_GPS[i0])
+    plot_tremor(lats, J - 1, thresh_tremor[j0])
