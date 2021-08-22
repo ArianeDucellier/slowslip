@@ -12,4 +12,6 @@ src/new_events/*
 src/old_events/*
 src/vespagrams/*
 src/*.pdf
+src/DWT.py
+
 

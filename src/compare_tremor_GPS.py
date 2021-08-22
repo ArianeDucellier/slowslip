@@ -428,7 +428,6 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
     e = 0.006694470
 
     # Start figure
-#    fig = plt.figure(1, figsize=(16, 8))
     fig, ax = plt.subplots(figsize=(16, 8))
     params = {'xtick.labelsize':24,
               'ytick.labelsize':24}
@@ -519,24 +518,15 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
         # Figure
         if len(times_stacked) > 0:
             
-#            filename = 'level8/times' + str(index) + '_sup.txt'
             slowslip = np.where(np.abs(disps_stacked) >= threshold)[0]
             times_slowslip = times_stacked[slowslip]
             disps_slowslip = disps_stacked[slowslip]
-#            np.savetxt(filename, times_stacked[slowslip], fmt='%.4f')
-#            filename = 'level8/times' + str(index) + '_diff.txt'
             difference = np.diff(times_slowslip)
-#            np.savetxt(filename, np.stack((times_slowslip[:-1], difference)).T, fmt='%.4f')
-#            filename = 'level8/times' + str(index) + '_times.txt'
             jumps = np.where(difference > 1.5 / 365.25)[0]
             begin_jumps = np.insert(jumps + 1, 0, 0)
             end_jumps = np.append(jumps, len(times_slowslip) - 1)
-#            begin_times = np.insert(times_slowslip[jumps + 1], 0, times_slowslip[0])
-#            end_times = np.insert(times_slowslip[jumps], -1, times_slowslip[-1])
             begin_times = times_slowslip[begin_jumps]
             end_times = times_slowslip[end_jumps]
-#            np.savetxt(filename, np.stack((begin_times, end_times, \
-#                disps_slowslip[begin_jumps], disps_slowslip[end_jumps])).T, fmt='%.4f')
 
             for i in range(0, len(jumps) + 1):
                 x0 = begin_times[i]
@@ -625,6 +615,12 @@ def find_threshold(station_file, lats, lons, dataset, direction, radius_GPS, \
     
     nonzeros = np.zeros(len(lats))
     equals = np.zeros(len(lats))
+
+    # Start figure
+    fig, ax = plt.subplots(figsize=(16, 8))
+    params = {'xtick.labelsize':24,
+              'ytick.labelsize':24}
+    pylab.rcParams.update(params)
 
     # Loop on latitude and longitude
     for index, (lat, lon) in enumerate(zip(lats, lons)):
@@ -729,6 +725,23 @@ def find_threshold(station_file, lats, lons, dataset, direction, radius_GPS, \
             input2[neg_tremor] = -1
             nonzeros[index] = np.mean(input1 * input2 == 1)
             equals[index] = np.mean(input1 == input2)
+            
+            true_detections = np.where(input1 * input2 == 1)[0]
+            plt.scatter(times_stacked[true_detections], lat + 0.05 * np.repeat(1, len(true_detections)), color='green')
+            false_detections = np.where((input1 * input2 == -1) | ((np.abs(input1) == 1) & (input2 == 0)))[0]
+            plt.scatter(times_stacked[false_detections], lat - 0.05 * np.repeat(1, len(false_detections)), color='red')
+
+    plt.xlim([2009.25, 2021.25])
+    plt.xlabel('Time (years)', fontsize=24)
+    plt.xticks(fontsize=24)
+    plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
+    plt.ylabel('Latitude', fontsize=24)
+    plt.yticks(fontsize=24)
+    plt.title('Signal detected for detail at level {:d}'. \
+        format(J + 1), fontsize=24)
+    plt.savefig('signal_detected_' + str(J + 1) + '.pdf', format='pdf')
+    plt.close(1)
+
     return (np.mean(nonzeros), np.mean(equals))
 
 if __name__ == '__main__':
@@ -765,17 +778,11 @@ if __name__ == '__main__':
     # For tremor data
     # Level 8: 0.006 - Level 7: 0.007 - Level 6: 0.005 - Level 5: 0.002
 
-    thresh_GPS = np.linspace(0.1, 1.5, 15)
-    thresh_tremor = np.linspace(0.001, 0.020, 20)
-    nonzeros = np.zeros((len(thresh_GPS), len(thresh_tremor)))
-    equals = np.zeros((len(thresh_GPS), len(thresh_tremor)))
-    for i in range(0, len(thresh_GPS)):
-        for j in range(0, len(thresh_tremor)):
-            nonzeros[i, j], equals[i, j] = find_threshold(station_file, lats, \
-                lons, dataset, direction, radius_GPS, J - 1, thresh_GPS[i], thresh_tremor[j])
-    equals = np.where((nonzeros > 0.10) & (nonzeros < 0.40), equals, 0)
-    i0, j0 = np.unravel_index(np.argmax(equals), np.array(equals).shape)
-    print(thresh_GPS[i0], thresh_tremor[j0], nonzeros[i0, j0], equals[i0, j0])
+    thresh_GPS = 0.2
+    thresh_tremor = 0.002
 
-    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J - 1, thresh_GPS[i0])
-    plot_tremor(lats, J - 1, thresh_tremor[j0])
+    nonzeros, equals = find_threshold(station_file, lats, \
+        lons, dataset, direction, radius_GPS, J - 1, thresh_GPS, thresh_tremor)
+
+    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J - 1, thresh_GPS)
+    plot_tremor(lats, J - 1, thresh_tremor)
