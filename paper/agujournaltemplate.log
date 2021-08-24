@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  10 AUG 2021 11:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  23 AUG 2021 20:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -305,6 +305,18 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 (./agujournaltemplate.aux
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
 
 LaTeX Warning: Label `pngfiguresample' multiply defined.
 
@@ -1533,37 +1545,168 @@ tice-able at lower time scales.
  []
 
 [5] [6 <./figures/500_DS-eps-converted-to.pdf>]
-Overfull \hbox (7.72392pt too wide) in paragraph at lines 265--265
-[]\OT1/cmr/m/n/10 We then ap-plied the wavelet fil-ter-ing to real GPS data. Fi
-g-ure 2 shows the lon-gi- 
+Overfull \hbox (12.82112pt too wide) in paragraph at lines 265--265
+[]\OT1/cmr/m/n/10 The DWT and MODWT meth-ods must be used on a con-tin-u-ous ti
+me se-ries, with- 
  []
 
 
-Overfull \hbox (8.90462pt too wide) in paragraph at lines 265--265
+Overfull \hbox (14.22394pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 out gaps in the record-ings. To deal with the gaps in the GNSS 
+record-ings, we sim-ply re- 
+ []
+
+
+Overfull \hbox (15.08516pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 place the miss-ing val-ues by Gaus-sian noise with mean zero an
+d stan-dard de-vi-a-tion equal 
+ []
+
+
+Overfull \hbox (20.43233pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 to the stan-dard de-vi-a-tion of the whole time se-ries. We ver
+-ify how the wavelet de-tails may 
+ []
+
+
+Overfull \hbox (4.55739pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 be af-fected by look-ing at a GPS time se-ries with-out miss-in
+g val-ues and com-par-ing the 
+ []
+
+
+Overfull \hbox (18.69629pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 wavelet de-tails with and with-out re-mov-ing some data points.
+ Sta-tion PGC5 has recorded 
+ []
+
+
+Overfull \hbox (17.96022pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 dur-ing 1390 days be-tween 2009 and 2013, with-out any miss-ing
+ val-ues. We first com-puted 
+ []
+
+
+Overfull \hbox (4.9601pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 the wavelet de-tails with-out miss-ing val-ues. Then, we re-mov
+ed ten neigh-bor-ing miss-ing 
+ []
+
+
+Overfull \hbox (10.52951pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 val-ues, re-placed them by Gaus-sian noise, and com-puted the w
+avelet de-tails with the re- 
+ []
+
+
+Overfull \hbox (6.21005pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 placed val-ues. Fig-ure 2 shows a com-par-i-son of the two wave
+let de-tails for two dif-fer-ent 
+ []
+
+
+Overfull \hbox (10.04338pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 lo-ca-tions of the miss-ing val-ues. We can see that there are 
+vis-i-ble dif-fer-ences in the time 
+ []
+
+
+Overfull \hbox (11.71004pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 se-ries it-self, and in the de-tails at the small-est lev-els o
+f the wavelet de-com-po-si-tion. How- 
+ []
+
+
+Overfull \hbox (32.21007pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 ever, the dif-fer-ences be-tween the wavelet de-tails with and 
+with-out miss-ing val-ues get smaller 
+ []
+
+
+Overfull \hbox (13.12671pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 and smaller with in-creas-ing lev-els the de-tails, and are bar
+ely vis-i-ble for the lev-els we are 
+ []
+
+
+Overfull \hbox (20.01556pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 mostly in-ter-ested in (lev-els 6 to 8). We thus con-clude that
+ we can eas-ily re-place the miss- 
+ []
+
+
+Overfull \hbox (23.19621pt too wide) in paragraph at lines 265--265
+\OT1/cmr/m/n/10 ing val-ues in the GNSS time se-ries with-out in-tro-duc-ing fa
+lse de-tec-tions of slow slip events.  
+ []
+
+Package epstopdf Info: Source file: <figures/DS_10.eps>
+(epstopdf)                    date: 2021-08-23 20:08:34
+(epstopdf)                    size: 199578 bytes
+(epstopdf)             Output file: <figures/DS_10-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-08-23 20:15:41
+(epstopdf)                    size: 46044 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/DS_10-eps-converte
+d-to.pdf figures/DS_10.eps>
+(epstopdf)             \includegraphics on input line 268.
+Package epstopdf Info: Output file is already uptodate.
+<figures/DS_10-eps-converted-to.pdf, id=81, 433.62pt x 1445.4pt>
+File: figures/DS_10-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/DS_10-eps-converted-to.pdf>
+Package pdftex.def Info: figures/DS_10-eps-converted-to.pdf used on input line 
+268.
+(pdftex.def)             Requested size: 142.26378pt x 474.20454pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
+[]\OT1/cmr/bx/n/9 Figure  2. \OT1/cmr/m/n/9 Bot-tom: Data from GPS sta-tion PGC
+5 with-out miss-ing val-ues (black) and with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
+\OT1/cmr/m/n/9 miss-ing val-ues re-placed by Gaus-sian noise (red) for two lo-c
+a-tions of the miss-ing val-ues (left and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
+\OT1/cmr/m/n/9 right). Bot-tom to top: Cor-re-spond-ing eight de-tails and smoo
+ths of the wavelet com-po-si-tion for
+ []
+
+
+Overfull \hbox (7.72392pt too wide) in paragraph at lines 273--273
+[]\OT1/cmr/m/n/10 We then ap-plied the wavelet fil-ter-ing to real GPS data. Fi
+g-ure 3 shows the lon-gi- 
+ []
+
+
+Overfull \hbox (8.90462pt too wide) in paragraph at lines 273--273
 \OT1/cmr/m/n/10 tu-di-nal dis-place-ment for GPS sta-tion PGC5, lo-cated in sou
 th-ern Van-cou-ver Is-land, the 
  []
 
 
-Overfull \hbox (4.54344pt too wide) in paragraph at lines 265--265
+Overfull \hbox (4.54344pt too wide) in paragraph at lines 273--273
 \OT1/cmr/m/n/10 de-tails of the wavelet de-com-po-si-tion for lev-els 1 to 8, a
 nd the smooth. In the data, we 
  []
 
 
-Overfull \hbox (11.9044pt too wide) in paragraph at lines 265--265
+Overfull \hbox (11.9044pt too wide) in paragraph at lines 273--273
 \OT1/cmr/m/n/10 can see a sharp drop in dis-place-ment when-ever there is a slo
 w slip event. For lev-els 5 to 
  []
 
 
-Overfull \hbox (7.0156pt too wide) in paragraph at lines 265--265
+Overfull \hbox (7.0156pt too wide) in paragraph at lines 273--273
 \OT1/cmr/m/n/10 8, we can see in the de-tails a pos-i-tive peak fol-lowed by a 
 neg-a-tive peak when-ever there 
  []
 
 
-Overfull \hbox (4.79341pt too wide) in paragraph at lines 265--265
+Overfull \hbox (4.79341pt too wide) in paragraph at lines 273--273
 \OT1/cmr/m/n/10 is a drop in dis-place-ment in the data. We thus ver-ify that t
 he wavelet method can de- 
  []
@@ -1577,65 +1720,65 @@ pdf>
 (epstopdf)                    size: 142724 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/cleaned_PGC5_lon-e
 ps-converted-to.pdf figures/cleaned_PGC5_lon.eps>
-(epstopdf)             \includegraphics on input line 268.
+(epstopdf)             \includegraphics on input line 276.
 Package epstopdf Info: Output file is already uptodate.
-<figures/cleaned_PGC5_lon-eps-converted-to.pdf, id=81, 722.7pt x 2384.91pt>
+<figures/cleaned_PGC5_lon-eps-converted-to.pdf, id=83, 722.7pt x 2384.91pt>
 File: figures/cleaned_PGC5_lon-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/cleaned_PGC5_lon-eps-converted-to.pdf>
 Package pdftex.def Info: figures/cleaned_PGC5_lon-eps-converted-to.pdf used on 
-input line 268.
+input line 276.
 (pdftex.def)             Requested size: 142.26378pt x 469.47707pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
-[]\OT1/cmr/bx/n/9 Figure  2. \OT1/cmr/m/n/9 De-tails and smooth of the wavelet 
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+[]\OT1/cmr/bx/n/9 Figure  3. \OT1/cmr/m/n/9 De-tails and smooth of the wavelet 
 de-com-po-si-tion of the lon-gi-tu-di-nal dis-place-ment
  []
 
 
-Overfull \hbox (6.20996pt too wide) in paragraph at lines 273--273
+Overfull \hbox (6.20996pt too wide) in paragraph at lines 281--281
 []\OT1/cmr/m/n/10 To in-crease the signal-to-noise ra-tio and be able to bet-te
 r de-tect slow slip events, 
  []
 
 
-Overfull \hbox (4.15445pt too wide) in paragraph at lines 273--273
+Overfull \hbox (4.15445pt too wide) in paragraph at lines 281--281
 \OT1/cmr/m/n/10 we stack the sig-nal over sev-eral GPS sta-tions. We choose to 
 fo-cus on GPS sta-tions lo- 
  []
 
 
-Overfull \hbox (0.62675pt too wide) in paragraph at lines 273--273
+Overfull \hbox (0.62675pt too wide) in paragraph at lines 281--281
 \OT1/cmr/m/n/10 cated close enough to the tremor zone to get a suf-fi-ciently h
 igh am-pli-tude of the slow 
  []
 
 
-Overfull \hbox (14.82129pt too wide) in paragraph at lines 273--273
+Overfull \hbox (14.82129pt too wide) in paragraph at lines 281--281
 \OT1/cmr/m/n/10 slip sig-nal. We choose 16 points lo-cated on the 40 km depth c
 on-tour of the plate bound- 
  []
 
 
-Overfull \hbox (3.93236pt too wide) in paragraph at lines 273--273
+Overfull \hbox (3.93236pt too wide) in paragraph at lines 281--281
 \OT1/cmr/m/n/10 ary (model from  Pre-ston, Crea-ger, Crosson, Brocher, and Treh
 u (2003)) with spac-ing 
  []
 
 
-Overfull \hbox (6.80731pt too wide) in paragraph at lines 273--273
-\OT1/cmr/m/n/10 equal 0.1 de-gree in lat-i-tude (red tri-an-gles on Fig-ure 3).
+Overfull \hbox (6.80731pt too wide) in paragraph at lines 281--281
+\OT1/cmr/m/n/10 equal 0.1 de-gree in lat-i-tude (red tri-an-gles on Fig-ure 4).
  Then we took all the GPS sta- 
  []
 
 
-Overfull \hbox (18.98795pt too wide) in paragraph at lines 273--273
+Overfull \hbox (18.98795pt too wide) in paragraph at lines 281--281
 \OT1/cmr/m/n/10 tions lo-cated in a 50 km ra-dius for a given point, com-pute t
 he wavelet de-tails for the lon- 
  []
 
 
-Overfull \hbox (11.19623pt too wide) in paragraph at lines 273--273
+Overfull \hbox (11.19623pt too wide) in paragraph at lines 281--281
 \OT1/cmr/m/n/10 gi-tu-di-nal dis-place-ment of each sta-tion, and stack each de
 -tail over the GPS sta-tions. We 
  []
@@ -1645,86 +1788,82 @@ Package epstopdf Info: Source file: <figures/map_GPS_stations.eps>
 (epstopdf)                    size: 2802307 bytes
 (epstopdf)             Output file: <figures/map_GPS_stations-eps-converted-to.
 pdf>
+(epstopdf)                    date: 2021-08-10 11:25:57
+(epstopdf)                    size: 7406578 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/map_GPS_stations-e
 ps-converted-to.pdf figures/map_GPS_stations.eps>
-(epstopdf)             \includegraphics on input line 276.
-runsystem(repstopdf --outfile=figures/map_GPS_stations-eps-converted-to.pdf fig
-ures/map_GPS_stations.eps)...executed safely (allowed).
+(epstopdf)             \includegraphics on input line 284.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figures/map_GPS_stations-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2021-08-10 11:25:57
-(epstopdf)                    size: 7406578 bytes.
-
-<figures/map_GPS_stations-eps-converted-to.pdf, id=83, 597.23125pt x 845.1575pt
+<figures/map_GPS_stations-eps-converted-to.pdf, id=85, 597.23125pt x 845.1575pt
 >
 File: figures/map_GPS_stations-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/map_GPS_stations-eps-converted-to.pdf>
 Package pdftex.def Info: figures/map_GPS_stations-eps-converted-to.pdf used on 
-input line 276.
+input line 284.
 (pdftex.def)             Requested size: 397.48499pt x 562.49985pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
-[]\OT1/cmr/bx/n/9 Figure  3. \OT1/cmr/m/n/9 GPS sta-tions used in this study (b
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+[]\OT1/cmr/bx/n/9 Figure  4. \OT1/cmr/m/n/9 GPS sta-tions used in this study (b
 lack tri-an-gles). The black line rep-re-sents the 40
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
 \OT1/cmr/m/n/9 km depth con-tour of the plate bound-ary model by  Pre-ston et a
 l.[] (2003). The red tri-an-gles are
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
 \OT1/cmr/m/n/9 the lo-ca-tions where we stack the GPS data. The small grey dots
  are all the tremor lo-ca-tions from
  []
 
 
-Overfull \hbox (11.91827pt too wide) in paragraph at lines 281--282
+Overfull \hbox (11.91827pt too wide) in paragraph at lines 289--290
 []\OT1/cmr/m/n/10 To com-pare slow slip events de-tected with GPS data and slow
  slip events de-tected 
  []
 
 
-Overfull \hbox (9.07118pt too wide) in paragraph at lines 281--282
+Overfull \hbox (9.07118pt too wide) in paragraph at lines 289--290
 \OT1/cmr/m/n/10 with seis-mic data, we took all the tremor epi-cen-ters lo-cate
 d within a 50 km ra-dius cen- 
  []
 
 
-Overfull \hbox (16.90457pt too wide) in paragraph at lines 281--282
+Overfull \hbox (16.90457pt too wide) in paragraph at lines 289--290
 \OT1/cmr/m/n/10 tered on one of the 16 lo-ca-tions marked by red tri-an-gles on
  Fig-ure 3. Then we com-puted 
  []
 
 
-Overfull \hbox (5.79344pt too wide) in paragraph at lines 281--282
+Overfull \hbox (5.79344pt too wide) in paragraph at lines 289--290
 \OT1/cmr/m/n/10 the cu-mu-la-tive num-ber of tremor within this cir-cle. Fi-nal
 ly, we re-moved a lin-ear trend 
  []
 
 
-Overfull \hbox (3.65459pt too wide) in paragraph at lines 281--282
+Overfull \hbox (3.65459pt too wide) in paragraph at lines 289--290
 \OT1/cmr/m/n/10 from the cu-mu-la-tive tremor count, and ap-plied the wavelet t
-rans-form. Fig-ure 4 shows 
+rans-form. Fig-ure 5 shows 
  []
 
 
-Overfull \hbox (9.68245pt too wide) in paragraph at lines 281--282
+Overfull \hbox (9.68245pt too wide) in paragraph at lines 289--290
 \OT1/cmr/m/n/10 an ex-am-ple of the wavelet de-com-po-si-tion for the third nor
 th-ern-most lo-ca-tion on Fig-ure 
  []
 
 
-Overfull \hbox (13.89069pt too wide) in paragraph at lines 281--282
-\OT1/cmr/m/n/10 3 (which is clos-est to GPS sta-tion PGC5). Con-trary to what h
+Overfull \hbox (13.89069pt too wide) in paragraph at lines 289--290
+\OT1/cmr/m/n/10 4 (which is clos-est to GPS sta-tion PGC5). Con-trary to what h
 ap-pens for the GPS data, 
  []
 
 
-Overfull \hbox (12.37662pt too wide) in paragraph at lines 281--282
+Overfull \hbox (12.37662pt too wide) in paragraph at lines 289--290
 \OT1/cmr/m/n/10 we see a sharp in-crease in the data when-ever there is a tremo
 r episode, which trans-lates 
  []
@@ -1733,34 +1872,127 @@ Package epstopdf Info: Source file: <figures/tremor_13.eps>
 (epstopdf)                    date: 2021-08-08 16:24:19
 (epstopdf)                    size: 258566 bytes
 (epstopdf)             Output file: <figures/tremor_13-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-08-10 11:25:58
+(epstopdf)                    size: 71879 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_13-eps-conv
 erted-to.pdf figures/tremor_13.eps>
-(epstopdf)             \includegraphics on input line 284.
-runsystem(repstopdf --outfile=figures/tremor_13-eps-converted-to.pdf figures/tr
-emor_13.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/tremor_13-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-08-10 11:25:58
-(epstopdf)                    size: 71879 bytes.
-<figures/tremor_13-eps-converted-to.pdf, id=85, 722.7pt x 2384.91pt>
+(epstopdf)             \includegraphics on input line 292.
+Package epstopdf Info: Output file is already uptodate.
+<figures/tremor_13-eps-converted-to.pdf, id=87, 722.7pt x 2384.91pt>
 File: figures/tremor_13-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/tremor_13-eps-converted-to.pdf>
 Package pdftex.def Info: figures/tremor_13-eps-converted-to.pdf used on input l
-ine 284.
+ine 292.
 (pdftex.def)             Requested size: 142.26378pt x 469.47707pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
-[]\OT1/cmr/bx/n/9 Figure  4. \OT1/cmr/m/n/9 De-tails and smooth of the wavelet 
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+[]\OT1/cmr/bx/n/9 Figure  5. \OT1/cmr/m/n/9 De-tails and smooth of the wavelet 
 de-com-po-si-tion of the de-trended cu-mu-la-tive
  []
 
-(./agujournaltemplate.bbl
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-[8 <./figures/cleaned_PGC5_lon-eps-converted-to.pdf>] [9 <./figures/map_GPS_sta
-tions-eps-converted-to.pdf>] [10 <./figures/tremor_13-eps-converted-to.pdf>]
+[8 <./figures/DS_10-eps-converted-to.pdf>] [9 <./figures/cleaned_PGC5_lon-eps-c
+onverted-to.pdf>] [10 <./figures/map_GPS_stations-eps-converted-to.pdf>]
+[11 <./figures/tremor_13-eps-converted-to.pdf>]
+Overfull \hbox (3.73781pt too wide) in paragraph at lines 299--300
+[]\OT1/cmr/m/n/10 We stacked the 8th level de-tail of the wavelet de-com-po-si-
+tion of the dis-place-ment 
+ []
+
+
+Overfull \hbox (14.25186pt too wide) in paragraph at lines 299--300
+\OT1/cmr/m/n/10 over all the GPS sta-tions lo-cated in a 50 km ra-dius of a giv
+en point, for the 16 lo-ca-tions 
+ []
+
+
+Overfull \hbox (8.46005pt too wide) in paragraph at lines 299--300
+\OT1/cmr/m/n/10 in-di-cated in Fig-ure 3. The re-sult is shown in the top panel
+ of Fig-ure 6, where each line 
+ []
+
+
+Overfull \hbox (8.2656pt too wide) in paragraph at lines 299--300
+\OT1/cmr/m/n/10 rep-re-sents one of the lo-ca-tions. To bet-ter high-light the 
+peaks in the wavelet de-tails, we 
+ []
+
+
+Overfull \hbox (9.849pt too wide) in paragraph at lines 299--300
+\OT1/cmr/m/n/10 high-lighted in red the time in-ter-vals where the am-pli-tude 
+of the stacked de-tail is higher 
+ []
+
+
+Overfull \hbox (8.43233pt too wide) in paragraph at lines 299--300
+\OT1/cmr/m/n/10 than a thresh-old, and in blue the time in-ter-vals where the a
+m-pli-tude of the stacked de- 
+ []
+
+
+Overfull \hbox (9.9184pt too wide) in paragraph at lines 299--300
+\OT1/cmr/m/n/10 tail is lower than mi-nus the thresh-old. To com-pare the GPS s
+ig-nal with the tremor sig- 
+ []
+
+
+Overfull \hbox (10.2379pt too wide) in paragraph at lines 299--300
+\OT1/cmr/m/n/10 nal, we plot-ted the 8th level de-tail of the wavelet de-com-po
+-si-tion of the tremor count on 
+ []
+
+
+Overfull \hbox (9.65462pt too wide) in paragraph at lines 299--300
+\OT1/cmr/m/n/10 the bot-tom panel of Fig-ure 6. We used the op-po-site of the c
+u-mu-la-tive tremor count for 
+ []
+
+
+Overfull \hbox (21.57129pt too wide) in paragraph at lines 299--300
+\OT1/cmr/m/n/10 the wavelet de-com-po-si-tion in or-der to be able to match pos
+-i-tive peaks with pos-i-tive peaks 
+ []
+
+<figures/GPS_detail_8.pdf, id=205, 1156.32pt x 578.16pt>
+File: figures/GPS_detail_8.pdf Graphic file (type pdf)
+
+<use figures/GPS_detail_8.pdf>
+Package pdftex.def Info: figures/GPS_detail_8.pdf used on input line 302.
+(pdftex.def)             Requested size: 397.48499pt x 198.742pt.
+
+<figures/tremor_detail_8.pdf, id=207, 1156.32pt x 578.16pt>
+File: figures/tremor_detail_8.pdf Graphic file (type pdf)
+
+<use figures/tremor_detail_8.pdf>
+Package pdftex.def Info: figures/tremor_detail_8.pdf used on input line 304.
+(pdftex.def)             Requested size: 397.48499pt x 198.742pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+[]\OT1/cmr/bx/n/9 Figure  6. \OT1/cmr/m/n/9 Top: Stacked 8th level de-tails of 
+the wavelet de-com-po-si-tion of the dis-place-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+\OT1/cmr/m/n/9 over all the GPS sta-tions lo-cated in a 50 km ra-dius of a give
+n point, for the 16 lo-ca-tions in-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+\OT1/cmr/m/n/9 cated in Fig-ure 3. Bot-tom: Op-po-site of the 8th level de-tail
+ of the cu-mu-la-tive tremor count in a
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./figures/GPS_detail_8.pdf> <./figures/tremor_detail_8.pdf>]
+(./agujournaltemplate.bbl
 Underfull \hbox (badness 1902) in paragraph at lines 45--61
 \OT1/cmr/m/n/10 events seen in tidal records (1980--2011).  \OT1/cmr/m/it/10 Bu
 l-letin of the Seis-mo-log-i-cal So-ci-ety 
@@ -1790,7 +2022,7 @@ Underfull \hbox (badness 3668) in paragraph at lines 317--330
 or and low-frequency 
  []
 
-) [11] (./agujournaltemplate.aux)
+) [13] (./agujournaltemplate.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
@@ -1800,13 +2032,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4666 strings out of 493117
- 61928 string characters out of 6135433
- 139154 words of memory out of 5000000
- 8023 multiletter control sequences out of 15000+600000
+ 4681 strings out of 493117
+ 62369 string characters out of 6135433
+ 140155 words of memory out of 5000000
+ 8035 multiletter control sequences out of 15000+600000
  12144 words of font info for 47 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 50i,9n,37p,1998b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,9n,37p,1998b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -1828,10 +2060,10 @@ ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2014/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on agujournaltemplate.pdf (11 pages, 7917470 bytes).
+Output written on agujournaltemplate.pdf (13 pages, 8129892 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+ 363 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

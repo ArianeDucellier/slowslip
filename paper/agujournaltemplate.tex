@@ -262,7 +262,15 @@ The ramp-like signal is transformed through the wavelet filtering into a wavefor
 
 \subsection{MODWT of GPS and tremor data}
 
-We then applied the wavelet filtering to real GPS data. Figure 2 shows the longitudinal displacement for GPS station PGC5, located in southern Vancouver Island, the details of the wavelet decomposition for levels 1 to 8, and the smooth. In the data, we can see a sharp drop in displacement whenever there is a slow slip event. For levels 5 to 8, we can see in the details a positive peak followed by a negative peak whenever there is a drop in displacement in the data. We thus verify that the wavelet method can detect slow slip events. \\
+The DWT and MODWT methods must be used on a continuous time series, without gaps in the recordings. To deal with the gaps in the GNSS recordings, we simply replace the missing values by Gaussian noise with mean zero and standard deviation equal to the standard deviation of the whole time series. We verify how the wavelet details may be affected by looking at a GPS time series without missing values and comparing the wavelet details with and without removing some data points. Station PGC5 has recorded during 1390 days between 2009 and 2013, without any missing values. We first computed the wavelet details without missing values. Then, we removed ten neighboring missing values, replaced them by Gaussian noise, and computed the wavelet details with the replaced values. Figure 2 shows a comparison of the two wavelet details for two different locations of the missing values. We can see that there are visible differences in the time series itself, and in the details at the smallest levels of the wavelet decomposition. However, the differences between the wavelet details with and without missing values get smaller and smaller with increasing levels the details, and are barely visible for the levels we are mostly interested in (levels 6 to 8). We thus conclude that we can easily replace the missing values in the GNSS time series without introducing false detections of slow slip events. \\
+
+\begin{figure}
+\noindent\includegraphics[width=5cm, trim={0cm 0cm 0cm 0cm},clip]{figures/DS_10.eps}
+\caption{Bottom: Data from GPS station PGC5 without missing values (black) and with missing values replaced by Gaussian noise (red) for two locations of the missing values (left and right). Bottom to top: Corresponding eight details and smooths of the wavelet composition for the original data (black) and for the missing values replaced by Gaussian noise (red).}
+\label{pngfiguresample}
+\end{figure}
+
+We then applied the wavelet filtering to real GPS data. Figure 3 shows the longitudinal displacement for GPS station PGC5, located in southern Vancouver Island, the details of the wavelet decomposition for levels 1 to 8, and the smooth. In the data, we can see a sharp drop in displacement whenever there is a slow slip event. For levels 5 to 8, we can see in the details a positive peak followed by a negative peak whenever there is a drop in displacement in the data. We thus verify that the wavelet method can detect slow slip events. \\
 
 \begin{figure}
 \noindent\includegraphics[width=5cm, trim={0cm 0cm 0cm 0cm},clip]{figures/cleaned_PGC5_lon.eps}
@@ -270,7 +278,7 @@ We then applied the wavelet filtering to real GPS data. Figure 2 shows the longi
 \label{pngfiguresample}
 \end{figure}
 
-To increase the signal-to-noise ratio and be able to better detect slow slip events, we stack the signal over several GPS stations. We choose to focus on GPS stations located close enough to the tremor zone to get a sufficiently high amplitude of the slow slip signal. We choose 16 points located on the 40 km depth contour of the plate boundary (model from ~\citet{PRE_2003}) with spacing equal 0.1 degree in latitude (red triangles on Figure 3). Then we took all the GPS stations located in a 50 km radius for a given point, compute the wavelet details for the longitudinal displacement of each station, and stack each detail over the GPS stations. We thus have a stacked detail for each level 1 to 8 of the wavelet decomposition. \\
+To increase the signal-to-noise ratio and be able to better detect slow slip events, we stack the signal over several GPS stations. We choose to focus on GPS stations located close enough to the tremor zone to get a sufficiently high amplitude of the slow slip signal. We choose 16 points located on the 40 km depth contour of the plate boundary (model from ~\citet{PRE_2003}) with spacing equal 0.1 degree in latitude (red triangles on Figure 4). Then we took all the GPS stations located in a 50 km radius for a given point, compute the wavelet details for the longitudinal displacement of each station, and stack each detail over the GPS stations. We thus have a stacked detail for each level 1 to 8 of the wavelet decomposition. \\
 
 \begin{figure}
 \noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/map_GPS_stations.eps}
@@ -278,7 +286,7 @@ To increase the signal-to-noise ratio and be able to better detect slow slip eve
 \label{pngfiguresample}
 \end{figure}
 
-To compare slow slip events detected with GPS data and slow slip events detected with seismic data, we took all the tremor epicenters located within a 50 km radius centered on one of the 16 locations marked by red triangles on Figure 3. Then we computed the cumulative number of tremor within this circle. Finally, we removed a linear trend from the cumulative tremor count, and applied the wavelet transform. Figure 4 shows an example of the wavelet decomposition for the third northernmost location on Figure 3 (which is closest to GPS station PGC5). Contrary to what happens for the GPS data, we see a sharp increase in the data whenever there is a tremor episode, which translates into a negative peak followed by a positive peak in the wavelet details.
+To compare slow slip events detected with GPS data and slow slip events detected with seismic data, we took all the tremor epicenters located within a 50 km radius centered on one of the 16 locations marked by red triangles on Figure 3. Then we computed the cumulative number of tremor within this circle. Finally, we removed a linear trend from the cumulative tremor count, and applied the wavelet transform. Figure 5 shows an example of the wavelet decomposition for the third northernmost location on Figure 4 (which is closest to GPS station PGC5). Contrary to what happens for the GPS data, we see a sharp increase in the data whenever there is a tremor episode, which translates into a negative peak followed by a positive peak in the wavelet details.
 
 \begin{figure}
 \noindent\includegraphics[width=5cm, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_13.eps}
@@ -288,9 +296,15 @@ To compare slow slip events detected with GPS data and slow slip events detected
 
 \section{Results}
 
-Explanation vespagram
+We stacked the 8th level detail of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 locations indicated in Figure 3. The result is shown in the top panel of Figure 6, where each line represents one of the locations. To better highlight the peaks in the wavelet details, we highlighted in red the time intervals where the amplitude of the stacked detail is higher than a threshold, and in blue the  time intervals where the amplitude of the stacked detail is lower than minus the threshold. To compare the GPS signal with the tremor signal, we plotted the 8th level detail of the wavelet decomposition of the tremor count on the bottom panel of Figure 6. We used the opposite of the cumulative tremor count for the wavelet decomposition in order to be able to match positive peaks with positive peaks and negative peaks with negative peaks.
 
-Correlation
+\begin{figure}
+\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_detail_8.pdf}
+
+\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_detail_8.pdf}
+\caption{Top: Stacked 8th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 locations indicated in Figure 3. Bottom: Opposite of the 8th level detail of the cumulative tremor count in a 50 km radius of a given point for the same 16 locations.}
+\label{pngfiguresample}
+\end{figure}
 
 \section{Discussion}
 
