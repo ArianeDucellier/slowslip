@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  23 AUG 2021 20:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  25 AUG 2021 19:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -305,6 +305,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 (./agujournaltemplate.aux
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
 
 LaTeX Warning: Label `pngfiguresample' multiply defined.
 
@@ -1898,63 +1904,93 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [8 <./figures/DS_10-eps-converted-to.pdf>] [9 <./figures/cleaned_PGC5_lon-eps-c
 onverted-to.pdf>] [10 <./figures/map_GPS_stations-eps-converted-to.pdf>]
 [11 <./figures/tremor_13-eps-converted-to.pdf>]
-Overfull \hbox (3.73781pt too wide) in paragraph at lines 299--300
+Overfull \hbox (3.73781pt too wide) in paragraph at lines 299--299
 []\OT1/cmr/m/n/10 We stacked the 8th level de-tail of the wavelet de-com-po-si-
 tion of the dis-place-ment 
  []
 
 
-Overfull \hbox (14.25186pt too wide) in paragraph at lines 299--300
+Overfull \hbox (14.25186pt too wide) in paragraph at lines 299--299
 \OT1/cmr/m/n/10 over all the GPS sta-tions lo-cated in a 50 km ra-dius of a giv
 en point, for the 16 lo-ca-tions 
  []
 
 
-Overfull \hbox (8.46005pt too wide) in paragraph at lines 299--300
+Overfull \hbox (8.46005pt too wide) in paragraph at lines 299--299
 \OT1/cmr/m/n/10 in-di-cated in Fig-ure 3. The re-sult is shown in the top panel
  of Fig-ure 6, where each line 
  []
 
 
-Overfull \hbox (8.2656pt too wide) in paragraph at lines 299--300
+Overfull \hbox (8.2656pt too wide) in paragraph at lines 299--299
 \OT1/cmr/m/n/10 rep-re-sents one of the lo-ca-tions. To bet-ter high-light the 
 peaks in the wavelet de-tails, we 
  []
 
 
-Overfull \hbox (9.849pt too wide) in paragraph at lines 299--300
+Overfull \hbox (9.849pt too wide) in paragraph at lines 299--299
 \OT1/cmr/m/n/10 high-lighted in red the time in-ter-vals where the am-pli-tude 
 of the stacked de-tail is higher 
  []
 
 
-Overfull \hbox (8.43233pt too wide) in paragraph at lines 299--300
+Overfull \hbox (8.43233pt too wide) in paragraph at lines 299--299
 \OT1/cmr/m/n/10 than a thresh-old, and in blue the time in-ter-vals where the a
 m-pli-tude of the stacked de- 
  []
 
 
-Overfull \hbox (9.9184pt too wide) in paragraph at lines 299--300
+Overfull \hbox (9.9184pt too wide) in paragraph at lines 299--299
 \OT1/cmr/m/n/10 tail is lower than mi-nus the thresh-old. To com-pare the GPS s
 ig-nal with the tremor sig- 
  []
 
 
-Overfull \hbox (10.2379pt too wide) in paragraph at lines 299--300
+Overfull \hbox (10.2379pt too wide) in paragraph at lines 299--299
 \OT1/cmr/m/n/10 nal, we plot-ted the 8th level de-tail of the wavelet de-com-po
 -si-tion of the tremor count on 
  []
 
 
-Overfull \hbox (9.65462pt too wide) in paragraph at lines 299--300
+Overfull \hbox (9.65462pt too wide) in paragraph at lines 299--299
 \OT1/cmr/m/n/10 the bot-tom panel of Fig-ure 6. We used the op-po-site of the c
 u-mu-la-tive tremor count for 
  []
 
 
-Overfull \hbox (21.57129pt too wide) in paragraph at lines 299--300
+Overfull \hbox (21.57129pt too wide) in paragraph at lines 299--299
 \OT1/cmr/m/n/10 the wavelet de-com-po-si-tion in or-der to be able to match pos
 -i-tive peaks with pos-i-tive peaks 
+ []
+
+
+Overfull \hbox (17.29358pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 and neg-a-tive peaks with neg-a-tive peaks. Al-though the lat-i
+-tu-di-nal ex-ten-sion of the events 
+ []
+
+
+Overfull \hbox (7.89066pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 is not al-ways the same for the GPS data and for the tremor dat
+a, we iden-tify the same 
+ []
+
+
+Overfull \hbox (7.32129pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 10 events in both 8th wavelet de-com-po-si-tions for the 8th le
+vel: Sum-mer 2010, Sum-mer 
+ []
+
+
+Overfull \hbox (20.82144pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 2011, Sum-mer 2012, Fall 2013, Summer-Fall 2014, Win-ter 2015-2
+016, Win-ter 2017, Spring 
+ []
+
+
+Overfull \hbox (12.7935pt too wide) in paragraph at lines 299--299
+\OT1/cmr/m/n/10 2018, Spring-Fall 2019, and Fall 2020 - Win-ter 2021. We can al
+so see the end of an 11th 
  []
 
 <figures/GPS_detail_8.pdf, id=205, 1156.32pt x 578.16pt>
@@ -1989,9 +2025,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--305
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (7.37671pt too wide) in paragraph at lines 309--309
+[]\OT1/cmr/m/n/10 Figures 7 and 8 show the same com-par-i-son be-tween the wave
+let de-com-po-si-tion of 
+ []
 
- [12 <./figures/GPS_detail_8.pdf> <./figures/tremor_detail_8.pdf>]
+
+Overfull \hbox (9.6407pt too wide) in paragraph at lines 309--309
+\OT1/cmr/m/n/10 the GPS data and the wavelet de-com-po-si-tion of the tremor co
+unt data for the 7th level 
+ []
+
+
+Overfull \hbox (2.57108pt too wide) in paragraph at lines 309--309
+\OT1/cmr/m/n/10 and the 6th level re-spec-tively. For the 7th level, we see the
+ same events as for the 8th 
+ []
+
+
+Overfull \hbox (6.91847pt too wide) in paragraph at lines 309--309
+\OT1/cmr/m/n/10 level, both for the GPS data and the tremor count data. The wav
+elet de-com-po-si-tion is 
+ []
+
+
+Overfull \hbox (0.4184pt too wide) in paragraph at lines 309--309
+\OT1/cmr/m/n/10 more noisy for the GPS data in the ear-li-est part of the time 
+se-ries, be-tween 2010 and 
+ []
+
+
+Overfull \hbox (5.2656pt too wide) in paragraph at lines 309--309
+\OT1/cmr/m/n/10 2013, but it does not seem that there are more slow slip events
+ vis-i-ble in the 7th level.  
+ []
+
+<figures/GPS_detail_7.pdf, id=209, 1156.32pt x 578.16pt>
+File: figures/GPS_detail_7.pdf Graphic file (type pdf)
+
+<use figures/GPS_detail_7.pdf>
+Package pdftex.def Info: figures/GPS_detail_7.pdf used on input line 312.
+(pdftex.def)             Requested size: 397.48499pt x 198.742pt.
+
+<figures/tremor_detail_7.pdf, id=211, 1156.32pt x 578.16pt>
+File: figures/tremor_detail_7.pdf Graphic file (type pdf)
+
+<use figures/tremor_detail_7.pdf>
+Package pdftex.def Info: figures/tremor_detail_7.pdf used on input line 314.
+(pdftex.def)             Requested size: 397.48499pt x 198.742pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--315
+[]\OT1/cmr/bx/n/9 Figure  7. \OT1/cmr/m/n/9 Top: Stacked 7th level de-tails of 
+the wavelet de-com-po-si-tion of the dis-place-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--315
+\OT1/cmr/m/n/9 over all the GPS sta-tions lo-cated in a 50 km ra-dius of a give
+n point, for the 16 lo-ca-tions in-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--315
+\OT1/cmr/m/n/9 cated in Fig-ure 3. Bot-tom: Op-po-site of the 7th level de-tail
+ of the cu-mu-la-tive tremor count in a
+ []
+
+
+Overfull \hbox (16.57118pt too wide) in paragraph at lines 319--320
+[]\OT1/cmr/m/n/10 For the 6th level de-tail, we see an ad-di-tional event in Fa
+ll 2009 that is present both 
+ []
+
+
+Overfull \hbox (20.04346pt too wide) in paragraph at lines 319--320
+\OT1/cmr/m/n/10 in the GPS and the tremor data. There are three small sig-nals 
+in the GPS data in Spring 
+ []
+
+
+Overfull \hbox (12.73796pt too wide) in paragraph at lines 319--320
+\OT1/cmr/m/n/10 2012, Fall 2017, and Win-ter 2020 that are not present in the t
+remor data, and are prob- 
+ []
+
+
+Overfull \hbox (4.90451pt too wide) in paragraph at lines 319--320
+\OT1/cmr/m/n/10 a-bly false de-tec-tions. To sum-ma-rize, all the 11 events pre
+sent on the 7th and 8th level 
+ []
+
+
+Overfull \hbox (7.1545pt too wide) in paragraph at lines 319--320
+\OT1/cmr/m/n/10 de-tails of the wavelet de-com-po-si-tion are true de-tec-tions
+, 12 of the 15 events present on 
+ []
+
+<figures/GPS_detail_6.pdf, id=213, 1156.32pt x 578.16pt>
+File: figures/GPS_detail_6.pdf Graphic file (type pdf)
+
+<use figures/GPS_detail_6.pdf>
+Package pdftex.def Info: figures/GPS_detail_6.pdf used on input line 322.
+(pdftex.def)             Requested size: 397.48499pt x 198.742pt.
+
+<figures/tremor_detail_6.pdf, id=215, 1156.32pt x 578.16pt>
+File: figures/tremor_detail_6.pdf Graphic file (type pdf)
+
+<use figures/tremor_detail_6.pdf>
+Package pdftex.def Info: figures/tremor_detail_6.pdf used on input line 324.
+(pdftex.def)             Requested size: 397.48499pt x 198.742pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+[]\OT1/cmr/bx/n/9 Figure  8. \OT1/cmr/m/n/9 Top: Stacked 6th level de-tails of 
+the wavelet de-com-po-si-tion of the dis-place-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+\OT1/cmr/m/n/9 over all the GPS sta-tions lo-cated in a 50 km ra-dius of a give
+n point, for the 16 lo-ca-tions in-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+\OT1/cmr/m/n/9 cated in Fig-ure 3. Bot-tom: Op-po-site of the 6th level de-tail
+ of the cu-mu-la-tive tremor count in a
+ []
+
 (./agujournaltemplate.bbl
 Underfull \hbox (badness 1902) in paragraph at lines 45--61
 \OT1/cmr/m/n/10 events seen in tidal records (1980--2011).  \OT1/cmr/m/it/10 Bu
@@ -2011,6 +2171,12 @@ re-arcs: A re-view.
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+[13 <./figures/GPS_detail_8.pdf> <./figures/tremor_detail_8.pdf>] [14 <./figure
+s/GPS_detail_7.pdf> <./figures/tremor_detail_7.pdf>] [15 <./figures/GPS_detail_
+6.pdf> <./figures/tremor_detail_6.pdf>]
 Underfull \hbox (badness 1688) in paragraph at lines 261--276
 []\OT1/cmr/m/n/10 Preston, L., Crea-ger, K., Crosson, R., Brocher, T., & Trehu,
  A.  (2003).  In-traslab 
@@ -2022,7 +2188,7 @@ Underfull \hbox (badness 3668) in paragraph at lines 317--330
 or and low-frequency 
  []
 
-) [13] (./agujournaltemplate.aux)
+) [16] (./agujournaltemplate.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
@@ -2032,13 +2198,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4681 strings out of 493117
- 62369 string characters out of 6135433
+ 4701 strings out of 493117
+ 62923 string characters out of 6135433
  140155 words of memory out of 5000000
- 8035 multiletter control sequences out of 15000+600000
+ 8051 multiletter control sequences out of 15000+600000
  12144 words of font info for 47 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 50i,9n,37p,1998b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,9n,37p,1998b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -2060,10 +2226,10 @@ ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2014/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on agujournaltemplate.pdf (13 pages, 8129892 bytes).
+Output written on agujournaltemplate.pdf (16 pages, 8653891 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
+ 538 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
