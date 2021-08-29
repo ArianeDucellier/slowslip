@@ -97,7 +97,7 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
         (W, V) = pyramid(disp, wavelet, J)
         (D, S) = get_DS(disp, W, wavelet, J)
         # Save wavelets into file
-        filename = 'MODWT_GPS/' + dataset + '_' + station + '_' + direction + '.pkl'
+        filename = 'MODWT_GPS_new/' + dataset + '_' + station + '_' + direction + '.pkl'
         pickle.dump([time, disp, W, V, D, S], open(filename, 'wb'))
 
         # Start figure
@@ -132,7 +132,7 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
         
         # Save figure
         plt.tight_layout()
-        plt.savefig('MODWT_GPS/' + dataset + '_' + station + '_' + \
+        plt.savefig('MODWT_GPS_new/' + dataset + '_' + station + '_' + \
             direction + '.eps', format='eps')
         plt.close(1)
         
@@ -453,7 +453,7 @@ def vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
 
         # Read output files from wavelet transform
         for (station, lon_sta, lat_sta) in zip(sub_stations['name'], sub_stations['longitude'], sub_stations['latitude']):
-            filename = 'tmp/' + dataset + '_' + station + '_' + direction + '.pkl'
+            filename = 'MODWT_GPS_new/' + dataset + '_' + station + '_' + direction + '.pkl'
             (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
             if ((np.min(time) < tmax_GPS) and (np.max(time) > tmin_GPS)):
                 lon_stas.append(lon_sta)
@@ -539,7 +539,9 @@ def vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
                 vespagram[:, (time_subset >= 2009.25) & (time_subset <= 2021.25)], cmap=plt.get_cmap('seismic'), \
                 norm=Normalize(vmin=-1.5, vmax=1.5))
 #                levels = np.linspace(-1.2, 1.2, 25))
-            plt.axvline(0.5 * (tmin_GPS + tmax_GPS), color='grey', linewidth=1)
+#            plt.axvline(0.5 * (tmin_GPS + tmax_GPS), color='grey', linewidth=1)
+            plt.axvline(tmin_tremor, color='grey', linewidth=1)
+            plt.axvline(tmax_tremor, color='grey', linewidth=1)
             plt.annotate('{:d} stations'.format(int(nb_sta[2 * t0])), \
                 (tmin_GPS + 0.7 * (tmax_GPS - tmin_GPS), 0), fontsize=5)
         plt.xlim([tmin_GPS, tmax_GPS])
@@ -643,29 +645,29 @@ if __name__ == '__main__':
     direction = 'lon'
     dataset = 'cleaned'
     wavelet = 'LA8'
-    J = 8
+    J = 10
     
     tremor_file = '../data/tremor/mbbp_cat_d_forHeidi'
     radius_tremor = 50
 
     slowness = np.arange(-0.1, 0.105, 0.005)
 
-    tmin_GPS = 2019.50
-    tmax_GPS = 2020.00
-    tmin_tremor = 2019.50
-    tmax_tremor = 2020.00
+    tmin_GPS = 2017.25
+    tmax_GPS = 2021.25
+    tmin_tremor = 2017.25
+    tmax_tremor = 2021.25
     lonmin = -125.4
     lonmax = -121.4
     latmin = 46.3
     latmax = 49.6
-    j = 7
+    j = 9
 
-    compute_wavelets(station_file, lats, lons, radius_GPS, direction, dataset, \
-        wavelet, J)
+#    compute_wavelets(station_file, lats, lons, radius_GPS, direction, dataset, \
+#        wavelet, J)
 
 #    vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
 #        radius_GPS, radius_tremor, tmin_GPS, tmax_GPS, j - 1, slowness)
 
-#    vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
-#        dataset, direction, radius_GPS, tmin_GPS, tmax_GPS, latmin, latmax, lonmin, lonmax, \
-#        j - 1, slowness)
+    vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
+        dataset, direction, radius_GPS, tmin_GPS, tmax_GPS, latmin, latmax, lonmin, lonmax, \
+        j - 1, slowness)

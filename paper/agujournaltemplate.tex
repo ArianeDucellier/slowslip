@@ -316,7 +316,7 @@ Figures 7 and 8 show the same comparison between the wavelet decomposition of th
 \label{pngfiguresample}
 \end{figure}
 
-For the 6th level detail, we see an additional event in Fall 2009 that is present both in the GPS and the tremor data. There are three small signals in the GPS data in Spring 2012, Fall 2017, and Winter 2020 that are not present in the tremor data, and are probably false detections. To summarize, all the 11 events present on the 7th and 8th level details of the wavelet decomposition are true detections, 12 of the 15 events present on the 6th level detail of the wavelet decomposition are true detections.
+For the 6th level detail, we see an additional event in Fall 2009 that is present both in the GPS and the tremor data. There are three small signals in the GPS data in Spring 2012, Fall 2017, and Winter 2020 that are not present in the tremor data, and are probably false detections. To summarize, all the 11 events present on the 7th and 8th level details of the wavelet decomposition are true detections, 12 of the 15 events present on the 6th level detail of the wavelet decomposition are true detections. \\
 
 \begin{figure}
 \noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_detail_6.pdf}
@@ -327,6 +327,33 @@ For the 6th level detail, we see an additional event in Fall 2009 that is presen
 \end{figure}
 
 \section{Discussion}
+
+In addition to the magnitude 6 events discussed above,  ~\citet{MIC_2019} have also identified several magnitude 5 events using a variational Bayesian Independent Component Analysis (vbICA) decomposition of the signal. As we expect smaller magnitude events to be more visible at smaller time scales of the wavelet decomposition (levels 4 and 5), we verify for all these events whether a signal can be seen at the same time as the time given in their catalog. Most of these magnitude 5 events are also sub-events of bigger magnitude 6 events. Table 1 summarizes for each event its number as indicated in the catalog from ~\citet{MIC_2019}, the beginning and end times as indicated in the catalog from ~\citet{MIC_2019}, whether it is visible at the level 4 of the wavelet decomposition, whether it is visible at the level 5 of the wavelet decomposition, and whether it is part of a bigger magnitude 6 event. All 10 events that are sub-event of a bigger event are visible at both levels 4 and 5. However, this may be due because the bigger event is in at levels 6 to 8, and also at smaller time scales. For the 3 small events that are not part of a bigger event, only one is visible at both time scales, the other two are visible either for level either for level 5 of the wavelet decomposition. Therefore, it is difficult to conclude whether the method can indeed detect events of magnitude 5.
+
+ \begin{table}
+ \caption{Magnitude 5 events from ~\citet{MIC_2019}.}
+ \centering
+ \begin{tabular}{c c c c c}
+ \hline
+ Event number & Time & Visible at level 4 & Visible at level 5 & Sub-event of bigger event \\
+ \hline
+ 25 & 2010.62-2010.67 & Yes & Yes & Yes \\
+ 29 & 2011.42-2011.45 & No & Yes & No \\
+ 31 & 2011.62-2011.68 & Yes & Yes & Yes \\
+ 32 & 2011.65-2011.68 & Yes & Yes & Yes \\
+ 35 & 2012.66-2012.72 & Yes & Yes & Yes \\
+ 42 & 2013.70-2013.78 & Yes & Yes & Yes \\
+ 44 & 2014.12-2014-20 & Yes & No & No \\
+ 45 & 2014.40-2014.48 & Yes & Yes & No \\
+ 49 & 2014.66-2014.71 & Yes & Yes & Yes \\
+ 52 & 2014.91-2014.95 & Yes & Yes & Yes \\
+ 57 & 2015.98-2016.08 & Yes & Yes & Yes \\
+ 60 & 2017.11-2017.15 & Yes & Yes & Yes \\
+ 61 & 2017.20-2017.24 & Yes & Yes & Yes \\
+ \hline
+ \end{tabular}
+ \end{table}
+
 
 \section{Conclusion}
 

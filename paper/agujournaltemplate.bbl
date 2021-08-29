@@ -165,6 +165,34 @@ Kumar, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Michel%
+, Gualandi%
+\BCBL {}\ \BBA {} Avouac%
+}{%
+Michel%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+MIC_2019}
+\APACinsertmetastar {%
+MIC_2019}%
+\begin{APACrefauthors}%
+Michel, S.%
+, Gualandi, A.%
+\BCBL {}\ \BBA {} Avouac, J\BHBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Interseismic coupling and slow slip events on the
+  {Cascadia} megathrust} {Interseismic coupling and slow slip events on the
+  {Cascadia} megathrust}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Pure and Applied Geophysics}{176}{}{3867-3891}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Obara%
 }{%
 Obara%

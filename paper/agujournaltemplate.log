@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  25 AUG 2021 19:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  28 AUG 2021 21:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2092,31 +2092,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 315--315
  []
 
 
-Overfull \hbox (16.57118pt too wide) in paragraph at lines 319--320
+Overfull \hbox (16.57118pt too wide) in paragraph at lines 319--319
 []\OT1/cmr/m/n/10 For the 6th level de-tail, we see an ad-di-tional event in Fa
 ll 2009 that is present both 
  []
 
 
-Overfull \hbox (20.04346pt too wide) in paragraph at lines 319--320
+Overfull \hbox (20.04346pt too wide) in paragraph at lines 319--319
 \OT1/cmr/m/n/10 in the GPS and the tremor data. There are three small sig-nals 
 in the GPS data in Spring 
  []
 
 
-Overfull \hbox (12.73796pt too wide) in paragraph at lines 319--320
+Overfull \hbox (12.73796pt too wide) in paragraph at lines 319--319
 \OT1/cmr/m/n/10 2012, Fall 2017, and Win-ter 2020 that are not present in the t
 remor data, and are prob- 
  []
 
 
-Overfull \hbox (4.90451pt too wide) in paragraph at lines 319--320
+Overfull \hbox (4.90451pt too wide) in paragraph at lines 319--319
 \OT1/cmr/m/n/10 a-bly false de-tec-tions. To sum-ma-rize, all the 11 events pre
 sent on the 7th and 8th level 
  []
 
 
-Overfull \hbox (7.1545pt too wide) in paragraph at lines 319--320
+Overfull \hbox (7.1545pt too wide) in paragraph at lines 319--319
 \OT1/cmr/m/n/10 de-tails of the wavelet de-com-po-si-tion are true de-tec-tions
 , 12 of the 15 events present on 
  []
@@ -2152,7 +2152,110 @@ Underfull \hbox (badness 10000) in paragraph at lines 325--325
  of the cu-mu-la-tive tremor count in a
  []
 
-(./agujournaltemplate.bbl
+
+Overfull \hbox (31.08516pt too wide) in paragraph at lines 331--332
+[]\OT1/cmr/m/n/10 In ad-di-tion to the mag-ni-tude 6 events dis-cussed above,  
+Michel, Gua-landi, and Avouac 
+ []
+
+
+Overfull \hbox (3.93239pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 (2019) have also iden-ti-fied sev-eral mag-ni-tude 5 events us-
+ing a vari-a-tional Bayesian In- 
+ []
+
+
+Overfull \hbox (28.26576pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 de-pen-dent Com-po-nent Anal-y-sis (vbICA) de-com-po-si-tion of
+ the sig-nal. As we ex-pect smaller 
+ []
+
+
+Overfull \hbox (12.18233pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 mag-ni-tude events to be more vis-i-ble at smaller time scales 
+of the wavelet de-com-po-si-tion 
+ []
+
+
+Overfull \hbox (7.48776pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 (lev-els 4 and 5), we ver-ify for all these events whether a si
+g-nal can be seen at the same 
+ []
+
+
+Overfull \hbox (7.1823pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 time as the time given in their cat-a-log. Most of these mag-ni
+-tude 5 events are also sub- 
+ []
+
+
+Overfull \hbox (3.6267pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 events of big-ger mag-ni-tude 6 events. Ta-ble 1 sum-ma-rizes f
+or each event its num-ber as 
+ []
+
+
+Overfull \hbox (3.87682pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 in-di-cated in the cat-a-log from  Michel et al.[] (2019), the 
+be-gin-ning and end times as in- 
+ []
+
+
+Overfull \hbox (1.40453pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 di-cated in the cat-a-log from  Michel et al.[] (2019), whether
+ it is vis-i-ble at the level 4 of 
+ []
+
+
+Overfull \hbox (3.93227pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 the wavelet de-com-po-si-tion, whether it is vis-i-ble at the l
+evel 5 of the wavelet de-com-po- 
+ []
+
+
+Overfull \hbox (10.73788pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 si-tion, and whether it is part of a big-ger mag-ni-tude 6 even
+t. All 10 events that are sub- 
+ []
+
+
+Overfull \hbox (9.54338pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 event of a big-ger event are vis-i-ble at both lev-els 4 and 5.
+ How-ever, this may be due be- 
+ []
+
+
+Overfull \hbox (0.1822pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 cause the big-ger event is in at lev-els 6 to 8, and also at sm
+aller time scales. For the 3 
+ []
+
+
+Overfull \hbox (6.93233pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 small events that are not part of a big-ger event, only one is 
+vis-i-ble at both time scales, 
+ []
+
+
+Overfull \hbox (7.07115pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 the other two are vis-i-ble ei-ther for level ei-ther for level
+ 5 of the wavelet de-com-po-si-tion. 
+ []
+
+
+Overfull \hbox (20.04341pt too wide) in paragraph at lines 331--332
+\OT1/cmr/m/n/10 There-fore, it is dif-fi-cult to con-clude whether the method c
+an in-deed de-tect events of mag- 
+ []
+
+
+Overfull \hbox (38.87683pt too wide) in paragraph at lines 336--355
+ [][] 
+ []
+
+(./agujournaltemplate.bbl [12] [13 <./figures/GPS_detail_8.pdf> <./figures/trem
+or_detail_8.pdf>] [14 <./figures/GPS_detail_7.pdf> <./figures/tremor_detail_7.p
+df>] [15 <./figures/GPS_detail_6.pdf> <./figures/tremor_detail_6.pdf>]
 Underfull \hbox (badness 1902) in paragraph at lines 45--61
 \OT1/cmr/m/n/10 events seen in tidal records (1980--2011).  \OT1/cmr/m/it/10 Bu
 l-letin of the Seis-mo-log-i-cal So-ci-ety 
@@ -2171,24 +2274,29 @@ re-arcs: A re-view.
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1215) in paragraph at lines 180--194
+\OT1/cmr/m/n/10 events on the Cas-ca-dia megath-rust.  \OT1/cmr/m/it/10 Pure an
+d Ap-plied Geo-physics\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 176\OT1/cmr/m/n/10 , 3
+867- 
+ []
 
- [12]
-[13 <./figures/GPS_detail_8.pdf> <./figures/tremor_detail_8.pdf>] [14 <./figure
-s/GPS_detail_7.pdf> <./figures/tremor_detail_7.pdf>] [15 <./figures/GPS_detail_
-6.pdf> <./figures/tremor_detail_6.pdf>]
-Underfull \hbox (badness 1688) in paragraph at lines 261--276
+
+Underfull \hbox (badness 1688) in paragraph at lines 289--304
 []\OT1/cmr/m/n/10 Preston, L., Crea-ger, K., Crosson, R., Brocher, T., & Trehu,
  A.  (2003).  In-traslab 
  []
 
 
-Underfull \hbox (badness 3668) in paragraph at lines 317--330
+Underfull \hbox (badness 3668) in paragraph at lines 345--358
 []\OT1/cmr/m/n/10 Shelly, D., Beroza, G., & Ide, S.  (2007).  Non-volcanic trem
 or and low-frequency 
  []
 
-) [16] (./agujournaltemplate.aux)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16])
+[17] (./agujournaltemplate.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
@@ -2198,13 +2306,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4701 strings out of 493117
- 62923 string characters out of 6135433
- 140155 words of memory out of 5000000
- 8051 multiletter control sequences out of 15000+600000
+ 4706 strings out of 493117
+ 62999 string characters out of 6135433
+ 143221 words of memory out of 5000000
+ 8056 multiletter control sequences out of 15000+600000
  12144 words of font info for 47 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 50i,9n,37p,1998b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,9n,37p,1998b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -2226,10 +2334,10 @@ ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2014/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on agujournaltemplate.pdf (16 pages, 8653891 bytes).
+Output written on agujournaltemplate.pdf (17 pages, 8656637 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
+ 541 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
