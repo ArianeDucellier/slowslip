@@ -49,7 +49,6 @@ for timestep in timesteps:
         # Plot data
         ax = plt.subplot2grid((J + 2, len(durations)), (0, i))
         plt.plot(time, disp, 'k', label='Data')
-        plt.xlabel('Time (days)', fontsize=20)
         plt.ylim(-2.0, 2.0)
         plt.legend(loc=3, fontsize=20)
         if i != 0:
@@ -60,15 +59,14 @@ for timestep in timesteps:
             plt.plot(time, D[j], 'k', label='D' + str(j + 1))
             plt.ylim(minD, maxD)
             plt.legend(loc=3, fontsize=20)
-            ax.axes.xaxis.set_ticks([])
             if i != 0:
                 ax.axes.yaxis.set_ticks([])
         # Plot smooth
         ax = plt.subplot2grid((J + 2, len(durations)), (J + 1, i))
         plt.plot(time, S[J], 'k', label='S' + str(J))
         plt.ylim(-2.0, 2.0)
+        plt.xlabel('Time (days)', fontsize=20)
         plt.legend(loc=3, fontsize=20)
-        ax.axes.xaxis.set_ticks([])
         if i != 0:
             ax.axes.yaxis.set_ticks([])
         title = 'Duration of event = ' + str(duration) + ' days'
