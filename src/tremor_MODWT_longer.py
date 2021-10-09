@@ -2,17 +2,22 @@
 Script to compute MODWT of cumulative tremor count
 """
 
+#import datetime
+#import matplotlib.cm as cm
 import matplotlib.pylab as pylab
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import pickle
 
+#from datetime import datetime
 from math import cos, floor, pi, sin, sqrt
+#from matplotlib.colors import Normalize
 from scipy.io import loadmat
 from scipy.signal import detrend
 
 import date
+#import DWT
 from MODWT import get_DS, pyramid
 
 def compute_wavelets_tremor(station_file, lats, lons, dataset, direction, \
@@ -23,36 +28,19 @@ def compute_wavelets_tremor(station_file, lats, lons, dataset, direction, \
     stations = pd.read_csv(station_file, sep=r'\s{1,}', header=None, engine='python')
     stations.columns = ['name', 'longitude', 'latitude']
 
-    # Read tremor files (A. Wech)
-    data_2009 = pd.read_csv('../data/tremor/tremor_events-2009-08-06T00 00 00-2009-12-31T23 59 59.csv')
-    data_2009['time '] = pd.to_datetime(data_2009['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2010 = pd.read_csv('../data/tremor/tremor_events-2010-01-01T00 00 00-2010-12-31T23 59 59.csv')
-    data_2010['time '] = pd.to_datetime(data_2010['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2011 = pd.read_csv('../data/tremor/tremor_events-2011-01-01T00 00 00-2011-12-31T23 59 59.csv')
-    data_2011['time '] = pd.to_datetime(data_2011['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2012 = pd.read_csv('../data/tremor/tremor_events-2012-01-01T00 00 00-2012-12-31T23 59 59.csv')
-    data_2012['time '] = pd.to_datetime(data_2012['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2013 = pd.read_csv('../data/tremor/tremor_events-2013-01-01T00 00 00-2013-12-31T23 59 59.csv')
-    data_2013['time '] = pd.to_datetime(data_2013['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2014 = pd.read_csv('../data/tremor/tremor_events-2014-01-01T00 00 00-2014-12-31T23 59 59.csv')
-    data_2014['time '] = pd.to_datetime(data_2014['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2015 = pd.read_csv('../data/tremor/tremor_events-2015-01-01T00 00 00-2015-12-31T23 59 59.csv')
-    data_2015['time '] = pd.to_datetime(data_2015['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2016 = pd.read_csv('../data/tremor/tremor_events-2016-01-01T00 00 00-2016-12-31T23 59 59.csv')
-    data_2016['time '] = pd.to_datetime(data_2016['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2017 = pd.read_csv('../data/tremor/tremor_events-2017-01-01T00 00 00-2017-12-31T23 59 59.csv')
-    data_2017['time '] = pd.to_datetime(data_2017['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2018 = pd.read_csv('../data/tremor/tremor_events-2018-01-01T00 00 00-2018-12-31T23 59 59.csv')
-    data_2018['time '] = pd.to_datetime(data_2018['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2019 = pd.read_csv('../data/tremor/tremor_events-2019-01-01T00 00 00-2019-12-31T23 59 59.csv')
-    data_2019['time '] = pd.to_datetime(data_2019['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2020 = pd.read_csv('../data/tremor/tremor_events-2020-01-01T00 00 00-2020-12-31T23 59 59.csv')
-    data_2020['time '] = pd.to_datetime(data_2020['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2021 = pd.read_csv('../data/tremor/tremor_events-2021-01-01T00 00 00-2021-04-29T23 59 59.csv')
-    data_2021['time '] = pd.to_datetime(data_2020['time '], format='%Y-%m-%d %H:%M:%S')
-    data = pd.concat([data_2009, data_2010, data_2011, data_2012, data_2013, \
-        data_2014, data_2015, data_2016, data_2017, data_2018, data_2019, \
-        data_2020, data_2021])
+    # Read tremor files (K. Creager)
+    data = loadmat('../data/tremor/SummaryLatestMerge.mat')
+    Summary = data['Summary']
+    TREMall = data['TREMall']
+    data = pd.DataFrame(columns=['lat', 'lon', 'depth', 'time'])
+    for k in range(0, len(Summary[0][0][3])):
+        indices = Summary[0][0][3][k]
+        lon = np.reshape(TREMall[0][0][2][indices[0] - 1], (-1))
+        lat = np.reshape(TREMall[0][0][1][indices[0] - 1], (-1))
+        depth = np.reshape(TREMall[0][0][3][indices[0] - 1], (-1))
+        time = np.reshape(TREMall[0][0][0][indices[0] - 1], (-1))
+        df = pd.DataFrame({'lat': lat, 'lon': lon, 'depth': depth, 'time': time})
+        data = pd.concat([data, df])
     data.reset_index(drop=True, inplace=True)
 
     # To convert lat/lon into kilometers
@@ -81,7 +69,7 @@ def compute_wavelets_tremor(station_file, lats, lons, dataset, direction, \
         for (station, lon_sta, lat_sta) in zip(sub_stations['name'], sub_stations['longitude'], sub_stations['latitude']):
             filename = 'MODWT_GPS/' + dataset + '_' + station + '_' + direction + '.pkl'
             (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
-            if ((np.min(time) <= 2021.25) and (np.max(time) >= 2009.25)):
+            if ((np.min(time) <= 2021.5) and (np.max(time) >= 2006.0)):
                 times.append(time)
 
         # Divide into time blocks
@@ -109,7 +97,7 @@ def compute_wavelets_tremor(station_file, lats, lons, dataset, direction, \
 
         # Concatenate times and disps
         times_stacked = np.concatenate(times_stacked)
-        times_stacked = times_stacked[(times_stacked  >= 2009.25) & (times_stacked  <= 2021.25)]
+        times_stacked = times_stacked[(times_stacked  >= 2006.0) & (times_stacked  <= 2021.5)]
 
         # Keep only tremor in a given radius
         dx = (pi / 180.0) * a * cos(lat * pi / 180.0) / sqrt(1.0 - e * e * \
@@ -127,12 +115,7 @@ def compute_wavelets_tremor(station_file, lats, lons, dataset, direction, \
         nt = len(tremor)
         time_tremor = np.zeros(nt)
         for i in range(0, nt):
-            year = tremor['time '].loc[i].year
-            month = tremor['time '].loc[i].month
-            day = tremor['time '].loc[i].day
-            hour = tremor['time '].loc[i].hour
-            minute = tremor['time '].loc[i].minute
-            second = tremor['time '].loc[i].second
+            (year, month, day, hour, minute, second) = date.matlab2ymdhms(tremor['time'].loc[i])
             time_tremor[i] = date.ymdhms2day(year, month, day, hour, minute, second)
 
         # Interpolate
@@ -145,7 +128,7 @@ def compute_wavelets_tremor(station_file, lats, lons, dataset, direction, \
 
         # Save wavelets
         pickle.dump([times_stacked, tremor_detrend, W, V, D, S], \
-            open('MODWT_tremor/tremor_' + str(index) + '.pkl', 'wb'))
+            open('MODWT_tremor_longer/tremor_' + str(index) + '.pkl', 'wb'))
 
         # Start figure
         params = {'xtick.labelsize':24,
@@ -160,26 +143,26 @@ def compute_wavelets_tremor(station_file, lats, lons, dataset, direction, \
         plt.subplot2grid((J + 2, 1), (J + 1, 0))
         plt.plot(times_stacked, tremor_detrend, 'k', label='Data')
         plt.xlabel('Time (years)', fontsize=24)
-        plt.xlim([2009.25, 2021.25])
+        plt.xlim([2006.0, 2021.5])
         plt.ylim([np.min(tremor_detrend), np.max(tremor_detrend)])
         plt.legend(loc=3, fontsize=20)
         # Plot details
         for j in range(0, J):
             plt.subplot2grid((J + 2, 1), (J - j, 0))
             plt.plot(times_stacked, D[j], 'k', label='D' + str(j + 1))
-            plt.xlim([2009.25, 2021.25])
+            plt.xlim([2006.0, 2021.5])
             plt.ylim(minD, maxD)
             plt.legend(loc=3, fontsize=20)
         # Plot smooth
         plt.subplot2grid((J + 2, 1), (0, 0))
         plt.plot(times_stacked, S[J], 'k', label='S' + str(J))
-        plt.xlim([2009.25, 2021.25])
+        plt.xlim([2006.0, 2021.5])
         plt.ylim([np.min(tremor_detrend), np.max(tremor_detrend)])
         plt.legend(loc=3, fontsize=20)
         
         # Save figure
         plt.tight_layout()
-        plt.savefig('MODWT_tremor/tremor_' + str(index) + '.eps', format='eps')
+        plt.savefig('MODWT_tremor_longer/tremor_' + str(index) + '.eps', format='eps')
         plt.close(1)
 
 if __name__ == '__main__':

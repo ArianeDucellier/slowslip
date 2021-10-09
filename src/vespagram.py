@@ -4,7 +4,7 @@ Script to plot a vespagram-like figure of slow slip
 
 import cartopy.crs as ccrs
 import cartopy.io.shapereader as shapereader
-import datetime
+#import datetime
 import matplotlib.cm as cm
 import matplotlib.pylab as pylab
 import matplotlib.pyplot as plt
@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 import pickle
 
-from datetime import datetime
+#from datetime import datetime
 from math import cos, floor, pi, sin, sqrt
 from matplotlib.colors import Normalize
 from scipy.io import loadmat
@@ -97,7 +97,7 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
         (W, V) = pyramid(disp, wavelet, J)
         (D, S) = get_DS(disp, W, wavelet, J)
         # Save wavelets into file
-        filename = 'MODWT_GPS_new/' + dataset + '_' + station + '_' + direction + '.pkl'
+        filename = 'MODWT_GPS/' + dataset + '_' + station + '_' + direction + '.pkl'
         pickle.dump([time, disp, W, V, D, S], open(filename, 'wb'))
 
         # Start figure
@@ -113,26 +113,26 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
         plt.subplot2grid((J + 2, 1), (J + 1, 0))
         plt.plot(time, disp, 'k', label='Data')
         plt.xlabel('Time (years)', fontsize=24)
-        plt.xlim([2009.25, 2021.25])
+        plt.xlim([2006.0, 2021.5])
         plt.ylim([np.min(disp), np.max(disp)])
         plt.legend(loc=3, fontsize=20)
         # Plot details
         for j in range(0, J):
             plt.subplot2grid((J + 2, 1), (J - j, 0))
             plt.plot(time, D[j], 'k', label='D' + str(j + 1))
-            plt.xlim([2009.25, 2021.25])
+            plt.xlim([2006.0, 2021.5])
             plt.ylim(minD, maxD)
             plt.legend(loc=3, fontsize=20)
         # Plot smooth
         plt.subplot2grid((J + 2, 1), (0, 0))
         plt.plot(time, S[J], 'k', label='S' + str(J))
-        plt.xlim([2009.25, 2021.25])
+        plt.xlim([2006.0, 2021.5])
         plt.ylim([np.min(disp), np.max(disp)])
         plt.legend(loc=3, fontsize=20)
         
         # Save figure
         plt.tight_layout()
-        plt.savefig('MODWT_GPS_new/' + dataset + '_' + station + '_' + \
+        plt.savefig('MODWT_GPS_longer/' + dataset + '_' + station + '_' + \
             direction + '.eps', format='eps')
         plt.close(1)
         
@@ -662,12 +662,12 @@ if __name__ == '__main__':
     latmax = 49.6
     j = 9
 
-#    compute_wavelets(station_file, lats, lons, radius_GPS, direction, dataset, \
-#        wavelet, J)
+    compute_wavelets(station_file, lats, lons, radius_GPS, direction, dataset, \
+        wavelet, J)
 
 #    vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
 #        radius_GPS, radius_tremor, tmin_GPS, tmax_GPS, j - 1, slowness)
 
-    vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
-        dataset, direction, radius_GPS, tmin_GPS, tmax_GPS, latmin, latmax, lonmin, lonmax, \
-        j - 1, slowness)
+#    vesp_map(station_file, tremor_file, tmin_tremor, tmax_tremor, lats, lons, \
+#        dataset, direction, radius_GPS, tmin_GPS, tmax_GPS, latmin, latmax, lonmin, lonmax, \
+#        j - 1, slowness)
