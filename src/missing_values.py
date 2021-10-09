@@ -1,5 +1,5 @@
 """ Script to look at MODWT of GPS data
-with defferent methods to fill in missing values """
+with different methods to fill in missing values """
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -38,10 +38,10 @@ N = np.shape(disp)[0]
 name = 'LA8'
 g = MODWT.get_scaling(name)
 L = len(g)
-J = 8
+J = 10
 nmax = 42
 nstep = 3
-filling = 'interpolation'
+filling = 'both'
 
 # Set random seed
 np.random.seed(0)
@@ -63,16 +63,19 @@ for n in range(1, nmax, nstep):
         # Remove points, replace by interpolation or noise
         if (filling == 'interpolation'):
             for i in range(0, n):
-                disp_interp[gap + i] = disp_interp[gap - 1] + (disp_interp[gap + n] \
-                    - disp_interp[gap - 1]) * (i + 1) / (n + 1)
+                before = np.mean(disp_interp[gap - 6 : gap - 1])
+                after = np.mean(disp_interp[gap + n : gap + n + 5])
+                disp_interp[gap + i] = before + (after - before) * (i + 1) / (n + 1)
         elif (filling == 'noise'):
             sigma = np.std(disp)
             disp_interp[gap : (gap + n)] = np.random.normal(0.0, sigma, n)
         else:
             sigma = np.std(disp)
             for i in range(0, n):
-                disp_interp[gap + i] = disp_interp[gap - 1] + (disp_interp[gap + n] \
-                    - disp_interp[gap - 1]) * (i + 1) / (n + 1) + np.random.normal(0.0, sigma, 1)
+                before = np.mean(disp_interp[gap - 6 : gap - 1])
+                after = np.mean(disp_interp[gap + n : gap + n + 5])
+                disp_interp[gap + i] = before + (after - before) * (i + 1) / (n + 1) + \
+                    np.random.normal(0.0, sigma, 1)
         # Compute MODWT
         [W, V] = pyramid(disp_interp, name, J)
         (D, S) = get_DS(disp_interp, W, name, J)
