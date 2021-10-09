@@ -60,12 +60,14 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
     # Read GPS data and compute wavelet transform
     for station in subset['name']:
         filename = '../data/PANGA/' + dataset + '/' + station + '.' + direction
+
         # Load the data
         data = np.loadtxt(filename, skiprows=26)
         time = data[:, 0]
         disp = data[:, 1]
         error = data[:, 2]
         sigma = np.std(disp)
+
         # Correct for the repeated values
         dt = np.diff(time)
         gap = np.where(dt < 1.0 / 365.0 - 0.0001)[0]
@@ -81,23 +83,36 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
                     and (time[gap[i] + 3] - time[gap[i] + 2] < 2.0 / 365.0 + 0.0001)):
                         time[gap[i] + 1] = time[gap[i] + 2]
                         time[gap[i] + 2] = 0.5 * (time[gap[i] + 2] + time[gap[i] + 3])
+
         # Look for gaps greater than 1 day
         days = 2
         dt = np.diff(time)
         gap = np.where(dt > days / 365.0 - 0.0001)[0]
         duration = np.round((time[gap + 1] - time[gap]) * 365).astype(np.int)
+
         # Fill the gaps by interpolation
         for j in range(0, len(gap)):
             time = np.insert(time, gap[j] + 1, \
                 time[gap[j]] + np.arange(1, duration[j]) / 365.0)
-            disp = np.insert(disp, gap[j] + 1, \
-                np.random.normal(0.0, sigma, duration[j] - 1))
+            if gap[j] >= 4:
+                before = np.mean(disp[gap[j] - 4 : gap[j] + 1])
+            else:
+                before = np.mean(disp[0 : gap[j] + 1])
+            if len(disp) >= gap[j] + 6:
+                after = np.mean(disp[gap[j] + 1 : gap[j] + 6])
+            else:
+                after = np.mean(disp[gap[j] + 1 :])
+            disp_interp = before + (after - before) * (np.arange(0, duration[j] - 1) + 1) / duration[j] + \
+                np.random.normal(0.0, sigma, duration[j] - 1)
+            disp = np.insert(disp, gap[j] + 1, disp_interp)
             gap[j + 1 : ] = gap[j + 1 : ] + duration[j] - 1
+
         # MODWT
         (W, V) = pyramid(disp, wavelet, J)
         (D, S) = get_DS(disp, W, wavelet, J)
+
         # Save wavelets into file
-        filename = 'MODWT_GPS/' + dataset + '_' + station + '_' + direction + '.pkl'
+        filename = 'MODWT_GPS_longer/' + dataset + '_' + station + '_' + direction + '.pkl'
         pickle.dump([time, disp, W, V, D, S], open(filename, 'wb'))
 
         # Start figure

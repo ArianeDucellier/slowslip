@@ -11,13 +11,13 @@ import MODWT
 # Time between events
 timesteps = [100, 200, 500, 1000]
 # Durations of slow slip events
-durations = [2, 5, 10, 20]
+durations = [5, 10, 20, 40]
 # MODWT wavelet filter
 name = 'LA8'
 # Duration of recording
 N = 2000
 # MODWT level
-J = 8
+J = 10
 
 # Create time vector
 time = np.arange(0, N)
@@ -47,7 +47,7 @@ for timestep in timesteps:
         maxD = max([np.max(Dj) for Dj in D])
         minD = min([np.min(Dj) for Dj in D])
         # Plot data
-        ax = plt.subplot2grid((J + 2, len(durations)), (J + 1, i))
+        ax = plt.subplot2grid((J + 2, len(durations)), (0, i))
         plt.plot(time, disp, 'k', label='Data')
         plt.xlabel('Time (days)', fontsize=20)
         plt.ylim(-2.0, 2.0)
@@ -56,7 +56,7 @@ for timestep in timesteps:
             ax.axes.yaxis.set_ticks([])
         # Plot details
         for j in range(0, J):
-            ax = plt.subplot2grid((J + 2, len(durations)), (J - j, i))
+            ax = plt.subplot2grid((J + 2, len(durations)), (j + 1, i))
             plt.plot(time, D[j], 'k', label='D' + str(j + 1))
             plt.ylim(minD, maxD)
             plt.legend(loc=3, fontsize=20)
@@ -64,7 +64,7 @@ for timestep in timesteps:
             if i != 0:
                 ax.axes.yaxis.set_ticks([])
         # Plot smooth
-        ax = plt.subplot2grid((J + 2, len(durations)), (0, i))
+        ax = plt.subplot2grid((J + 2, len(durations)), (J + 1, i))
         plt.plot(time, S[J], 'k', label='S' + str(J))
         plt.ylim(-2.0, 2.0)
         plt.legend(loc=3, fontsize=20)
@@ -75,8 +75,6 @@ for timestep in timesteps:
         plt.title(title, fontsize=20)
 
     # Save figure
-#    title = 'Time between events = ' + str(timestep)
-#    plt.suptitle(title, fontsize=30)
     plt.tight_layout()
     plt.savefig('synthetics/' + str(timestep) + '_DS.eps', format='eps')
     plt.close(1)
