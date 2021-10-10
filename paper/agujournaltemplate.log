@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 OCT 2021 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 OCT 2021 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1389,36 +1389,28 @@ he mag-ni-tude of the slow slip
  []
 
 
-Overfull \hbox (0.1403pt too wide) in paragraph at lines 253--253
-\OT1/cmr/m/n/10 event, we use dif-fer-ent val-ues for $\OML/cmm/m/it/10 N \OT1/
-cmr/m/n/10 = 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5\OML/cmm/m/it/10 ; \OT1/cmr/m
-/n/10 10\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 20$ days. Fig-ure 1 shows the syn-th
-et-ics, 
- []
-
-
-Overfull \hbox (1.26569pt too wide) in paragraph at lines 253--253
-\OT1/cmr/m/n/10 the de-tails of the wavelet de-com-po-si-tion for lev-els 1 to 
-8, and the smooth for the four 
+Overfull \hbox (2.68233pt too wide) in paragraph at lines 253--253
+\OT1/cmr/m/n/10 ics, the de-tails of the wavelet de-com-po-si-tion for lev-els 
+1 to 10, and the smooth for the 
  []
 
 Package epstopdf Info: Source file: <figures/500_DS.eps>
-(epstopdf)                    date: 2021-08-08 12:33:07
-(epstopdf)                    size: 259218 bytes
+(epstopdf)                    date: 2021-10-09 14:53:00
+(epstopdf)                    size: 348472 bytes
 (epstopdf)             Output file: <figures/500_DS-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-08-08 12:34:24
-(epstopdf)                    size: 65904 bytes
+(epstopdf)                    date: 2021-10-09 15:00:22
+(epstopdf)                    size: 73570 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/500_DS-eps-convert
 ed-to.pdf figures/500_DS.eps>
 (epstopdf)             \includegraphics on input line 256.
 Package epstopdf Info: Output file is already uptodate.
-<figures/500_DS-eps-converted-to.pdf, id=33, 1445.4pt x 2384.91pt>
+<figures/500_DS-eps-converted-to.pdf, id=33, 1445.4pt x 2818.53pt>
 File: figures/500_DS-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/500_DS-eps-converted-to.pdf>
 Package pdftex.def Info: figures/500_DS-eps-converted-to.pdf used on input line
  256.
-(pdftex.def)             Requested size: 397.48499pt x 655.83409pt.
+(pdftex.def)             Requested size: 312.9803pt x 610.31589pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 257--257
 []\OT1/cmr/bx/n/9 Figure  1. \OT1/cmr/m/n/9 De-tails and smooth of the wavelet 
@@ -1432,18 +1424,21 @@ left), 5 days, 10 days, and 20 days
  []
 
 
-LaTeX Warning: Float too large for page by 41.5866pt on input line 259.
-
-
 Overfull \hbox (7.79343pt too wide) in paragraph at lines 261--261
 []\OT1/cmr/m/n/10 The ramp-like sig-nal is trans-formed through the wavelet fil
 -ter-ing into a wave-form 
  []
 
 
-Overfull \hbox (17.65459pt too wide) in paragraph at lines 261--261
-\OT1/cmr/m/n/10 with first a pos-i-tive peak and then a neg-a-tive peak. The wi
-dth of the wave-form in-creases 
+Overfull \hbox (2.90457pt too wide) in paragraph at lines 261--261
+\OT1/cmr/m/n/10 with first a pos-i-tive peak and then a neg-a-tive peak. The sh
+ape of the wave-form is the 
+ []
+
+
+Overfull \hbox (24.62677pt too wide) in paragraph at lines 261--261
+\OT1/cmr/m/n/10 same for ev-ery level of the wavelet de-com-po-si-tion, but the
+ width of the wave-form in-creases 
  []
 
 
@@ -1453,33 +1448,21 @@ o-si-tion, the width of the wave-
  []
 
 
-Overfull \hbox (13.93222pt too wide) in paragraph at lines 261--261
-\OT1/cmr/m/n/10 form is nearly as large as the time be-tween two events. We do 
-not show de-tails at larger 
+Overfull \hbox (7.34885pt too wide) in paragraph at lines 261--261
+\OT1/cmr/m/n/10 form is nearly as large as the time be-tween two events. At lar
+ger scales, the wave-forms 
  []
 
 
-Overfull \hbox (2.93224pt too wide) in paragraph at lines 261--261
-\OT1/cmr/m/n/10 scales as the cor-re-spond-ing wave-forms would start to merge 
-two con-tigu-ous events to- 
+Overfull \hbox (12.76563pt too wide) in paragraph at lines 261--261
+\OT1/cmr/m/n/10 start to merge two con-tigu-ous events to-gether, and make the 
+wavelet de-com-po-si-tion less 
  []
 
 
-Overfull \hbox (12.51569pt too wide) in paragraph at lines 261--261
-\OT1/cmr/m/n/10 gether, and make the wavelet de-com-po-si-tion less in-ter-pret
-able. For an event of du-ra-tion 
- []
-
-
-Overfull \hbox (25.93233pt too wide) in paragraph at lines 261--261
-\OT1/cmr/m/n/10 2 days, the wavelet de-tails at lev-els higher than 2 have a la
-rger am-pli-tude than the wavelet 
- []
-
-
-Overfull \hbox (19.68234pt too wide) in paragraph at lines 261--261
-\OT1/cmr/m/n/10 de-tail at level 1. For an event of du-ra-tion 5 days, the wave
-let de-tails at lev-els higher than 
+Overfull \hbox (7.79344pt too wide) in paragraph at lines 261--261
+\OT1/cmr/m/n/10 in-ter-pretable. For an event of du-ra-tion 5 days, the wavelet
+ de-tails at lev-els higher than 
  []
 
 
@@ -1490,7 +1473,7 @@ scales. For an event of du-
 
 
 Overfull \hbox (7.6268pt too wide) in paragraph at lines 261--261
-\OT1/cmr/m/n/10 ra-tion 10 days, the wavelet de-tails at lev-els higher than 5 
+\OT1/cmr/m/n/10 ra-tion 10 days, the wavelet de-tails at lev-els higher than 4 
 have a larger am-pli-tude than 
  []
 
@@ -1502,32 +1485,38 @@ n 20 days, the wavelet de-tails
 
 
 Overfull \hbox (8.23782pt too wide) in paragraph at lines 261--261
-\OT1/cmr/m/n/10 at lev-els higher than 6 have a larger am-pli-tude than the wav
+\OT1/cmr/m/n/10 at lev-els higher than 5 have a larger am-pli-tude than the wav
 elet de-tails at lower scales. 
  []
 
 
-Overfull \hbox (2.45993pt too wide) in paragraph at lines 261--261
-\OT1/cmr/m/n/10 Thus, the scale lev-els at which an event is be-ing seen in the
- wavelet de-tails give us an 
+Overfull \hbox (17.79344pt too wide) in paragraph at lines 261--261
+\OT1/cmr/m/n/10 For an event of du-ra-tion 40 days, the wavelet de-tails at lev
+-els higher than 6 have a larger 
  []
 
 
-Overfull \hbox (15.54353pt too wide) in paragraph at lines 261--261
-\OT1/cmr/m/n/10 in-di-ca-tion about the du-ra-tion (and the mag-ni-tude) of the
- slow slip event. We ex-pect the 
+Overfull \hbox (25.48778pt too wide) in paragraph at lines 261--261
+\OT1/cmr/m/n/10 am-pli-tude than the wavelet de-tails at lower scales. Thus, th
+e scale lev-els at which an event 
  []
 
 
-Overfull \hbox (3.6546pt too wide) in paragraph at lines 261--261
-\OT1/cmr/m/n/10 big slow slip events of mag-ni-tude 6-7 that lasts about 10 day
-s to start be-ing vis-i-ble at 
+Overfull \hbox (23.98795pt too wide) in paragraph at lines 261--261
+\OT1/cmr/m/n/10 is be-ing seen in the wavelet de-tails give us an in-di-ca-tion
+ about the du-ra-tion (and the mag- 
  []
 
 
-Overfull \hbox (5.32117pt too wide) in paragraph at lines 261--261
-\OT1/cmr/m/n/10 the level 5 of the wavelet de-com-po-si-tion, but to not be no-
-tice-able at lower time scales.  
+Overfull \hbox (10.12674pt too wide) in paragraph at lines 261--261
+\OT1/cmr/m/n/10 ni-tude) of the slow slip event. We ex-pect the big slow slip e
+vents of mag-ni-tude 6-7 that 
+ []
+
+
+Overfull \hbox (9.12674pt too wide) in paragraph at lines 261--261
+\OT1/cmr/m/n/10 last sev-eral weeks to start be-ing vis-i-ble at the level 5 of
+ the wavelet de-com-po-si-tion, but 
  []
 
 [5] [6 <./figures/500_DS-eps-converted-to.pdf>]
@@ -1648,7 +1637,7 @@ Package epstopdf Info: Source file: <figures/DS_10.eps>
 d-to.pdf figures/DS_10.eps>
 (epstopdf)             \includegraphics on input line 268.
 Package epstopdf Info: Output file is already uptodate.
-<figures/DS_10-eps-converted-to.pdf, id=81, 433.62pt x 1734.48pt>
+<figures/DS_10-eps-converted-to.pdf, id=85, 433.62pt x 1734.48pt>
 File: figures/DS_10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/DS_10-eps-converted-to.pdf>
@@ -1726,7 +1715,7 @@ pdf>
 ps-converted-to.pdf figures/cleaned_PGC5_lon.eps>
 (epstopdf)             \includegraphics on input line 276.
 Package epstopdf Info: Output file is already uptodate.
-<figures/cleaned_PGC5_lon-eps-converted-to.pdf, id=83, 722.7pt x 2384.91pt>
+<figures/cleaned_PGC5_lon-eps-converted-to.pdf, id=87, 722.7pt x 2384.91pt>
 File: figures/cleaned_PGC5_lon-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/cleaned_PGC5_lon-eps-converted-to.pdf>
@@ -1788,8 +1777,8 @@ Overfull \hbox (11.19623pt too wide) in paragraph at lines 281--281
  []
 
 Package epstopdf Info: Source file: <figures/map_GPS_stations.eps>
-(epstopdf)                    date: 2021-08-08 15:30:28
-(epstopdf)                    size: 2802307 bytes
+(epstopdf)                    date: 2021-10-09 15:40:39
+(epstopdf)                    size: 2802563 bytes
 (epstopdf)             Output file: <figures/map_GPS_stations-eps-converted-to.
 pdf>
 (epstopdf)                    date: 2021-08-21 10:30:12
@@ -1797,9 +1786,15 @@ pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/map_GPS_stations-e
 ps-converted-to.pdf figures/map_GPS_stations.eps>
 (epstopdf)             \includegraphics on input line 284.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/map_GPS_stations-eps-converted-to.pdf fig
+ures/map_GPS_stations.eps)...executed safely (allowed).
 
-<figures/map_GPS_stations-eps-converted-to.pdf, id=85, 597.23125pt x 845.1575pt
+Package epstopdf Info: Result file: <figures/map_GPS_stations-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2021-10-09 15:42:21
+(epstopdf)                    size: 7406582 bytes.
+
+<figures/map_GPS_stations-eps-converted-to.pdf, id=89, 597.23125pt x 845.1575pt
 >
 File: figures/map_GPS_stations-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/map_GPS_stations-eps-converted-to.pdf>
@@ -1889,7 +1884,7 @@ erted-to.pdf figures/tremor_13.eps>
 (epstopdf)             \includegraphics on input line 292.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/tremor_13-eps-converted-to.pdf, id=170, 722.7pt x 2384.91pt>
+<figures/tremor_13-eps-converted-to.pdf, id=174, 722.7pt x 2384.91pt>
 File: figures/tremor_13-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/tremor_13-eps-converted-to.pdf>
@@ -1992,14 +1987,14 @@ Overfull \hbox (12.7935pt too wide) in paragraph at lines 299--299
 so see the end of an 11th 
  []
 
-<figures/GPS_detail_8.pdf, id=172, 1156.32pt x 578.16pt>
+<figures/GPS_detail_8.pdf, id=176, 1156.32pt x 578.16pt>
 File: figures/GPS_detail_8.pdf Graphic file (type pdf)
 
 <use figures/GPS_detail_8.pdf>
 Package pdftex.def Info: figures/GPS_detail_8.pdf used on input line 302.
 (pdftex.def)             Requested size: 397.48499pt x 198.742pt.
 
-<figures/tremor_detail_8.pdf, id=174, 1156.32pt x 578.16pt>
+<figures/tremor_detail_8.pdf, id=178, 1156.32pt x 578.16pt>
 File: figures/tremor_detail_8.pdf Graphic file (type pdf)
 
 <use figures/tremor_detail_8.pdf>
@@ -2059,14 +2054,14 @@ Overfull \hbox (5.2656pt too wide) in paragraph at lines 309--309
  vis-i-ble in the 7th level.  
  []
 
-<figures/GPS_detail_7.pdf, id=176, 1156.32pt x 578.16pt>
+<figures/GPS_detail_7.pdf, id=180, 1156.32pt x 578.16pt>
 File: figures/GPS_detail_7.pdf Graphic file (type pdf)
 
 <use figures/GPS_detail_7.pdf>
 Package pdftex.def Info: figures/GPS_detail_7.pdf used on input line 312.
 (pdftex.def)             Requested size: 397.48499pt x 198.742pt.
 
-<figures/tremor_detail_7.pdf, id=178, 1156.32pt x 578.16pt>
+<figures/tremor_detail_7.pdf, id=182, 1156.32pt x 578.16pt>
 File: figures/tremor_detail_7.pdf Graphic file (type pdf)
 
 <use figures/tremor_detail_7.pdf>
@@ -2120,14 +2115,14 @@ Overfull \hbox (7.1545pt too wide) in paragraph at lines 319--319
 , 12 of the 15 events present on 
  []
 
-<figures/GPS_detail_6.pdf, id=180, 1156.32pt x 578.16pt>
+<figures/GPS_detail_6.pdf, id=184, 1156.32pt x 578.16pt>
 File: figures/GPS_detail_6.pdf Graphic file (type pdf)
 
 <use figures/GPS_detail_6.pdf>
 Package pdftex.def Info: figures/GPS_detail_6.pdf used on input line 322.
 (pdftex.def)             Requested size: 397.48499pt x 198.742pt.
 
-<figures/tremor_detail_6.pdf, id=182, 1156.32pt x 578.16pt>
+<figures/tremor_detail_6.pdf, id=186, 1156.32pt x 578.16pt>
 File: figures/tremor_detail_6.pdf Graphic file (type pdf)
 
 <use figures/tremor_detail_6.pdf>
@@ -2308,7 +2303,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4709 strings out of 493014
  63164 string characters out of 6133351
- 143695 words of memory out of 5000000
+ 144695 words of memory out of 5000000
  8138 multiletter control sequences out of 15000+600000
  12144 words of font info for 47 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
@@ -2334,10 +2329,10 @@ ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on agujournaltemplate.pdf (17 pages, 8658856 bytes).
+Output written on agujournaltemplate.pdf (17 pages, 8665871 bytes).
 PDF statistics:
- 542 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
+ 546 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
