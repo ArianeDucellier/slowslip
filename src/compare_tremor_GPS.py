@@ -417,7 +417,7 @@ def plot_correlations():
         plt.savefig('events_' + str(level) + '.pdf', format='pdf')
         plt.close(1)        
 
-def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, threshold):
+def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, threshold, events):
     """
     """
     # Read station file
@@ -501,7 +501,10 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
                 if (len(indices) > 0):
                     nsta = nsta + 1
                     tj = time[indices]
-                    Dj = D[J][indices]
+#                    Dj = D[J][indices]
+                    Dj = np.zeros(len(indices))
+                    for j in J:
+                        Dj = Dj + D[j - 1][indices]
                     Dj_interp = np.interp(time_subset, tj, Dj)
                     Dj_stacked =  Dj_stacked + Dj_interp
             Dj_stacked = Dj_stacked / nsta
@@ -528,6 +531,9 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
             begin_times = times_slowslip[begin_jumps]
             end_times = times_slowslip[end_jumps]
 
+            for event in events:
+                plt.axvline(event, color='grey', linewidth=1)
+
             for i in range(0, len(jumps) + 1):
                 x0 = begin_times[i]
                 dx = end_times[i] - begin_times[i]
@@ -544,12 +550,15 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
     plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
     plt.ylabel('Latitude', fontsize=24)
     plt.yticks(fontsize=24)
-    plt.title('Detail at level {:d} of MODWT of GPS data'. \
-        format(J + 1), fontsize=24)
-    plt.savefig('GPS_longer_detail_' + str(J + 1) + '.pdf', format='pdf')
+#    plt.title('Detail at level {:d} of MODWT of GPS data'. \
+#        format(J + 1), fontsize=24)
+    plt.title('Detail at levels {} of MODWT of GPS data'. \
+        format(J), fontsize=24)
+#    plt.savefig('GPS_longer_detail_' + str(J + 1) + '.pdf', format='pdf')
+    plt.savefig('GPS_longer_detail_.pdf', format='pdf')
     plt.close(1)
 
-def plot_tremor(lats, J, threshold):
+def plot_tremor(lats, J, threshold, events):
     """
     """
 
@@ -566,6 +575,7 @@ def plot_tremor(lats, J, threshold):
         filename = 'MODWT_tremor_longer/tremor_' + str(index) + '.pkl'
         MODWT_tremor = pickle.load(open(filename, 'rb'))
         times_stacked = MODWT_tremor[0]
+#        D_tremor = MODWT_tremor[4][J]
         D_tremor = np.zeros(len(times_stacked))
         for j in J:
             D_tremor = D_tremor + MODWT_tremor[4][j - 1]
@@ -583,6 +593,9 @@ def plot_tremor(lats, J, threshold):
             begin_times = times_slowslip[begin_jumps]
             end_times = times_slowslip[end_jumps]
 
+            for event in events:
+                plt.axvline(event, color='grey', linewidth=1)
+
             for i in range(0, len(jumps) + 1):
                 x0 = begin_times[i]
                 dx = end_times[i] - begin_times[i]
@@ -599,8 +612,11 @@ def plot_tremor(lats, J, threshold):
     plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
     plt.ylabel('Latitude', fontsize=24)
     plt.yticks(fontsize=24)
+#    plt.title('Detail at level {:d} of MODWT of tremor data'. \
+#        format(J + 1), fontsize=24)
     plt.title('Detail at levels {} of MODWT of tremor data'. \
         format(J), fontsize=24)
+#    plt.savefig('tremor_longer_detail_' + str(J + 1) + '.pdf', format='pdf')
     plt.savefig('tremor_longer_detail.pdf', format='pdf')
     plt.close(1)
 
@@ -759,6 +775,9 @@ if __name__ == '__main__':
     dataset = 'cleaned'
     direction = 'lon'
     radius_GPS = 50
+    events = [2007.0630, 2008.3566, 2009.3452, 2010.6342, 2011.6041, 2012.7172, \
+        2013.7137, 2014.6479, 2014.8904, 2016.1082, 2017.2342, 2018.4932, \
+        2019.2329, 2019.8767, 2020.7923, 2020.8552, 2021.0904]
 
 #    radius_tremor = 50
 #    wavelet = 'LA8'
@@ -780,11 +799,12 @@ if __name__ == '__main__':
     # For tremor data
     # Level 10: 0.004 - Level 9: 0.004 - Level 8: 0.006 - Level 7: 0.006 - Level 6: 0.005 - Level 5: 0.004
 
-#    thresh_GPS = 0.3
-    thresh_tremor = 0.014
-    J = [5, 6, 7, 8]
+    thresh_GPS = 0.6
+#    thresh_tremor = 0.008
+    J = [7,8]
+
 #    nonzeros, equals = find_threshold(station_file, lats, \
 #        lons, dataset, direction, radius_GPS, J - 1, thresh_GPS, thresh_tremor)
 
-#    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J - 1, thresh_GPS)
-    plot_tremor(lats, J, thresh_tremor)
+    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh_GPS, events)
+#    plot_tremor(lats, J, thresh_tremor, events)
