@@ -139,6 +139,37 @@ Frank, W.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{GPS/GNSS Network and Geodesy Laboratory: Central Washington University,
+  other/seismic network}%
+}{%
+{GPS/GNSS Network and Geodesy Laboratory: Central Washington University,
+  other/seismic network}%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+PANGA}
+\APACinsertmetastar {%
+PANGA}%
+\begin{APACrefauthors}%
+{GPS/GNSS Network and Geodesy Laboratory: Central Washington University,
+  other/seismic network}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+\APACrefbtitle {{Pacific Northwest Geodetic Array (PANGA)}.} {{Pacific
+  Northwest Geodetic Array (PANGA)}.}
+\newblock
+\APACaddressPublisher{}{International Federation of Digital Seismograph
+  Networks}.
+\newblock
+\begin{APACrefURL} \url{http://www.panga.cwu.edu/} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{doi:10.7914/SN/PW} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kumar%
 \ \BBA {} Foufoula-Georgiou%
 }{%
@@ -464,6 +495,32 @@ Wei, M.%
   {Subduction} {Zone}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Geophysical Research Letters}{39}{}{L15309}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wessel%
+\ \BBA {} Smith%
+}{%
+Wessel%
+\ \BBA {} Smith%
+}{%
+{\protect \APACyear {1991}}%
+}]{%
+WES_1991}
+\APACinsertmetastar {%
+WES_1991}%
+\begin{APACrefauthors}%
+Wessel, P.%
+\BCBT {}\ \BBA {} Smith, W\BPBI H\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1991}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Free software helps map and display data} {Free software
+  helps map and display data}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{EOS Trans. AGU}{72}{}{441}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

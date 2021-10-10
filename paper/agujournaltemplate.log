@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 OCT 2021 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  10 OCT 2021 16:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -307,6 +307,9 @@ LaTeX Warning: Label `pngfiguresample' multiply defined.
 
 LaTeX Warning: Label `pngfiguresample' multiply defined.
 
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
 )
 \openout1 = `agujournaltemplate.aux'.
 
@@ -379,815 +382,922 @@ File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 118.
+LaTeX Font Info:    Try loading font information for U+msa on input line 110.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 118.
+LaTeX Font Info:    Try loading font information for U+msb on input line 110.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (7.26556pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 Slow slip events were dis-cov-ered in many sub-duc-tion zones d
+ur-ing the last two decades 
+ []
+
+
+Overfull \hbox (8.83517pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 thanks to record-ings of the dis-place-ment of Earth's sur-face
+ by dense Global Nav-i-ga-tion 
+ []
+
+
+Overfull \hbox (3.19618pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 Satel-lite Sys-tem (GNSS) net-works. Slow slip can last from a 
+few days to sev-eral years 
+ []
+
+
+Overfull \hbox (16.46007pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 and has a rel-a-tively short re-cur-rence time (months to years
+), com-pared to the re-cur-rence 
+ []
+
+
+Overfull \hbox (8.18231pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 time of reg-u-lar earth-quakes (up to sev-eral hun-dreds of yea
+rs), al-low-ing sci-en-tists to ob- 
+ []
+
+
+Overfull \hbox (13.59895pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 serve and study many com-plete event cy-cles. In many places, t
+ec-tonic tremor is also ob- 
+ []
+
+
+Overfull \hbox (25.43231pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 served in re-la-tion to slow slip and can be used as a proxy to
+ study slow slip events of mod- 
+ []
+
+
+Overfull \hbox (5.83508pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 er-ate mag-ni-tude where sur-face de-for-ma-tion is hid-den in 
+GNSS noise. How-ever, in sub- 
+ []
+
+
+Overfull \hbox (15.59889pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 duc-tion zones where no clear re-la-tion-ship be-tween tremor a
+nd slow slip oc-cur-rence is ob- 
+ []
+
+
+Overfull \hbox (10.68231pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 served, these meth-ods can-not be ap-plied, and we need other m
+eth-ods to be able to bet- 
+ []
+
+
+Overfull \hbox (14.6822pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 ter de-tect and quan-tify slow slip. Wavelets meth-ods such as 
+the Dis-crete Wavelet Trans- 
+ []
+
+
+Overfull \hbox (23.32127pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 form (DWT) and the Max-i-mal Over-lap Dis-crete Wavelet Trans-f
+orm (MODWT) are math- 
+ []
+
+
+Overfull \hbox (15.76573pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 e-mat-i-cal tools for an-a-lyz-ing time se-ries si-mul-ta-ne-ou
+sly in the time and the fre-quency do- 
+ []
+
+
+Overfull \hbox (4.40454pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 main by ob-serv-ing how weighted av-er-ages of a time se-ries v
+ary from one av-er-ag-ing pe- 
+ []
+
+
+Overfull \hbox (17.50174pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 riod to the next. In this pa-per, we use wavelet meth-ods to an
+-a-lyze GNSS time se-ries and 
+ []
+
+
+Overfull \hbox (9.05727pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 seis-mic record-ings of slow slip events in Cas-ca-dia. We use 
+de-trended GNSS data, ap-ply 
+ []
+
+
+Overfull \hbox (18.02954pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 the MODWT trans-form and stack the wavelet de-tails over sev-er
+al nearby GNSS sta-tions. 
+ []
+
+
+Overfull \hbox (5.96002pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 As an in-de-pen-dent check on the tim-ing of slow slip events, 
+we also com-pute the cu-mu- 
+ []
+
+
+Overfull \hbox (1.08517pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 la-tive num-ber of tremor in the vicin-ity of the GNSS sta-tion
+s, de-trend this sig-nal, and 
+ []
+
+
+Overfull \hbox (10.96005pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 ap-ply the MODWT trans-form. In both time se-ries, we can then 
+see si-mul-ta-ne-ous wave- 
+ []
+
+
+Overfull \hbox (12.96008pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 forms whose tim-ing cor-re-sponds to the tim-ing of slow slip e
+vents. We as-sume that there 
+ []
+
+
+Overfull \hbox (9.12665pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 is a slow slip event when-ever there is a peak in the wavelet s
+ig-nal. We ver-ify that there 
+ []
+
+
+Overfull \hbox (6.9184pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 is a good cor-re-la-tion be-tween slow slip events de-tected wi
+th only GNSS data, and slow 
+ []
+
+
+Overfull \hbox (14.90448pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 slip events de-tected with only seis-mic data. The wavelet-base
+d de-tec-tion method de-tects 
+ []
+
+
+Overfull \hbox (12.57127pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 all events of mag-ni-tude higher than 6 as de-ter-mined by in-d
+e-pen-dent event cat-a-logs (e.g. 
+ []
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 201.
+(Font)              size <10.95> substituted on input line 200.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 201.
+(Font)              size <10.95> substituted on input line 200.
 
 
-Overfull \hbox (10.93216pt too wide) in paragraph at lines 203--203
+Overfull \hbox (10.93216pt too wide) in paragraph at lines 202--202
 []\OT1/cmr/m/n/10 Slow slip events are a new fea-ture dis-cov-ered in the last 
 two decades in many sub- 
  []
 
 
-Overfull \hbox (20.83514pt too wide) in paragraph at lines 203--203
+Overfull \hbox (20.83514pt too wide) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 duc-tion zones thanks to record-ings of the dis-place-ment of E
 arth's sur-face by dense Global 
  []
 
 
-Overfull \hbox (7.58517pt too wide) in paragraph at lines 203--203
+Overfull \hbox (7.58517pt too wide) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 Nav-i-ga-tion Satel-lite Sys-tem (GNSS) net-works. As with or-d
 i-nary earth-quakes, slow slip 
  []
 
 
-Overfull \hbox (15.1823pt too wide) in paragraph at lines 203--203
+Overfull \hbox (15.1823pt too wide) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 events are caused by slip on a fault, such as the plate bound-a
 ry be-tween a tec-tonic plate 
  []
 
 
-Overfull \hbox (5.62677pt too wide) in paragraph at lines 203--203
+Overfull \hbox (5.62677pt too wide) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 sub-duct-ing un-der an-other tec-tonic plate. How-ever, they ta
 ke a much longer time (sev- 
  []
 
 
-Overfull \hbox (7.21014pt too wide) in paragraph at lines 203--203
+Overfull \hbox (7.21014pt too wide) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 eral days to sev-eral years) to hap-pen rel-a-tive to or-di-nar
 y earth-quakes, and they have a 
  []
 
 
-Overfull \hbox (5.01561pt too wide) in paragraph at lines 203--203
+Overfull \hbox (5.01561pt too wide) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 rel-a-tively short re-cur-rence time (months to years), com-par
 ed to the re-cur-rence time of 
  []
 
 
-Overfull \hbox (11.87675pt too wide) in paragraph at lines 203--203
+Overfull \hbox (11.87675pt too wide) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 reg-u-lar earth-quakes (up to sev-eral hun-dreds of years), al-
 low-ing sci-en-tists to ob-serve and 
  []
 
 
-Overfull \hbox (2.12677pt too wide) in paragraph at lines 203--203
+Overfull \hbox (2.12677pt too wide) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 study many com-plete event cy-cles, which is typ-i-cally not po
 s-si-ble to ex-plore with tra- 
  []
 
 
-Overfull \hbox (19.93239pt too wide) in paragraph at lines 203--203
+Overfull \hbox (19.93239pt too wide) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 di-tional earth-quake cat-a-logs  (Beroza & Ide, 2011). A slow 
 slip event on the plate bound- 
  []
 
 
-Overfull \hbox (19.224pt too wide) in paragraph at lines 203--203
+Overfull \hbox (19.224pt too wide) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 ary is in-ferred to hap-pen when there is a re-ver-sal of the d
 i-rec-tion of mo-tion at GNSS sta- 
  []
 
 
-Overfull \hbox (11.18228pt too wide) in paragraph at lines 203--203
+Overfull \hbox (11.18228pt too wide) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 tions, com-pared to the sec-u-lar in-ter-seis-mic mo-tion. Slow
  slip events have been ob-served 
  []
 
 
-Overfull \hbox (6.59906pt too wide) in paragraph at lines 203--203
+Overfull \hbox (6.59906pt too wide) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 in many sub-duc-tion zones, such as Cas-ca-dia, Nankai (south-w
 est Japan), Alaska, Costa 
  []
 
 
-Overfull \hbox (7.93224pt too wide) in paragraph at lines 205--205
+Overfull \hbox (7.93224pt too wide) in paragraph at lines 204--204
 []\OT1/cmr/m/n/10 In many places, tec-tonic tremor are also ob-served in re-la-
 tion to slow slip. Tremor 
  []
 
 
-Overfull \hbox (0.90451pt too wide) in paragraph at lines 205--205
+Overfull \hbox (0.90451pt too wide) in paragraph at lines 204--204
 \OT1/cmr/m/n/10 is a long (sev-eral sec-onds to many min-utes), low am-pli-tude
  seis-mic sig-nal, with emer- 
  []
 
 
-Overfull \hbox (28.04343pt too wide) in paragraph at lines 205--205
+Overfull \hbox (28.04343pt too wide) in paragraph at lines 204--204
 \OT1/cmr/m/n/10 gent on-sets, and an ab-sence of clear im-pul-sive phases. Tec-
 tonic tremor have been ex-plained 
  []
 
 
-Overfull \hbox (4.68234pt too wide) in paragraph at lines 205--205
+Overfull \hbox (4.68234pt too wide) in paragraph at lines 204--204
 \OT1/cmr/m/n/10 as a swarm of small, low-frequency earth-quakes (LFEs)  (Shelly
 , Beroza, & Ide, 2007), 
  []
 
 
-Overfull \hbox (7.93234pt too wide) in paragraph at lines 205--205
+Overfull \hbox (7.93234pt too wide) in paragraph at lines 204--204
 \OT1/cmr/m/n/10 that is small mag-ni-tude earth-quakes (M $\OMS/cmsy/m/n/10 ^^X
 $ \OT1/cmr/m/n/10 1), for which fre-quency con-tent (1-10 Hz) is 
  []
 
 
-Overfull \hbox (9.98793pt too wide) in paragraph at lines 205--205
+Overfull \hbox (9.98793pt too wide) in paragraph at lines 204--204
 \OT1/cmr/m/n/10 lower than for or-di-nary earth-quakes (up to 20 Hz). In sub-du
 c-tion zones such as Nankai 
  []
 
 
-Overfull \hbox (11.93243pt too wide) in paragraph at lines 205--205
+Overfull \hbox (11.93243pt too wide) in paragraph at lines 204--204
 \OT1/cmr/m/n/10 and Cas-ca-dia, tec-tonic tremor ob-ser-va-tions are spa-tially
  and tem-po-rally cor-re-lated with 
  []
 
 
-Overfull \hbox (4.68237pt too wide) in paragraph at lines 205--205
+Overfull \hbox (4.68237pt too wide) in paragraph at lines 204--204
 \OT1/cmr/m/n/10 slow slip ob-ser-va-tions (Obara, 2002; Rogers & Dragert, 2003)
 . Due to this cor-re-la-tion, 
  []
 
 
-Overfull \hbox (18.46011pt too wide) in paragraph at lines 205--205
+Overfull \hbox (18.46011pt too wide) in paragraph at lines 204--204
 \OT1/cmr/m/n/10 these paired phe-nom-ena have been called Episodic Tremor and S
 lip (ETS). How-ever, this 
  []
 
 
-Overfull \hbox (17.34894pt too wide) in paragraph at lines 205--205
+Overfull \hbox (17.34894pt too wide) in paragraph at lines 204--204
 \OT1/cmr/m/n/10 is not al-ways the case. For in-stance, in north-ern New Zealan
 d, tremor are more chal-leng- 
  []
 
 
-Overfull \hbox (1.71013pt too wide) in paragraph at lines 205--205
+Overfull \hbox (1.71013pt too wide) in paragraph at lines 204--204
 \OT1/cmr/m/n/10 ing to de-tect, and seem to be lo-cated downdip of the slow sli
 p on the plate bound-ary.  
  []
 
 
-Overfull \hbox (19.44614pt too wide) in paragraph at lines 207--207
+Overfull \hbox (19.44614pt too wide) in paragraph at lines 206--206
 []\OT1/cmr/m/n/10 In Cas-ca-dia and Guer-rero, Mex-ico, tremor has been used as
  a proxy to ob-serve slow 
  []
 
 
-Overfull \hbox (19.50177pt too wide) in paragraph at lines 207--207
+Overfull \hbox (19.50177pt too wide) in paragraph at lines 206--206
 \OT1/cmr/m/n/10 slip events that are not di-rectly de-tectable in the GNSS data
 . For in-stance,  Aguiar, Mel- 
  []
 
 
-Overfull \hbox (4.33516pt too wide) in paragraph at lines 207--207
-\OT1/cmr/m/n/10 bourne, and Scrivner (2009) com-puted the GPS-estimated mo-ment
- re-lease for 23 ETS 
+Overfull \hbox (16.73796pt too wide) in paragraph at lines 206--206
+\OT1/cmr/m/n/10 bourne, and Scrivner (2009) stud-ied 23 ETS events in Cas-ca-di
+a with more than 50 hours 
  []
 
 
-Overfull \hbox (3.62682pt too wide) in paragraph at lines 207--207
-\OT1/cmr/m/n/10 events in Cas-ca-dia be-tween 1997 and 2008. Si-mul-ta-ne-ously
-, they com-puted the cu-mu- 
+Overfull \hbox (16.83514pt too wide) in paragraph at lines 206--206
+\OT1/cmr/m/n/10 of tec-tonic tremor. For all these events, they com-puted both 
+the GPS-estimated mo-ment 
  []
 
 
-Overfull \hbox (9.34895pt too wide) in paragraph at lines 207--207
-\OT1/cmr/m/n/10 la-tive num-ber of hours of tec-tonic tremor recorded for each 
-event. They ob-served a lin- 
+Overfull \hbox (11.62675pt too wide) in paragraph at lines 206--206
+\OT1/cmr/m/n/10 re-lease and the cu-mu-la-tive num-ber of hours of tec-tonic tr
+emor recorded. They ob-served 
  []
 
 
-Overfull \hbox (11.26564pt too wide) in paragraph at lines 207--207
-\OT1/cmr/m/n/10 ear re-la-tion-ship be-tween mo-ment re-lease and num-ber of ho
-urs of tremor for ETS events 
+Overfull \hbox (0.37677pt too wide) in paragraph at lines 206--206
+\OT1/cmr/m/n/10 a lin-ear re-la-tion-ship be-tween mo-ment re-lease and num-ber
+ of hours of tremor for ETS 
  []
 
 
-Overfull \hbox (19.76572pt too wide) in paragraph at lines 207--207
-\OT1/cmr/m/n/10 of mo-ment mag-ni-tude 6.3 to 6.8. For all these events, at lea
-st 50 hours of tec-tonic tremor 
+Overfull \hbox (24.48798pt too wide) in paragraph at lines 206--206
+\OT1/cmr/m/n/10 events of mo-ment mag-ni-tude 6.3 to 6.8. They also ob-served m
+any smaller bursts of tremor 
  []
 
 
-Overfull \hbox (19.44626pt too wide) in paragraph at lines 207--207
-\OT1/cmr/m/n/10 where ob-served si-mul-ta-ne-ously with the GPS de-for-ma-tion.
- How-ever, many smaller bursts 
+Overfull \hbox (8.82124pt too wide) in paragraph at lines 206--206
+\OT1/cmr/m/n/10 of du-ra-tion 1 to 50 hours in be-tween the big ETS events, wit
+h-out any de-tectable sig-nal 
  []
 
 
-Overfull \hbox (5.09894pt too wide) in paragraph at lines 207--207
-\OT1/cmr/m/n/10 of tremor of du-ra-tion 1 to 50 hours were also ob-served in be
--tween the big ETS events. 
+Overfull \hbox (21.72398pt too wide) in paragraph at lines 206--206
+\OT1/cmr/m/n/10 in the GPS data. How-ever, based on the re-la-tion-ship be-twee
+n slow slip mo-ment and num- 
  []
 
 
-Overfull \hbox (33.76573pt too wide) in paragraph at lines 207--207
-\OT1/cmr/m/n/10 Based on the re-la-tion-ship be-tween slow slip mo-ment and num
--ber of hours of tremor,  Aguiar 
+Overfull \hbox (0.73784pt too wide) in paragraph at lines 206--206
+\OT1/cmr/m/n/10 ber of hours of tremor for big-ger events, it is pos-si-ble to 
+in-fer the ex-is-tence of smaller 
  []
 
 
-Overfull \hbox (7.79344pt too wide) in paragraph at lines 207--207
-\OT1/cmr/m/n/10 et al.[] (2009) sug-gested that smaller slow slip events of mag
--ni-tude 5-6 may oc-cur si-mul- 
+Overfull \hbox (13.21013pt too wide) in paragraph at lines 206--206
+\OT1/cmr/m/n/10 slow slip events of mag-ni-tude 5-6 oc-cur-ring si-mul-ta-ne-ou
+sly with the tremor bursts. This 
  []
 
 
-Overfull \hbox (17.14066pt too wide) in paragraph at lines 209--209
-[] \OT1/cmr/m/n/10 Frank (2016) trans-formed the GPS time se-ries into daily in
--cre-ments of sur-face mo- 
- []
-
-
-Overfull \hbox (0.23788pt too wide) in paragraph at lines 209--209
-\OT1/cmr/m/n/10 tion by com-put-ing the first or-der dif-fer-en-ti-a-tion of th
-e time se-ries. He then dis-carded 
- []
-
-
-Overfull \hbox (23.349pt too wide) in paragraph at lines 209--209
-\OT1/cmr/m/n/10 the daily in-cre-ments ob-served dur-ing known big slow slip ev
-ents, and fo-cused on the inter- 
- []
-
-
-Overfull \hbox (12.21013pt too wide) in paragraph at lines 209--209
-\OT1/cmr/m/n/10 events pe-riod. He di-vided the daily in-cre-ments into two gro
-ups: the first group con-tains 
- []
-
-
-Overfull \hbox (16.84894pt too wide) in paragraph at lines 209--209
-\OT1/cmr/m/n/10 days when slow seis-mic-ity (tec-tonic tremor and LFEs) is de-t
-ected, the sec-ond group con- 
- []
-
-
-Overfull \hbox (4.55728pt too wide) in paragraph at lines 209--209
-\OT1/cmr/m/n/10 tains days when the num-bers of LFEs (for Guer-rero) or tremor 
-(for Cas-ca-dia) is lower 
- []
-
-
-Overfull \hbox (15.2379pt too wide) in paragraph at lines 209--209
-\OT1/cmr/m/n/10 than a thresh-old. He then stacked sep-a-rately the two groups 
-of daily in-cre-ments and ob- 
- []
-
-
-Overfull \hbox (10.58508pt too wide) in paragraph at lines 209--209
-\OT1/cmr/m/n/10 served a cu-mu-la-tive dis-place-ment in the north-ern di-rec-t
-ion (for Guer-rero) and the east- 
- []
-
-
-Overfull \hbox (23.46019pt too wide) in paragraph at lines 209--209
-\OT1/cmr/m/n/10 ern di-rec-tion (for Cas-ca-dia) cor-re-spond-ing to the load-i
-ng pe-riod when few tremor or LFEs 
- []
-
-
-Overfull \hbox (3.099pt too wide) in paragraph at lines 209--209
-\OT1/cmr/m/n/10 are ob-served and the sur-face de-for-ma-tion cor-re-sponds to 
-the sec-u-lar plate mo-tion. He 
- []
-
-
-Overfull \hbox (19.68224pt too wide) in paragraph at lines 209--209
-\OT1/cmr/m/n/10 and LFEs are ob-served. This re-verse dis-place-ment cor-re-spo
-nds to smaller slow slip events 
+Overfull \hbox (2.15448pt too wide) in paragraph at lines 206--206
+\OT1/cmr/m/n/10 leads to a power-law re-la-tion-ship be-tween seis-mic mo-ment 
+and num-ber of events with 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-Overfull \hbox (0.37659pt too wide) in paragraph at lines 211--211
+Overfull \hbox (17.47401pt too wide) in paragraph at lines 208--208
+[] \OT1/cmr/m/n/10 Frank (2016) di-vided GPS time se-ries ob-ser-va-tions into 
+two groups: the first group 
+ []
+
+
+Overfull \hbox (6.04337pt too wide) in paragraph at lines 208--208
+\OT1/cmr/m/n/10 con-tains days when slow seis-mic-ity (tec-tonic tremor and LFE
+s) is de-tected, the sec-ond 
+ []
+
+
+Overfull \hbox (11.62675pt too wide) in paragraph at lines 208--208
+\OT1/cmr/m/n/10 group con-tains days when the num-bers of tremor or LFEs is low
+er than a thresh-old. He 
+ []
+
+
+Overfull \hbox (4.51566pt too wide) in paragraph at lines 208--208
+\OT1/cmr/m/n/10 then stacked sep-a-rately the two groups of ob-ser-va-tions and
+ ob-served a cu-mu-la-tive dis- 
+ []
+
+
+Overfull \hbox (2.8073pt too wide) in paragraph at lines 208--208
+\OT1/cmr/m/n/10 place-ment in the north-ern di-rec-tion (for Guer-rero) and the
+ east-ern di-rec-tion (for Cas- 
+ []
+
+
+Overfull \hbox (6.48793pt too wide) in paragraph at lines 208--208
+\OT1/cmr/m/n/10 ca-dia) cor-re-spond-ing to the load-ing pe-riod when few tremo
+r or LFEs are ob-served and 
+ []
+
+
+Overfull \hbox (12.01566pt too wide) in paragraph at lines 208--208
+\OT1/cmr/m/n/10 the sur-face de-for-ma-tion cor-re-sponds to the sec-u-lar plat
+e mo-tion. He also ob-served a cu- 
+ []
+
+
+Overfull \hbox (1.97394pt too wide) in paragraph at lines 208--208
+\OT1/cmr/m/n/10 mu-la-tive dis-place-ment in the south-ern di-rec-tion (for Gue
+r-rero) and the west-ern di-rec- 
+ []
+
+
+Overfull \hbox (5.43234pt too wide) in paragraph at lines 208--208
+\OT1/cmr/m/n/10 tion (for Cas-ca-dia) cor-re-spond-ing to the re-lease pe-riod 
+when tremor and LFEs are ob- 
+ []
+
+
+Overfull \hbox (17.76555pt too wide) in paragraph at lines 208--208
+\OT1/cmr/m/n/10 served. He was thus able to ob-serve a re-verse dis-place-ment 
+cor-re-spond-ing to smaller slow 
+ []
+
+
+Overfull \hbox (0.37659pt too wide) in paragraph at lines 210--210
 []\OT1/cmr/m/n/10 However, in other sub-duc-tion zones such as New Zealand, the
 re is no clear re-la- 
  []
 
 
-Overfull \hbox (12.18233pt too wide) in paragraph at lines 211--211
+Overfull \hbox (9.40454pt too wide) in paragraph at lines 210--210
 \OT1/cmr/m/n/10 tion-ship be-tween tremor and slow slip oc-cur-rence and these 
-meth-ods can-not be ap-plied. 
+meth-ods can-not be ap-plied 
  []
 
 
-Overfull \hbox (10.6822pt too wide) in paragraph at lines 213--213
+Overfull \hbox (24.47404pt too wide) in paragraph at lines 210--210
+\OT1/cmr/m/n/10 to de-tect smaller slow slip events that pro-duce a GNSS sig-na
+l with an am-pli-tude too small 
+ []
+
+
+Overfull \hbox (22.59898pt too wide) in paragraph at lines 210--210
+\OT1/cmr/m/n/10 com-pared to the noise. We thus need other meth-ods to be able 
+to bet-ter de-tect and quan- 
+ []
+
+
+Overfull \hbox (10.6822pt too wide) in paragraph at lines 212--212
 []\OT1/cmr/m/n/10 Wavelets meth-ods such as the Dis-crete Wavelet Trans-form (D
 WT) are math-e-mat- 
  []
 
 
-Overfull \hbox (12.43242pt too wide) in paragraph at lines 213--213
+Overfull \hbox (12.43242pt too wide) in paragraph at lines 212--212
 \OT1/cmr/m/n/10 i-cal tools for an-a-lyz-ing time se-ries si-mul-ta-ne-ously in
  the time and the fre-quency do-main 
  []
 
 
-Overfull \hbox (5.82123pt too wide) in paragraph at lines 213--213
+Overfull \hbox (5.82123pt too wide) in paragraph at lines 212--212
 \OT1/cmr/m/n/10 by ob-serv-ing how weighted av-er-ages of a time se-ries vary f
 rom one av-er-ag-ing pe-riod to 
  []
 
 
-Overfull \hbox (10.96017pt too wide) in paragraph at lines 213--213
+Overfull \hbox (10.96017pt too wide) in paragraph at lines 212--212
 \OT1/cmr/m/n/10 the next. Wavelet meth-ods have been widely used for geo-phys-i
 -cal ap-pli-ca-tions  (Ku-mar 
  []
 
 
-Overfull \hbox (2.8351pt too wide) in paragraph at lines 213--213
+Overfull \hbox (2.8351pt too wide) in paragraph at lines 212--212
 \OT1/cmr/m/n/10 & Foufoula-Georgiou, 1997). How-ever, few stud-ies have used wa
 velet meth-ods to an-a- 
  []
 
 
-Overfull \hbox (0.79338pt too wide) in paragraph at lines 213--213
+Overfull \hbox (0.79338pt too wide) in paragraph at lines 212--212
 \OT1/cmr/m/n/10 lyze record-ings of slow slip, and their scope was lim-ited to 
 the de-tec-tion of the big-ger 
  []
 
 
-Overfull \hbox (6.79347pt too wide) in paragraph at lines 215--215
-[] \OT1/cmr/m/n/10 Alba, Wel-don, Lively-brooks, and Schmidt (2019) used hourly
- wa-ter level records 
+Overfull \hbox (27.23798pt too wide) in paragraph at lines 212--212
+\OT1/cmr/m/n/10 (mag-ni-tude 6-7) short-term (a few weeks) events  (Alba, Wel-d
+on, Lively-brooks, & Schmidt, 
  []
 
 
-Overfull \hbox (4.59908pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 from four tide gauges in the Juan de Fuca Straight and the Puge
-t Sound to de-ter-mine 
+Overfull \hbox (1.66858pt too wide) in paragraph at lines 212--212
+\OT1/cmr/m/n/10 2019; Ohtani, McGuire, & Segall, 2010; Szeliga, Mel-bourne, San
+-til-lan, & Miller, 2008; 
  []
 
 
-Overfull \hbox (21.46008pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 ver-ti-cal dis-place-ments, up-lift rates be-tween ETS events, 
-and net up-lift rates be-tween 1996 
+Overfull \hbox (20.9879pt too wide) in paragraph at lines 214--214
+[] \OT1/cmr/m/n/10 Szeliga et al.[] (2008) de-ter-mined the tim-ing and the am-
+pli-tude of 34 slow slip events 
  []
 
 
-Overfull \hbox (9.07123pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 and 2011. The noise in the tide gauges data is as-so-ci-ated wi
-th tides, and ocean and at- 
+Overfull \hbox (0.54352pt too wide) in paragraph at lines 214--214
+\OT1/cmr/m/n/10 through-out the Cas-ca-dia sub-duc-tion zone be-tween 1997 and 
+2005. They mod-eled the 
  []
 
 
-Overfull \hbox (12.18231pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 mo-spheric noise on mul-ti-ple timescales (a few days for storm
-s to decades for os-cil-la-tions 
+Overfull \hbox (6.97397pt too wide) in paragraph at lines 214--214
+\OT1/cmr/m/n/10 GPS time se-ries by the sum of a lin-ear trend, an-nual and bia
+n-nual si-nu-soids rep-re-sent- 
  []
 
 
-Overfull \hbox (28.57118pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 be-tween ocean basins), and is as-sumed to be co-her-ent be-twe
-en each of the four tidal gauges 
+Overfull \hbox (15.98792pt too wide) in paragraph at lines 214--214
+\OT1/cmr/m/n/10 ing sea-sonal ef-fects, Heav-i-side step func-tions cor-re-spon
+d-ing to earth-quakes and hard-ware 
  []
 
 
-Overfull \hbox (9.40457pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 stud-ied. On the con-trary, the up-lift due to ETS events shoul
-d be dif-fer-ent at each tidal 
+Overfull \hbox (11.47404pt too wide) in paragraph at lines 214--214
+\OT1/cmr/m/n/10 up-grades, and a resid-ual sig-nal. They then ap-plied a Gaus-s
+ian wavelet trans-form to the 
  []
 
 
-Overfull \hbox (21.87686pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 gauge. They first re-moved the tides us-ing NOAA hourly har-mon
-ic tidal pre-dic-tions. They 
+Overfull \hbox (20.44617pt too wide) in paragraph at lines 214--214
+\OT1/cmr/m/n/10 resid-ual time se-ries to get the ex-act tim-ing of the slow sl
+ip at each GPS sta-tion. The idea 
  []
 
 
-Overfull \hbox (12.0434pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 then re-moved the resid-ual noise us-ing a method based on the 
-DWT. More pre-cisely, the 
+Overfull \hbox (1.849pt too wide) in paragraph at lines 214--214
+\OT1/cmr/m/n/10 is that the wavelet trans-form al-lows us to an-a-lyze the sig-
+nal both in the time and the 
  []
 
 
-Overfull \hbox (9.48788pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 au-thors ap-plied a DWT to each of the four sites stud-ied, and
- to the av-er-age of the four 
+Overfull \hbox (0.12675pt too wide) in paragraph at lines 214--214
+\OT1/cmr/m/n/10 fre-quency do-mains. A sharp change in the sig-nal will be lo-c
+al-ized and seen at all lev- 
  []
 
 
-Overfull \hbox (6.48781pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 sites. Then, for each level of the DWT de-com-po-si-tion, they 
-car-ried out a lin-ear re-gres- 
+Overfull \hbox (7.48792pt too wide) in paragraph at lines 214--214
+\OT1/cmr/m/n/10 els of the wavelet de-com-po-si-tion, con-trary to what hap-pen
+s with the pe-ri-odic si-nu-soids 
  []
 
 
-Overfull \hbox (10.79338pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 sion be-tween the de-tail for one site and the de-tail for the 
-av-er-age of the four sites. This 
+Overfull \hbox (17.54341pt too wide) in paragraph at lines 216--216
+[]\OT1/cmr/m/n/10 Instead of us-ing wavelets in the time do-main,  Ohtani et al
+.[] (2010) used 2D wavelet 
  []
 
 
-Overfull \hbox (13.62666pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 pro-cess gives a co-ef-fi-cient for each level and for each sit
-e. They then con-structed a noise 
+Overfull \hbox (3.54341pt too wide) in paragraph at lines 216--216
+\OT1/cmr/m/n/10 func-tions in the spa-tial do-main to de-tect slow slip events.
+ They de-signed the Net-work 
  []
 
 
-Overfull \hbox (1.59897pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 sig-nal for each site by mul-ti-ply-ing the co-ef-fi-cient from
- the lin-ear re-gres-sion by the de- 
+Overfull \hbox (6.9046pt too wide) in paragraph at lines 216--216
+\OT1/cmr/m/n/10 Stain Fil-ter (NSF) to de-tect tran-sient de-for-ma-tion sig-na
+ls from large-scale geode-tic ar- 
  []
 
 
-Overfull \hbox (8.12675pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 tail of the av-er-age over the four sites, and sum-ming for all
- lev-els. The noise sig-nal thus 
+Overfull \hbox (7.8907pt too wide) in paragraph at lines 216--216
+\OT1/cmr/m/n/10 rays. They mod-eled the po-si-tion of the GPS sta-tion by the s
+um of the sec-u-lar ve-loc-ity, 
  []
 
 
-Overfull \hbox (6.04338pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 ob-tained was then re-moved from the time se-ries. They then st
-acked mul-ti-ple events to 
+Overfull \hbox (6.54337pt too wide) in paragraph at lines 216--216
+\OT1/cmr/m/n/10 a spa-tially co-her-ent field, site-specific noise, ref-er-ence
+ frame er-rors, and ob-ser-va-tion er- 
  []
 
 
-Overfull \hbox (10.18242pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 ob-tain an av-er-age event up-lift rate, align-ing the 12 ETS e
-vents us-ing ex-act tim-ing from 
+Overfull \hbox (7.84894pt too wide) in paragraph at lines 216--216
+\OT1/cmr/m/n/10 rors. The spa-tial dis-place-ment field is mod-eled by the sum 
+of ba-sis wavelets with time- 
  []
 
 
-Overfull \hbox (11.91843pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 GPS data. A dif-fer-ence in up-lift be-tween the two tidal gaug
-es at Port An-ge-les and Port 
+Overfull \hbox (10.32118pt too wide) in paragraph at lines 216--216
+\OT1/cmr/m/n/10 varying weights. Their method has been suc-cess-fully used to d
+e-tect a tran-sient event in 
  []
 
 
-Overfull \hbox (12.43224pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 Townsend was then clearly seen in the stacked time se-ries. Fi-
-nally, the au-thors re-moved 
- []
-
-
-Overfull \hbox (16.79343pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 the long-term up-lift rate and the long-term sea level rise to 
-ob-tain an av-er-age inter-event 
- []
-
-
-Overfull \hbox (7.87685pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 up-lift rate. They found that the inter-event de-for-ma-tion at
- a site is equal and op-po-site 
- []
-
-
-Overfull \hbox (1.51569pt too wide) in paragraph at lines 215--215
-\OT1/cmr/m/n/10 to the de-for-ma-tion dur-ing an ETS event, sug-gest-ing that E
-TS events are, on av-er-age, 
- []
-
-
-Overfull \hbox (1.71017pt too wide) in paragraph at lines 217--217
-[] \OT1/cmr/m/n/10 Szeliga, Mel-bourne, San-til-lan, and Miller (2008) de-ter-m
-ined the tim-ing and the 
- []
-
-
-Overfull \hbox (13.76572pt too wide) in paragraph at lines 217--217
-\OT1/cmr/m/n/10 am-pli-tude of 34 slow slip events through-out the Cas-ca-dia s
-ub-duc-tion zone be-tween 1997 
- []
-
-
-Overfull \hbox (14.50172pt too wide) in paragraph at lines 217--217
-\OT1/cmr/m/n/10 and 2005. They sta-bi-lized the GPS time se-ries us-ing a ref-e
-r-ence set of sta-tions from sta- 
- []
-
-
-Overfull \hbox (22.86288pt too wide) in paragraph at lines 217--217
-\OT1/cmr/m/n/10 ble North Amer-ica. They then mod-elled the GPS time se-ries by
- the sum of a lin-ear trend, 
- []
-
-
-Overfull \hbox (15.18237pt too wide) in paragraph at lines 217--217
-\OT1/cmr/m/n/10 an-nual and bian-nual si-nu-soids rep-re-sent-ing sea-sonal ef-
-fects, and Heav-i-side step func-tions 
- []
-
-
-Overfull \hbox (17.93234pt too wide) in paragraph at lines 217--217
-\OT1/cmr/m/n/10 cor-re-spond-ing to earth-quakes and hard-ware up-grades. The l
-in-ear sys-tem was then solved 
- []
-
-
-Overfull \hbox (13.86298pt too wide) in paragraph at lines 217--217
-\OT1/cmr/m/n/10 us-ing a weighted QR de-com-po-si-tion. Fi-nally, they ap-plied
- a Gaus-sian wavelet trans-form 
- []
-
-
-Overfull \hbox (7.11282pt too wide) in paragraph at lines 217--217
-\OT1/cmr/m/n/10 to the resid-ual time se-ries to get the ex-act tim-ing of the 
-slow slip at each GPS sta-tion. 
- []
-
-
-Overfull \hbox (1.98784pt too wide) in paragraph at lines 217--217
-\OT1/cmr/m/n/10 The suc-ceed-ing wavelet ba-sis func-tions are in-creas-ingly s
-en-si-tive to tem-po-ral lo-cal-iza- 
- []
-
-
-Overfull \hbox (5.46016pt too wide) in paragraph at lines 217--217
-\OT1/cmr/m/n/10 tion of a given sig-nal, and the on-set of fault-ing ap-pears o
-n the wavelet spec-trum as an 
- []
-
-
-Overfull \hbox (14.23776pt too wide) in paragraph at lines 217--217
-\OT1/cmr/m/n/10 am-pli-tude spike present over all fre-quen-cies. The off-set f
-or each slow slip event was then 
- []
-
-
-Overfull \hbox (11.48792pt too wide) in paragraph at lines 217--217
-\OT1/cmr/m/n/10 used to in-vert for the slow slip at depth by as-sum-ing a thru
-st fault slip at each sub-fault 
- []
-
-
-Overfull \hbox (17.0296pt too wide) in paragraph at lines 219--219
-[]\OT1/cmr/m/n/10 Finally, in-stead of us-ing wavelets in the time do-main,  Oh
-tani, McGuire, and Segall 
- []
-
-
-Overfull \hbox (11.15454pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 (2010) used 2D wavelet func-tions in the spa-tial do-main to de
--tect slow slip events. They 
- []
-
-
-Overfull \hbox (1.59906pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 de-signed the Net-work Stain Fil-ter (NSF) to de-tect tran-sien
-t de-for-ma-tion sig-nals from 
- []
-
-
-Overfull \hbox (2.01563pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 large-scale geode-tic ar-rays. Con-trary to their pre-vi-ous wo
-rk on the Net-work In-ver-sion 
- []
-
-
-Overfull \hbox (0.18237pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 Fil-ter (NIF), there is no need to spec-ify po-ten-tial sources
- of de-for-ma-tion. They mod- 
- []
-
-
-Overfull \hbox (2.58511pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 eled the po-si-tion of the GPS sta-tion by the sum of the sec-u
--lar ve-loc-ity, a spa-tially co- 
- []
-
-
-Overfull \hbox (7.48776pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 her-ent field, site-specific noise, ref-er-ence frame er-rors, 
-and ob-ser-va-tion er-rors. The spa- 
- []
-
-
-Overfull \hbox (4.79338pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 tial dis-place-ment field is mod-eled by the sum of ba-sis wave
-lets (the Deslauriers-Dubuc 
- []
-
-
-Overfull \hbox (11.87672pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 wavelet of de-gree 3) with time-varying weights. The tran-sient
- is con-sid-ered to be nearly 
- []
-
-
-Overfull \hbox (11.099pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 steady-sate, so that it has spa-tial weights for the dis-place-
-ment and the ve-loc-ity, but the 
- []
-
-
-Overfull \hbox (24.76578pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 ac-cel-er-a-tion is mod-eled by a ran-dom walk with a time-vary
-ing vari-ance. All the time vary- 
- []
-
-
-Overfull \hbox (0.71019pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 ing co-ef-fi-cients are es-ti-mated us-ing Kalman fil-ter-ing, 
-and the op-ti-miza-tion prob-lem is 
- []
-
-
-Overfull \hbox (18.07124pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 reg-u-lar-ized with the spa-tial sum of the tran-sient strain r
-ate field. Their method has been 
- []
-
-
-Overfull \hbox (1.4323pt too wide) in paragraph at lines 219--219
-\OT1/cmr/m/n/10 suc-cess-fully used to de-tect a tran-sient event in the Boso p
-enin-sula, Japan, and a slow 
+Overfull \hbox (1.84901pt too wide) in paragraph at lines 216--216
+\OT1/cmr/m/n/10 the Boso penin-sula, Japan, and a slow slip event in the Alaska
+ sub-duc-tion zone  (Wei 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-Overfull \hbox (0.89055pt too wide) in paragraph at lines 221--221
-[]\OT1/cmr/m/n/10 In this study, we use wavelet meth-ods to an-a-lyze GPS and s
-eis-mic record-ings of 
+Overfull \hbox (3.2101pt too wide) in paragraph at lines 218--218
+[]\OT1/cmr/m/n/10 Finally,  Alba et al.[] (2019) used hourly wa-ter level recor
+ds from four tide gauges 
  []
 
 
-Overfull \hbox (5.04341pt too wide) in paragraph at lines 221--221
-\OT1/cmr/m/n/10 slow slip events in Cas-ca-dia. Our ob-jec-tive is to ver-ify t
-hat there is a good cor-re-la-tion 
+Overfull \hbox (9.9046pt too wide) in paragraph at lines 218--218
+\OT1/cmr/m/n/10 in the Juan de Fuca Straight and the Puget Sound to de-ter-mine
+ ver-ti-cal dis-place-ments, 
  []
 
 
-Overfull \hbox (2.75165pt too wide) in paragraph at lines 221--221
-\OT1/cmr/m/n/10 be-tween slow slip events de-tected with only GNSS data, and sl
-ow slip events de-tected 
+Overfull \hbox (18.29346pt too wide) in paragraph at lines 218--218
+\OT1/cmr/m/n/10 up-lift rates be-tween ETS events, and net up-lift rates be-twe
+en 1996 and 2011. Their main 
  []
 
 
-Overfull \hbox (7.37674pt too wide) in paragraph at lines 221--221
-\OT1/cmr/m/n/10 with only seis-mic data. We thus want to demon-strate that the 
-wavelet-based de-tec-tion 
+Overfull \hbox (3.2101pt too wide) in paragraph at lines 218--218
+\OT1/cmr/m/n/10 idea is that the tidal level mea-sured at a given gauge is the 
+sum of a noise com-po-nent 
  []
 
 
-Overfull \hbox (13.12677pt too wide) in paragraph at lines 221--221
-\OT1/cmr/m/n/10 method can be ap-plied to de-tect slow slip events that may be 
-cur-rently un-de-tected with 
+Overfull \hbox (4.93239pt too wide) in paragraph at lines 218--218
+\OT1/cmr/m/n/10 at mul-ti-ple timescales (tides, ocean and at-mo-spheric noise)
+ and an up-lift sig-nal due to 
  []
 
 
-Overfull \hbox (18.58508pt too wide) in paragraph at lines 225--225
+Overfull \hbox (21.46005pt too wide) in paragraph at lines 218--218
+\OT1/cmr/m/n/10 the ETS events. The noise com-po-nent is as-sumed to be co-her-
+ent be-tween all tidal gauges, 
+ []
+
+
+Overfull \hbox (25.1824pt too wide) in paragraph at lines 218--218
+\OT1/cmr/m/n/10 while the up-lift sig-nal is dif-fer-ent pro-vided that the gau
+ges are far enough from each other. 
+ []
+
+
+Overfull \hbox (7.62675pt too wide) in paragraph at lines 218--218
+\OT1/cmr/m/n/10 By stack-ing the tidal records, the up-lift sig-nals can-cel ea
+ch other while the noise sig-nal 
+ []
+
+
+Overfull \hbox (11.5713pt too wide) in paragraph at lines 218--218
+\OT1/cmr/m/n/10 is am-pli-fied. By stack-ing the de-tails of the DWT de-com-po-
+si-tion, in-stead of stack-ing the 
+ []
+
+
+Overfull \hbox (13.07114pt too wide) in paragraph at lines 218--218
+\OT1/cmr/m/n/10 raw tidal record, each of the com-po-nents of the noise at dif-
+fer-ent time scales is re-trieved 
+ []
+
+
+Overfull \hbox (8.23792pt too wide) in paragraph at lines 218--218
+\OT1/cmr/m/n/10 and can then be re-moved from the raw records to ob-tain the up
+-lift sig-nal. The au-thors 
+ []
+
+
+Overfull \hbox (7.43222pt too wide) in paragraph at lines 218--218
+\OT1/cmr/m/n/10 were then able to clearly see a dif-fer-ence in up-lift be-twee
+n the two tidal gauges at Port 
+ []
+
+
+Overfull \hbox (7.04338pt too wide) in paragraph at lines 220--220
+[]\OT1/cmr/m/n/10 In our study, we use a sim-i-lar ap-proach with a dif-fer-ent
+ rea-son-ing. We only stack 
+ []
+
+
+Overfull \hbox (10.19632pt too wide) in paragraph at lines 220--220
+\OT1/cmr/m/n/10 sig-nals at nearby GPS sta-tions, as-sum-ing that the lon-gi-tu
+-di-nal dis-place-ment due to the 
+ []
+
+
+Overfull \hbox (5.89056pt too wide) in paragraph at lines 220--220
+\OT1/cmr/m/n/10 ETS events will then be the same at each of the GPS sta-tions c
+on-sid-ered. We sup-pose 
+ []
+
+
+Overfull \hbox (16.69626pt too wide) in paragraph at lines 220--220
+\OT1/cmr/m/n/10 that some of the noise com-po-nent is dif-fer-ent at each GPS s
+ta-tion and will be elim-i-nated 
+ []
+
+
+Overfull \hbox (1.37685pt too wide) in paragraph at lines 220--220
+\OT1/cmr/m/n/10 by the stack-ing. Fi-nally, we sup-pose that the noise and the 
+lon-gi-tu-di-nal dis-place-ment 
+ []
+
+
+Overfull \hbox (3.6545pt too wide) in paragraph at lines 220--220
+\OT1/cmr/m/n/10 due to the ETS events and the sec-u-lar plate mo-tion have dif-
+fer-ent time scales, so that 
+ []
+
+
+Overfull \hbox (9.1545pt too wide) in paragraph at lines 220--220
+\OT1/cmr/m/n/10 the wavelet de-com-po-si-tion will act as a band-pass fil-ter t
+o re-trieve the dis-place-ment sig- 
+ []
+
+
+Overfull \hbox (11.02953pt too wide) in paragraph at lines 220--220
+\OT1/cmr/m/n/10 nal and high-light the ETS events. We use wavelet meth-ods to a
+n-a-lyze GPS and seis-mic 
+ []
+
+
+Overfull \hbox (14.26564pt too wide) in paragraph at lines 220--220
+\OT1/cmr/m/n/10 record-ings of slow slip events in Cas-ca-dia. Our ob-jec-tive 
+is to ver-ify that there is a good 
+ []
+
+
+Overfull \hbox (12.80725pt too wide) in paragraph at lines 220--220
+\OT1/cmr/m/n/10 cor-re-la-tion be-tween slow slip events de-tected with only GN
+SS data, and slow slip events 
+ []
+
+
+Overfull \hbox (4.04338pt too wide) in paragraph at lines 220--220
+\OT1/cmr/m/n/10 de-tected with only seis-mic data. We thus want to demon-strate
+ that the wavelet-based 
+ []
+
+
+Overfull \hbox (0.34897pt too wide) in paragraph at lines 220--220
+\OT1/cmr/m/n/10 de-tec-tion method can be ap-plied to de-tect slow slip events 
+that may be cur-rently un- 
+ []
+
+
+Overfull \hbox (18.58508pt too wide) in paragraph at lines 224--224
 []\OT1/cmr/m/n/10 We fo-cused our study on north-west Wash-ing-ton State. For t
 he GNSS data, we used 
  []
 
 
-Overfull \hbox (5.09888pt too wide) in paragraph at lines 225--225
+Overfull \hbox (5.09888pt too wide) in paragraph at lines 224--224
 \OT1/cmr/m/n/10 the GPS time se-ries pro-vided by the Pa-cific North-west Geode
 -tic Ar-ray, Cen-tral Wash- 
  []
 
 
-Overfull \hbox (9.4601pt too wide) in paragraph at lines 225--225
+Overfull \hbox (9.4601pt too wide) in paragraph at lines 224--224
 \OT1/cmr/m/n/10 ing-ton Uni-ver-sity. These are net-work so-lu-tions in ITRF200
 8 with phase am-bi-gu-i-ties re- 
  []
 
 
-Overfull \hbox (16.65465pt too wide) in paragraph at lines 225--225
+Overfull \hbox (16.65465pt too wide) in paragraph at lines 224--224
 \OT1/cmr/m/n/10 solved. So-lu-tions are com-puted with JPL/NASA or-bits and sat
 el-lite clocks. North, East, 
  []
 
 
-Overfull \hbox (8.51561pt too wide) in paragraph at lines 225--225
+Overfull \hbox (8.51561pt too wide) in paragraph at lines 224--224
 \OT1/cmr/m/n/10 and Ver-ti-cal di-rec-tions are avail-able. How-ever, as the di
 -rec-tion of the sec-u-lar plate mo- 
  []
 
 
-Overfull \hbox (6.00168pt too wide) in paragraph at lines 225--225
+Overfull \hbox (6.00168pt too wide) in paragraph at lines 224--224
 \OT1/cmr/m/n/10 tion is close to the East di-rec-tion, we only used the East di
 -rec-tion of the GPS time se- 
  []
 
 
-Overfull \hbox (2.04341pt too wide) in paragraph at lines 225--225
+Overfull \hbox (2.04341pt too wide) in paragraph at lines 224--224
 \OT1/cmr/m/n/10 ries for the data anal-y-sis, as it has the best signal-to-nois
 e ra-tio. The wavelet method 
  []
 
 
-Overfull \hbox (18.09894pt too wide) in paragraph at lines 225--225
+Overfull \hbox (18.09894pt too wide) in paragraph at lines 224--224
 \OT1/cmr/m/n/10 works best with data with zero mean, and no sharp dis-con-ti-nu
 -ities, so we use the cleaned 
  []
 
 
-Overfull \hbox (0.39058pt too wide) in paragraph at lines 225--225
-\OT1/cmr/m/n/10 dataset, that is GPS times eries with lin-ear trends, steps due
- to earth-quakes or hard- 
+Overfull \hbox (4.33502pt too wide) in paragraph at lines 224--224
+\OT1/cmr/m/n/10 dataset, that is GPS times se-ries with lin-ear trends, steps d
+ue to earth-quakes or hard- 
  []
 
 
-Overfull \hbox (6.57129pt too wide) in paragraph at lines 225--225
+Overfull \hbox (6.57129pt too wide) in paragraph at lines 224--224
 \OT1/cmr/m/n/10 ware up-grades, and an-nual and semi-annual si-nu-soids sig-nal
 s si-mul-ta-ne-ously es-ti-mated 
  []
 
 
-Overfull \hbox (2.15462pt too wide) in paragraph at lines 225--225
+Overfull \hbox (2.15462pt too wide) in paragraph at lines 224--224
 \OT1/cmr/m/n/10 and re-moved fol-low-ing  Szeliga, Mel-bourne, Miller, and San-
 til-lan (2004). For the seis- 
  []
 
 
-Overfull \hbox (24.87675pt too wide) in paragraph at lines 225--225
-\OT1/cmr/m/n/10 mic data, we used the tremor cat-a-log from the Pa-cific North-
-west Seis-mic Net-work (PNSN) 
+Overfull \hbox (11.23787pt too wide) in paragraph at lines 224--224
+\OT1/cmr/m/n/10 mic data, we used the tremor cat-a-log from []ref-er-ence for t
+he cat-a-log. The fol-low-ing is to 
  []
 
 
-Overfull \hbox (2.01561pt too wide) in paragraph at lines 225--225
-\OT1/cmr/m/n/10 (Wech, 2010). Tremor were de-tected and lo-cated us-ing wave-fo
-rm en-ve-lope cor-re-la-tion 
+Overfull \hbox (19.54338pt too wide) in paragraph at lines 224--224
+\OT1/cmr/m/n/10 be mod-i-fied. the Pa-cific North-west Seis-mic Net-work (PNSN)
+  (Wech, 2010). Tremor were 
  []
 
 
-Overfull \hbox (8.68237pt too wide) in paragraph at lines 225--225
-\OT1/cmr/m/n/10 and clus-ter-ing and a cen-troid lo-ca-tion is avail-able for e
-v-ery given five-minute time win- 
+Overfull \hbox (10.3768pt too wide) in paragraph at lines 224--224
+\OT1/cmr/m/n/10 de-tected and lo-cated us-ing wave-form en-ve-lope cor-re-la-ti
+on and clus-ter-ing and a cen-troid 
  []
 
 
-Overfull \hbox (1.0434pt too wide) in paragraph at lines 225--225
-\OT1/cmr/m/n/10 dow when tremor was de-tected. As the cat-a-log starts in Au-gu
-st 2009, we only looked 
+Overfull \hbox (12.29344pt too wide) in paragraph at lines 224--224
+\OT1/cmr/m/n/10 lo-ca-tion is avail-able for ev-ery given five-minute time win-
+dow when tremor was de-tected. 
  []
 
 
-Overfull \hbox (6.84895pt too wide) in paragraph at lines 231--232
+Overfull \hbox (4.55736pt too wide) in paragraph at lines 224--224
+\OT1/cmr/m/n/10 As the cat-a-log starts in Au-gust 2009, we only looked at GPS 
+data recorded in 2009 or 
+ []
+
+
+Overfull \hbox (6.84895pt too wide) in paragraph at lines 230--231
 []\OT1/cmr/m/n/10 The Dis-crete Wavelet Trans-form (DWT) is an or-thonor-mal tr
 ans-form that trans- 
  []
 
 
-Overfull \hbox (61.98338pt too wide) in paragraph at lines 231--232
+Overfull \hbox (61.98338pt too wide) in paragraph at lines 230--231
 \OT1/cmr/m/n/10 forms a time se-ries $\OML/cmm/m/it/10 X[] []$ \OT1/cmr/m/n/10 
 into a vec-tor of wavelet co-ef-fi-cients $\OML/cmm/m/it/10 W[] []$\OT1/cmr/m/n
 /10 . 
  []
 
 
-Overfull \hbox (4.46231pt too wide) in paragraph at lines 231--232
+Overfull \hbox (4.46231pt too wide) in paragraph at lines 230--231
 \OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 is some in-te-ger higher or equal to 1, the
  vec-tor of wavelet co-ef-fi-cients can be de-com- 
  []
 
 
-Overfull \hbox (8.01657pt too wide) in paragraph at lines 231--232
+Overfull \hbox (8.01657pt too wide) in paragraph at lines 230--231
 \OT1/cmr/m/n/10 posed into $\OML/cmm/m/it/10 J$ \OT1/cmr/m/n/10 wavelet vec-tor
 s $\OML/cmm/m/it/10 W[]$ \OT1/cmr/m/n/10 of lengths $[]$, $[]$, ... , $[]$, and
  one scal-ing vec-tor $\OML/cmm/m/it/10 V[]$ \OT1/cmr/m/n/10 of 
  []
 
 
-Overfull \hbox (20.11165pt too wide) in paragraph at lines 231--232
+Overfull \hbox (20.11165pt too wide) in paragraph at lines 230--231
 \OT1/cmr/m/n/10 length $[]$. Each wavelet vec-tor $\OML/cmm/m/it/10 W[]$ \OT1/c
 mr/m/n/10 is as-so-ci-ated with changes on scale $\OML/cmm/m/it/10 ^^\[] \OT1/c
 mr/m/n/10 = \OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 2[]$, where 
  []
 
 
-Overfull \hbox (16.0816pt too wide) in paragraph at lines 231--232
+Overfull \hbox (16.0816pt too wide) in paragraph at lines 230--231
 \OML/cmm/m/it/10 dt$ \OT1/cmr/m/n/10 is the time step of the time se-ries, and 
 cor-re-sponds to the fil-ter-ing of the orig-i-nal time 
  []
 
 
-Overfull \hbox (6.11452pt too wide) in paragraph at lines 231--232
+Overfull \hbox (6.11452pt too wide) in paragraph at lines 230--231
 \OT1/cmr/m/n/10 se-ries with a fil-ter with nom-i-nal fre-quency in-ter-val $[[
 ]; []]$. The scal-ing vec-tor $\OML/cmm/m/it/10 V[]$ 
  []
 
 
-Overfull \hbox (10.16866pt too wide) in paragraph at lines 231--232
+Overfull \hbox (10.16866pt too wide) in paragraph at lines 230--231
 \OT1/cmr/m/n/10 orig-i-nal time se-ries with a fil-ter with nom-i-nal fre-quenc
 y in-ter-val $[0; []]$. We can also 
  []
 
 
-Overfull \hbox (25.48947pt too wide) in paragraph at lines 231--232
+Overfull \hbox (25.48947pt too wide) in paragraph at lines 230--231
 \OT1/cmr/m/n/10 wavelet smooth $\OML/cmm/m/it/10 S[]$\OT1/cmr/m/n/10 , which is
  a vec-tor of length $\OML/cmm/m/it/10 N$\OT1/cmr/m/n/10 , and is as-so-ci-ated
  to scales $\OML/cmm/m/it/10 ^^\[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 dt\OT1/cm
@@ -1195,205 +1305,206 @@ r/m/n/10 2[]$
  []
 
 
-Overfull \hbox (34.8491pt too wide) in paragraph at lines 231--232
+Overfull \hbox (34.8491pt too wide) in paragraph at lines 230--231
 \OT1/cmr/m/n/10 and higher. To-gether, the de-tails and the smooths de-fine the
  mul-tires-o-lu-tion anal-y-sis (MRA) 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3417) has occurred while \output is active []
 
  [4]
-Overfull \hbox (8.84888pt too wide) in paragraph at lines 239--239
+Overfull \hbox (8.84888pt too wide) in paragraph at lines 238--238
 []\OT1/cmr/m/n/10 The DWT present sev-eral dis-ad-van-tages. First, the length 
 of the time se-ries must 
  []
 
 
-Overfull \hbox (1.66281pt too wide) in paragraph at lines 239--239
+Overfull \hbox (1.66281pt too wide) in paragraph at lines 238--238
 \OT1/cmr/m/n/10 be a mul-ti-ple of $2[]$ where $\OML/cmm/m/it/10 J$ \OT1/cmr/m/
 n/10 is the level of the DWT de-com-po-si-tion. Sec-ond, the time 
  []
 
 
-Overfull \hbox (12.11975pt too wide) in paragraph at lines 239--239
+Overfull \hbox (12.11975pt too wide) in paragraph at lines 238--238
 \OT1/cmr/m/n/10 step of the wavelet vec-tor $\OML/cmm/m/it/10 W[]$ \OT1/cmr/m/n
 /10 is $\OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 2[]$, which may not cor-re-spond to 
 the time when some 
  []
 
 
-Overfull \hbox (8.62675pt too wide) in paragraph at lines 239--239
+Overfull \hbox (8.62675pt too wide) in paragraph at lines 238--238
 \OT1/cmr/m/n/10 in-ter-est-ing phe-nomenon is vis-i-ble on the orig-i-nal time 
 se-ries. Third, when we cir-cu-larly 
  []
 
 
-Overfull \hbox (10.6823pt too wide) in paragraph at lines 239--239
+Overfull \hbox (10.6823pt too wide) in paragraph at lines 238--238
 \OT1/cmr/m/n/10 shift the time se-ries, the cor-re-spond-ing wavelet co-ef-fi-c
 ients, de-tails and smooths are not 
  []
 
 
-Overfull \hbox (2.23787pt too wide) in paragraph at lines 239--239
+Overfull \hbox (2.23787pt too wide) in paragraph at lines 238--238
 \OT1/cmr/m/n/10 a cir-cu-larly shifted ver-sion of the wavelet co-ef-fi-cients,
  de-tails and smooths of the orig- 
  []
 
 
-Overfull \hbox (34.599pt too wide) in paragraph at lines 239--239
+Overfull \hbox (34.599pt too wide) in paragraph at lines 238--238
 \OT1/cmr/m/n/10 i-nal time se-ries. Thus, the val-ues of the wavelet co-ef-fi-c
 ients, de-tails and smooths are strongly 
  []
 
 
-Overfull \hbox (8.46017pt too wide) in paragraph at lines 239--239
+Overfull \hbox (8.46017pt too wide) in paragraph at lines 238--238
 \OT1/cmr/m/n/10 de-pen-dent on the time when we start ex-per-i-men-tally gath-e
 r-ing the data. Fi-nally, when 
  []
 
 
-Overfull \hbox (3.09894pt too wide) in paragraph at lines 239--239
+Overfull \hbox (3.09894pt too wide) in paragraph at lines 238--238
 \OT1/cmr/m/n/10 we fil-ter the time se-ries to ob-tain the de-tails and smooths
 , we in-tro-duce a phase shift, 
  []
 
 
-Overfull \hbox (0.43236pt too wide) in paragraph at lines 239--239
+Overfull \hbox (0.43236pt too wide) in paragraph at lines 238--238
 \OT1/cmr/m/n/10 which makes dif-fi-cult to line up mean-ing-fully the fea-tures
  of the MRA with the orig-i- 
  []
 
 
-Overfull \hbox (45.40451pt too wide) in paragraph at lines 241--242
+Overfull \hbox (45.40451pt too wide) in paragraph at lines 240--241
 []\OT1/cmr/m/n/10 This is why we use in-stead the Max-i-mal Over-lap Dis-crete 
 Wavelet Trans-form (MODWT). 
  []
 
 
-Overfull \hbox (73.80083pt too wide) in paragraph at lines 241--242
+Overfull \hbox (73.80083pt too wide) in paragraph at lines 240--241
 \OT1/cmr/m/n/10 The MODWT trans-forms the time se-ries $\OML/cmm/m/it/10 X[] []
 $ \OT1/cmr/m/n/10 into J wavelet vec-tors $[] []$ 
  []
 
 
-Overfull \hbox (26.04462pt too wide) in paragraph at lines 241--242
+Overfull \hbox (26.04462pt too wide) in paragraph at lines 240--241
 \OT1/cmr/m/n/10 of length $\OML/cmm/m/it/10 N$ \OT1/cmr/m/n/10 and a scal-ing v
 ec-tor $[]$ of length $\OML/cmm/m/it/10 N$\OT1/cmr/m/n/10 . As is the case for 
 the DWT, each wavelet 
  []
 
 
-Overfull \hbox (0.55193pt too wide) in paragraph at lines 241--242
+Overfull \hbox (0.55193pt too wide) in paragraph at lines 240--241
 \OT1/cmr/m/n/10 vec-tor $[]$ is as-so-ci-ated with changes on scale $\OML/cmm/m
 /it/10 ^^\[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 2[]$, and cor
 -re-sponds to the fil- 
  []
 
 
-Overfull \hbox (23.27992pt too wide) in paragraph at lines 241--242
+Overfull \hbox (23.27992pt too wide) in paragraph at lines 240--241
 \OT1/cmr/m/n/10 ter-ing of the orig-i-nal time se-ries with a fil-ter with nom-
 i-nal fre-quency in-ter-val $[[]; []]$. 
  []
 
 
-Overfull \hbox (1.80774pt too wide) in paragraph at lines 241--242
+Overfull \hbox (1.80774pt too wide) in paragraph at lines 240--241
 \OT1/cmr/m/n/10 The scal-ing vec-tor $[]$ is as-so-ci-ated with av-er-ages in s
 cale $\OML/cmm/m/it/10 ^^U[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 dt\OT1/cmr/m/n/
 10 2[]$, and cor-re-sponds 
  []
 
 
-Overfull \hbox (1.79347pt too wide) in paragraph at lines 241--242
+Overfull \hbox (1.79347pt too wide) in paragraph at lines 240--241
 \OT1/cmr/m/n/10 to the fil-ter-ing of the orig-i-nal time se-ries with a fil-te
 r with nom-i-nal fre-quency in-ter-val 
  []
 
 
-Overfull \hbox (5.55717pt too wide) in paragraph at lines 249--249
+Overfull \hbox (5.55717pt too wide) in paragraph at lines 248--248
 []\OT1/cmr/m/n/10 The MODWT of a time se-ries can be de-fined for any length $\
 OML/cmm/m/it/10 N$\OT1/cmr/m/n/10 . The time step of 
  []
 
 
-Overfull \hbox (3.00821pt too wide) in paragraph at lines 249--249
+Overfull \hbox (3.00821pt too wide) in paragraph at lines 248--248
 \OT1/cmr/m/n/10 the wavelet vec-tors $[]$ and the scal-ing vec-tor $[]$ is equa
 l to the time step of the orig- 
  []
 
 
-Overfull \hbox (13.95999pt too wide) in paragraph at lines 249--249
+Overfull \hbox (13.95999pt too wide) in paragraph at lines 248--248
 \OT1/cmr/m/n/10 i-nal time se-ries. When we cir-cu-larly shift the time se-ries
 , the cor-re-spond-ing wavelet vec- 
  []
 
 
-Overfull \hbox (9.15459pt too wide) in paragraph at lines 249--249
+Overfull \hbox (9.15459pt too wide) in paragraph at lines 248--248
 \OT1/cmr/m/n/10 and smooths are as-so-ci-ated with a zero phase fil-ter, mak-in
 g it easy to line up mean-ing- 
  []
 
 
-Overfull \hbox (20.87677pt too wide) in paragraph at lines 249--249
+Overfull \hbox (20.87677pt too wide) in paragraph at lines 248--248
 \OT1/cmr/m/n/10 fully the fea-tures of the MRA with the orig-i-nal time se-ries
 . The wavelet meth-ods for time 
  []
 
 
-Overfull \hbox (0.98782pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.98782pt too wide) in paragraph at lines 252--252
 []\OT1/cmr/m/n/10 To il-lus-trate the wavelet trans-form method, we first ap-pl
 y the MODWT to syn- 
  []
 
 
-Overfull \hbox (1.23776pt too wide) in paragraph at lines 253--253
+Overfull \hbox (1.23776pt too wide) in paragraph at lines 252--252
 \OT1/cmr/m/n/10 thet-ics data. As slow slip events oc-cur in Cas-ca-dia on a re
 g-u-lar ba-sis, ev-ery twelve to 
  []
 
 
-Overfull \hbox (19.8352pt too wide) in paragraph at lines 253--253
+Overfull \hbox (19.8352pt too wide) in paragraph at lines 252--252
 \OT1/cmr/m/n/10 the ground dis-place-ment ob-served on the lon-gi-tu-di-nal com
 -po-nent of GPS sta-tions in Cas- 
  []
 
 
-Overfull \hbox (9.28992pt too wide) in paragraph at lines 253--253
+Overfull \hbox (9.28992pt too wide) in paragraph at lines 252--252
 \OT1/cmr/m/n/10 ca-dia, we di-vide each pe-riod into two parts: In the first pa
 rt of du-ra-tion $\OML/cmm/m/it/10 T \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 N$\O
 T1/cmr/m/n/10 , the dis- 
  []
 
 
-Overfull \hbox (12.26566pt too wide) in paragraph at lines 253--253
+Overfull \hbox (12.26566pt too wide) in paragraph at lines 252--252
 \OT1/cmr/m/n/10 place-ment is lin-early in-creas-ing and cor-re-sponds to the s
 ec-u-lar plate mo-tion in the east- 
  []
 
 
-Overfull \hbox (6.30728pt too wide) in paragraph at lines 253--253
+Overfull \hbox (6.30728pt too wide) in paragraph at lines 252--252
 \OT1/cmr/m/n/10 ern di-rec-tion; in the sec-ond part of du-ra-tion $\OML/cmm/m/
 it/10 N$\OT1/cmr/m/n/10 , the dis-place-ment is lin-early de-creas-ing 
  []
 
 
-Overfull \hbox (11.48787pt too wide) in paragraph at lines 253--253
+Overfull \hbox (11.48787pt too wide) in paragraph at lines 252--252
 \OT1/cmr/m/n/10 and cor-re-sponds to a slow slip event on a re-verse fault at d
 epth trig-ger-ing a ground dis- 
  []
 
 
-Overfull \hbox (3.18222pt too wide) in paragraph at lines 253--253
+Overfull \hbox (3.18222pt too wide) in paragraph at lines 252--252
 \OT1/cmr/m/n/10 place-ment in the west-ern di-rec-tion. To see the ef-fect of t
 he mag-ni-tude of the slow slip 
  []
 
 
-Overfull \hbox (2.68233pt too wide) in paragraph at lines 253--253
+Overfull \hbox (2.68233pt too wide) in paragraph at lines 252--252
 \OT1/cmr/m/n/10 ics, the de-tails of the wavelet de-com-po-si-tion for lev-els 
 1 to 10, and the smooth for the 
  []
 
+[5]
 Package epstopdf Info: Source file: <figures/500_DS.eps>
 (epstopdf)                    date: 2021-10-09 14:53:00
 (epstopdf)                    size: 348472 bytes
@@ -1402,227 +1513,227 @@ Package epstopdf Info: Source file: <figures/500_DS.eps>
 (epstopdf)                    size: 73570 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/500_DS-eps-convert
 ed-to.pdf figures/500_DS.eps>
-(epstopdf)             \includegraphics on input line 256.
+(epstopdf)             \includegraphics on input line 255.
 Package epstopdf Info: Output file is already uptodate.
-<figures/500_DS-eps-converted-to.pdf, id=33, 1445.4pt x 2818.53pt>
+ <figures/500_DS-eps-converted-to.pdf, id=36, 1445.4pt x 2818.53pt>
 File: figures/500_DS-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/500_DS-eps-converted-to.pdf>
 Package pdftex.def Info: figures/500_DS-eps-converted-to.pdf used on input line
- 256.
+ 255.
 (pdftex.def)             Requested size: 312.9803pt x 610.31589pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--257
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\OT1/cmr/bx/n/9 Figure  1. \OT1/cmr/m/n/9 De-tails and smooth of the wavelet 
 de-com-po-si-tion of a syn-thet-ics sig-nal with pe-riod
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--257
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \OT1/cmr/m/n/9 500 days and du-ra-tion of the slow slip event equal to 2 days (
 left), 5 days, 10 days, and 20 days
  []
 
 
-Overfull \hbox (7.79343pt too wide) in paragraph at lines 261--261
+Overfull \hbox (7.79343pt too wide) in paragraph at lines 260--260
 []\OT1/cmr/m/n/10 The ramp-like sig-nal is trans-formed through the wavelet fil
 -ter-ing into a wave-form 
  []
 
 
-Overfull \hbox (2.90457pt too wide) in paragraph at lines 261--261
+Overfull \hbox (2.90457pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 with first a pos-i-tive peak and then a neg-a-tive peak. The sh
 ape of the wave-form is the 
  []
 
 
-Overfull \hbox (24.62677pt too wide) in paragraph at lines 261--261
+Overfull \hbox (24.62677pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 same for ev-ery level of the wavelet de-com-po-si-tion, but the
  width of the wave-form in-creases 
  []
 
 
-Overfull \hbox (24.2934pt too wide) in paragraph at lines 261--261
+Overfull \hbox (24.2934pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 with the scale level. For the 8th level of the wavelet de-com-p
 o-si-tion, the width of the wave- 
  []
 
 
-Overfull \hbox (7.34885pt too wide) in paragraph at lines 261--261
+Overfull \hbox (7.34885pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 form is nearly as large as the time be-tween two events. At lar
 ger scales, the wave-forms 
  []
 
 
-Overfull \hbox (12.76563pt too wide) in paragraph at lines 261--261
+Overfull \hbox (12.76563pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 start to merge two con-tigu-ous events to-gether, and make the 
 wavelet de-com-po-si-tion less 
  []
 
 
-Overfull \hbox (7.79344pt too wide) in paragraph at lines 261--261
+Overfull \hbox (7.79344pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 in-ter-pretable. For an event of du-ra-tion 5 days, the wavelet
  de-tails at lev-els higher than 
  []
 
 
-Overfull \hbox (3.8767pt too wide) in paragraph at lines 261--261
+Overfull \hbox (3.8767pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 3 have a larger am-pli-tude than the wavelet de-tails at lower 
 scales. For an event of du- 
  []
 
 
-Overfull \hbox (7.6268pt too wide) in paragraph at lines 261--261
+Overfull \hbox (7.6268pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 ra-tion 10 days, the wavelet de-tails at lev-els higher than 4 
 have a larger am-pli-tude than 
  []
 
 
-Overfull \hbox (11.46002pt too wide) in paragraph at lines 261--261
+Overfull \hbox (11.46002pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 the wavelet de-tails at lower scales. For an event of du-ra-tio
 n 20 days, the wavelet de-tails 
  []
 
 
-Overfull \hbox (8.23782pt too wide) in paragraph at lines 261--261
+Overfull \hbox (8.23782pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 at lev-els higher than 5 have a larger am-pli-tude than the wav
 elet de-tails at lower scales. 
  []
 
 
-Overfull \hbox (17.79344pt too wide) in paragraph at lines 261--261
+Overfull \hbox (17.79344pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 For an event of du-ra-tion 40 days, the wavelet de-tails at lev
 -els higher than 6 have a larger 
  []
 
 
-Overfull \hbox (25.48778pt too wide) in paragraph at lines 261--261
+Overfull \hbox (25.48778pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 am-pli-tude than the wavelet de-tails at lower scales. Thus, th
 e scale lev-els at which an event 
  []
 
 
-Overfull \hbox (23.98795pt too wide) in paragraph at lines 261--261
+Overfull \hbox (23.98795pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 is be-ing seen in the wavelet de-tails give us an in-di-ca-tion
  about the du-ra-tion (and the mag- 
  []
 
 
-Overfull \hbox (10.12674pt too wide) in paragraph at lines 261--261
+Overfull \hbox (10.12674pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 ni-tude) of the slow slip event. We ex-pect the big slow slip e
 vents of mag-ni-tude 6-7 that 
  []
 
 
-Overfull \hbox (9.12674pt too wide) in paragraph at lines 261--261
+Overfull \hbox (9.12674pt too wide) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 last sev-eral weeks to start be-ing vis-i-ble at the level 5 of
  the wavelet de-com-po-si-tion, but 
  []
 
-[5] [6 <./figures/500_DS-eps-converted-to.pdf>]
-Overfull \hbox (12.82112pt too wide) in paragraph at lines 265--265
+
+Overfull \hbox (12.82112pt too wide) in paragraph at lines 264--264
 []\OT1/cmr/m/n/10 The DWT and MODWT meth-ods must be used on a con-tin-u-ous ti
 me se-ries, with- 
  []
 
 
-Overfull \hbox (14.22394pt too wide) in paragraph at lines 265--265
+Overfull \hbox (14.22394pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 out gaps in the record-ings. To deal with the gaps in the GNSS 
 record-ings, we sim-ply re- 
  []
 
 
-Overfull \hbox (6.22401pt too wide) in paragraph at lines 265--265
+Overfull \hbox (6.22401pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 place the miss-ing val-ues by the sum of a straight line and a 
 Gaus-sian noise com-po-nent 
  []
 
 
-Overfull \hbox (19.488pt too wide) in paragraph at lines 265--265
+Overfull \hbox (19.488pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 with mean zero and stan-dard de-vi-a-tion equal to the stan-dar
 d de-vi-a-tion of the whole time 
  []
 
 
-Overfull \hbox (4.79338pt too wide) in paragraph at lines 265--265
+Overfull \hbox (4.79338pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 se-ries. The straight line starts at the mean of the five days 
 be-fore the gap and ends at 
  []
 
 
-Overfull \hbox (0.84895pt too wide) in paragraph at lines 265--265
+Overfull \hbox (0.84895pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 the mean of the five days af-ter the gap. We ver-ify how the wa
 velet de-tails may be af- 
  []
 
 
-Overfull \hbox (18.72404pt too wide) in paragraph at lines 265--265
+Overfull \hbox (18.72404pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 fected by look-ing at a GPS time se-ries with-out miss-ing val-
 ues and com-par-ing the wavelet 
  []
 
 
-Overfull \hbox (4.83517pt too wide) in paragraph at lines 265--265
+Overfull \hbox (4.83517pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 de-tails with and with-out re-mov-ing some data points. Sta-tio
 n PGC5 has recorded dur- 
  []
 
 
-Overfull \hbox (2.9324pt too wide) in paragraph at lines 265--265
+Overfull \hbox (2.9324pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 ing 1390 days be-tween 2009 and 2013, with-out any miss-ing val
 -ues. We first com-puted 
  []
 
 
-Overfull \hbox (4.9601pt too wide) in paragraph at lines 265--265
+Overfull \hbox (4.9601pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 the wavelet de-tails with-out miss-ing val-ues. Then, we re-mov
 ed ten neigh-bor-ing miss-ing 
  []
 
 
-Overfull \hbox (16.1407pt too wide) in paragraph at lines 265--265
+Overfull \hbox (16.1407pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 val-ues, re-placed them by the sum of the straight line and the
  Gaus-sian noise com-po-nent, 
  []
 
 
-Overfull \hbox (2.23784pt too wide) in paragraph at lines 265--265
+Overfull \hbox (2.23784pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 and com-puted the wavelet de-tails with the re-placed val-ues. 
 Fig-ure 2 shows a com-par- 
  []
 
 
-Overfull \hbox (7.73784pt too wide) in paragraph at lines 265--265
+Overfull \hbox (7.73784pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 i-son of the two wavelet de-tails for two dif-fer-ent lo-ca-tio
 ns of the miss-ing val-ues. We can 
  []
 
 
-Overfull \hbox (27.3489pt too wide) in paragraph at lines 265--265
+Overfull \hbox (27.3489pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 see that there are vis-i-ble dif-fer-ences in the time se-ries 
 it-self, and in the de-tails at the small- 
  []
 
 
-Overfull \hbox (16.5155pt too wide) in paragraph at lines 265--265
+Overfull \hbox (16.5155pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 est lev-els of the wavelet de-com-po-si-tion. How-ever, the dif
 -fer-ences be-tween the wavelet de- 
  []
 
 
-Overfull \hbox (8.43234pt too wide) in paragraph at lines 265--265
+Overfull \hbox (8.43234pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 tails with and with-out miss-ing val-ues get smaller and smalle
 r with in-creas-ing lev-els the 
  []
 
 
-Overfull \hbox (29.2101pt too wide) in paragraph at lines 265--265
+Overfull \hbox (29.2101pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 de-tails, and are barely vis-i-ble for the lev-els we are mostl
 y in-ter-ested in (lev-els 6 and above). 
  []
 
 
-Overfull \hbox (10.64055pt too wide) in paragraph at lines 265--265
+Overfull \hbox (10.64055pt too wide) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 We thus con-clude that we can eas-ily re-place the miss-ing val
 -ues in the GNSS time se-ries 
  []
@@ -1635,626 +1746,839 @@ Package epstopdf Info: Source file: <figures/DS_10.eps>
 (epstopdf)                    size: 48030 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/DS_10-eps-converte
 d-to.pdf figures/DS_10.eps>
-(epstopdf)             \includegraphics on input line 268.
+(epstopdf)             \includegraphics on input line 267.
 Package epstopdf Info: Output file is already uptodate.
-<figures/DS_10-eps-converted-to.pdf, id=85, 433.62pt x 1734.48pt>
+<figures/DS_10-eps-converted-to.pdf, id=38, 433.62pt x 1734.48pt>
 File: figures/DS_10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/DS_10-eps-converted-to.pdf>
 Package pdftex.def Info: figures/DS_10-eps-converted-to.pdf used on input line 
-268.
+267.
 (pdftex.def)             Requested size: 142.26378pt x 569.04546pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
 []\OT1/cmr/bx/n/9 Figure  2. \OT1/cmr/m/n/9 Bot-tom: Data from GPS sta-tion PGC
 5 with-out miss-ing val-ues (black) and with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
 \OT1/cmr/m/n/9 miss-ing val-ues re-placed by the sum of a straight line and a G
 aus-sian noise com-po-nent (red) for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
 \OT1/cmr/m/n/9 two lo-ca-tions of the miss-ing val-ues (left and right). Bot-to
 m to top: Cor-re-spond-ing ten de-tails
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
 \OT1/cmr/m/n/9 and smooths of the wavelet com-po-si-tion for the orig-i-nal dat
 a (black) and for the miss-ing val-ues
  []
 
 
-Overfull \hbox (7.72392pt too wide) in paragraph at lines 273--273
+Overfull \hbox (7.72392pt too wide) in paragraph at lines 272--272
 []\OT1/cmr/m/n/10 We then ap-plied the wavelet fil-ter-ing to real GPS data. Fi
 g-ure 3 shows the lon-gi- 
  []
 
 
-Overfull \hbox (8.90462pt too wide) in paragraph at lines 273--273
+Overfull \hbox (8.90462pt too wide) in paragraph at lines 272--272
 \OT1/cmr/m/n/10 tu-di-nal dis-place-ment for GPS sta-tion PGC5, lo-cated in sou
 th-ern Van-cou-ver Is-land, the 
  []
 
 
-Overfull \hbox (4.54344pt too wide) in paragraph at lines 273--273
+Overfull \hbox (4.54344pt too wide) in paragraph at lines 272--272
 \OT1/cmr/m/n/10 de-tails of the wavelet de-com-po-si-tion for lev-els 1 to 8, a
 nd the smooth. In the data, we 
  []
 
 
-Overfull \hbox (11.9044pt too wide) in paragraph at lines 273--273
+Overfull \hbox (11.9044pt too wide) in paragraph at lines 272--272
 \OT1/cmr/m/n/10 can see a sharp drop in dis-place-ment when-ever there is a slo
 w slip event. For lev-els 5 to 
  []
 
 
-Overfull \hbox (7.0156pt too wide) in paragraph at lines 273--273
+Overfull \hbox (7.0156pt too wide) in paragraph at lines 272--272
 \OT1/cmr/m/n/10 8, we can see in the de-tails a pos-i-tive peak fol-lowed by a 
 neg-a-tive peak when-ever there 
  []
 
 
-Overfull \hbox (4.79341pt too wide) in paragraph at lines 273--273
+Overfull \hbox (4.79341pt too wide) in paragraph at lines 272--272
 \OT1/cmr/m/n/10 is a drop in dis-place-ment in the data. We thus ver-ify that t
 he wavelet method can de- 
  []
 
 Package epstopdf Info: Source file: <figures/cleaned_PGC5_lon.eps>
-(epstopdf)                    date: 2021-08-21 10:30:12
-(epstopdf)                    size: 487189 bytes
+(epstopdf)                    date: 2021-10-09 15:45:27
+(epstopdf)                    size: 586475 bytes
 (epstopdf)             Output file: <figures/cleaned_PGC5_lon-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2021-08-21 10:30:12
-(epstopdf)                    size: 142724 bytes
+(epstopdf)                    date: 2021-10-10 11:06:25
+(epstopdf)                    size: 164520 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/cleaned_PGC5_lon-e
 ps-converted-to.pdf figures/cleaned_PGC5_lon.eps>
-(epstopdf)             \includegraphics on input line 276.
+(epstopdf)             \includegraphics on input line 275.
 Package epstopdf Info: Output file is already uptodate.
-<figures/cleaned_PGC5_lon-eps-converted-to.pdf, id=87, 722.7pt x 2384.91pt>
+<figures/cleaned_PGC5_lon-eps-converted-to.pdf, id=40, 722.7pt x 2818.53pt>
 File: figures/cleaned_PGC5_lon-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/cleaned_PGC5_lon-eps-converted-to.pdf>
 Package pdftex.def Info: figures/cleaned_PGC5_lon-eps-converted-to.pdf used on 
-input line 276.
-(pdftex.def)             Requested size: 142.26378pt x 469.47707pt.
+input line 275.
+(pdftex.def)             Requested size: 142.26378pt x 554.83653pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
 []\OT1/cmr/bx/n/9 Figure  3. \OT1/cmr/m/n/9 De-tails and smooth of the wavelet 
 de-com-po-si-tion of the lon-gi-tu-di-nal dis-place-ment
  []
 
 
-Overfull \hbox (6.20996pt too wide) in paragraph at lines 281--281
+Overfull \hbox (6.20996pt too wide) in paragraph at lines 280--280
 []\OT1/cmr/m/n/10 To in-crease the signal-to-noise ra-tio and be able to bet-te
 r de-tect slow slip events, 
  []
 
 
-Overfull \hbox (4.15445pt too wide) in paragraph at lines 281--281
+Overfull \hbox (4.15445pt too wide) in paragraph at lines 280--280
 \OT1/cmr/m/n/10 we stack the sig-nal over sev-eral GPS sta-tions. We choose to 
 fo-cus on GPS sta-tions lo- 
  []
 
 
-Overfull \hbox (0.62675pt too wide) in paragraph at lines 281--281
+Overfull \hbox (0.62675pt too wide) in paragraph at lines 280--280
 \OT1/cmr/m/n/10 cated close enough to the tremor zone to get a suf-fi-ciently h
 igh am-pli-tude of the slow 
  []
 
 
-Overfull \hbox (14.82129pt too wide) in paragraph at lines 281--281
+Overfull \hbox (14.82129pt too wide) in paragraph at lines 280--280
 \OT1/cmr/m/n/10 slip sig-nal. We choose 16 points lo-cated on the 40 km depth c
 on-tour of the plate bound- 
  []
 
 
-Overfull \hbox (3.93236pt too wide) in paragraph at lines 281--281
+Overfull \hbox (3.93236pt too wide) in paragraph at lines 280--280
 \OT1/cmr/m/n/10 ary (model from  Pre-ston, Crea-ger, Crosson, Brocher, and Treh
 u (2003)) with spac-ing 
  []
 
 
-Overfull \hbox (6.80731pt too wide) in paragraph at lines 281--281
+Overfull \hbox (6.80731pt too wide) in paragraph at lines 280--280
 \OT1/cmr/m/n/10 equal 0.1 de-gree in lat-i-tude (red tri-an-gles on Fig-ure 4).
  Then we took all the GPS sta- 
  []
 
 
-Overfull \hbox (18.98795pt too wide) in paragraph at lines 281--281
+Overfull \hbox (18.98795pt too wide) in paragraph at lines 280--280
 \OT1/cmr/m/n/10 tions lo-cated in a 50 km ra-dius for a given point, com-pute t
 he wavelet de-tails for the lon- 
  []
 
 
-Overfull \hbox (11.19623pt too wide) in paragraph at lines 281--281
+Overfull \hbox (11.19623pt too wide) in paragraph at lines 280--280
 \OT1/cmr/m/n/10 gi-tu-di-nal dis-place-ment of each sta-tion, and stack each de
 -tail over the GPS sta-tions. We 
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+[7 <./figures/500_DS-eps-converted-to.pdf>] [8 <./figures/DS_10-eps-converted-t
+o.pdf>] [9 <./figures/cleaned_PGC5_lon-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/map_GPS_stations.eps>
 (epstopdf)                    date: 2021-10-09 15:40:39
 (epstopdf)                    size: 2802563 bytes
 (epstopdf)             Output file: <figures/map_GPS_stations-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2021-08-21 10:30:12
-(epstopdf)                    size: 7406578 bytes
+(epstopdf)                    date: 2021-10-09 15:42:21
+(epstopdf)                    size: 7406582 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/map_GPS_stations-e
 ps-converted-to.pdf figures/map_GPS_stations.eps>
-(epstopdf)             \includegraphics on input line 284.
-runsystem(repstopdf --outfile=figures/map_GPS_stations-eps-converted-to.pdf fig
-ures/map_GPS_stations.eps)...executed safely (allowed).
+(epstopdf)             \includegraphics on input line 283.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figures/map_GPS_stations-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2021-10-09 15:42:21
-(epstopdf)                    size: 7406582 bytes.
-
-<figures/map_GPS_stations-eps-converted-to.pdf, id=89, 597.23125pt x 845.1575pt
->
+<figures/map_GPS_stations-eps-converted-to.pdf, id=163, 597.23125pt x 845.1575p
+t>
 File: figures/map_GPS_stations-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/map_GPS_stations-eps-converted-to.pdf>
 Package pdftex.def Info: figures/map_GPS_stations-eps-converted-to.pdf used on 
-input line 284.
+input line 283.
 (pdftex.def)             Requested size: 397.48499pt x 562.49985pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/bx/n/9 Figure  4. \OT1/cmr/m/n/9 GPS sta-tions used in this study (b
 lack tri-an-gles). The black line rep-re-sents the 40
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 km depth con-tour of the plate bound-ary model by  Pre-ston et a
 l.[] (2003). The red tri-an-gles are
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 the lo-ca-tions where we stack the GPS data. The small grey dots
  are all the tremor lo-ca-tions from
  []
 
 
-Overfull \hbox (11.91827pt too wide) in paragraph at lines 289--290
+Overfull \hbox (11.91827pt too wide) in paragraph at lines 288--289
 []\OT1/cmr/m/n/10 To com-pare slow slip events de-tected with GPS data and slow
  slip events de-tected 
  []
 
 
-Overfull \hbox (9.07118pt too wide) in paragraph at lines 289--290
+Overfull \hbox (9.07118pt too wide) in paragraph at lines 288--289
 \OT1/cmr/m/n/10 with seis-mic data, we took all the tremor epi-cen-ters lo-cate
 d within a 50 km ra-dius cen- 
  []
 
 
-Overfull \hbox (16.90457pt too wide) in paragraph at lines 289--290
+Overfull \hbox (16.90457pt too wide) in paragraph at lines 288--289
 \OT1/cmr/m/n/10 tered on one of the 16 lo-ca-tions marked by red tri-an-gles on
  Fig-ure 3. Then we com-puted 
  []
 
 
-Overfull \hbox (5.79344pt too wide) in paragraph at lines 289--290
+Overfull \hbox (5.79344pt too wide) in paragraph at lines 288--289
 \OT1/cmr/m/n/10 the cu-mu-la-tive num-ber of tremor within this cir-cle. Fi-nal
 ly, we re-moved a lin-ear trend 
  []
 
 
-Overfull \hbox (3.65459pt too wide) in paragraph at lines 289--290
+Overfull \hbox (3.65459pt too wide) in paragraph at lines 288--289
 \OT1/cmr/m/n/10 from the cu-mu-la-tive tremor count, and ap-plied the wavelet t
 rans-form. Fig-ure 5 shows 
  []
 
 
-Overfull \hbox (9.68245pt too wide) in paragraph at lines 289--290
+Overfull \hbox (9.68245pt too wide) in paragraph at lines 288--289
 \OT1/cmr/m/n/10 an ex-am-ple of the wavelet de-com-po-si-tion for the third nor
 th-ern-most lo-ca-tion on Fig-ure 
  []
 
 
-Overfull \hbox (13.89069pt too wide) in paragraph at lines 289--290
+Overfull \hbox (13.89069pt too wide) in paragraph at lines 288--289
 \OT1/cmr/m/n/10 4 (which is clos-est to GPS sta-tion PGC5). Con-trary to what h
 ap-pens for the GPS data, 
  []
 
 
-Overfull \hbox (12.37662pt too wide) in paragraph at lines 289--290
+Overfull \hbox (12.37662pt too wide) in paragraph at lines 288--289
 \OT1/cmr/m/n/10 we see a sharp in-crease in the data when-ever there is a tremo
 r episode, which trans-lates 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-[8 <./figures/DS_10-eps-converted-to.pdf>] [9 <./figures/cleaned_PGC5_lon-eps-c
-onverted-to.pdf>] [10 <./figures/map_GPS_stations-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/tremor_13.eps>
-(epstopdf)                    date: 2021-08-21 10:30:12
-(epstopdf)                    size: 258566 bytes
+(epstopdf)                    date: 2021-10-09 15:58:45
+(epstopdf)                    size: 313308 bytes
 (epstopdf)             Output file: <figures/tremor_13-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-08-21 10:30:12
-(epstopdf)                    size: 71879 bytes
+(epstopdf)                    date: 2021-10-10 15:28:19
+(epstopdf)                    size: 84086 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_13-eps-conv
 erted-to.pdf figures/tremor_13.eps>
-(epstopdf)             \includegraphics on input line 292.
+(epstopdf)             \includegraphics on input line 291.
 Package epstopdf Info: Output file is already uptodate.
-
-<figures/tremor_13-eps-converted-to.pdf, id=174, 722.7pt x 2384.91pt>
+<figures/tremor_13-eps-converted-to.pdf, id=165, 722.7pt x 2818.53pt>
 File: figures/tremor_13-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/tremor_13-eps-converted-to.pdf>
 Package pdftex.def Info: figures/tremor_13-eps-converted-to.pdf used on input l
-ine 292.
-(pdftex.def)             Requested size: 142.26378pt x 469.47707pt.
+ine 291.
+(pdftex.def)             Requested size: 142.26378pt x 554.83653pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
+Underfull \hbox (badness 10000) in paragraph at lines 292--292
 []\OT1/cmr/bx/n/9 Figure  5. \OT1/cmr/m/n/9 De-tails and smooth of the wavelet 
 de-com-po-si-tion of the de-trended cu-mu-la-tive
  []
 
 
-Overfull \hbox (3.73781pt too wide) in paragraph at lines 299--299
+Overfull \hbox (3.73781pt too wide) in paragraph at lines 298--298
 []\OT1/cmr/m/n/10 We stacked the 8th level de-tail of the wavelet de-com-po-si-
 tion of the dis-place-ment 
  []
 
 
-Overfull \hbox (14.25186pt too wide) in paragraph at lines 299--299
+Overfull \hbox (14.25186pt too wide) in paragraph at lines 298--298
 \OT1/cmr/m/n/10 over all the GPS sta-tions lo-cated in a 50 km ra-dius of a giv
 en point, for the 16 lo-ca-tions 
  []
 
 
-Overfull \hbox (8.46005pt too wide) in paragraph at lines 299--299
+Overfull \hbox (8.46005pt too wide) in paragraph at lines 298--298
 \OT1/cmr/m/n/10 in-di-cated in Fig-ure 3. The re-sult is shown in the top panel
  of Fig-ure 6, where each line 
  []
 
 
-Overfull \hbox (8.2656pt too wide) in paragraph at lines 299--299
+Overfull \hbox (8.2656pt too wide) in paragraph at lines 298--298
 \OT1/cmr/m/n/10 rep-re-sents one of the lo-ca-tions. To bet-ter high-light the 
 peaks in the wavelet de-tails, we 
  []
 
 
-Overfull \hbox (9.849pt too wide) in paragraph at lines 299--299
+Overfull \hbox (9.849pt too wide) in paragraph at lines 298--298
 \OT1/cmr/m/n/10 high-lighted in red the time in-ter-vals where the am-pli-tude 
 of the stacked de-tail is higher 
  []
 
 
-Overfull \hbox (8.43233pt too wide) in paragraph at lines 299--299
+Overfull \hbox (8.43233pt too wide) in paragraph at lines 298--298
 \OT1/cmr/m/n/10 than a thresh-old, and in blue the time in-ter-vals where the a
 m-pli-tude of the stacked de- 
  []
 
 
-Overfull \hbox (9.9184pt too wide) in paragraph at lines 299--299
+Overfull \hbox (9.9184pt too wide) in paragraph at lines 298--298
 \OT1/cmr/m/n/10 tail is lower than mi-nus the thresh-old. To com-pare the GPS s
 ig-nal with the tremor sig- 
  []
 
 
-Overfull \hbox (10.2379pt too wide) in paragraph at lines 299--299
+Overfull \hbox (10.2379pt too wide) in paragraph at lines 298--298
 \OT1/cmr/m/n/10 nal, we plot-ted the 8th level de-tail of the wavelet de-com-po
 -si-tion of the tremor count on 
  []
 
 
-Overfull \hbox (9.65462pt too wide) in paragraph at lines 299--299
+Overfull \hbox (9.65462pt too wide) in paragraph at lines 298--298
 \OT1/cmr/m/n/10 the bot-tom panel of Fig-ure 6. We used the op-po-site of the c
 u-mu-la-tive tremor count for 
  []
 
 
-Overfull \hbox (21.57129pt too wide) in paragraph at lines 299--299
+Overfull \hbox (21.57129pt too wide) in paragraph at lines 298--298
 \OT1/cmr/m/n/10 the wavelet de-com-po-si-tion in or-der to be able to match pos
 -i-tive peaks with pos-i-tive peaks 
  []
 
 
-Overfull \hbox (17.29358pt too wide) in paragraph at lines 299--299
-\OT1/cmr/m/n/10 and neg-a-tive peaks with neg-a-tive peaks. Al-though the lat-i
--tu-di-nal ex-ten-sion of the events 
+Overfull \hbox (16.26569pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 and neg-a-tive peaks with neg-a-tive peaks. In the tremor cat-a
+-log from []ref-er-ence?[], there are 
  []
 
 
-Overfull \hbox (7.89066pt too wide) in paragraph at lines 299--299
-\OT1/cmr/m/n/10 is not al-ways the same for the GPS data and for the tremor dat
-a, we iden-tify the same 
+Overfull \hbox (10.59895pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 17 tremor events with more than 150 hours of tremor recorded. T
+he events are sum-ma- 
  []
 
 
-Overfull \hbox (7.32129pt too wide) in paragraph at lines 299--299
-\OT1/cmr/m/n/10 10 events in both 8th wavelet de-com-po-si-tions for the 8th le
-vel: Sum-mer 2010, Sum-mer 
+Overfull \hbox (27.3212pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 rized in Ta-ble 1. The time of the event is the start date plus
+ half the du-ra-tion of the event. 
  []
 
 
-Overfull \hbox (20.82144pt too wide) in paragraph at lines 299--299
-\OT1/cmr/m/n/10 2011, Sum-mer 2012, Fall 2013, Summer-Fall 2014, Win-ter 2015-2
-016, Win-ter 2017, Spring 
+Overfull \hbox (17.58517pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 Al-though the lat-i-tu-di-nal ex-ten-sion of the events is not 
+al-ways the same for the GPS data 
  []
 
 
-Overfull \hbox (12.7935pt too wide) in paragraph at lines 299--299
-\OT1/cmr/m/n/10 2018, Spring-Fall 2019, and Fall 2020 - Win-ter 2021. We can al
-so see the end of an 11th 
+Overfull \hbox (4.48788pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 and for the tremor data, we iden-tify the same 13 events in bot
+h 8th wavelet de-com-po- 
  []
 
-<figures/GPS_detail_8.pdf, id=176, 1156.32pt x 578.16pt>
-File: figures/GPS_detail_8.pdf Graphic file (type pdf)
 
-<use figures/GPS_detail_8.pdf>
-Package pdftex.def Info: figures/GPS_detail_8.pdf used on input line 302.
+Overfull \hbox (14.98807pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 si-tions for the 8th level: Jan-uary 2007, May 2008, May 2009, 
+Au-gust 2010, Au-gust 2011, 
+ []
+
+
+Overfull \hbox (4.34912pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 Septem-ber 2012, Septem-ber 2013, August-November 2014, Jan-uar
+y 2016, March 2017, 
+ []
+
+
+Overfull \hbox (11.40468pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 June 2018, March-November 2019, and Oc-to-ber 2020-January 2021
+. Al-though there are 
+ []
+
+
+Overfull \hbox (5.98784pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 two events in the tremor cat-a-log in Au-gust 2014 and Novem-be
+r 2014, these two events 
+ []
+
+
+Overfull \hbox (4.34901pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 are not dis-tin-guish-able in the 8th level de-tails and look m
+ore like a sin-gle event slowly 
+ []
+
+
+Overfull \hbox (11.79353pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 prop-a-gat-ing from South to North. The same phe-nomenon is ob-
+served in 2019 when two 
+ []
+
+
+Overfull \hbox (9.32123pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 tremor events in March and Novem-ber 2019 are merged into a sin
+-gle event prop-a-gat-ing 
+ []
+
+
+Overfull \hbox (21.84909pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 slowly from South to North. In 2020-2021, the wavelet de-com-po
+-si-tion of the tremor shows 
+ []
+
+
+Overfull \hbox (1.23787pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 one event in the south in October-November 2020 and one event i
+n the North in Jan- 
+ []
+
+
+Overfull \hbox (1.94624pt too wide) in paragraph at lines 298--298
+\OT1/cmr/m/n/10 uary 2021, but in the wavelet de-com-po-si-tion of the GPS data
+, these three events look 
+ []
+
+<figures/GPS_longer_detail_8.pdf, id=167, 1156.32pt x 578.16pt>
+File: figures/GPS_longer_detail_8.pdf Graphic file (type pdf)
+
+<use figures/GPS_longer_detail_8.pdf>
+Package pdftex.def Info: figures/GPS_longer_detail_8.pdf used on input line 301
+.
 (pdftex.def)             Requested size: 397.48499pt x 198.742pt.
 
-<figures/tremor_detail_8.pdf, id=178, 1156.32pt x 578.16pt>
-File: figures/tremor_detail_8.pdf Graphic file (type pdf)
+<figures/tremor_longer_detail_8.pdf, id=169, 1156.32pt x 578.16pt>
+File: figures/tremor_longer_detail_8.pdf Graphic file (type pdf)
 
-<use figures/tremor_detail_8.pdf>
-Package pdftex.def Info: figures/tremor_detail_8.pdf used on input line 304.
+<use figures/tremor_longer_detail_8.pdf>
+Package pdftex.def Info: figures/tremor_longer_detail_8.pdf used on input line 
+303.
 (pdftex.def)             Requested size: 397.48499pt x 198.742pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
+Underfull \hbox (badness 10000) in paragraph at lines 304--304
 []\OT1/cmr/bx/n/9 Figure  6. \OT1/cmr/m/n/9 Top: Stacked 8th level de-tails of 
 the wavelet de-com-po-si-tion of the dis-place-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
+Underfull \hbox (badness 10000) in paragraph at lines 304--304
 \OT1/cmr/m/n/9 over all the GPS sta-tions lo-cated in a 50 km ra-dius of a give
 n point, for the 16 lo-ca-tions in-di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
+Underfull \hbox (badness 10000) in paragraph at lines 304--304
 \OT1/cmr/m/n/9 cated in Fig-ure 3. Bot-tom: Op-po-site of the 8th level de-tail
  of the cu-mu-la-tive tremor count in a
  []
 
 
-Overfull \hbox (7.37671pt too wide) in paragraph at lines 309--309
+Overfull \hbox (7.37671pt too wide) in paragraph at lines 308--308
 []\OT1/cmr/m/n/10 Figures 7 and 8 show the same com-par-i-son be-tween the wave
 let de-com-po-si-tion of 
  []
 
 
-Overfull \hbox (9.6407pt too wide) in paragraph at lines 309--309
+Overfull \hbox (9.6407pt too wide) in paragraph at lines 308--308
 \OT1/cmr/m/n/10 the GPS data and the wavelet de-com-po-si-tion of the tremor co
 unt data for the 7th level 
  []
 
 
-Overfull \hbox (2.57108pt too wide) in paragraph at lines 309--309
+Overfull \hbox (2.57108pt too wide) in paragraph at lines 308--308
 \OT1/cmr/m/n/10 and the 6th level re-spec-tively. For the 7th level, we see the
  same events as for the 8th 
  []
 
 
-Overfull \hbox (6.91847pt too wide) in paragraph at lines 309--309
+Overfull \hbox (6.91847pt too wide) in paragraph at lines 308--308
 \OT1/cmr/m/n/10 level, both for the GPS data and the tremor count data. The wav
 elet de-com-po-si-tion is 
  []
 
 
-Overfull \hbox (0.4184pt too wide) in paragraph at lines 309--309
-\OT1/cmr/m/n/10 more noisy for the GPS data in the ear-li-est part of the time 
-se-ries, be-tween 2010 and 
+Overfull \hbox (0.8629pt too wide) in paragraph at lines 308--308
+\OT1/cmr/m/n/10 more noisy for the GPS data be-tween 2010 and 2012, but it does
+ not seem that there 
  []
 
+<figures/GPS_longer_detail_7.pdf, id=171, 1156.32pt x 578.16pt>
+File: figures/GPS_longer_detail_7.pdf Graphic file (type pdf)
 
-Overfull \hbox (5.2656pt too wide) in paragraph at lines 309--309
-\OT1/cmr/m/n/10 2013, but it does not seem that there are more slow slip events
- vis-i-ble in the 7th level.  
- []
-
-<figures/GPS_detail_7.pdf, id=180, 1156.32pt x 578.16pt>
-File: figures/GPS_detail_7.pdf Graphic file (type pdf)
-
-<use figures/GPS_detail_7.pdf>
-Package pdftex.def Info: figures/GPS_detail_7.pdf used on input line 312.
+<use figures/GPS_longer_detail_7.pdf>
+Package pdftex.def Info: figures/GPS_longer_detail_7.pdf used on input line 311
+.
 (pdftex.def)             Requested size: 397.48499pt x 198.742pt.
 
-<figures/tremor_detail_7.pdf, id=182, 1156.32pt x 578.16pt>
-File: figures/tremor_detail_7.pdf Graphic file (type pdf)
+<figures/tremor_longer_detail_7.pdf, id=173, 1156.32pt x 578.16pt>
+File: figures/tremor_longer_detail_7.pdf Graphic file (type pdf)
 
-<use figures/tremor_detail_7.pdf>
-Package pdftex.def Info: figures/tremor_detail_7.pdf used on input line 314.
+<use figures/tremor_longer_detail_7.pdf>
+Package pdftex.def Info: figures/tremor_longer_detail_7.pdf used on input line 
+313.
 (pdftex.def)             Requested size: 397.48499pt x 198.742pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--315
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 []\OT1/cmr/bx/n/9 Figure  7. \OT1/cmr/m/n/9 Top: Stacked 7th level de-tails of 
 the wavelet de-com-po-si-tion of the dis-place-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--315
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 \OT1/cmr/m/n/9 over all the GPS sta-tions lo-cated in a 50 km ra-dius of a give
 n point, for the 16 lo-ca-tions in-di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--315
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 \OT1/cmr/m/n/9 cated in Fig-ure 3. Bot-tom: Op-po-site of the 7th level de-tail
  of the cu-mu-la-tive tremor count in a
  []
 
 
-Overfull \hbox (16.57118pt too wide) in paragraph at lines 319--319
-[]\OT1/cmr/m/n/10 For the 6th level de-tail, we see an ad-di-tional event in Fa
-ll 2009 that is present both 
+Overfull \hbox (5.87675pt too wide) in paragraph at lines 318--318
+[]\OT1/cmr/m/n/10 For the 6th level de-tail, we see an ad-di-tional event in th
+e South in Fall 2009 that 
  []
 
 
-Overfull \hbox (20.04346pt too wide) in paragraph at lines 319--319
-\OT1/cmr/m/n/10 in the GPS and the tremor data. There are three small sig-nals 
-in the GPS data in Spring 
+Overfull \hbox (10.69623pt too wide) in paragraph at lines 318--318
+\OT1/cmr/m/n/10 is present both in the GPS and the tremor data. It may cor-re-s
+pond to the north-ern ex- 
  []
 
 
-Overfull \hbox (12.73796pt too wide) in paragraph at lines 319--319
+Overfull \hbox (6.15457pt too wide) in paragraph at lines 318--318
+\OT1/cmr/m/n/10 tent of a big ETS event oc-cur-ring in Fall 2009 south of the s
+tudy area (event 19 in the 
+ []
+
+
+Overfull \hbox (2.55733pt too wide) in paragraph at lines 318--318
+\OT1/cmr/m/n/10 Michel et al.[] (2019) cat-a-log). There are three small sig-na
+ls in the GPS data in Spring 
+ []
+
+
+Overfull \hbox (12.73796pt too wide) in paragraph at lines 318--318
 \OT1/cmr/m/n/10 2012, Fall 2017, and Win-ter 2020 that are not present in the t
 remor data, and are prob- 
  []
 
 
-Overfull \hbox (4.90451pt too wide) in paragraph at lines 319--319
-\OT1/cmr/m/n/10 a-bly false de-tec-tions. To sum-ma-rize, all the 11 events pre
+Overfull \hbox (4.90451pt too wide) in paragraph at lines 318--318
+\OT1/cmr/m/n/10 a-bly false de-tec-tions. To sum-ma-rize, all the 13 events pre
 sent on the 7th and 8th level 
  []
 
 
-Overfull \hbox (7.1545pt too wide) in paragraph at lines 319--319
+Overfull \hbox (7.1545pt too wide) in paragraph at lines 318--318
 \OT1/cmr/m/n/10 de-tails of the wavelet de-com-po-si-tion are true de-tec-tions
-, 12 of the 15 events present on 
- []
-
-<figures/GPS_detail_6.pdf, id=184, 1156.32pt x 578.16pt>
-File: figures/GPS_detail_6.pdf Graphic file (type pdf)
-
-<use figures/GPS_detail_6.pdf>
-Package pdftex.def Info: figures/GPS_detail_6.pdf used on input line 322.
-(pdftex.def)             Requested size: 397.48499pt x 198.742pt.
-
-<figures/tremor_detail_6.pdf, id=186, 1156.32pt x 578.16pt>
-File: figures/tremor_detail_6.pdf Graphic file (type pdf)
-
-<use figures/tremor_detail_6.pdf>
-Package pdftex.def Info: figures/tremor_detail_6.pdf used on input line 324.
-(pdftex.def)             Requested size: 397.48499pt x 198.742pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
-[]\OT1/cmr/bx/n/9 Figure  8. \OT1/cmr/m/n/9 Top: Stacked 6th level de-tails of 
-the wavelet de-com-po-si-tion of the dis-place-ment
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
-\OT1/cmr/m/n/9 over all the GPS sta-tions lo-cated in a 50 km ra-dius of a give
-n point, for the 16 lo-ca-tions in-di-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
-\OT1/cmr/m/n/9 cated in Fig-ure 3. Bot-tom: Op-po-site of the 6th level de-tail
- of the cu-mu-la-tive tremor count in a
- []
-
-
-Overfull \hbox (31.08516pt too wide) in paragraph at lines 331--332
-[]\OT1/cmr/m/n/10 In ad-di-tion to the mag-ni-tude 6 events dis-cussed above,  
-Michel, Gua-landi, and Avouac 
- []
-
-
-Overfull \hbox (3.93239pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 (2019) have also iden-ti-fied sev-eral mag-ni-tude 5 events us-
-ing a vari-a-tional Bayesian In- 
- []
-
-
-Overfull \hbox (28.26576pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 de-pen-dent Com-po-nent Anal-y-sis (vbICA) de-com-po-si-tion of
- the sig-nal. As we ex-pect smaller 
- []
-
-
-Overfull \hbox (12.18233pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 mag-ni-tude events to be more vis-i-ble at smaller time scales 
-of the wavelet de-com-po-si-tion 
- []
-
-
-Overfull \hbox (7.48776pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 (lev-els 4 and 5), we ver-ify for all these events whether a si
-g-nal can be seen at the same 
- []
-
-
-Overfull \hbox (7.1823pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 time as the time given in their cat-a-log. Most of these mag-ni
--tude 5 events are also sub- 
- []
-
-
-Overfull \hbox (3.6267pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 events of big-ger mag-ni-tude 6 events. Ta-ble 1 sum-ma-rizes f
-or each event its num-ber as 
- []
-
-
-Overfull \hbox (3.87682pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 in-di-cated in the cat-a-log from  Michel et al.[] (2019), the 
-be-gin-ning and end times as in- 
- []
-
-
-Overfull \hbox (1.40453pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 di-cated in the cat-a-log from  Michel et al.[] (2019), whether
- it is vis-i-ble at the level 4 of 
- []
-
-
-Overfull \hbox (3.93227pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 the wavelet de-com-po-si-tion, whether it is vis-i-ble at the l
-evel 5 of the wavelet de-com-po- 
- []
-
-
-Overfull \hbox (10.73788pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 si-tion, and whether it is part of a big-ger mag-ni-tude 6 even
-t. All 10 events that are sub- 
- []
-
-
-Overfull \hbox (9.54338pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 event of a big-ger event are vis-i-ble at both lev-els 4 and 5.
- How-ever, this may be due be- 
- []
-
-
-Overfull \hbox (0.1822pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 cause the big-ger event is in at lev-els 6 to 8, and also at sm
-aller time scales. For the 3 
- []
-
-
-Overfull \hbox (6.93233pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 small events that are not part of a big-ger event, only one is 
-vis-i-ble at both time scales, 
- []
-
-
-Overfull \hbox (7.07115pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 the other two are vis-i-ble ei-ther for level ei-ther for level
- 5 of the wavelet de-com-po-si-tion. 
- []
-
-
-Overfull \hbox (20.04341pt too wide) in paragraph at lines 331--332
-\OT1/cmr/m/n/10 There-fore, it is dif-fi-cult to con-clude whether the method c
-an in-deed de-tect events of mag- 
- []
-
-
-Overfull \hbox (38.87683pt too wide) in paragraph at lines 336--355
- [][] 
+, 14 of the 17 events present on 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-[12 <./figures/tremor_13-eps-converted-to.pdf>] [13 <./figures/GPS_detail_8.pdf
-> <./figures/tremor_detail_8.pdf>] [14 <./figures/GPS_detail_7.pdf> <./figures/
-tremor_detail_7.pdf>] [15 <./figures/GPS_detail_6.pdf> <./figures/tremor_detail
-_6.pdf>] (./agujournaltemplate.bbl
+ [10]
+[11 <./figures/map_GPS_stations-eps-converted-to.pdf>] [12 <./figures/tremor_13
+-eps-converted-to.pdf>] [13 <./figures/GPS_longer_detail_8.pdf> <./figures/trem
+or_longer_detail_8.pdf>] [14 <./figures/GPS_longer_detail_7.pdf> <./figures/tre
+mor_longer_detail_7.pdf>]
+<figures/GPS_longer_detail_6.pdf, id=386, 1156.32pt x 578.16pt>
+File: figures/GPS_longer_detail_6.pdf Graphic file (type pdf)
+
+<use figures/GPS_longer_detail_6.pdf>
+Package pdftex.def Info: figures/GPS_longer_detail_6.pdf used on input line 321
+.
+(pdftex.def)             Requested size: 397.48499pt x 198.742pt.
+
+<figures/tremor_longer_detail_6.pdf, id=388, 1156.32pt x 578.16pt>
+File: figures/tremor_longer_detail_6.pdf Graphic file (type pdf)
+
+<use figures/tremor_longer_detail_6.pdf>
+Package pdftex.def Info: figures/tremor_longer_detail_6.pdf used on input line 
+323.
+(pdftex.def)             Requested size: 397.48499pt x 198.742pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+[]\OT1/cmr/bx/n/9 Figure  8. \OT1/cmr/m/n/9 Top: Stacked 6th level de-tails of 
+the wavelet de-com-po-si-tion of the dis-place-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+\OT1/cmr/m/n/9 over all the GPS sta-tions lo-cated in a 50 km ra-dius of a give
+n point, for the 16 lo-ca-tions in-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+\OT1/cmr/m/n/9 cated in Fig-ure 3. Bot-tom: Op-po-site of the 6th level de-tail
+ of the cu-mu-la-tive tremor count in a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
+[]\OT1/cmr/bx/n/9 Table 1. \OT1/cmr/m/n/9 Big Episodic Tremor and Slip events. 
+The du-ra-tion and the num-ber of tremor are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
+\OT1/cmr/m/n/9 from the tremor cat-a-log of []ref-er-ence?[]. The event num-ber
+ and the mag-ni-tude are from the slow
+ []
+
+
+Overfull \hbox (6.57118pt too wide) in paragraph at lines 358--358
+[]\OT1/cmr/m/n/10 In ad-di-tion to the mag-ni-tude 6 events dis-cussed above,  
+Michel et al.[] (2019) have 
+ []
+
+
+Overfull \hbox (18.65463pt too wide) in paragraph at lines 358--358
+\OT1/cmr/m/n/10 also iden-ti-fied sev-eral mag-ni-tude 5 events us-ing a vari-a
+-tional Bayesian In-de-pen-dent Com- 
+ []
+
+
+Overfull \hbox (8.8213pt too wide) in paragraph at lines 358--358
+\OT1/cmr/m/n/10 po-nent Anal-y-sis (vbICA) de-com-po-si-tion of the sig-nal. As
+ we ex-pect smaller mag-ni-tude 
+ []
+
+
+Overfull \hbox (4.4045pt too wide) in paragraph at lines 358--358
+\OT1/cmr/m/n/10 events to be more vis-i-ble at smaller time scales of the wavel
+et de-com-po-si-tion (level 5), 
+ []
+
+
+Overfull \hbox (9.15442pt too wide) in paragraph at lines 358--358
+\OT1/cmr/m/n/10 we ver-ify for all these events whether a sig-nal can be seen a
+t the same time as the time 
+ []
+
+
+Overfull \hbox (0.54341pt too wide) in paragraph at lines 358--358
+\OT1/cmr/m/n/10 given in their cat-a-log. Most of these mag-ni-tude 5 events ar
+e also sub-events of big-ger 
+ []
+
+
+Overfull \hbox (1.37674pt too wide) in paragraph at lines 358--358
+\OT1/cmr/m/n/10 mag-ni-tude 6 events. Ta-ble 2 sum-ma-rizes for each event its 
+tim-ing, its num-ber and its 
+ []
+
+
+Overfull \hbox (9.76572pt too wide) in paragraph at lines 358--358
+\OT1/cmr/m/n/10 mag-ni-tude as in-di-cated in the cat-a-log from  Michel et al.
+[] (2019), and whether it is part 
+ []
+
+[15 <./figures/GPS_longer_detail_6.pdf> <./figures/tremor_longer_detail_6.pdf>]
+
+Overfull \hbox (2.30727pt too wide) in paragraph at lines 386--387
+[]\OT1/cmr/m/n/10 Figure 9 shows the 5th level de-tail wavelet de-com-po-si-tio
+n of the GPS data. Red 
+ []
+
+
+Overfull \hbox (8.07117pt too wide) in paragraph at lines 386--387
+\OT1/cmr/m/n/10 lines show the tim-ing of the big ETS events from Ta-ble 1, and
+ blue lines show the tim- 
+ []
+
+<figures/GPS_michel_detail_5.pdf, id=472, 1156.32pt x 578.16pt>
+File: figures/GPS_michel_detail_5.pdf Graphic file (type pdf)
+
+<use figures/GPS_michel_detail_5.pdf>
+Package pdftex.def Info: figures/GPS_michel_detail_5.pdf used on input line 389
+.
+(pdftex.def)             Requested size: 397.48499pt x 198.742pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--390
+[]\OT1/cmr/bx/n/9 Figure  9. \OT1/cmr/m/n/9 Top: Stacked 5th level de-tails of 
+the wavelet de-com-po-si-tion of the dis-place-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--390
+\OT1/cmr/m/n/9 over all the GPS sta-tions lo-cated in a 50 km ra-dius of a give
+n point, for the 16 lo-ca-tions in-di-
+ []
+
+
+Overfull \hbox (4.4044pt too wide) in paragraph at lines 394--395
+[]\OT1/cmr/m/n/10 All 14 events that are sub-event of a big-ger event are vis-i
+-ble at level 5. How-ever, 
+ []
+
+
+Overfull \hbox (0.21pt too wide) in paragraph at lines 394--395
+\OT1/cmr/m/n/10 this may be due be-cause the big-ger event are clearly seen at 
+lev-els 6 to 8, and also at 
+ []
+
+
+Overfull \hbox (16.0712pt too wide) in paragraph at lines 394--395
+\OT1/cmr/m/n/10 smaller time scales. The one small event that is not part of a 
+big-ger event (Win-ter 2009) 
+ []
+
+
+Overfull \hbox (4.3767pt too wide) in paragraph at lines 394--395
+\OT1/cmr/m/n/10 is vis-i-ble at level 5 of the wavelet de-com-po-si-tion. How-e
+ver, some other events that are 
+ []
+
+
+Overfull \hbox (12.59908pt too wide) in paragraph at lines 394--395
+\OT1/cmr/m/n/10 not in  Michel et al.[] (2019)'s cat-a-log are also vis-i-ble i
+n late 2007, early 2010, early 2012, 
+ []
+
+
+Overfull \hbox (5.84895pt too wide) in paragraph at lines 394--395
+\OT1/cmr/m/n/10 and late 2016. There-fore, it is dif-fi-cult to make the dif-fe
+r-ence be-tween a true de-tec-tion 
+ []
+
+
+Overfull \hbox (6.09897pt too wide) in paragraph at lines 394--395
+\OT1/cmr/m/n/10 and a false de-tec-tion, and to con-clude whether the method ca
+n in-deed de-tect events of 
+ []
+
+
+Overfull \hbox (15.19608pt too wide) in paragraph at lines 398--399
+[]\OT1/cmr/m/n/10 In this pa-per, we have used wavelet meth-ods to an-a-lyze GN
+SS time se-ries and seis- 
+ []
+
+
+Overfull \hbox (7.00172pt too wide) in paragraph at lines 398--399
+\OT1/cmr/m/n/10 mic record-ings of slow slip events in Cas-ca-dia. We used de-t
+rended GNSS data, ap-plied 
+ []
+
+
+Overfull \hbox (18.02954pt too wide) in paragraph at lines 398--399
+\OT1/cmr/m/n/10 the MODWT trans-form and stack the wavelet de-tails over sev-er
+al nearby GNSS sta-tions. 
+ []
+
+
+Overfull \hbox (11.5156pt too wide) in paragraph at lines 398--399
+\OT1/cmr/m/n/10 As an in-de-pen-dent check on the tim-ing of slow slip events, 
+we also com-puted the cu-mu- 
+ []
+
+
+Overfull \hbox (11.08519pt too wide) in paragraph at lines 398--399
+\OT1/cmr/m/n/10 la-tive num-ber of tremor in the vicin-ity of the GNSS sta-tion
+s, de-trended this sig-nal, and 
+ []
+
+
+Overfull \hbox (26.79341pt too wide) in paragraph at lines 398--399
+\OT1/cmr/m/n/10 ap-plied the MODWT trans-form. In both time se-ries, we could t
+hen see si-mul-ta-ne-ous wave- 
+ []
+
+
+Overfull \hbox (18.51566pt too wide) in paragraph at lines 398--399
+\OT1/cmr/m/n/10 forms whose tim-ing cor-re-sponds to the tim-ing of slow slip e
+vents. We as-sumed that there 
+ []
+
+
+Overfull \hbox (16.34886pt too wide) in paragraph at lines 398--399
+\OT1/cmr/m/n/10 is a slow slip event when-ever there is a peak in the wavelet s
+ig-nal. We ver-i-fied that there 
+ []
+
+
+Overfull \hbox (6.9184pt too wide) in paragraph at lines 398--399
+\OT1/cmr/m/n/10 is a good cor-re-la-tion be-tween slow slip events de-tected wi
+th only GNSS data, and slow 
+ []
+
+
+Overfull \hbox (14.90448pt too wide) in paragraph at lines 398--399
+\OT1/cmr/m/n/10 slip events de-tected with only seis-mic data. The wavelet-base
+d de-tec-tion method de-tects 
+ []
+
+
+Overfull \hbox (12.57127pt too wide) in paragraph at lines 398--399
+\OT1/cmr/m/n/10 all events of mag-ni-tude higher than 6 as de-ter-mined by in-d
+e-pen-dent event cat-a-logs (e.g. 
+ []
+
+
+Overfull \hbox (7.11292pt too wide) in paragraph at lines 398--399
+\OT1/cmr/m/n/10 (Michel et al.[], 2019)). We de-tected sig-nals in the GPS data
+ that could be mag-ni-tude 5 
+ []
+
+
+Overfull \hbox (0.45999pt too wide) in paragraph at lines 398--399
+\OT1/cmr/m/n/10 events, but it is not easy to make the dif-fer-ence be-tween tr
+ue de-tec-tions and false de- 
+ []
+
+[16] [17 <./figures/GPS_michel_detail_5.pdf>]
+Overfull \hbox (2.54349pt too wide) in paragraph at lines 569--571
+\OT1/cmr/m/n/10 This work was funded by the grant from the Na-tional Sci-ence F
+oun-da-tion XXX. A.D. 
+ []
+
+
+Overfull \hbox (4.09908pt too wide) in paragraph at lines 569--571
+\OT1/cmr/m/n/10 would like to thank Pr Don-ald Per-ci-val for in-tro-duc-ing he
+r to wavelet meth-ods dur-ing 
+ []
+
+
+Overfull \hbox (15.61288pt too wide) in paragraph at lines 569--571
+\OT1/cmr/m/n/10 his ex-cel-lent class taught at Uni-ver-sity of Wash-ing-ton. T
+he GPS record-ings used for this 
+ []
+
+
+Overfull \hbox (25.1268pt too wide) in paragraph at lines 569--571
+\OT1/cmr/m/n/10 anal-y-sis can be down-loaded from the PANGA web-site  (GPS/GNS
+S Net-work and Geodesy 
+ []
+
+
+Overfull \hbox (13.37686pt too wide) in paragraph at lines 569--571
+\OT1/cmr/m/n/10 Lab-o-ra-tory: Cen-tral Wash-ing-ton Uni-ver-sity, other/seismi
+c net-work, 1996). Fig-ure 4 was 
+ []
+
+
+Overfull \hbox (13.47401pt too wide) in paragraph at lines 569--571
+\OT1/cmr/m/n/10 done us-ing GMT  (Wes-sel & Smith, 1991). The Python scripts us
+ed to an-a-lyze the data 
+ []
+
+(./agujournaltemplate.bbl
 Underfull \hbox (badness 1902) in paragraph at lines 45--61
 \OT1/cmr/m/n/10 events seen in tidal records (1980--2011).  \OT1/cmr/m/it/10 Bu
 l-letin of the Seis-mo-log-i-cal So-ci-ety 
@@ -2273,25 +2597,46 @@ re-arcs: A re-view.
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 180--194
+Underfull \hbox (badness 10000) in paragraph at lines 154--171
+[]\OT1/cmr/m/n/10 GPS/GNSS Net-work and Geodesy Lab-o-ra-tory: Cen-tral Wash-in
+g-ton Uni-ver-sity, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--171
+\OT1/cmr/m/n/10 In-ter-na-tional Fed-er-a-tion of Dig-i-tal Seis-mo-graph Net-w
+orks.  Re-trieved from 
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 211--225
 \OT1/cmr/m/n/10 events on the Cas-ca-dia megath-rust.  \OT1/cmr/m/it/10 Pure an
 d Ap-plied Geo-physics\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 176\OT1/cmr/m/n/10 , 3
 867- 
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 289--304
+Underfull \hbox (badness 1688) in paragraph at lines 320--335
 []\OT1/cmr/m/n/10 Preston, L., Crea-ger, K., Crosson, R., Brocher, T., & Trehu,
  A.  (2003).  In-traslab 
  []
 
-[16]
-Underfull \hbox (badness 3668) in paragraph at lines 345--358
+
+Underfull \hbox (badness 3668) in paragraph at lines 376--389
 []\OT1/cmr/m/n/10 Shelly, D., Beroza, G., & Ide, S.  (2007).  Non-volcanic trem
 or and low-frequency 
  []
 
-) [17] (./agujournaltemplate.aux)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Underfull \hbox (badness 1681) in paragraph at lines 513--525
+[]\OT1/cmr/m/n/10 Wessel, P., & Smith, W. H. F.  (1991).  Free soft-ware helps 
+map and dis-play data. 
+ []
+
+) [19] (./agujournaltemplate.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
@@ -2301,38 +2646,38 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4709 strings out of 493014
- 63164 string characters out of 6133351
- 144695 words of memory out of 5000000
- 8138 multiletter control sequences out of 15000+600000
- 12144 words of font info for 47 fonts, out of 8000000 for 9000
+ 4726 strings out of 493014
+ 63698 string characters out of 6133351
+ 141967 words of memory out of 5000000
+ 8153 multiletter control sequences out of 15000+600000
+ 12312 words of font info for 48 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 50i,9n,37p,1998b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,8n,37p,2278b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on agujournaltemplate.pdf (17 pages, 8665871 bytes).
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on agujournaltemplate.pdf (19 pages, 9057573 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
+ 598 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

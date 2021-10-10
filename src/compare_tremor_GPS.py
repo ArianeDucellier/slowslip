@@ -417,7 +417,7 @@ def plot_correlations():
         plt.savefig('events_' + str(level) + '.pdf', format='pdf')
         plt.close(1)        
 
-def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, threshold, events):
+def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, threshold, events, small_events):
     """
     """
     # Read station file
@@ -432,6 +432,11 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
     params = {'xtick.labelsize':24,
               'ytick.labelsize':24}
     pylab.rcParams.update(params)
+
+    for event in events:
+        plt.axvline(event, color='red', linewidth=2)
+    for event in small_events:
+        plt.axvline(event, color='blue', linewidth=1)
 
     # Loop on latitude and longitude
     for index, (lat, lon) in enumerate(zip(lats, lons)):
@@ -501,10 +506,10 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
                 if (len(indices) > 0):
                     nsta = nsta + 1
                     tj = time[indices]
-#                    Dj = D[J][indices]
-                    Dj = np.zeros(len(indices))
-                    for j in J:
-                        Dj = Dj + D[j - 1][indices]
+                    Dj = D[J][indices]
+#                    Dj = np.zeros(len(indices))
+#                    for j in J:
+#                        Dj = Dj + D[j - 1][indices]
                     Dj_interp = np.interp(time_subset, tj, Dj)
                     Dj_stacked =  Dj_stacked + Dj_interp
             Dj_stacked = Dj_stacked / nsta
@@ -531,34 +536,31 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
             begin_times = times_slowslip[begin_jumps]
             end_times = times_slowslip[end_jumps]
 
-            for event in events:
-                plt.axvline(event, color='grey', linewidth=1)
-
-            for i in range(0, len(jumps) + 1):
-                x0 = begin_times[i]
-                dx = end_times[i] - begin_times[i]
-                if disps_slowslip[begin_jumps[i]] > 0:
-                    ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
-                else:
-                    ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
+#            for i in range(0, len(jumps) + 1):
+#                x0 = begin_times[i]
+#                dx = end_times[i] - begin_times[i]
+#                if disps_slowslip[begin_jumps[i]] > 0:
+#                    ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
+#                else:
+#                    ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
 
             plt.plot(times_stacked, lat + 0.1 * disps_stacked, color='black')
 
-    plt.xlim([2006.0, 2021.5])
+    plt.xlim([2006.8, 2017.4])
     plt.xlabel('Time (years)', fontsize=24)
     plt.xticks(fontsize=24)
     plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
     plt.ylabel('Latitude', fontsize=24)
     plt.yticks(fontsize=24)
-#    plt.title('Detail at level {:d} of MODWT of GPS data'. \
-#        format(J + 1), fontsize=24)
-    plt.title('Detail at levels {} of MODWT of GPS data'. \
-        format(J), fontsize=24)
-#    plt.savefig('GPS_longer_detail_' + str(J + 1) + '.pdf', format='pdf')
-    plt.savefig('GPS_longer_detail_.pdf', format='pdf')
+    plt.title('Detail at level {:d} of MODWT of GPS data'. \
+        format(J + 1), fontsize=24)
+#    plt.title('Detail at levels {} of MODWT of GPS data'. \
+#        format(J), fontsize=24)
+    plt.savefig('GPS_longer_detail_' + str(J + 1) + '.pdf', format='pdf')
+#    plt.savefig('GPS_longer_detail_.pdf', format='pdf')
     plt.close(1)
 
-def plot_tremor(lats, J, threshold, events):
+def plot_tremor(lats, J, threshold, events, small_events):
     """
     """
 
@@ -568,6 +570,11 @@ def plot_tremor(lats, J, threshold, events):
               'ytick.labelsize':24}
     pylab.rcParams.update(params)
 
+    for event in events:
+        plt.axvline(event, color='red', linewidth=2)
+    for event in small_events:
+        plt.axvline(event, color='blue', linewidth=1)
+
     # Loop on latitude and longitude
     for index, lat in enumerate(lats):
 
@@ -575,10 +582,10 @@ def plot_tremor(lats, J, threshold, events):
         filename = 'MODWT_tremor_longer/tremor_' + str(index) + '.pkl'
         MODWT_tremor = pickle.load(open(filename, 'rb'))
         times_stacked = MODWT_tremor[0]
-#        D_tremor = MODWT_tremor[4][J]
-        D_tremor = np.zeros(len(times_stacked))
-        for j in J:
-            D_tremor = D_tremor + MODWT_tremor[4][j - 1]
+        D_tremor = MODWT_tremor[4][J]
+#        D_tremor = np.zeros(len(times_stacked))
+#        for j in J:
+#            D_tremor = D_tremor + MODWT_tremor[4][j - 1]
         
         # Figure
         if len(times_stacked) > 0:
@@ -593,31 +600,28 @@ def plot_tremor(lats, J, threshold, events):
             begin_times = times_slowslip[begin_jumps]
             end_times = times_slowslip[end_jumps]
 
-            for event in events:
-                plt.axvline(event, color='grey', linewidth=1)
-
-            for i in range(0, len(jumps) + 1):
-                x0 = begin_times[i]
-                dx = end_times[i] - begin_times[i]
-                if D_slowslip[begin_jumps[i]] < 0:
-                    ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
-                else:
-                    ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
+#            for i in range(0, len(jumps) + 1):
+#                x0 = begin_times[i]
+#                dx = end_times[i] - begin_times[i]
+#                if D_slowslip[begin_jumps[i]] < 0:
+#                    ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
+#                else:
+#                    ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
 
             plt.plot(times_stacked, lat - 5.0 * D_tremor, color='black')
 
-    plt.xlim([2006.0, 2021.5])
+    plt.xlim([2006.8, 2017.4])
     plt.xlabel('Time (years)', fontsize=24)
     plt.xticks(fontsize=24)
     plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
     plt.ylabel('Latitude', fontsize=24)
     plt.yticks(fontsize=24)
-#    plt.title('Detail at level {:d} of MODWT of tremor data'. \
-#        format(J + 1), fontsize=24)
-    plt.title('Detail at levels {} of MODWT of tremor data'. \
-        format(J), fontsize=24)
-#    plt.savefig('tremor_longer_detail_' + str(J + 1) + '.pdf', format='pdf')
-    plt.savefig('tremor_longer_detail.pdf', format='pdf')
+    plt.title('Detail at level {:d} of MODWT of tremor data'. \
+        format(J + 1), fontsize=24)
+#    plt.title('Detail at levels {} of MODWT of tremor data'. \
+#        format(J), fontsize=24)
+    plt.savefig('tremor_longer_detail_' + str(J + 1) + '.pdf', format='pdf')
+#    plt.savefig('tremor_longer_detail.pdf', format='pdf')
     plt.close(1)
 
 def find_threshold(station_file, lats, lons, dataset, direction, radius_GPS, \
@@ -778,6 +782,8 @@ if __name__ == '__main__':
     events = [2007.0630, 2008.3566, 2009.3452, 2010.6342, 2011.6041, 2012.7172, \
         2013.7137, 2014.6479, 2014.8904, 2016.1082, 2017.2342, 2018.4932, \
         2019.2329, 2019.8767, 2020.7923, 2020.8552, 2021.0904]
+    small_events = [2007.06, 2007.08, 2008.38, 2009.16, 2009.36, 2010.63, \
+        2011.66, 2012.69, 2013.74, 2014.69, 2014.93, 2016.03, 2017.13, 2017.22]
 
 #    radius_tremor = 50
 #    wavelet = 'LA8'
@@ -799,12 +805,12 @@ if __name__ == '__main__':
     # For tremor data
     # Level 10: 0.004 - Level 9: 0.004 - Level 8: 0.006 - Level 7: 0.006 - Level 6: 0.005 - Level 5: 0.004
 
-    thresh_GPS = 0.6
-#    thresh_tremor = 0.008
-    J = [7,8]
+#    thresh_GPS = 0.6
+    thresh_tremor = 0.001
+    J = 5
 
 #    nonzeros, equals = find_threshold(station_file, lats, \
 #        lons, dataset, direction, radius_GPS, J - 1, thresh_GPS, thresh_tremor)
 
-    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh_GPS, events)
-#    plot_tremor(lats, J, thresh_tremor, events)
+#    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J - 1, thresh_GPS, events, small_events)
+    plot_tremor(lats, J - 1, thresh_tremor, events, small_events)
