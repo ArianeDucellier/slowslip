@@ -1,0 +1,118 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aguiar et~al.(2009)Aguiar, Melbourne, and Scrivner]{AGU_2009}
+A.C. Aguiar, T.I. Melbourne, and C.W. Scrivner.
+\newblock Moment release rate of {Cascadia} tremor constrained by {GPS}.
+\newblock \emph{Journal of Geophysical Research}, 114:\penalty0 B00A05, 2009.
+
+\bibitem[Alba et~al.(2019)Alba, Weldon, Livelybrooks, and Schmidt]{ALB_2019}
+S.~Alba, R.~J. Weldon, D.~Livelybrooks, and D.~A. Schmidt.
+\newblock Cascadia {ETS} events seen in tidal records (1980--2011).
+\newblock \emph{Bulletin of the Seismological Society of America}, 2019.
+
+\bibitem[Audet and Kim(2016)]{AUD_2016}
+P.~Audet and Y.H. Kim.
+\newblock Teleseismic constraints on the geological environment of deep
+  episodic slow earthquakes in subduction zone forearcs: A review.
+\newblock \emph{Tectonophysics}, 670:\penalty0 1--15, 2016.
+
+\bibitem[Beroza and Ide(2011)]{BER_2011}
+G.C. Beroza and S.~Ide.
+\newblock Slow earthquakes and nonvolcanic tremor.
+\newblock \emph{Annual Review of Earth and Planetary Sciences}, 39:\penalty0
+  271--296, 2011.
+
+\bibitem[Frank(2016)]{FRA_2016}
+W.B. Frank.
+\newblock Slow slip hidden in the noise: The intermittence of tectonic release.
+\newblock \emph{Geophysical Research Letters}, 43:\penalty0 10125--10133, 2016.
+
+\bibitem[{GPS/GNSS Network and Geodesy Laboratory: Central Washington
+  University, other/seismic network}(1996)]{PANGA}
+{GPS/GNSS Network and Geodesy Laboratory: Central Washington University,
+  other/seismic network}.
+\newblock {Pacific Northwest Geodetic Array (PANGA)}, 1996.
+\newblock URL \url{http://www.panga.cwu.edu/}.
+
+\bibitem[Kumar and Foufoula-Georgiou(1997)]{KUM_1997}
+P.~Kumar and E.~Foufoula-Georgiou.
+\newblock Wavelet analysis for geophysical applications.
+\newblock \emph{Reviews of Geophysics}, 35\penalty0 (4):\penalty0 385--412,
+  1997.
+
+\bibitem[Michel et~al.(2019)Michel, Gualandi, and Avouac]{MIC_2019}
+S.~Michel, A.~Gualandi, and J.-P. Avouac.
+\newblock Interseismic coupling and slow slip events on the {Cascadia}
+  megathrust.
+\newblock \emph{Pure and Applied Geophysics}, 176:\penalty0 3867--3891, 2019.
+
+\bibitem[Obara(2002)]{OBA_2002}
+K.~Obara.
+\newblock Nonvolcanic deep tremor associated with subduction in southwest
+  {Japan}.
+\newblock \emph{Science}, 296\penalty0 (5573):\penalty0 1679--1681, 2002.
+
+\bibitem[Ohtani et~al.(2010)Ohtani, McGuire, and Segall]{OHT_2010}
+R.~Ohtani, J.J. McGuire, and P.~Segall.
+\newblock Network strain filter: A new tool for monitoring and detecting
+  transient deformation signals in {GPS} arrays.
+\newblock \emph{Journal of Geophysical Research}, 115:\penalty0 B12418, 2010.
+
+\bibitem[Percival and Walden(2000)]{PER_2000}
+D.B. Percival and A.T. Walden.
+\newblock \emph{Wavelet {Methods} for {Time} {Series} {Analysis}}.
+\newblock Cambridge {Series} in {Statistical} and {Probabilistic}
+  {Mathematics}. Cambridge {University} {Press}, New York, NY, USA, 2000.
+
+\bibitem[Preston et~al.(2003)Preston, Creager, Crosson, Brocher, and
+  Trehu]{PRE_2003}
+L.A. Preston, K.C. Creager, R.S. Crosson, T.M. Brocher, and A.M. Trehu.
+\newblock Intraslab earthquakes: Dehydration of the {Cascadia slab}.
+\newblock \emph{Science}, 302:\penalty0 1197--1200, 2003.
+
+\bibitem[Rogers and Dragert(2003)]{ROG_2003}
+G.~Rogers and H.~Dragert.
+\newblock Tremor and slip on the {Cascadia} subduction zone: The chatter of
+  silent slip.
+\newblock \emph{Science}, 300\penalty0 (5627):\penalty0 1942--1943, 2003.
+
+\bibitem[Shelly et~al.(2007)Shelly, Beroza, and Ide]{SHE_2007_nature}
+D.R. Shelly, G.C. Beroza, and S.~Ide.
+\newblock Non-volcanic tremor and low-frequency earthquake swarms.
+\newblock \emph{Nature}, 446:\penalty0 305--307, 2007.
+
+\bibitem[Szeliga et~al.(2004)Szeliga, Melbourne, Miller, and
+  Santillan]{SZE_2004}
+W.~Szeliga, T.I. Melbourne, M.M. Miller, and V.M. Santillan.
+\newblock Southern {Cascadia} episodic slow earthquakes.
+\newblock \emph{Geophysical Research Letters}, 31:\penalty0 L16602, 2004.
+
+\bibitem[Szeliga et~al.(2008)Szeliga, Melbourne, Santillan, and
+  Miller]{SZE_2008}
+W.~Szeliga, T.~Melbourne, M.~Santillan, and M.~Miller.
+\newblock {GPS} constraints on 34 slow slip events within the {Cascadia}
+  subduction zone, 1997-2005.
+\newblock \emph{Journal of Geophysical Research}, 113:\penalty0 B04404, 2008.
+
+\bibitem[Wech(2010)]{WEC_2010}
+A.G. Wech.
+\newblock Interactive tremor monitoring.
+\newblock \emph{Seismological Research Letters}, 81\penalty0 (4):\penalty0
+  664--669, 2010.
+
+\bibitem[Wei et~al.(2012)Wei, McGuire, and Richardson]{WEI_2012}
+M.~Wei, J.J. McGuire, and E.~Richardson.
+\newblock A slow slip event in the south central {Alaska} {Subduction} {Zone}.
+\newblock \emph{Geophysical Research Letters}, 39:\penalty0 L15309, 2012.
+
+\bibitem[Wessel and Smith(1991)]{WES_1991}
+P.~Wessel and W.~H.~F. Smith.
+\newblock Free software helps map and display data.
+\newblock \emph{EOS Trans. AGU}, 72:\penalty0 441, 1991.
+
+\end{thebibliography}
