@@ -505,10 +505,10 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
                 if (len(indices) > 0):
                     nsta = nsta + 1
                     tj = time[indices]
-                    Dj = D[J][indices]
-#                    Dj = np.zeros(len(indices))
-#                    for j in J:
-#                        Dj = Dj + D[j - 1][indices]
+#                    Dj = D[J][indices]
+                    Dj = np.zeros(len(indices))
+                    for j in J:
+                        Dj = Dj + D[j - 1][indices]
                     Dj_interp = np.interp(time_subset, tj, Dj)
                     Dj_stacked =  Dj_stacked + Dj_interp
             Dj_stacked = Dj_stacked / nsta
@@ -553,12 +553,12 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
     plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
     plt.ylabel('Latitude', fontsize=24)
     plt.yticks(fontsize=24)
-    plt.title('Detail at level {:d} of MODWT of GPS data'. \
-        format(J + 1), fontsize=24)
-#    plt.title('Details at levels {} of MODWT of GPS data'. \
-#        format(J), fontsize=24)
-    plt.savefig('GPS_longer_detail_' + str(J + 1) + '.pdf', format='pdf')
-#    plt.savefig('GPS_longer_detail.eps', format='eps')
+#    plt.title('Detail at level {:d} of MODWT of GPS data'. \
+#        format(J + 1), fontsize=24)
+    plt.title('Details at levels {} of MODWT of GPS data'. \
+        format(J), fontsize=24)
+#    plt.savefig('GPS_longer_detail_' + str(J + 1) + '.eps', format='eps')
+    plt.savefig('GPS_longer_detail.eps', format='eps')
     plt.close(1)
 
 def plot_tremor(lats, J, threshold, events, small_events):
@@ -583,10 +583,10 @@ def plot_tremor(lats, J, threshold, events, small_events):
         filename = 'MODWT_tremor_longer/tremor_' + str(index) + '.pkl'
         MODWT_tremor = pickle.load(open(filename, 'rb'))
         times_stacked = MODWT_tremor[0]
-        D_tremor = MODWT_tremor[4][J]
-#        D_tremor = np.zeros(len(times_stacked))
-#        for j in J:
-#            D_tremor = D_tremor + MODWT_tremor[4][j - 1]
+#        D_tremor = MODWT_tremor[4][J]
+        D_tremor = np.zeros(len(times_stacked))
+        for j in J:
+            D_tremor = D_tremor + MODWT_tremor[4][j - 1]
         
         # Figure
         if len(times_stacked) > 0:
@@ -619,12 +619,12 @@ def plot_tremor(lats, J, threshold, events, small_events):
     plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
     plt.ylabel('Latitude', fontsize=24)
     plt.yticks(fontsize=24)
-    plt.title('Detail at level {:d} of MODWT of tremor data'. \
-        format(J + 1), fontsize=24)
-#    plt.title('Details at levels {} of MODWT of tremor data'. \
-#        format(J), fontsize=24)
-    plt.savefig('tremor_longer_detail_' + str(J + 1) + '.pdf', format='pdf')
-#    plt.savefig('tremor_longer_detail.eps', format='eps')
+#    plt.title('Detail at level {:d} of MODWT of tremor data'. \
+#        format(J + 1), fontsize=24)
+    plt.title('Details at levels {} of MODWT of tremor data'. \
+        format(J), fontsize=24)
+#    plt.savefig('tremor_longer_detail_' + str(J + 1) + '.eps', format='eps')
+    plt.savefig('tremor_longer_detail.eps', format='eps')
     plt.close(1)
 
 def find_false_detections(station_file, lats, lons, dataset, direction, \
@@ -720,10 +720,10 @@ def find_false_detections(station_file, lats, lons, dataset, direction, \
                 if (len(indices) > 0):
                     nsta = nsta + 1
                     tj = time[indices]
-                    Dj = D[J][indices]
-#                    Dj = np.zeros(len(indices))
-#                    for j in J:
-#                        Dj = Dj + D[j - 1][indices]
+#                    Dj = D[J][indices]
+                    Dj = np.zeros(len(indices))
+                    for j in J:
+                        Dj = Dj + D[j - 1][indices]
                     Dj_interp = np.interp(time_subset, tj, Dj)
                     Dj_stacked =  Dj_stacked + Dj_interp
             Dj_stacked = Dj_stacked / nsta
@@ -741,10 +741,10 @@ def find_false_detections(station_file, lats, lons, dataset, direction, \
         filename = 'MODWT_tremor_longer/tremor_' + str(index) + '.pkl'
         MODWT_tremor = pickle.load(open(filename, 'rb'))
         time = MODWT_tremor[0]
-        D_tremor = - MODWT_tremor[4][J]
-#        D_tremor = np.zeros(len(times_stacked))
-#        for j in J:
-#            D_tremor = D_tremor - MODWT_tremor[4][j - 1]
+#        D_tremor = - MODWT_tremor[4][J]
+        D_tremor = np.zeros(len(times_stacked))
+        for j in J:
+            D_tremor = D_tremor - MODWT_tremor[4][j - 1]
 
         # Correlation
         if len(times_stacked) > 0:
@@ -839,12 +839,12 @@ def find_false_detections(station_file, lats, lons, dataset, direction, \
         plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
         plt.ylabel('Latitude', fontsize=24)
         plt.yticks(fontsize=24)
-        plt.title('Signal detected for detail at level {:d}'. \
-            format(J + 1), fontsize=24)
-#        plt.title('Signal detected for details at levels {}'. \
-#            format(J), fontsize=24)
-        plt.savefig('signal_detected_' + str(J + 1) + '.pdf', format='pdf')
-#        plt.savefig('signal_detected.eps', format='eps')
+#        plt.title('Signal detected for detail at level {:d}'. \
+#            format(J + 1), fontsize=24)
+        plt.title('Signal detected for details at levels {}'. \
+            format(J), fontsize=24)
+#        plt.savefig('signal_detected_' + str(J + 1) + '.eps', format='eps')
+        plt.savefig('signal_detected.eps', format='eps')
         plt.close(1)
     
     return(np.sum(TP0), np.sum(TN0), np.sum(FP0), np.sum(FN0))
@@ -857,16 +857,24 @@ def plot_ROC_curve(station_file, lats, lons, dataset, direction, \
     TN = np.zeros((len(thresh_GPS), len(thresh_tremor)))
     FP = np.zeros((len(thresh_GPS), len(thresh_tremor)))
     FN = np.zeros((len(thresh_GPS), len(thresh_tremor)))
+    sensitivity = np.zeros((len(thresh_GPS), len(thresh_tremor)))
+    specificity = np.zeros((len(thresh_GPS), len(thresh_tremor)))
     for i in range(0, len(thresh_GPS)):
         for j in range(0, len(thresh_tremor)):
-            (TP[i, j], TN[i, j], FP[i, j], FN[i, j]) = find_false_detections( \
-                station_file, lats, lons, dataset, direction, radius_GPS, \
-                J - 1, thresh_GPS[i], thresh_tremor[j], events, False)
 #            (TP[i, j], TN[i, j], FP[i, j], FN[i, j]) = find_false_detections( \
 #                station_file, lats, lons, dataset, direction, radius_GPS, \
-#                J, thresh_GPS[i], thresh_tremor[j], events, False)
-    sensitivity = TP / (TP + FN)
-    specificity = TN / (TN + FP)
+#                J - 1, thresh_GPS[i], thresh_tremor[j], events, False)
+            (TP[i, j], TN[i, j], FP[i, j], FN[i, j]) = find_false_detections( \
+                station_file, lats, lons, dataset, direction, radius_GPS, \
+                J, thresh_GPS[i], thresh_tremor[j], events, False)
+            if TP[i, j] + FN[i, j] == 0:
+                sensitivity[i, j] = 0
+            else:
+                sensitivity[i, j] = TP[i, j] / (TP[i, j] + FN[i, j])
+            if TN[i, j] + FP[i, j] == 0:
+                specificity[i, j] = 0
+            else:
+                specificity[i, j] = TN[i, j] / (TN[i, j] + FP[i, j])
     i0 = np.where(np.abs(thresh_GPS - chosen_GPS) < 0.001)[0]
     j0 = np.where(np.abs(thresh_tremor - chosen_tremor) < 0.00001)[0]
     
@@ -883,10 +891,10 @@ def plot_ROC_curve(station_file, lats, lons, dataset, direction, \
     plt.ylabel('True positive rate', fontsize=24)
     plt.yticks(fontsize=24)
     plt.ylim([0, 1])
-    plt.title('ROC curve for detail at level {:d}'. format(J), fontsize=24)
-#    plt.title('ROC curve for details at levels {}'. format(J), fontsize=24)
-    plt.savefig('ROC_' + str(J) + '.pdf', format='pdf')
-#    plt.savefig('ROC.eps', format='eps')
+#    plt.title('ROC curve for detail at level {:d}'. format(J), fontsize=24)
+    plt.title('ROC curve for details at levels {}'. format(J), fontsize=24)
+#    plt.savefig('ROC_' + str(J) + '.eps', format='eps')
+    plt.savefig('ROC.eps', format='eps')
     plt.close(1)
 
     return(sensitivity, specificity)
@@ -926,28 +934,23 @@ if __name__ == '__main__':
 #    plot_correlations()
 
     # For GPS data
-    # Level 10: 0.1 - Level 9: 0.3 - Level 8: 0.5 - Level 7: 0.5 - Level 6: 0.4 - Level 5: 0.3
-    # For tremor data
-    # Level 10: 0.004 - Level 9: 0.004 - Level 8: 0.006 - Level 7: 0.006 - Level 6: 0.005 - Level 5: 0.004
-
-    # For GPS data
-    # Level 10: 0.5 - Level 9: 0.7 - Level 8: 0.6 - Level 7: 0.5 - Level 6: 0.4 - Level 5: 0.3 - Level 4: 0.3
-    # Level 7-8: 1.0 - Level 6-7-8: 1.1 - Level 5-6-7-8: 1.1 - Level 5-6-7: 0.6 - Level 5-6: 0.5 - Level 6-7: 0.7
+    # Level 10: 0.3 - Level 9: 0.4 - Level 8: 0.4 - Level 7: 0.5 - Level 6: 0.3 - Level 5: 0.3 - Level 4: 0.3
+    # Level 7-8: 0.7 - Level 6-7-8: 0.8 - Level 5-6-7-8: 0.8 - Level 5-6-7: 0.6 - Level 5-6: 0.4 - Level 6-7: 0.5
     # For tremor data:
-    # Level 10: 0.01 - Level 9: 0.01 - Level 8: 0.003 - Level 7: 0.009 - Level 6: 0.01 - Level 5: 0.01 - Level 4: 0.007
-    # Level 7-8: 0.014 - Level 6-7-8: 0.01 - Level 5-6-7-8: 0.01 - Level 5-6-7: 0.01 - Level 5-6: 0.01 - Level 6-7: 0.01
+    # Level 10: 0.009 - Level 9: 0.009 - Level 8: 0.003 - Level 7: 0.01 - Level 6: 0.009 - Level 5: 0.01 - Level 4: 0.007
+    # Level 7-8: 0.01 - Level 6-7-8: 0.01 - Level 5-6-7-8: 0.009 - Level 5-6-7: 0.01 - Level 5-6: 0.01 - Level 6-7: 0.01
 
     thresh_GPS = np.arange(0.1, 1.6, 0.1)
     thresh_tremor = np.arange(0.001, 0.011, 0.001)
-    chosen_GPS = 0.4
-    chosen_tremor = 0.003
-    J = 8
+    chosen_GPS = 0.5
+    chosen_tremor = 0.01
+    J = [6, 7]
 
-    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J - 1, chosen_GPS, events, small_events)
-    plot_tremor(lats, J - 1, chosen_tremor, events, small_events)
+    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, chosen_GPS, events, small_events)
+    plot_tremor(lats, J, chosen_tremor, events, small_events)
     
     (TP, TN, FP, FN) = find_false_detections(station_file, lats, lons, dataset, direction, \
-        radius_GPS, J - 1, chosen_GPS, chosen_tremor, events, True)
+        radius_GPS, J, chosen_GPS, chosen_tremor, events, True)
     
     (sensitivity, specificity) = plot_ROC_curve(station_file, lats, lons, dataset, direction, \
         radius_GPS, J, thresh_GPS, thresh_tremor, events, chosen_GPS, chosen_tremor)
