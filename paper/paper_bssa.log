@@ -1,16 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  24 OCT 2021 00:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 OCT 2021 16:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **paper_bssa.tex
 (./paper_bssa.tex
-LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -24,41 +24,41 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count87
-LaTeX Info: Redefining \frac on input line 210.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count88
 \leftroot@=\count89
-LaTeX Info: Redefining \overline on input line 306.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count90
 \DOTSCASE@=\count91
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \macc@depth=\count92
 \c@MaxMatrixCols=\count93
 \dotsspace@=\muskip10
@@ -79,20 +79,20 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/preprint/authblk.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/preprint/authblk.sty
 Package: authblk 2001/02/27 1.3 (PWD)
 \affilsep=\skip46
 \@affilsep=\skip47
@@ -100,47 +100,47 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@authors=\count100
 \c@affil=\count101
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/05/09 v1.1c Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 137.
+Package color Info: Driver file: pdftex.def on input line 144.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count102
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 96.
 )
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count103
 \output=\toks20
@@ -158,14 +158,14 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box28
 LaTeX Info: Redefining \\ on input line 3056.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip48
 \bibsep=\skip49
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count110
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (./paper_bssa.aux
@@ -214,7 +214,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
- (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
 \scratchdimen=\dimen119
@@ -227,40 +227,39 @@ LaTeX Font Info:    ... okay on input line 21.
 \MPnumerator=\count115
 \makeMPintoPDFobject=\count116
 \everyMPtoPDFconversion=\toks22
-) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
@@ -269,32 +268,32 @@ Package etexcmds Info: Could not find \expanded.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
+(grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Try loading font information for U+msa on input line 23.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 28.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
  [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
@@ -431,10 +430,10 @@ Overfull \hbox (41.11185pt too wide) in paragraph at lines 170--193
 
 [16] [17] [18]
 Package epstopdf Info: Source file: <figures/500_DS.eps>
-(epstopdf)                    date: 2021-10-09 19:34:25
+(epstopdf)                    date: 2021-10-09 14:53:00
 (epstopdf)                    size: 348472 bytes
 (epstopdf)             Output file: <figures/500_DS-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-10-09 19:34:25
+(epstopdf)                    date: 2021-10-09 15:00:22
 (epstopdf)                    size: 73570 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/500_DS-eps-convert
 ed-to.pdf figures/500_DS.eps>
@@ -453,10 +452,10 @@ Package pdftex.def Info: figures/500_DS-eps-converted-to.pdf used on input line
 LaTeX Warning: Float too large for page by 108.81589pt on input line 259.
 
 Package epstopdf Info: Source file: <figures/DS_10.eps>
-(epstopdf)                    date: 2021-10-09 14:43:39
+(epstopdf)                    date: 2021-10-09 11:02:11
 (epstopdf)                    size: 213259 bytes
 (epstopdf)             Output file: <figures/DS_10-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-10-09 14:43:39
+(epstopdf)                    date: 2021-10-09 11:10:52
 (epstopdf)                    size: 48030 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/DS_10-eps-converte
 d-to.pdf figures/DS_10.eps>
@@ -474,11 +473,11 @@ Package pdftex.def Info: figures/DS_10-eps-converted-to.pdf used on input line
 LaTeX Warning: Float too large for page by 103.54546pt on input line 265.
 
 Package epstopdf Info: Source file: <figures/cleaned_PGC5_lon.eps>
-(epstopdf)                    date: 2021-10-10 17:36:17
+(epstopdf)                    date: 2021-10-09 15:45:27
 (epstopdf)                    size: 586475 bytes
 (epstopdf)             Output file: <figures/cleaned_PGC5_lon-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2021-10-10 17:36:17
+(epstopdf)                    date: 2021-10-10 11:06:25
 (epstopdf)                    size: 164520 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/cleaned_PGC5_lon-e
 ps-converted-to.pdf figures/cleaned_PGC5_lon.eps>
@@ -496,11 +495,11 @@ input line 268.
 LaTeX Warning: Float too large for page by 40.78098pt on input line 271.
 
 Package epstopdf Info: Source file: <figures/map_GPS_stations.eps>
-(epstopdf)                    date: 2021-10-09 19:34:25
+(epstopdf)                    date: 2021-10-09 15:40:39
 (epstopdf)                    size: 2802563 bytes
 (epstopdf)             Output file: <figures/map_GPS_stations-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2021-10-09 19:34:25
+(epstopdf)                    date: 2021-10-09 15:42:21
 (epstopdf)                    size: 7406582 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/map_GPS_stations-e
 ps-converted-to.pdf figures/map_GPS_stations.eps>
@@ -515,10 +514,10 @@ Package pdftex.def Info: figures/map_GPS_stations-eps-converted-to.pdf used on
 input line 274.
 (pdftex.def)             Requested size: 345.0pt x 488.2186pt.
 Package epstopdf Info: Source file: <figures/tremor_13.eps>
-(epstopdf)                    date: 2021-10-10 17:36:17
+(epstopdf)                    date: 2021-10-09 15:58:45
 (epstopdf)                    size: 313308 bytes
 (epstopdf)             Output file: <figures/tremor_13-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-10-10 17:36:17
+(epstopdf)                    date: 2021-10-10 15:28:19
 (epstopdf)                    size: 84086 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_13-eps-conv
 erted-to.pdf figures/tremor_13.eps>
@@ -537,22 +536,16 @@ ine 280.
 LaTeX Warning: Float too large for page by 40.78098pt on input line 283.
 
 Package epstopdf Info: Source file: <figures/GPS_longer_detail_8.eps>
-(epstopdf)                    date: 2021-10-23 21:56:44
+(epstopdf)                    date: 2021-10-24 11:19:54
 (epstopdf)                    size: 303511 bytes
 (epstopdf)             Output file: <figures/GPS_longer_detail_8-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2021-10-21 00:01:46
-(epstopdf)                    size: 81185 bytes
+(epstopdf)                    date: 2021-10-24 11:19:54
+(epstopdf)                    size: 82006 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_detail_
 8-eps-converted-to.pdf figures/GPS_longer_detail_8.eps>
 (epstopdf)             \includegraphics on input line 286.
-runsystem(repstopdf --outfile=figures/GPS_longer_detail_8-eps-converted-to.pdf 
-figures/GPS_longer_detail_8.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/GPS_longer_detail_8-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2021-10-24 00:05:20
-(epstopdf)                    size: 82006 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <figures/GPS_longer_detail_8-eps-converted-to.pdf, id=85, 1156.32pt x 578.16pt>
 File: figures/GPS_longer_detail_8-eps-converted-to.pdf Graphic file (type pdf)
@@ -561,22 +554,16 @@ Package pdftex.def Info: figures/GPS_longer_detail_8-eps-converted-to.pdf used
 on input line 286.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/tremor_longer_detail_8.eps>
-(epstopdf)                    date: 2021-10-23 21:56:45
+(epstopdf)                    date: 2021-10-24 11:19:54
 (epstopdf)                    size: 270039 bytes
 (epstopdf)             Output file: <figures/tremor_longer_detail_8-eps-convert
 ed-to.pdf>
-(epstopdf)                    date: 2021-10-21 00:01:48
+(epstopdf)                    date: 2021-10-24 11:19:54
 (epstopdf)                    size: 71354 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_longer_deta
 il_8-eps-converted-to.pdf figures/tremor_longer_detail_8.eps>
 (epstopdf)             \includegraphics on input line 288.
-runsystem(repstopdf --outfile=figures/tremor_longer_detail_8-eps-converted-to.p
-df figures/tremor_longer_detail_8.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/tremor_longer_detail_8-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2021-10-24 00:05:21
-(epstopdf)                    size: 71354 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <figures/tremor_longer_detail_8-eps-converted-to.pdf, id=87, 1156.32pt x 578.16
 pt>
@@ -587,22 +574,16 @@ Package pdftex.def Info: figures/tremor_longer_detail_8-eps-converted-to.pdf us
 ed on input line 288.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/GPS_longer_detail_7.eps>
-(epstopdf)                    date: 2021-10-23 22:14:30
+(epstopdf)                    date: 2021-10-24 11:19:54
 (epstopdf)                    size: 388353 bytes
 (epstopdf)             Output file: <figures/GPS_longer_detail_7-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2021-10-21 00:01:49
+(epstopdf)                    date: 2021-10-24 11:19:54
 (epstopdf)                    size: 106324 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_detail_
 7-eps-converted-to.pdf figures/GPS_longer_detail_7.eps>
 (epstopdf)             \includegraphics on input line 294.
-runsystem(repstopdf --outfile=figures/GPS_longer_detail_7-eps-converted-to.pdf 
-figures/GPS_longer_detail_7.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/GPS_longer_detail_7-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2021-10-24 00:05:22
-(epstopdf)                    size: 106324 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <figures/GPS_longer_detail_7-eps-converted-to.pdf, id=89, 1156.32pt x 578.16pt>
 File: figures/GPS_longer_detail_7-eps-converted-to.pdf Graphic file (type pdf)
@@ -611,22 +592,16 @@ Package pdftex.def Info: figures/GPS_longer_detail_7-eps-converted-to.pdf used
 on input line 294.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/tremor_longer_detail_7.eps>
-(epstopdf)                    date: 2021-10-23 22:14:31
+(epstopdf)                    date: 2021-10-24 11:19:54
 (epstopdf)                    size: 291348 bytes
 (epstopdf)             Output file: <figures/tremor_longer_detail_7-eps-convert
 ed-to.pdf>
-(epstopdf)                    date: 2021-10-21 00:01:50
-(epstopdf)                    size: 90786 bytes
+(epstopdf)                    date: 2021-10-24 11:19:54
+(epstopdf)                    size: 90177 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_longer_deta
 il_7-eps-converted-to.pdf figures/tremor_longer_detail_7.eps>
 (epstopdf)             \includegraphics on input line 296.
-runsystem(repstopdf --outfile=figures/tremor_longer_detail_7-eps-converted-to.p
-df figures/tremor_longer_detail_7.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/tremor_longer_detail_7-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2021-10-24 00:05:24
-(epstopdf)                    size: 90177 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <figures/tremor_longer_detail_7-eps-converted-to.pdf, id=91, 1156.32pt x 578.16
 pt>
@@ -637,22 +612,16 @@ Package pdftex.def Info: figures/tremor_longer_detail_7-eps-converted-to.pdf us
 ed on input line 296.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/GPS_longer_detail_6.eps>
-(epstopdf)                    date: 2021-10-23 22:20:26
+(epstopdf)                    date: 2021-10-24 11:19:54
 (epstopdf)                    size: 629242 bytes
 (epstopdf)             Output file: <figures/GPS_longer_detail_6-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2021-10-21 00:01:52
-(epstopdf)                    size: 150380 bytes
+(epstopdf)                    date: 2021-10-24 11:19:54
+(epstopdf)                    size: 153086 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_detail_
 6-eps-converted-to.pdf figures/GPS_longer_detail_6.eps>
 (epstopdf)             \includegraphics on input line 302.
-runsystem(repstopdf --outfile=figures/GPS_longer_detail_6-eps-converted-to.pdf 
-figures/GPS_longer_detail_6.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/GPS_longer_detail_6-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2021-10-24 00:05:25
-(epstopdf)                    size: 153086 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <figures/GPS_longer_detail_6-eps-converted-to.pdf, id=93, 1156.32pt x 578.16pt>
 File: figures/GPS_longer_detail_6-eps-converted-to.pdf Graphic file (type pdf)
@@ -669,22 +638,16 @@ Package pdftex.def Info: figures/tremor_longer_detail_6.pdf used on input line
 304.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/GPS_longer_detail_6-7-8.eps>
-(epstopdf)                    date: 2021-10-23 23:10:47
+(epstopdf)                    date: 2021-10-24 11:19:54
 (epstopdf)                    size: 530541 bytes
 (epstopdf)             Output file: <figures/GPS_longer_detail_6-7-8-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2021-10-21 00:01:53
-(epstopdf)                    size: 143188 bytes
+(epstopdf)                    date: 2021-10-24 11:19:54
+(epstopdf)                    size: 144454 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_detail_
 6-7-8-eps-converted-to.pdf figures/GPS_longer_detail_6-7-8.eps>
 (epstopdf)             \includegraphics on input line 310.
-runsystem(repstopdf --outfile=figures/GPS_longer_detail_6-7-8-eps-converted-to.
-pdf figures/GPS_longer_detail_6-7-8.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/GPS_longer_detail_6-7-8-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2021-10-24 00:05:26
-(epstopdf)                    size: 144454 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <figures/GPS_longer_detail_6-7-8-eps-converted-to.pdf, id=97, 1156.32pt x 578.1
 6pt>
@@ -695,22 +658,16 @@ Package pdftex.def Info: figures/GPS_longer_detail_6-7-8-eps-converted-to.pdf u
 sed on input line 310.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/tremor_longer_detail_6-7-8.eps>
-(epstopdf)                    date: 2021-10-23 23:10:47
+(epstopdf)                    date: 2021-10-24 11:19:54
 (epstopdf)                    size: 380849 bytes
 (epstopdf)             Output file: <figures/tremor_longer_detail_6-7-8-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2021-10-21 00:01:54
+(epstopdf)                    date: 2021-10-24 11:19:54
 (epstopdf)                    size: 103812 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_longer_deta
 il_6-7-8-eps-converted-to.pdf figures/tremor_longer_detail_6-7-8.eps>
 (epstopdf)             \includegraphics on input line 312.
-runsystem(repstopdf --outfile=figures/tremor_longer_detail_6-7-8-eps-converted-
-to.pdf figures/tremor_longer_detail_6-7-8.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/tremor_longer_detail_6-7-8-eps-con
-verted-to.pdf>
-(epstopdf)                    date: 2021-10-24 00:05:27
-(epstopdf)                    size: 103812 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <figures/tremor_longer_detail_6-7-8-eps-converted-to.pdf, id=99, 1156.32pt x 57
 8.16pt>
@@ -721,20 +678,15 @@ Package pdftex.def Info: figures/tremor_longer_detail_6-7-8-eps-converted-to.pd
 f used on input line 312.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/ROC_6-7-8.eps>
-(epstopdf)                    date: 2021-10-23 23:11:40
+(epstopdf)                    date: 2021-10-24 11:19:54
 (epstopdf)                    size: 28341 bytes
 (epstopdf)             Output file: <figures/ROC_6-7-8-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-10-21 00:01:55
-(epstopdf)                    size: 37114 bytes
+(epstopdf)                    date: 2021-10-24 11:19:54
+(epstopdf)                    size: 37328 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/ROC_6-7-8-eps-conv
 erted-to.pdf figures/ROC_6-7-8.eps>
 (epstopdf)             \includegraphics on input line 318.
-runsystem(repstopdf --outfile=figures/ROC_6-7-8-eps-converted-to.pdf figures/RO
-C_6-7-8.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/ROC_6-7-8-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-10-24 00:05:28
-(epstopdf)                    size: 37328 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <figures/ROC_6-7-8-eps-converted-to.pdf, id=101, 578.16pt x 578.16pt>
 File: figures/ROC_6-7-8-eps-converted-to.pdf Graphic file (type pdf)
@@ -767,30 +719,30 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3267 strings out of 493117
- 45517 string characters out of 6135433
- 112669 words of memory out of 5000000
- 6658 multiletter control sequences out of 15000+600000
+ 3277 strings out of 493014
+ 45725 string characters out of 6133351
+ 112367 words of memory out of 5000000
+ 6747 multiletter control sequences out of 15000+600000
  12009 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,9n,27p,2266b,267s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/t
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on paper_bssa.pdf (30 pages, 9127081 bytes).
+Output written on paper_bssa.pdf (30 pages, 9127796 bytes).
 PDF statistics:
  725 PDF objects out of 1000 (max. 8388607)
  197 compressed objects within 2 object streams
