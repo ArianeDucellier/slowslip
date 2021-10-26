@@ -81,27 +81,25 @@ for n in range(1, nmax, nstep):
         (D, S) = get_DS(disp_interp, W, name, J)
 
         # Plot data
-        ax = plt.subplot2grid((J + 2, len(gaps)), (J + 1, count))
+        ax = plt.subplot2grid((J + 2, len(gaps)), (0, count))
         plt.plot(time, disp_interp, 'r')
         plt.plot(time, disp, 'k', label='Data')
         plt.xlim(np.min(time[gap - 100]), np.max(time[gap + n + 99]))
-        plt.legend(loc=1)
-        plt.xlabel('Time (years)', fontsize=14)
+        plt.legend(loc=1)        
         # Plot details at each level
         for j in range(0, J):
-            ax = plt.subplot2grid((J + 2, len(gaps)), (J - j, count))
+            ax = plt.subplot2grid((J + 2, len(gaps)), (j + 1, count))
             plt.plot(time, D[j], 'r')
             plt.plot(time, D0[j], 'k', label='D' + str(j + 1))
             plt.xlim(np.min(time[gap - 100]), np.max(time[gap + n + 99]))
             plt.legend(loc=1)
-            ax.axes.xaxis.set_ticks([])
         # Plot scaling coefficients for the last level
-        ax = plt.subplot2grid((J + 2, len(gaps)), (0, count))
+        ax = plt.subplot2grid((J + 2, len(gaps)), (J + 1, count))
         plt.plot(time, S[J], 'r')
         plt.plot(time, S0[J], 'k', label='S' + str(J))
         plt.xlim(np.min(time[gap - 100]), np.max(time[gap + n + 99]))
         plt.legend(loc=1)
-        ax.axes.xaxis.set_ticks([])
+        plt.xlabel('Time (years)', fontsize=14)
 
     plt.tight_layout()
     plt.savefig('missing_values/' + filling + '/DS_' + str(n) + '.eps', format='eps')

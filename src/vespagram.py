@@ -112,7 +112,7 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
         (D, S) = get_DS(disp, W, wavelet, J)
 
         # Save wavelets into file
-        filename = 'MODWT_GPS/' + dataset + '_' + station + '_' + direction + '.pkl'
+        filename = 'MODWT_GPS_longer/' + dataset + '_' + station + '_' + direction + '.pkl'
         pickle.dump([time, disp, W, V, D, S], open(filename, 'wb'))
 
         # Start figure
@@ -125,29 +125,29 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
         minD = min([np.min(Dj) for Dj in D])
 
         # Plot data
-        plt.subplot2grid((J + 2, 1), (J + 1, 0))
+        plt.subplot2grid((J + 2, 1), (0, 0))
         plt.plot(time, disp, 'k', label='Data')
-        plt.xlabel('Time (years)', fontsize=24)
-        plt.xlim([2009.25, 2021.25])
+        plt.xlim([2006.0, 2021.5])
         plt.ylim([np.min(disp), np.max(disp)])
         plt.legend(loc=3, fontsize=20)
         # Plot details
         for j in range(0, J):
-            plt.subplot2grid((J + 2, 1), (J - j, 0))
+            plt.subplot2grid((J + 2, 1), (j + 1, 0))
             plt.plot(time, D[j], 'k', label='D' + str(j + 1))
-            plt.xlim([2009.25, 2021.25])
+            plt.xlim([2006.0, 2021.5])
             plt.ylim(minD, maxD)
             plt.legend(loc=3, fontsize=20)
         # Plot smooth
-        plt.subplot2grid((J + 2, 1), (0, 0))
+        plt.subplot2grid((J + 2, 1), (J + 1, 0))
         plt.plot(time, S[J], 'k', label='S' + str(J))
-        plt.xlim([2009.25, 2021.25])
+        plt.xlim([2006.0, 2021.5])
         plt.ylim([np.min(disp), np.max(disp)])
         plt.legend(loc=3, fontsize=20)
+        plt.xlabel('Time (years)', fontsize=24)
         
         # Save figure
         plt.tight_layout()
-        plt.savefig('MODWT_GPS/' + dataset + '_' + station + '_' + \
+        plt.savefig('MODWT_GPS_longer/' + dataset + '_' + station + '_' + \
             direction + '.eps', format='eps')
         plt.close(1)
         
