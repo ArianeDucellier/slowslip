@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  29 OCT 2021 22:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  3 NOV 2021 20:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -165,6 +165,9 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count110
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -202,18 +205,18 @@ LaTeX Warning: Label `pngfiguresample' multiply defined.
 )
 \openout1 = `paper_bssa.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
  (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
@@ -275,56 +278,46 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+LaTeX Font Info:    Try loading font information for U+msa on input line 25.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 28.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
@@ -339,62 +332,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[4]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-[7]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
-
- []
-
-
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-[9]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
@@ -404,48 +397,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-[12] (./paper_bssa.bbl [13]) [14]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 [15]
-Overfull \hbox (41.11185pt too wide) in paragraph at lines 172--195
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
  []
 
 [16]
-Overfull \hbox (3.82472pt too wide) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+[18] [19] (./paper_bssa.bbl [20] [21]) [22]
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+
+ []
+
+[23]
+Overfull \hbox (41.11185pt too wide) in paragraph at lines 176--199
+ [][] 
+ []
+
+[24]
+Overfull \hbox (3.82472pt too wide) in paragraph at lines 233--234
 []\OT1/cmr/m/n/10 Figure 1. Demon-stra-tion of a wavelet de-com-po-si-tion for 
 a syn-thetic dataset.
  []
 
-[17] [18]
+[25] [26] [27]
 Package epstopdf Info: Source file: <figures/500_DS.eps>
 (epstopdf)                    date: 2021-10-09 19:34:25
 (epstopdf)                    size: 348472 bytes
@@ -454,18 +457,19 @@ Package epstopdf Info: Source file: <figures/500_DS.eps>
 (epstopdf)                    size: 73570 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/500_DS-eps-convert
 ed-to.pdf figures/500_DS.eps>
-(epstopdf)             \includegraphics on input line 258.
+(epstopdf)             \includegraphics on input line 262.
 Package epstopdf Info: Output file is already uptodate.
- <figures/500_DS-eps-converted-to.pdf, id=75, 1445.4pt x 2818.53pt>
+
+<figures/500_DS-eps-converted-to.pdf, id=104, 1445.4pt x 2818.53pt>
 File: figures/500_DS-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/500_DS-eps-converted-to.pdf>
 Package pdftex.def Info: figures/500_DS-eps-converted-to.pdf used on input line
- 258.
+ 262.
 (pdftex.def)             Requested size: 284.52756pt x 554.83653pt.
 
 
-LaTeX Warning: Float too large for page by 88.78098pt on input line 261.
+LaTeX Warning: Float too large for page by 88.78098pt on input line 265.
 
 Package epstopdf Info: Source file: <figures/DS_10.eps>
 (epstopdf)                    date: 2021-10-25 20:09:22
@@ -475,18 +479,18 @@ Package epstopdf Info: Source file: <figures/DS_10.eps>
 (epstopdf)                    size: 46472 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/DS_10-eps-converte
 d-to.pdf figures/DS_10.eps>
-(epstopdf)             \includegraphics on input line 264.
+(epstopdf)             \includegraphics on input line 268.
 Package epstopdf Info: Output file is already uptodate.
-<figures/DS_10-eps-converted-to.pdf, id=77, 433.62pt x 1734.48pt>
+<figures/DS_10-eps-converted-to.pdf, id=106, 433.62pt x 1734.48pt>
 File: figures/DS_10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/DS_10-eps-converted-to.pdf>
 Package pdftex.def Info: figures/DS_10-eps-converted-to.pdf used on input line 
-264.
+268.
 (pdftex.def)             Requested size: 142.26378pt x 569.04546pt.
 
 
-LaTeX Warning: Float too large for page by 103.54546pt on input line 267.
+LaTeX Warning: Float too large for page by 103.54546pt on input line 271.
 
 Package epstopdf Info: Source file: <figures/cleaned_PGC5_lon.eps>
 (epstopdf)                    date: 2021-10-25 20:21:02
@@ -497,18 +501,18 @@ pdf>
 (epstopdf)                    size: 153613 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/cleaned_PGC5_lon-e
 ps-converted-to.pdf figures/cleaned_PGC5_lon.eps>
-(epstopdf)             \includegraphics on input line 270.
+(epstopdf)             \includegraphics on input line 274.
 Package epstopdf Info: Output file is already uptodate.
-<figures/cleaned_PGC5_lon-eps-converted-to.pdf, id=79, 722.7pt x 2818.53pt>
+<figures/cleaned_PGC5_lon-eps-converted-to.pdf, id=108, 722.7pt x 2818.53pt>
 File: figures/cleaned_PGC5_lon-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/cleaned_PGC5_lon-eps-converted-to.pdf>
 Package pdftex.def Info: figures/cleaned_PGC5_lon-eps-converted-to.pdf used on 
-input line 270.
+input line 274.
 (pdftex.def)             Requested size: 142.26378pt x 554.83653pt.
 
 
-LaTeX Warning: Float too large for page by 52.78098pt on input line 273.
+LaTeX Warning: Float too large for page by 52.78098pt on input line 277.
 
 Package epstopdf Info: Source file: <figures/map_GPS_stations.eps>
 (epstopdf)                    date: 2021-10-09 19:34:25
@@ -519,15 +523,15 @@ pdf>
 (epstopdf)                    size: 7406582 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/map_GPS_stations-e
 ps-converted-to.pdf figures/map_GPS_stations.eps>
-(epstopdf)             \includegraphics on input line 276.
+(epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/map_GPS_stations-eps-converted-to.pdf, id=81, 597.23125pt x 845.1575pt
->
+<figures/map_GPS_stations-eps-converted-to.pdf, id=110, 597.23125pt x 845.1575p
+t>
 File: figures/map_GPS_stations-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/map_GPS_stations-eps-converted-to.pdf>
 Package pdftex.def Info: figures/map_GPS_stations-eps-converted-to.pdf used on 
-input line 276.
+input line 280.
 (pdftex.def)             Requested size: 345.0pt x 488.2186pt.
 Package epstopdf Info: Source file: <figures/tremor_13.eps>
 (epstopdf)                    date: 2021-10-10 17:36:17
@@ -537,19 +541,19 @@ Package epstopdf Info: Source file: <figures/tremor_13.eps>
 (epstopdf)                    size: 84086 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_13-eps-conv
 erted-to.pdf figures/tremor_13.eps>
-(epstopdf)             \includegraphics on input line 282.
+(epstopdf)             \includegraphics on input line 286.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/tremor_13-eps-converted-to.pdf, id=83, 722.7pt x 2818.53pt>
+<figures/tremor_13-eps-converted-to.pdf, id=112, 722.7pt x 2818.53pt>
 File: figures/tremor_13-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/tremor_13-eps-converted-to.pdf>
 Package pdftex.def Info: figures/tremor_13-eps-converted-to.pdf used on input l
-ine 282.
+ine 286.
 (pdftex.def)             Requested size: 142.26378pt x 554.83653pt.
 
 
-LaTeX Warning: Float too large for page by 53.33653pt on input line 285.
+LaTeX Warning: Float too large for page by 53.33653pt on input line 289.
 
 Package epstopdf Info: Source file: <figures/GPS_longer_detail_8.eps>
 (epstopdf)                    date: 2021-10-23 21:56:44
@@ -560,14 +564,15 @@ to.pdf>
 (epstopdf)                    size: 82006 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_detail_
 8-eps-converted-to.pdf figures/GPS_longer_detail_8.eps>
-(epstopdf)             \includegraphics on input line 288.
+(epstopdf)             \includegraphics on input line 292.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/GPS_longer_detail_8-eps-converted-to.pdf, id=85, 1156.32pt x 578.16pt>
+<figures/GPS_longer_detail_8-eps-converted-to.pdf, id=114, 1156.32pt x 578.16pt
+>
 File: figures/GPS_longer_detail_8-eps-converted-to.pdf Graphic file (type pdf)
-<use figures/GPS_longer_detail_8-eps-converted-to.pdf>
+ <use figures/GPS_longer_detail_8-eps-converted-to.pdf>
 Package pdftex.def Info: figures/GPS_longer_detail_8-eps-converted-to.pdf used 
-on input line 288.
+on input line 292.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/tremor_longer_detail_8.eps>
 (epstopdf)                    date: 2021-10-23 21:56:45
@@ -578,16 +583,16 @@ ed-to.pdf>
 (epstopdf)                    size: 71354 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_longer_deta
 il_8-eps-converted-to.pdf figures/tremor_longer_detail_8.eps>
-(epstopdf)             \includegraphics on input line 290.
+(epstopdf)             \includegraphics on input line 294.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/tremor_longer_detail_8-eps-converted-to.pdf, id=87, 1156.32pt x 578.16
-pt>
+<figures/tremor_longer_detail_8-eps-converted-to.pdf, id=116, 1156.32pt x 578.1
+6pt>
 File: figures/tremor_longer_detail_8-eps-converted-to.pdf Graphic file (type pd
 f)
  <use figures/tremor_longer_detail_8-eps-converted-to.pdf>
 Package pdftex.def Info: figures/tremor_longer_detail_8-eps-converted-to.pdf us
-ed on input line 290.
+ed on input line 294.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/GPS_longer_detail_7.eps>
 (epstopdf)                    date: 2021-10-23 22:14:30
@@ -598,14 +603,15 @@ to.pdf>
 (epstopdf)                    size: 106324 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_detail_
 7-eps-converted-to.pdf figures/GPS_longer_detail_7.eps>
-(epstopdf)             \includegraphics on input line 296.
+(epstopdf)             \includegraphics on input line 300.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/GPS_longer_detail_7-eps-converted-to.pdf, id=89, 1156.32pt x 578.16pt>
+<figures/GPS_longer_detail_7-eps-converted-to.pdf, id=118, 1156.32pt x 578.16pt
+>
 File: figures/GPS_longer_detail_7-eps-converted-to.pdf Graphic file (type pdf)
-<use figures/GPS_longer_detail_7-eps-converted-to.pdf>
+ <use figures/GPS_longer_detail_7-eps-converted-to.pdf>
 Package pdftex.def Info: figures/GPS_longer_detail_7-eps-converted-to.pdf used 
-on input line 296.
+on input line 300.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/tremor_longer_detail_7.eps>
 (epstopdf)                    date: 2021-10-23 22:14:31
@@ -616,16 +622,16 @@ ed-to.pdf>
 (epstopdf)                    size: 90177 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_longer_deta
 il_7-eps-converted-to.pdf figures/tremor_longer_detail_7.eps>
-(epstopdf)             \includegraphics on input line 298.
+(epstopdf)             \includegraphics on input line 302.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/tremor_longer_detail_7-eps-converted-to.pdf, id=91, 1156.32pt x 578.16
-pt>
+<figures/tremor_longer_detail_7-eps-converted-to.pdf, id=120, 1156.32pt x 578.1
+6pt>
 File: figures/tremor_longer_detail_7-eps-converted-to.pdf Graphic file (type pd
 f)
  <use figures/tremor_longer_detail_7-eps-converted-to.pdf>
 Package pdftex.def Info: figures/tremor_longer_detail_7-eps-converted-to.pdf us
-ed on input line 298.
+ed on input line 302.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/GPS_longer_detail_6.eps>
 (epstopdf)                    date: 2021-10-23 22:20:26
@@ -636,22 +642,23 @@ to.pdf>
 (epstopdf)                    size: 153086 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_detail_
 6-eps-converted-to.pdf figures/GPS_longer_detail_6.eps>
-(epstopdf)             \includegraphics on input line 304.
+(epstopdf)             \includegraphics on input line 308.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/GPS_longer_detail_6-eps-converted-to.pdf, id=93, 1156.32pt x 578.16pt>
+<figures/GPS_longer_detail_6-eps-converted-to.pdf, id=122, 1156.32pt x 578.16pt
+>
 File: figures/GPS_longer_detail_6-eps-converted-to.pdf Graphic file (type pdf)
-<use figures/GPS_longer_detail_6-eps-converted-to.pdf>
+ <use figures/GPS_longer_detail_6-eps-converted-to.pdf>
 Package pdftex.def Info: figures/GPS_longer_detail_6-eps-converted-to.pdf used 
-on input line 304.
+on input line 308.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 
-<figures/tremor_longer_detail_6.pdf, id=95, 1156.32pt x 578.16pt>
+<figures/tremor_longer_detail_6.pdf, id=124, 1156.32pt x 578.16pt>
 File: figures/tremor_longer_detail_6.pdf Graphic file (type pdf)
 
 <use figures/tremor_longer_detail_6.pdf>
 Package pdftex.def Info: figures/tremor_longer_detail_6.pdf used on input line 
-306.
+310.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/GPS_longer_detail_6-7-8.eps>
 (epstopdf)                    date: 2021-10-23 23:10:47
@@ -662,16 +669,16 @@ ted-to.pdf>
 (epstopdf)                    size: 144454 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_detail_
 6-7-8-eps-converted-to.pdf figures/GPS_longer_detail_6-7-8.eps>
-(epstopdf)             \includegraphics on input line 312.
+(epstopdf)             \includegraphics on input line 316.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/GPS_longer_detail_6-7-8-eps-converted-to.pdf, id=97, 1156.32pt x 578.1
-6pt>
+<figures/GPS_longer_detail_6-7-8-eps-converted-to.pdf, id=126, 1156.32pt x 578.
+16pt>
 File: figures/GPS_longer_detail_6-7-8-eps-converted-to.pdf Graphic file (type p
 df)
  <use figures/GPS_longer_detail_6-7-8-eps-converted-to.pdf>
 Package pdftex.def Info: figures/GPS_longer_detail_6-7-8-eps-converted-to.pdf u
-sed on input line 312.
+sed on input line 316.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/tremor_longer_detail_6-7-8.eps>
 (epstopdf)                    date: 2021-10-23 23:10:47
@@ -682,16 +689,16 @@ verted-to.pdf>
 (epstopdf)                    size: 103812 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_longer_deta
 il_6-7-8-eps-converted-to.pdf figures/tremor_longer_detail_6-7-8.eps>
-(epstopdf)             \includegraphics on input line 314.
+(epstopdf)             \includegraphics on input line 318.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/tremor_longer_detail_6-7-8-eps-converted-to.pdf, id=99, 1156.32pt x 57
-8.16pt>
+<figures/tremor_longer_detail_6-7-8-eps-converted-to.pdf, id=128, 1156.32pt x 5
+78.16pt>
 File: figures/tremor_longer_detail_6-7-8-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use figures/tremor_longer_detail_6-7-8-eps-converted-to.pdf>
 Package pdftex.def Info: figures/tremor_longer_detail_6-7-8-eps-converted-to.pd
-f used on input line 314.
+f used on input line 318.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/ROC_6-7-8.eps>
 (epstopdf)                    date: 2021-10-23 23:11:40
@@ -701,44 +708,44 @@ Package epstopdf Info: Source file: <figures/ROC_6-7-8.eps>
 (epstopdf)                    size: 37328 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/ROC_6-7-8-eps-conv
 erted-to.pdf figures/ROC_6-7-8.eps>
-(epstopdf)             \includegraphics on input line 320.
+(epstopdf)             \includegraphics on input line 324.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/ROC_6-7-8-eps-converted-to.pdf, id=101, 578.16pt x 578.16pt>
+<figures/ROC_6-7-8-eps-converted-to.pdf, id=130, 578.16pt x 578.16pt>
 File: figures/ROC_6-7-8-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/ROC_6-7-8-eps-converted-to.pdf>
 Package pdftex.def Info: figures/ROC_6-7-8-eps-converted-to.pdf used on input l
-ine 320.
+ine 324.
 (pdftex.def)             Requested size: 345.0pt x 344.99312pt.
 
-<figures/GPS_michel_detail_5.pdf, id=103, 1156.32pt x 578.16pt>
+<figures/GPS_michel_detail_5.pdf, id=132, 1156.32pt x 578.16pt>
 File: figures/GPS_michel_detail_5.pdf Graphic file (type pdf)
 
 <use figures/GPS_michel_detail_5.pdf>
-Package pdftex.def Info: figures/GPS_michel_detail_5.pdf used on input line 326
+Package pdftex.def Info: figures/GPS_michel_detail_5.pdf used on input line 330
 .
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
- [19] [20 <./figures/500_DS-eps-converted-to.pdf>] [21 <./figures/DS_10-eps-con
-verted-to.pdf>] [22 <./figures/cleaned_PGC5_lon-eps-converted-to.pdf>] [23 <./f
-igures/map_GPS_stations-eps-converted-to.pdf>] [24 <./figures/tremor_13-eps-con
-verted-to.pdf>] [25 <./figures/GPS_longer_detail_8-eps-converted-to.pdf> <./fig
-ures/tremor_longer_detail_8-eps-converted-to.pdf>] [26 <./figures/GPS_longer_de
+ [28] [29 <./figures/500_DS-eps-converted-to.pdf>] [30 <./figures/DS_10-eps-con
+verted-to.pdf>] [31 <./figures/cleaned_PGC5_lon-eps-converted-to.pdf>] [32 <./f
+igures/map_GPS_stations-eps-converted-to.pdf>] [33 <./figures/tremor_13-eps-con
+verted-to.pdf>] [34 <./figures/GPS_longer_detail_8-eps-converted-to.pdf> <./fig
+ures/tremor_longer_detail_8-eps-converted-to.pdf>] [35 <./figures/GPS_longer_de
 tail_7-eps-converted-to.pdf> <./figures/tremor_longer_detail_7-eps-converted-to
-.pdf>] [27 <./figures/GPS_longer_detail_6-eps-converted-to.pdf> <./figures/trem
-or_longer_detail_6.pdf>] [28 <./figures/GPS_longer_detail_6-7-8-eps-converted-t
-o.pdf> <./figures/tremor_longer_detail_6-7-8-eps-converted-to.pdf>] [29 <./figu
+.pdf>] [36 <./figures/GPS_longer_detail_6-eps-converted-to.pdf> <./figures/trem
+or_longer_detail_6.pdf>] [37 <./figures/GPS_longer_detail_6-7-8-eps-converted-t
+o.pdf> <./figures/tremor_longer_detail_6-7-8-eps-converted-to.pdf>] [38 <./figu
 res/ROC_6-7-8-eps-converted-to.pdf>]
-[30 <./figures/GPS_michel_detail_5.pdf>] (./paper_bssa.aux)
+[39 <./figures/GPS_michel_detail_5.pdf>] (./paper_bssa.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3273 strings out of 493117
- 45613 string characters out of 6135433
- 112730 words of memory out of 5000000
- 6664 multiletter control sequences out of 15000+600000
+ 3305 strings out of 493117
+ 46207 string characters out of 6135433
+ 110158 words of memory out of 5000000
+ 6692 multiletter control sequences out of 15000+600000
  12009 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,9n,27p,1870b,267s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -758,10 +765,10 @@ ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on paper_bssa.pdf (30 pages, 9118204 bytes).
+Output written on paper_bssa.pdf (39 pages, 9122003 bytes).
 PDF statistics:
- 725 PDF objects out of 1000 (max. 8388607)
- 197 compressed objects within 2 object streams
+ 757 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

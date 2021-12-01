@@ -417,6 +417,8 @@ def plot_correlations():
         plt.savefig('events_' + str(level) + '.pdf', format='pdf')
         plt.close(1)        
 
+
+
 def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, threshold, events, small_events):
     """
     """
@@ -912,6 +914,10 @@ if __name__ == '__main__':
     dataset = 'cleaned'
     direction = 'lon'
     radius_GPS = 50
+    lonmin = -125.4
+    lonmax = -121.4
+    latmin = 46.3
+    latmax = 49.6
     events = [2007.0630, 2008.3566, 2009.3452, 2010.6342, 2011.6041, 2012.7172, \
         2013.7137, 2014.6479, 2014.8904, 2016.1082, 2017.2342, 2018.4932, \
         2019.2329, 2019.8767, 2020.7923, 2020.8552, 2021.0904]
@@ -942,15 +948,16 @@ if __name__ == '__main__':
 
     thresh_GPS = np.arange(0.1, 1.6, 0.1)
     thresh_tremor = np.arange(0.001, 0.011, 0.001)
-    chosen_GPS = 0.5
+    chosen_GPS = 0.8
     chosen_tremor = 0.01
-    J = [6, 7]
+    J = [6, 7, 8]
 
-    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, chosen_GPS, events, small_events)
-    plot_tremor(lats, J, chosen_tremor, events, small_events)
+#    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, chosen_GPS, events, small_events)
     
-    (TP, TN, FP, FN) = find_false_detections(station_file, lats, lons, dataset, direction, \
-        radius_GPS, J, chosen_GPS, chosen_tremor, events, True)
+#    plot_tremor(lats, J, chosen_tremor, events, small_events)
     
-    (sensitivity, specificity) = plot_ROC_curve(station_file, lats, lons, dataset, direction, \
-        radius_GPS, J, thresh_GPS, thresh_tremor, events, chosen_GPS, chosen_tremor)
+#    (TP, TN, FP, FN) = find_false_detections(station_file, lats, lons, dataset, direction, \
+#        radius_GPS, J, chosen_GPS, chosen_tremor, events, True)
+    
+#    (sensitivity, specificity) = plot_ROC_curve(station_file, lats, lons, dataset, direction, \
+#        radius_GPS, J, thresh_GPS, thresh_tremor, events, chosen_GPS, chosen_tremor)

@@ -8,12 +8,13 @@
 \bibitem[Aguiar et~al.(2009)Aguiar, Melbourne, and Scrivner]{AGU_2009}
 A.C. Aguiar, T.I. Melbourne, and C.W. Scrivner.
 \newblock Moment release rate of {Cascadia} tremor constrained by {GPS}.
-\newblock \emph{Journal of Geophysical Research}, 114:\penalty0 B00A05, 2009.
+\newblock \emph{J. Geophys. Res.}, 114:\penalty0 B00A05, 2009.
 
 \bibitem[Alba et~al.(2019)Alba, Weldon, Livelybrooks, and Schmidt]{ALB_2019}
 S.~Alba, R.~J. Weldon, D.~Livelybrooks, and D.~A. Schmidt.
 \newblock Cascadia {ETS} events seen in tidal records (1980--2011).
-\newblock \emph{Bulletin of the Seismological Society of America}, 2019.
+\newblock \emph{Bull. Seismol. Soc. Am.}, 109\penalty0 (2):\penalty0 812--821,
+  2019.
 
 \bibitem[Audet and Kim(2016)]{AUD_2016}
 P.~Audet and Y.H. Kim.
@@ -24,13 +25,12 @@ P.~Audet and Y.H. Kim.
 \bibitem[Beroza and Ide(2011)]{BER_2011}
 G.C. Beroza and S.~Ide.
 \newblock Slow earthquakes and nonvolcanic tremor.
-\newblock \emph{Annual Review of Earth and Planetary Sciences}, 39:\penalty0
-  271--296, 2011.
+\newblock \emph{Annu. Rev. Earth Planet. Sci.}, 39:\penalty0 271--296, 2011.
 
 \bibitem[Frank(2016)]{FRA_2016}
 W.B. Frank.
 \newblock Slow slip hidden in the noise: The intermittence of tectonic release.
-\newblock \emph{Geophysical Research Letters}, 43:\penalty0 10125--10133, 2016.
+\newblock \emph{Geophys. Res. Lett.}, 43:\penalty0 10125--10133, 2016.
 
 \bibitem[{GPS/GNSS Network and Geodesy Laboratory: Central Washington
   University, other/seismic network}(1996)]{PANGA}
@@ -42,14 +42,13 @@ W.B. Frank.
 \bibitem[Kumar and Foufoula-Georgiou(1997)]{KUM_1997}
 P.~Kumar and E.~Foufoula-Georgiou.
 \newblock Wavelet analysis for geophysical applications.
-\newblock \emph{Reviews of Geophysics}, 35\penalty0 (4):\penalty0 385--412,
-  1997.
+\newblock \emph{Rev. Geophys.}, 35\penalty0 (4):\penalty0 385--412, 1997.
 
 \bibitem[Michel et~al.(2019)Michel, Gualandi, and Avouac]{MIC_2019}
 S.~Michel, A.~Gualandi, and J.-P. Avouac.
 \newblock Interseismic coupling and slow slip events on the {Cascadia}
   megathrust.
-\newblock \emph{Pure and Applied Geophysics}, 176:\penalty0 3867--3891, 2019.
+\newblock \emph{Pure Appl. Geophys.}, 176:\penalty0 3867--3891, 2019.
 
 \bibitem[Obara(2002)]{OBA_2002}
 K.~Obara.
@@ -61,7 +60,7 @@ K.~Obara.
 R.~Ohtani, J.J. McGuire, and P.~Segall.
 \newblock Network strain filter: A new tool for monitoring and detecting
   transient deformation signals in {GPS} arrays.
-\newblock \emph{Journal of Geophysical Research}, 115:\penalty0 B12418, 2010.
+\newblock \emph{J. Geophys. Res.}, 115:\penalty0 B12418, 2010.
 
 \bibitem[Percival and Walden(2000)]{PER_2000}
 D.B. Percival and A.T. Walden.
@@ -90,27 +89,25 @@ D.R. Shelly, G.C. Beroza, and S.~Ide.
   Santillan]{SZE_2004}
 W.~Szeliga, T.I. Melbourne, M.M. Miller, and V.M. Santillan.
 \newblock Southern {Cascadia} episodic slow earthquakes.
-\newblock \emph{Geophysical Research Letters}, 31:\penalty0 L16602, 2004.
+\newblock \emph{Geophys. Res. Lett.}, 31:\penalty0 L16602, 2004.
 
 \bibitem[Szeliga et~al.(2008)Szeliga, Melbourne, Santillan, and
   Miller]{SZE_2008}
 W.~Szeliga, T.~Melbourne, M.~Santillan, and M.~Miller.
 \newblock {GPS} constraints on 34 slow slip events within the {Cascadia}
   subduction zone, 1997-2005.
-\newblock \emph{Journal of Geophysical Research}, 113:\penalty0 B04404, 2008.
+\newblock \emph{J. Geophys. Res.}, 113:\penalty0 B04404, 2008.
 
 \bibitem[Todd and Schwartz(2016)]{TOD_2016}
 E.K. Todd and S.Y. Schwartz.
 \newblock Tectonic tremor along the northern {Hikurangi} {Margin}, {New}
   {Zealand}, between 2010 and 2015.
-\newblock \emph{Journal of Geophysical Research Solid Earth}, 121:\penalty0
-  8706--8719, 2016.
+\newblock \emph{J. Geophys. Res. Solid Earth}, 121:\penalty0 8706--8719, 2016.
 
 \bibitem[Wech(2010)]{WEC_2010}
 A.G. Wech.
 \newblock Interactive tremor monitoring.
-\newblock \emph{Seismological Research Letters}, 81\penalty0 (4):\penalty0
-  664--669, 2010.
+\newblock \emph{Seismol. Res. Lett.}, 81\penalty0 (4):\penalty0 664--669, 2010.
 
 \bibitem[Wech(2016)]{WEC_2016}
 A.G. Wech.
@@ -121,7 +118,7 @@ A.G. Wech.
 \bibitem[Wei et~al.(2012)Wei, McGuire, and Richardson]{WEI_2012}
 M.~Wei, J.J. McGuire, and E.~Richardson.
 \newblock A slow slip event in the south central {Alaska} {Subduction} {Zone}.
-\newblock \emph{Geophysical Research Letters}, 39:\penalty0 L15309, 2012.
+\newblock \emph{Geophys. Res. Lett.}, 39:\penalty0 L15309, 2012.
 
 \bibitem[Wessel and Smith(1991)]{WES_1991}
 P.~Wessel and W.~H.~F. Smith.
