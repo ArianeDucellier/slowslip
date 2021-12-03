@@ -283,7 +283,7 @@ if __name__ == '__main__':
     latmin = 46.3
     latmax = 49.6
 
-    for image in range(0, 20):
+    for image in range(17, 21):
 
         tmin_GPS = 2010.25 + image * 0.02 - 1.0
         tmax_GPS = 2010.25 + image * 0.02 + 1.0

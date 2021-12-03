@@ -53,6 +53,8 @@ for timestep in timesteps:
         plt.legend(loc=3, fontsize=20)
         if i != 0:
             ax.axes.yaxis.set_ticks([])
+        title = 'Duration of event = ' + str(duration) + ' days'
+        plt.title(title, fontsize=20)
         # Plot details
         for j in range(0, J):
             ax = plt.subplot2grid((J + 2, len(durations)), (j + 1, i))
@@ -69,8 +71,6 @@ for timestep in timesteps:
         plt.legend(loc=3, fontsize=20)
         if i != 0:
             ax.axes.yaxis.set_ticks([])
-        title = 'Duration of event = ' + str(duration) + ' days'
-        plt.title(title, fontsize=20)
 
     # Save figure
     plt.tight_layout()
