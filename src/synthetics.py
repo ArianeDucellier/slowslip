@@ -9,9 +9,11 @@ import numpy as np
 import MODWT
 
 # Time between events
-timesteps = [100, 200, 500, 1000]
+#timesteps = [100, 200, 500, 1000]
+timesteps = [500]
 # Durations of slow slip events
-durations = [5, 10, 20, 40]
+#durations = [5, 10, 20, 40]
+durations = [2, 5, 10, 20]
 # MODWT wavelet filter
 name = 'LA8'
 # Duration of recording
@@ -42,8 +44,8 @@ for timestep in timesteps:
         signal = np.concatenate([part1, part2])
         disp = np.tile(signal, int(N / timestep))
         # Compute MODWT
-        (W, V) = MODWT.pyramid(disp, name, J)
-        (D, S) = MODWT.get_DS(disp, W, name, J)
+        (W, V) = MODWT.pyramid(disp, name, J - 1)
+        (D, S) = MODWT.get_DS(disp, W, name, J - 1)
         maxD = max([np.max(Dj) for Dj in D])
         minD = min([np.min(Dj) for Dj in D])
         # Plot data
@@ -58,14 +60,17 @@ for timestep in timesteps:
         # Plot details
         for j in range(0, J):
             ax = plt.subplot2grid((J + 2, len(durations)), (j + 1, i))
-            plt.plot(time, D[j], 'k', label='D' + str(j + 1))
-            plt.ylim(minD, maxD)
+            if j != J - 1:
+                plt.plot(time, D[j], 'k', label='D' + str(j + 1))
+            else:
+                plt.plot(time, D[5] + D[6] + D[7], 'k', label='D6+D7+D8')
+            plt.ylim(minD, maxD)    
             plt.legend(loc=3, fontsize=20)
             if i != 0:
                 ax.axes.yaxis.set_ticks([])
         # Plot smooth
         ax = plt.subplot2grid((J + 2, len(durations)), (J + 1, i))
-        plt.plot(time, S[J], 'k', label='S' + str(J))
+        plt.plot(time, S[J - 1], 'k', label='S' + str(J - 1))
         plt.ylim(-2.0, 2.0)
         plt.xlabel('Time (days)', fontsize=20)
         plt.legend(loc=3, fontsize=20)
@@ -74,5 +79,5 @@ for timestep in timesteps:
 
     # Save figure
     plt.tight_layout()
-    plt.savefig('synthetics/' + str(timestep) + '_DS.eps', format='eps')
+    plt.savefig('synthetics/' + str(timestep) + '_DS.png', format='png')
     plt.close(1)

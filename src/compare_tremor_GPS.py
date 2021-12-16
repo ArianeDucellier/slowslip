@@ -436,9 +436,9 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
     pylab.rcParams.update(params)
 
     for event in events:
-        plt.axvline(event, color='black', linewidth=1)
-#    for event in small_events:
-#        plt.axvline(event, color='blue', linewidth=1)
+        plt.axvline(event, color='red', linewidth=2)
+    for event in small_events:
+        plt.axvline(event, color='blue', linewidth=1)
 
     # Loop on latitude and longitude
     for index, (lat, lon) in enumerate(zip(lats, lons)):
@@ -507,10 +507,10 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
                 if (len(indices) > 0):
                     nsta = nsta + 1
                     tj = time[indices]
-#                    Dj = D[J][indices]
-                    Dj = np.zeros(len(indices))
-                    for j in J:
-                        Dj = Dj + D[j - 1][indices]
+                    Dj = D[J][indices]
+#                    Dj = np.zeros(len(indices))
+#                    for j in J:
+#                        Dj = Dj + D[j - 1][indices]
                     Dj_interp = np.interp(time_subset, tj, Dj)
                     Dj_stacked =  Dj_stacked + Dj_interp
             Dj_stacked = Dj_stacked / nsta
@@ -542,25 +542,26 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
                 for i in range(0, len(jumps) + 1):
                     x0 = begin_times[i]
                     dx = end_times[i] - begin_times[i]
-                    if disps_slowslip[begin_jumps[i]] > 0:
-                        ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
-                    else:
-                        ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
+#                    if disps_slowslip[begin_jumps[i]] > 0:
+#                        ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
+#                    else:
+#                        ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
 
             plt.plot(times_stacked, lat + 0.1 * disps_stacked, color='black')
 
-    plt.xlim([2006.0, 2021.5])
+#    plt.xlim([2006.0, 2021.5])
+    plt.xlim([2006.75, 2017.50])
     plt.xlabel('Time (years)', fontsize=24)
     plt.xticks(fontsize=24)
     plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
     plt.ylabel('Latitude', fontsize=24)
     plt.yticks(fontsize=24)
-#    plt.title('Detail at level {:d} of MODWT of GPS data'. \
-#        format(J + 1), fontsize=24)
-    plt.title('Details at levels {} of MODWT of GPS data'. \
-        format(J), fontsize=24)
-#    plt.savefig('GPS_longer_detail_' + str(J + 1) + '.eps', format='eps')
-    plt.savefig('GPS_longer_detail.eps', format='eps')
+    plt.title('Detail at level {:d} of MODWT of GPS data'. \
+        format(J + 1), fontsize=24)
+#    plt.title('Details at levels {} of MODWT of GPS data'. \
+#        format(J), fontsize=24)
+    plt.savefig('GPS_longer_detail_' + str(J + 1) + '.eps', format='eps')
+#    plt.savefig('GPS_longer_detail.png', format='png')
     plt.close(1)
 
 def plot_tremor(lats, J, threshold, events, small_events):
@@ -626,7 +627,7 @@ def plot_tremor(lats, J, threshold, events, small_events):
     plt.title('Details at levels {} of MODWT of tremor data'. \
         format(J), fontsize=24)
 #    plt.savefig('tremor_longer_detail_' + str(J + 1) + '.eps', format='eps')
-    plt.savefig('tremor_longer_detail.eps', format='eps')
+    plt.savefig('tremor_longer_detail.png', format='png')
     plt.close(1)
 
 def find_false_detections(station_file, lats, lons, dataset, direction, \
@@ -896,7 +897,7 @@ def plot_ROC_curve(station_file, lats, lons, dataset, direction, \
 #    plt.title('ROC curve for detail at level {:d}'. format(J), fontsize=24)
     plt.title('ROC curve for details at levels {}'. format(J), fontsize=24)
 #    plt.savefig('ROC_' + str(J) + '.eps', format='eps')
-    plt.savefig('ROC.eps', format='eps')
+    plt.savefig('ROC.png', format='png')
     plt.close(1)
 
     return(sensitivity, specificity)
@@ -948,11 +949,11 @@ if __name__ == '__main__':
 
     thresh_GPS = np.arange(0.1, 1.6, 0.1)
     thresh_tremor = np.arange(0.001, 0.011, 0.001)
-    chosen_GPS = 0.8
+    chosen_GPS = 0.3
     chosen_tremor = 0.01
-    J = [6, 7, 8]
+    J = 5
 
-#    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, chosen_GPS, events, small_events)
+    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J - 1, chosen_GPS, events, small_events)
     
 #    plot_tremor(lats, J, chosen_tremor, events, small_events)
     

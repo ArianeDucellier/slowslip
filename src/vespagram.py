@@ -58,7 +58,7 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
     (nuH, nuG) = DWT.get_nu(wavelet, J)
 
     # Read GPS data and compute wavelet transform
-    for station in subset['name']:
+    for station in ['PGC5']: #subset['name']:
         filename = '../data/PANGA/' + dataset + '/' + station + '.' + direction
 
         # Load the data
@@ -148,7 +148,7 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
         # Save figure
         plt.tight_layout()
         plt.savefig('MODWT_GPS_longer/' + dataset + '_' + station + '_' + \
-            direction + '.eps', format='eps')
+            direction + '.png', format='png')
         plt.close(1)
         
 def vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \

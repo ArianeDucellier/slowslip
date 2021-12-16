@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-set output = map_GPS_stations.eps
+set output = map_GPS_stations_new.png
 
 # Small map
 set x1 = -125
