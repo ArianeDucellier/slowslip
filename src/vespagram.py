@@ -119,26 +119,32 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
         params = {'xtick.labelsize':24,
                   'ytick.labelsize':24}
         pylab.rcParams.update(params)   
-        fig = plt.figure(1, figsize=(10, 3 * (J + 3)))
+ #       fig = plt.figure(1, figsize=(10, 3 * (J + 3)))
+        fig = plt.figure(1, figsize=(10, 3 * 4))
 
         maxD = max([np.max(Dj) for Dj in D])
         minD = min([np.min(Dj) for Dj in D])
 
         # Plot data
-        plt.subplot2grid((J + 2, 1), (0, 0))
-        plt.plot(time, disp, 'k', label='Data')
-        plt.xlim([2006.0, 2021.5])
-        plt.ylim([np.min(disp), np.max(disp)])
-        plt.legend(loc=3, fontsize=20)
+#        plt.subplot2grid((J + 2, 1), (0, 0))
+#        plt.subplot2grid((4, 1), (0, 0))
+#        plt.plot(time, disp, 'k', label='Data')
+#        plt.xlim([2006.0, 2021.5])
+#        plt.ylim([np.min(disp), np.max(disp)])
+#        plt.legend(loc=3, fontsize=20)
         # Plot details
-        for j in range(0, J):
-            plt.subplot2grid((J + 2, 1), (j + 1, 0))
+        for j in range(7, J):
+#            plt.subplot2grid((J + 2, 1), (j + 1, 0))
+            plt.subplot2grid((4, 1), (j - 7, 0))
             plt.plot(time, D[j], 'k', label='D' + str(j + 1))
             plt.xlim([2006.0, 2021.5])
             plt.ylim(minD, maxD)
             plt.legend(loc=3, fontsize=20)
+#            if j == 6:
+#                plt.xlabel('Time (years)', fontsize=24)
         # Plot smooth
-        plt.subplot2grid((J + 2, 1), (J + 1, 0))
+#        plt.subplot2grid((J + 2, 1), (J + 1, 0))
+        plt.subplot2grid((4, 1), (3, 0))
         plt.plot(time, S[J], 'k', label='S' + str(J))
         plt.xlim([2006.0, 2021.5])
         plt.ylim([np.min(disp), np.max(disp)])
@@ -148,7 +154,7 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
         # Save figure
         plt.tight_layout()
         plt.savefig('MODWT_GPS_longer/' + dataset + '_' + station + '_' + \
-            direction + '.png', format='png')
+            direction + '_3.eps', format='eps')
         plt.close(1)
         
 def vesp_tremor(station_file, tremor_file, lats, lons, dataset, direction, \
