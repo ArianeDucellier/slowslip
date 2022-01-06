@@ -34,7 +34,8 @@ for timestep in timesteps:
     params = {'xtick.labelsize':20,
               'ytick.labelsize':20}
     pylab.rcParams.update(params)   
-    fig = plt.figure(1, figsize=(5 * len(durations), 3 * (J + 3)))
+#    fig = plt.figure(1, figsize=(5 * len(durations), 3 * (J + 2)))
+    fig = plt.figure(1, figsize=(5 * len(durations), 3 * 3))
 
     # Loop on duration
     for i, duration in enumerate(durations):
@@ -44,33 +45,38 @@ for timestep in timesteps:
         signal = np.concatenate([part1, part2])
         disp = np.tile(signal, int(N / timestep))
         # Compute MODWT
-        (W, V) = MODWT.pyramid(disp, name, J - 1)
-        (D, S) = MODWT.get_DS(disp, W, name, J - 1)
+        (W, V) = MODWT.pyramid(disp, name, J)
+        (D, S) = MODWT.get_DS(disp, W, name, J)
         maxD = max([np.max(Dj) for Dj in D])
         minD = min([np.min(Dj) for Dj in D])
         # Plot data
-        ax = plt.subplot2grid((J + 2, len(durations)), (0, i))
-        plt.plot(time, disp, 'k', label='Data')
-        plt.ylim(-2.0, 2.0)
-        plt.legend(loc=3, fontsize=20)
-        if i != 0:
-            ax.axes.yaxis.set_ticks([])
-        title = 'Duration of event = ' + str(duration) + ' days'
-        plt.title(title, fontsize=20)
+#        ax = plt.subplot2grid((J + 2, len(durations)), (0, i))
+#        ax = plt.subplot2grid((3, len(durations)), (0, i))
+#        plt.plot(time, disp, 'k', label='Data')
+#        plt.ylim(-2.0, 2.0)
+#        plt.legend(loc=3, fontsize=20)
+#        if i != 0:
+#            ax.axes.yaxis.set_ticks([])
+#        title = 'Duration of event = ' + str(duration) + ' days'
+#        plt.title(title, fontsize=20)
         # Plot details
-        for j in range(0, J):
-            ax = plt.subplot2grid((J + 2, len(durations)), (j + 1, i))
-            if j != J - 1:
-                plt.plot(time, D[j], 'k', label='D' + str(j + 1))
-            else:
-                plt.plot(time, D[5] + D[6] + D[7], 'k', label='D6+D7+D8')
+        for j in range(8, J):
+#            ax = plt.subplot2grid((J + 2, len(durations)), (j + 1, i))
+            ax = plt.subplot2grid((3, len(durations)), (j - 8, i))
+            plt.plot(time, D[j], 'k', label='D' + str(j + 1))
             plt.ylim(minD, maxD)    
             plt.legend(loc=3, fontsize=20)
             if i != 0:
                 ax.axes.yaxis.set_ticks([])
+            if j == 8:
+                title = 'Duration of event = ' + str(duration) + ' days'
+                plt.title(title, fontsize=20)
+#            if j == 7:
+#                plt.xlabel('Time (days)', fontsize=20)
         # Plot smooth
-        ax = plt.subplot2grid((J + 2, len(durations)), (J + 1, i))
-        plt.plot(time, S[J - 1], 'k', label='S' + str(J - 1))
+#        ax = plt.subplot2grid((J + 2, len(durations)), (J + 1, i))
+        ax = plt.subplot2grid((3, len(durations)), (2, i))
+        plt.plot(time, S[J], 'k', label='S' + str(J))
         plt.ylim(-2.0, 2.0)
         plt.xlabel('Time (days)', fontsize=20)
         plt.legend(loc=3, fontsize=20)
@@ -79,5 +85,5 @@ for timestep in timesteps:
 
     # Save figure
     plt.tight_layout()
-    plt.savefig('synthetics/' + str(timestep) + '_DS.png', format='png')
+    plt.savefig('synthetics/' + str(timestep) + '_DS_4.eps', format='eps')
     plt.close(1)
