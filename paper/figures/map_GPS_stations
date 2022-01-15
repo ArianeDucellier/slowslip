@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-set output = map_GPS_stations_new.png
+set output = map_GPS_stations_slides.eps
 
 # Small map
 set x1 = -125
@@ -138,7 +138,7 @@ cat << END >> names.dat
 -124.6131 48.5443 PTRF
 END
 
-gmt pstext names.dat -R$Rop -J$Jop -F+f12p -O >> $output
+#gmt pstext names.dat -R$Rop -J$Jop -F+f12p -O >> $output
 
 rm mytext.dat
 rm stations.dat
