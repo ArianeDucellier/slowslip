@@ -286,7 +286,7 @@ def plot_GPS_map_tremor(station_file, lats, lons, dataset, direction, radius_GPS
     ax2.set_title('{:04d} tremor in {:02d} days'.format(np.shape(tremor_sub)[0], \
         int(floor(365.25 * (tmax_tremor - tmin_tremor)))), fontsize=20)
 
-    plt.savefig('movie/GPS_zoom.eps', format='eps')
+    plt.savefig('movie/GPS_zoom_2.pdf', format='pdf')
 #    plt.savefig('movie/GPS_{:03d}.png'.format(image), format='png')
     plt.close(1)
 
@@ -322,10 +322,10 @@ if __name__ == '__main__':
 #        plot_GPS_map_tremor(station_file, lats, lons, dataset, direction, radius_GPS, J, chosen_GPS, \
 #            lonmin, lonmax, latmin, latmax, tmin_GPS, tmax_GPS, tmin_tremor, tmax_tremor, image)
 
-    tmin_GPS = 2010.15 - 1.0
-    tmax_GPS = 2010.15 + 1.0
-    tmin_tremor = 2010.15 - 7.5 / 365.25
-    tmax_tremor = 2010.15 + 7.5 / 365.25
+    tmin_GPS = 2010.22 - 1.0
+    tmax_GPS = 2010.22 + 1.0
+    tmin_tremor = 2010.22 - 7.5 / 365.25
+    tmax_tremor = 2010.22 + 7.5 / 365.25
     image = 0
 
     plot_GPS_map_tremor(station_file, lats, lons, dataset, direction, radius_GPS, J, chosen_GPS, \
