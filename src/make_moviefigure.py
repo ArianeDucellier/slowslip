@@ -14,6 +14,7 @@ import pickle
 
 from datetime import datetime
 from math import cos, floor, pi, sin, sqrt
+from scipy.io import loadmat
 
 import date
 
@@ -26,42 +27,57 @@ def plot_GPS_map_tremor(station_file, lats, lons, dataset, direction, radius_GPS
     stations.columns = ['name', 'longitude', 'latitude']
 
     # Read tremor files (A. Wech)
-    data_2009 = pd.read_csv('../data/tremor/tremor_events-2009-08-06T00 00 00-2009-12-31T23 59 59.csv')
-    data_2009['time '] = pd.to_datetime(data_2009['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2010 = pd.read_csv('../data/tremor/tremor_events-2010-01-01T00 00 00-2010-12-31T23 59 59.csv')
-    data_2010['time '] = pd.to_datetime(data_2010['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2011 = pd.read_csv('../data/tremor/tremor_events-2011-01-01T00 00 00-2011-12-31T23 59 59.csv')
-    data_2011['time '] = pd.to_datetime(data_2011['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2012 = pd.read_csv('../data/tremor/tremor_events-2012-01-01T00 00 00-2012-12-31T23 59 59.csv')
-    data_2012['time '] = pd.to_datetime(data_2012['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2013 = pd.read_csv('../data/tremor/tremor_events-2013-01-01T00 00 00-2013-12-31T23 59 59.csv')
-    data_2013['time '] = pd.to_datetime(data_2013['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2014 = pd.read_csv('../data/tremor/tremor_events-2014-01-01T00 00 00-2014-12-31T23 59 59.csv')
-    data_2014['time '] = pd.to_datetime(data_2014['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2015 = pd.read_csv('../data/tremor/tremor_events-2015-01-01T00 00 00-2015-12-31T23 59 59.csv')
-    data_2015['time '] = pd.to_datetime(data_2015['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2016 = pd.read_csv('../data/tremor/tremor_events-2016-01-01T00 00 00-2016-12-31T23 59 59.csv')
-    data_2016['time '] = pd.to_datetime(data_2016['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2017 = pd.read_csv('../data/tremor/tremor_events-2017-01-01T00 00 00-2017-12-31T23 59 59.csv')
-    data_2017['time '] = pd.to_datetime(data_2017['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2018 = pd.read_csv('../data/tremor/tremor_events-2018-01-01T00 00 00-2018-12-31T23 59 59.csv')
-    data_2018['time '] = pd.to_datetime(data_2018['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2019 = pd.read_csv('../data/tremor/tremor_events-2019-01-01T00 00 00-2019-12-31T23 59 59.csv')
-    data_2019['time '] = pd.to_datetime(data_2019['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2020 = pd.read_csv('../data/tremor/tremor_events-2020-01-01T00 00 00-2020-12-31T23 59 59.csv')
-    data_2020['time '] = pd.to_datetime(data_2020['time '], format='%Y-%m-%d %H:%M:%S')
-    data_2021 = pd.read_csv('../data/tremor/tremor_events-2021-01-01T00 00 00-2021-04-29T23 59 59.csv')
-    data_2021['time '] = pd.to_datetime(data_2020['time '], format='%Y-%m-%d %H:%M:%S')
-    data = pd.concat([data_2009, data_2010, data_2011, data_2012, data_2013, \
-        data_2014, data_2015, data_2016, data_2017, data_2018, data_2019, \
-        data_2020, data_2021])
+#    data_2009 = pd.read_csv('../data/tremor/tremor_events-2009-08-06T00 00 00-2009-12-31T23 59 59.csv')
+#    data_2009['time '] = pd.to_datetime(data_2009['time '], format='%Y-%m-%d %H:%M:%S')
+#    data_2010 = pd.read_csv('../data/tremor/tremor_events-2010-01-01T00 00 00-2010-12-31T23 59 59.csv')
+#    data_2010['time '] = pd.to_datetime(data_2010['time '], format='%Y-%m-%d %H:%M:%S')
+#    data_2011 = pd.read_csv('../data/tremor/tremor_events-2011-01-01T00 00 00-2011-12-31T23 59 59.csv')
+#    data_2011['time '] = pd.to_datetime(data_2011['time '], format='%Y-%m-%d %H:%M:%S')
+#    data_2012 = pd.read_csv('../data/tremor/tremor_events-2012-01-01T00 00 00-2012-12-31T23 59 59.csv')
+#    data_2012['time '] = pd.to_datetime(data_2012['time '], format='%Y-%m-%d %H:%M:%S')
+#    data_2013 = pd.read_csv('../data/tremor/tremor_events-2013-01-01T00 00 00-2013-12-31T23 59 59.csv')
+#    data_2013['time '] = pd.to_datetime(data_2013['time '], format='%Y-%m-%d %H:%M:%S')
+#    data_2014 = pd.read_csv('../data/tremor/tremor_events-2014-01-01T00 00 00-2014-12-31T23 59 59.csv')
+#    data_2014['time '] = pd.to_datetime(data_2014['time '], format='%Y-%m-%d %H:%M:%S')
+#    data_2015 = pd.read_csv('../data/tremor/tremor_events-2015-01-01T00 00 00-2015-12-31T23 59 59.csv')
+#    data_2015['time '] = pd.to_datetime(data_2015['time '], format='%Y-%m-%d %H:%M:%S')
+#    data_2016 = pd.read_csv('../data/tremor/tremor_events-2016-01-01T00 00 00-2016-12-31T23 59 59.csv')
+#    data_2016['time '] = pd.to_datetime(data_2016['time '], format='%Y-%m-%d %H:%M:%S')
+#    data_2017 = pd.read_csv('../data/tremor/tremor_events-2017-01-01T00 00 00-2017-12-31T23 59 59.csv')
+#    data_2017['time '] = pd.to_datetime(data_2017['time '], format='%Y-%m-%d %H:%M:%S')
+#    data_2018 = pd.read_csv('../data/tremor/tremor_events-2018-01-01T00 00 00-2018-12-31T23 59 59.csv')
+#    data_2018['time '] = pd.to_datetime(data_2018['time '], format='%Y-%m-%d %H:%M:%S')
+#    data_2019 = pd.read_csv('../data/tremor/tremor_events-2019-01-01T00 00 00-2019-12-31T23 59 59.csv')
+#    data_2019['time '] = pd.to_datetime(data_2019['time '], format='%Y-%m-%d %H:%M:%S')
+#    data_2020 = pd.read_csv('../data/tremor/tremor_events-2020-01-01T00 00 00-2020-12-31T23 59 59.csv')
+#    data_2020['time '] = pd.to_datetime(data_2020['time '], format='%Y-%m-%d %H:%M:%S')
+#    data_2021 = pd.read_csv('../data/tremor/tremor_events-2021-01-01T00 00 00-2021-04-29T23 59 59.csv')
+#    data_2021['time '] = pd.to_datetime(data_2020['time '], format='%Y-%m-%d %H:%M:%S')
+#    data = pd.concat([data_2009, data_2010, data_2011, data_2012, data_2013, \
+#        data_2014, data_2015, data_2016, data_2017, data_2018, data_2019, \
+#        data_2020, data_2021])
+#    data.reset_index(drop=True, inplace=True)
+
+    # Read tremor files (K. Creager)
+    data = loadmat('../data/tremor/SummaryLatestMerge.mat')
+    Summary = data['Summary']
+    TREMall = data['TREMall']
+    data = pd.DataFrame(columns=['lat', 'lon', 'depth', 'time'])
+    for k in range(0, len(Summary[0][0][3])):
+        indices = Summary[0][0][3][k]
+        lon = np.reshape(TREMall[0][0][2][indices[0] - 1], (-1))
+        lat = np.reshape(TREMall[0][0][1][indices[0] - 1], (-1))
+        depth = np.reshape(TREMall[0][0][3][indices[0] - 1], (-1))
+        time = np.reshape(TREMall[0][0][0][indices[0] - 1], (-1))
+        df = pd.DataFrame({'lat': lat, 'lon': lon, 'depth': depth, 'time': time})
+        data = pd.concat([data, df])
     data.reset_index(drop=True, inplace=True)
 
     # Convert begin and end times for tremor
     (year1, month1, day1, hour1, minute1, second1) = date.day2ymdhms(tmin_tremor)
-    day_begin = int(floor(date.ymdhms2matlab(year1, month1, day1, hour1, minute1, second1)))
+    day_begin = date.ymdhms2matlab(year1, month1, day1, hour1, minute1, second1)
     (year2, month2, day2, hour2, minute2, second2) = date.day2ymdhms(tmax_tremor)
-    day_end = int(floor(date.ymdhms2matlab(year2, month2, day2, hour2, minute2, second2)))
+    day_end = date.ymdhms2matlab(year2, month2, day2, hour2, minute2, second2)
 
     a = 6378.136
     e = 0.006694470
@@ -221,28 +237,41 @@ def plot_GPS_map_tremor(station_file, lats, lons, dataset, direction, radius_GPS
     for myfeature in shapereader.Reader(land_shp).geometries(): 
         ax2.add_geometries([myfeature], ccrs.PlateCarree(), facecolor='#FFFFE0', edgecolor='black', alpha=0.5)
 
-    # Keep only tremor on map (A. Wech)
+    # Keep only tremor on map
     mask = ((data['lat'] >= latmin) & (data['lat'] <= latmax) \
           & (data['lon'] >= lonmin) & (data['lon'] <= lonmax))
     tremor = data.loc[mask].copy()
     tremor.reset_index(drop=True, inplace=True)
 
    # Keep only tremor in time interval (A. Wech)
-    mask = ((tremor['time '] >= datetime(year1, month1, day1, hour1, minute1, second1)) \
-          & (tremor['time '] <= datetime(year2, month2, day2, hour2, minute2, second2)))
+#    mask = ((tremor['time '] >= datetime(year1, month1, day1, hour1, minute1, second1)) \
+#          & (tremor['time '] <= datetime(year2, month2, day2, hour2, minute2, second2)))
+#    tremor_sub = tremor.loc[mask].copy()
+#    tremor_sub.reset_index(drop=True, inplace=True)
+
+    # Keep only tremor in time interval (K. Creager)
+    mask = ((tremor['time'] >= day_begin) \
+          & (tremor['time'] <= day_end))
     tremor_sub = tremor.loc[mask].copy()
     tremor_sub.reset_index(drop=True, inplace=True)
 
     # Convert tremor time (A. Wech)
+#    nt = len(tremor_sub)
+#    time_tremor = np.zeros(nt)
+#    for i in range(0, nt):
+#        year = tremor_sub['time '].loc[i].year
+#        month = tremor_sub['time '].loc[i].month
+#        day = tremor_sub['time '].loc[i].day
+#        hour = tremor_sub['time '].loc[i].hour
+#        minute = tremor_sub['time '].loc[i].minute
+#        second = tremor_sub['time '].loc[i].second
+#        time_tremor[i] = date.ymdhms2day(year, month, day, hour, minute, second)    
+
+    # Convert tremor time (K. Creager)
     nt = len(tremor_sub)
     time_tremor = np.zeros(nt)
     for i in range(0, nt):
-        year = tremor_sub['time '].loc[i].year
-        month = tremor_sub['time '].loc[i].month
-        day = tremor_sub['time '].loc[i].day
-        hour = tremor_sub['time '].loc[i].hour
-        minute = tremor_sub['time '].loc[i].minute
-        second = tremor_sub['time '].loc[i].second
+        (year, month, day, hour, minute, second) = date.matlab2ymdhms(tremor_sub['time'].loc[i])
         time_tremor[i] = date.ymdhms2day(year, month, day, hour, minute, second)    
 
     # Plot tremor on map (A. Wech)
@@ -257,8 +286,8 @@ def plot_GPS_map_tremor(station_file, lats, lons, dataset, direction, radius_GPS
     ax2.set_title('{:04d} tremor in {:02d} days'.format(np.shape(tremor_sub)[0], \
         int(floor(365.25 * (tmax_tremor - tmin_tremor)))), fontsize=20)
 
-#    plt.savefig('GPS_tremor_detail_' + str(J + 1) + '.pdf', format='pdf')
-    plt.savefig('movie/GPS_{:03d}.png'.format(image), format='png')
+    plt.savefig('movie/GPS_zoom.eps', format='eps')
+#    plt.savefig('movie/GPS_{:03d}.png'.format(image), format='png')
     plt.close(1)
 
 if __name__ == '__main__':
@@ -283,12 +312,21 @@ if __name__ == '__main__':
     latmin = 46.3
     latmax = 49.6
 
-    for image in range(17, 21):
+#    for image in range(261, 501):
 
-        tmin_GPS = 2010.25 + image * 0.02 - 1.0
-        tmax_GPS = 2010.25 + image * 0.02 + 1.0
-        tmin_tremor = 2010.25 + image * 0.02 - 7.5 / 365.25
-        tmax_tremor = 2010.25 + image * 0.02 + 7.5 / 365.25
+#        tmin_GPS = 2010.25 + image * 0.02 - 1.0
+#        tmax_GPS = 2010.25 + image * 0.02 + 1.0
+#        tmin_tremor = 2010.25 + image * 0.02 - 7.5 / 365.25
+#        tmax_tremor = 2010.25 + image * 0.02 + 7.5 / 365.25
 
-        plot_GPS_map_tremor(station_file, lats, lons, dataset, direction, radius_GPS, J, chosen_GPS, \
-            lonmin, lonmax, latmin, latmax, tmin_GPS, tmax_GPS, tmin_tremor, tmax_tremor, image)
+#        plot_GPS_map_tremor(station_file, lats, lons, dataset, direction, radius_GPS, J, chosen_GPS, \
+#            lonmin, lonmax, latmin, latmax, tmin_GPS, tmax_GPS, tmin_tremor, tmax_tremor, image)
+
+    tmin_GPS = 2010.15 - 1.0
+    tmax_GPS = 2010.15 + 1.0
+    tmin_tremor = 2010.15 - 7.5 / 365.25
+    tmax_tremor = 2010.15 + 7.5 / 365.25
+    image = 0
+
+    plot_GPS_map_tremor(station_file, lats, lons, dataset, direction, radius_GPS, J, chosen_GPS, \
+        lonmin, lonmax, latmin, latmax, tmin_GPS, tmax_GPS, tmin_tremor, tmax_tremor, image)
