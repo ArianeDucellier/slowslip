@@ -25,8 +25,8 @@ def stack(station_file, dataset, direction, lat_min, lat_max):
     stations = pd.read_csv(station_file, sep=r'\s{1,}', header=None, \
         engine='python')
     stations.columns = ['name', 'longitude', 'latitude']
-    subset = stations.loc[(stations['latitude'] >= latmin) & \
-                          (stations['latitude'] <= latmax)]
+    subset = stations.loc[(stations['latitude'] >= lat_min) & \
+                          (stations['latitude'] <= lat_max)]
 
     # Stack the detrended signal over GPS stations
     times = []
@@ -85,7 +85,7 @@ def compute_common_modes(station_file, dataset, direction, latitudes):
     for i in range(0, len(latitudes) - 1):
         (time, disp) = stack(station_file, dataset, direction, latitudes[i], latitudes[i + 1])
         filename = 'common_modes/' + 'lat_' + str(i) + '.pkl'
-        pickle.dump([time, disp, latitudes[i], latitudesi + 1], open(filename, 'wb'))
+        pickle.dump([time, disp, latitudes[i], latitudes[i + 1]], open(filename, 'wb'))
 
 def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
     wavelet, J, latitudes):
@@ -198,30 +198,3 @@ if __name__ == '__main__':
     latitudes = np.array([46, 46.5, 47, 47.5, 48, 48.5, 49, 49.5, 50])
 
     compute_common_modes(station_file, dataset, direction, latitudes)
-
-#    lats = [47.20000, 47.30000, 47.40000, 47.50000, 47.60000, 47.70000, \
-#        47.80000, 47.90000, 48.00000, 48.10000, 48.20000, 48.30000, 48.40000, \
-#        48.50000, 48.60000, 48.70000]
-#    lons = [-122.74294, -122.73912, -122.75036, -122.77612, -122.81591, \
-#        -122.86920, -122.93549, -123.01425, -123.10498, -123.20716, \
-#        -123.32028, -123.44381, -123.57726, -123.72011, -123.87183, \
-#        -124.03193]
-#    radius_GPS = 50
-    
-#    wavelet = 'LA8'
-#    J = 10
-    
-#    tremor_file = '../data/tremor/mbbp_cat_d_forHeidi'
-#    radius_tremor = 50
-
-#    slowness = np.arange(-0.1, 0.105, 0.005)
-
-#    tmin_GPS = 2017.25
-#    tmax_GPS = 2021.25
-#    tmin_tremor = 2017.25
-#    tmax_tremor = 2021.25
-#    lonmin = -125.4
-#    lonmax = -121.4
-#    latmin = 46.3
-#    latmax = 49.6
-#    j = 9
