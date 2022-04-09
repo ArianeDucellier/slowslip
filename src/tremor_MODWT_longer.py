@@ -140,7 +140,7 @@ def compute_wavelets_tremor(station_file, lats, lons, dataset, direction, \
         minD = min([np.min(Dj) for Dj in D])
 
         # Plot data
-        plt.subplot2grid((J + 2, 1), (J + 1, 0))
+        plt.subplot2grid((J + 2, 1), (0, 0))
         plt.plot(times_stacked, tremor_detrend, 'k', label='Data')
         plt.xlabel('Time (years)', fontsize=24)
         plt.xlim([2006.0, 2021.5])
@@ -148,13 +148,13 @@ def compute_wavelets_tremor(station_file, lats, lons, dataset, direction, \
         plt.legend(loc=3, fontsize=20)
         # Plot details
         for j in range(0, J):
-            plt.subplot2grid((J + 2, 1), (J - j, 0))
+            plt.subplot2grid((J + 2, 1), (j + 1, 0))
             plt.plot(times_stacked, D[j], 'k', label='D' + str(j + 1))
             plt.xlim([2006.0, 2021.5])
             plt.ylim(minD, maxD)
             plt.legend(loc=3, fontsize=20)
         # Plot smooth
-        plt.subplot2grid((J + 2, 1), (0, 0))
+        plt.subplot2grid((J + 2, 1), (J + 1, 0))
         plt.plot(times_stacked, S[J], 'k', label='S' + str(J))
         plt.xlim([2006.0, 2021.5])
         plt.ylim([np.min(tremor_detrend), np.max(tremor_detrend)])

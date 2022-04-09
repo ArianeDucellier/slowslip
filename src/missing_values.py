@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from math import log, sqrt
+from matplotlib import ticker
 
 import DWT, MODWT
 from MODWT import get_DS, get_scaling, inv_pyramid, pyramid
@@ -82,6 +83,7 @@ for n in range(1, nmax, nstep):
 
         # Plot data
         ax = plt.subplot2grid((J + 2, len(gaps)), (0, count))
+        ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%.1f'))
         plt.plot(time, disp_interp, 'r')
         plt.plot(time, disp, 'k', label='Data')
         plt.xlim(np.min(time[gap - 100]), np.max(time[gap + n + 99]))
@@ -89,12 +91,14 @@ for n in range(1, nmax, nstep):
         # Plot details at each level
         for j in range(0, J):
             ax = plt.subplot2grid((J + 2, len(gaps)), (j + 1, count))
+            ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%.1f'))
             plt.plot(time, D[j], 'r')
             plt.plot(time, D0[j], 'k', label='D' + str(j + 1))
             plt.xlim(np.min(time[gap - 100]), np.max(time[gap + n + 99]))
             plt.legend(loc=1)
         # Plot scaling coefficients for the last level
         ax = plt.subplot2grid((J + 2, len(gaps)), (J + 1, count))
+        ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%.1f'))
         plt.plot(time, S[J], 'r')
         plt.plot(time, S0[J], 'k', label='S' + str(J))
         plt.xlim(np.min(time[gap - 100]), np.max(time[gap + n + 99]))

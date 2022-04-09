@@ -17,6 +17,7 @@ from matplotlib.colors import Normalize
 
 import date
 import DWT
+from matplotlib_cmap_generator import red, green, blue, generateCmap
 from MODWT import get_DS, get_scaling, pyramid
 
 def correlate(X, Y, ncor):
@@ -468,6 +469,7 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
             filename = 'MODWT_GPS_longer/' + dataset + '_' + station + '_' + direction + '.pkl'
             (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
             if ((np.min(time) <= 2021.5) and (np.max(time) >= 2006.0)):
+                print(index, station)
                 times.append(time)
                 disps.append(disp)
                 Ws.append(W)
@@ -507,10 +509,10 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
                 if (len(indices) > 0):
                     nsta = nsta + 1
                     tj = time[indices]
-                    Dj = D[J][indices]
-#                    Dj = np.zeros(len(indices))
-#                    for j in J:
-#                        Dj = Dj + D[j - 1][indices]
+#                    Dj = D[J][indices]
+                    Dj = np.zeros(len(indices))
+                    for j in J:
+                        Dj = Dj + D[j - 1][indices]
                     Dj_interp = np.interp(time_subset, tj, Dj)
                     Dj_stacked =  Dj_stacked + Dj_interp
             Dj_stacked = Dj_stacked / nsta
@@ -542,26 +544,26 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
                 for i in range(0, len(jumps) + 1):
                     x0 = begin_times[i]
                     dx = end_times[i] - begin_times[i]
-#                    if disps_slowslip[begin_jumps[i]] > 0:
-#                        ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
-#                    else:
-#                        ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
+                    if disps_slowslip[begin_jumps[i]] > 0:
+                        ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
+                    else:
+                        ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
 
             plt.plot(times_stacked, lat + 0.1 * disps_stacked, color='black')
 
-#    plt.xlim([2006.0, 2021.5])
-    plt.xlim([2006.75, 2017.50])
+    plt.xlim([2006.0, 2021.5])
+#    plt.xlim([2006.75, 2017.50])
     plt.xlabel('Time (years)', fontsize=24)
     plt.xticks(fontsize=24)
     plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
     plt.ylabel('Latitude', fontsize=24)
     plt.yticks(fontsize=24)
-    plt.title('Detail at level {:d} of MODWT of GPS data'. \
-        format(J + 1), fontsize=24)
-#    plt.title('Details at levels {} of MODWT of GPS data'. \
-#        format(J), fontsize=24)
-    plt.savefig('GPS_longer_detail_' + str(J + 1) + '.eps', format='eps')
-#    plt.savefig('GPS_longer_detail.png', format='png')
+#    plt.title('Detail at level {:d} of MODWT of GPS data'. \
+#        format(J + 1), fontsize=24)
+    plt.title('Details at levels {} of MODWT of GPS data'. \
+        format(J), fontsize=24)
+#    plt.savefig('GPS_longer_detail_' + str(J + 1) + '.eps', format='eps')
+    plt.savefig('GPS_longer_detail.eps', format='eps')
     plt.close(1)
 
 def plot_tremor(lats, J, threshold, events, small_events):
@@ -886,8 +888,14 @@ def plot_ROC_curve(station_file, lats, lons, dataset, direction, \
               'ytick.labelsize':24}
     pylab.rcParams.update(params)
     plt.plot([-0.1, 1.1], [-0.1, 1.1], color='grey')
-    plt.plot(1 - specificity, sensitivity, 'ko')
-    plt.plot(1 - specificity[i0, j0], sensitivity[i0, j0], 'rx', markersize=20)
+    for j in range(0, len(thresh_tremor)):
+        level_red = red(thresh_tremor[j], np.min(thresh_tremor), np.max(thresh_tremor))
+        level_green = green(thresh_tremor[j], np.min(thresh_tremor), np.max(thresh_tremor))
+        level_blue = blue(thresh_tremor[j], np.min(thresh_tremor), np.max(thresh_tremor))
+        cmap = generateCmap([(level_red, level_green, level_blue), \
+            (0.5 * level_red, 0.5 * level_green, 0.5 * level_blue)])
+        plt.scatter(1 - specificity[0:5, j], sensitivity[0:5, j], c=1 - specificity[0:5, j], cmap=cmap)
+    plt.plot(1 - specificity[i0, j0], sensitivity[i0, j0], 'kx', markersize=20)
     plt.xlabel('False positive rate', fontsize=24)
     plt.xticks(fontsize=24)
     plt.xlim([0, 1])
@@ -897,7 +905,7 @@ def plot_ROC_curve(station_file, lats, lons, dataset, direction, \
 #    plt.title('ROC curve for detail at level {:d}'. format(J), fontsize=24)
     plt.title('ROC curve for details at levels {}'. format(J), fontsize=24)
 #    plt.savefig('ROC_' + str(J) + '.eps', format='eps')
-    plt.savefig('ROC.png', format='png')
+    plt.savefig('ROC.eps', format='eps')
     plt.close(1)
 
     return(sensitivity, specificity)
@@ -949,11 +957,11 @@ if __name__ == '__main__':
 
     thresh_GPS = np.arange(0.1, 1.6, 0.1)
     thresh_tremor = np.arange(0.001, 0.011, 0.001)
-    chosen_GPS = 0.3
+    chosen_GPS = 0.7
     chosen_tremor = 0.01
-    J = 5
+    J = [6, 7, 8]
 
-    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J - 1, chosen_GPS, events, small_events)
+    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, chosen_GPS, events, small_events)
     
 #    plot_tremor(lats, J, chosen_tremor, events, small_events)
     
