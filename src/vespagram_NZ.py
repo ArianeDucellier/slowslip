@@ -49,6 +49,7 @@ def compute_wavelets(station_file, direction, wavelet, J):
         time = np.array(data['date-time'].apply( \
             lambda x: datetime.date.toordinal(x)))
         cname = ' ' + direction + ' (mm)'
+
         time = 2000 + (time - 730120) / 365.25
         disp = np.array(data[cname])
         sigma = np.std(disp)
@@ -126,7 +127,7 @@ def compute_wavelets(station_file, direction, wavelet, J):
         plt.tight_layout()
         plt.savefig('MODWT_GPS_NZ/' + station + '_' + direction + '.pdf', format='pdf')
         plt.close(1)
-        
+
 if __name__ == '__main__':
 
     station_file = '../data/GeoNet/stations.txt'

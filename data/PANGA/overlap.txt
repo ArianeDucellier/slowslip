@@ -1,16 +1,33 @@
- 0                     CSKI CUSH ELSR GRMD LNGB OLAR OLMP           PRDY                                    SMAI      TACO THUN TUMW                               HGP1 KNTP                PSEA
- 1                     CSKI CUSH ELSR      LNGB OLAR OLMP OYLR      PRDY                                    SMAI      TACO THUN TUMW                               HGP1 KNTP                PSEA         V081 V096 V102
- 2                     CSKI CUSH ELSR      LNGB      OLMP OYLR      PRDY                                    SMAI SSHO TACO THUN TUMW UFDA BCIT BLVU BSUM ESM1      HGP1 KNTP           POUL PSEA           V081 V096 V102
- 3                     CSKI CUSH ELSR      LNGB           OYLR      PRDY                                    SMAI SSHO TACO           UFDA BCIT BLVU BSUM ESM1           KNTP KRMT      POUL PSEA           V081 V096 V102
+ 0                     CSKI CUSH ELSR GRMD LNGB OLAR OLMP                PRDY                                    SMAI      TACO THUN TUMW                               HGP1 KNTP                PSEA
+ 1                     CSKI CUSH ELSR      LNGB OLAR OLMP OYLR           PRDY                                    SMAI      TACO THUN TUMW                               HGP1 KNTP                PSEA           V081 V096 V102
+ 2                     CSKI CUSH ELSR      LNGB      OLMP OYLR           PRDY                                    SMAI SSHO TACO THUN TUMW UFDA BCIT BLVU BSUM ESM1      HGP1 KNTP           POUL PSEA           V081 V096 V102
+ 3                     CSKI CUSH ELSR      LNGB           OYLR           PRDY                                    SMAI SSHO TACO           UFDA BCIT BLVU BSUM ESM1           KNTP KRMT      POUL PSEA           V081 V096 V102
  4      CHCM           CSKI CUSH ELSR      LNGB           OYLR           PRDY                                    SMAI SSHO TACO           UFDA BCIT BLVU      ESM1           KNTP KRMT      POUL PSEA      TRI1 V081 V096 V102
- 5      CHCM                CUSH ELSR                               PFLD PRDY                               SEQM SMAI SSHO                UFDA                ESM1                KRMT      POUL PSEA SQIM                                                         V081 V096 V102
- 6      CHCM                CUSH ELSR                                                                       SEQM      SSHO                UFDA           ESM1                KRMT PNCL POUL      SQIM      V081 V096
- 7      CHCM      COUP           ELSR                                    PTAA                          SEQM                          UFDA                ESM1                     PNCL POUL      SQIM
- 8      CHCM      COUP                                                   PTAA           SC03           SEQM                          UFDA                ESM1                     PNCL POUL      SQIM
- 9 ALBH CHCM      COUP                                                   PTAA           SC03           SEQM                                                                       PNCL           SQIM
-10 ALBH CHCM      COUP                                                   PTAA SACH SC02      SEQM                                                   FRID                PNCL           SQIM
-11 ALBH                PGC5                                              PTAA SACH SC02      SEQM                                                   FRID                PNCL           SQIM
-12 ALBH                PGC5                                              PTAA SACH SC02      SEQM                                                   FRID                PNCL           SQIM
-13 ALBH      CLRS      PGC5                                              PTAA SACH           SC04                                                                            PNCL
-14 ALBH      CLRS      PGC5 PTRF                                              SACH           SC04
-15           CLRS      PGC5 PTRF                                              SACH           SC04
+ 5      CHCM                CUSH ELSR                               PFLD PRDY                               SEQM SMAI SSHO                UFDA                ESM1                KRMT      POUL PSEA SQIM      V081 V096 V102
+ 6      CHCM                CUSH ELSR                                                                       SEQM      SSHO                UFDA                ESM1                KRMT PNCL POUL      SQIM      V081 V096
+ 7      CHCM      COUP           ELSR                                         PTAA                          SEQM                          UFDA                ESM1                     PNCL POUL      SQIM
+ 8      CHCM      COUP                                                        PTAA                SC03      SEQM                          UFDA                ESM1                     PNCL POUL      SQIM
+ 9 ALBH CHCM      COUP                                                        PTAA                SC03      SEQM                                                                       PNCL           SQIM
+10 ALBH CHCM      COUP                                                        PTAA      SACH SC02           SEQM                                                   FRID                PNCL           SQIM
+11 ALBH                                                       PGC5            PTAA      SACH SC02           SEQM                                                   FRID                PNCL           SQIM
+12 ALBH                                                       PGC5            PTAA      SACH SC02           SEQM                                                   FRID                PNCL           SQIM
+13 ALBH      CLRS                                             PGC5            PTAA      SACH           SC04                                                                            PNCL
+14 ALBH      CLRS                                             PGC5                 PTRF SACH           SC04
+15           CLRS                                             PGC5                 PTRF SACH           SC04
+
+
+0 = 15  1 = 18 C = 14
+1 = 18  2 = 24 C = 17
+2 = 24  3 = 21 C = 20
+3 = 21  4 = 22 C = 20
+4 = 22  5 = 17 C = 14
+5 = 17  6 = 13 C = 12
+6 = 13  7 = 10 C = 8
+7 = 10  8 = 10 C = 9
+8 = 10  9 = 8 C = 7
+9 = 8  10 = 10 C = 7
+10 = 10  11 = 9 C = 8
+11 = 9  12 = 9 C = 9
+12 = 9  13 = 7 C = 5
+13 = 7  14 = 6 C = 5
+14 = 6  15 = 5 C = 5

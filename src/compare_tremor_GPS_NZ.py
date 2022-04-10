@@ -20,7 +20,7 @@ import DWT
 from MODWT import get_DS, get_scaling, pyramid
 
 
-def plot_GPS(station_file, lats, lons, direction, radius_GPS, J, threshold):
+def plot_GPS(station_file, lats, lons, direction, radius_GPS, J, threshold, events, possible_events):
     """
     """
     # Read station file
@@ -28,14 +28,16 @@ def plot_GPS(station_file, lats, lons, direction, radius_GPS, J, threshold):
     stations.columns = ['name', 'longitude', 'latitude']
 
     # Time limits
-    tmin = 2000 + 909 / 365.25
-    tmax = 2000 + 8127 / 365.25
+#    tmin = 2000 + 909 / 365.25
+#    tmax = 2000 + 8127 / 365.25
+    tmin = 2010.0
+    tmax = 2016.0
 
     a = 6378.136
     e = 0.006694470
 
     # Start figure
-    fig, ax = plt.subplots(figsize=(16, 8))
+    fig, ax = plt.subplots(figsize=(16, 9))
     params = {'xtick.labelsize':24,
               'ytick.labelsize':24}
     pylab.rcParams.update(params)
@@ -149,6 +151,15 @@ def plot_GPS(station_file, lats, lons, direction, radius_GPS, J, threshold):
 
             plt.plot(times_stacked, lat + 0.1 * disps_stacked, color='black')
 
+    # Add slow slip events from Todd and Schwartz (2016)
+#    for event in events:
+#        plt.plot([event['time'], event['time']], \
+#            [event['latmin'], event['latmax']], color='red', linewidth=4)
+#    for event in possible_events:
+#        plt.plot([event['time'], event['time']], \
+#            [event['latmin'], event['latmax']], color='red', linewidth=4, \
+#            linestyle='dotted')
+
     plt.xlim([tmin, tmax])
     plt.xlabel('Time (years)', fontsize=24)
     plt.xticks(fontsize=24)
@@ -166,21 +177,52 @@ def plot_GPS(station_file, lats, lons, direction, radius_GPS, J, threshold):
 if __name__ == '__main__':
 
     station_file = '../data/GeoNet/stations.txt'
-    lats = [-39.5000, -39.4000, -39.3000, -39.2000, -39.1000, -39.0000, \
-        -38.9000, -38.8000, -38.7000, -38.6000, -38.5000, -38.4000, \
-        -38.3000, -38.2000, -38.1000, -38.0000]
-    lons = [176.8000, 176.9000, 177.0000, 177.1000, 177.2000, 177.3000, \
-        177.4000, 177.5000, 177.6000, 177.7000, 177.8000, 177.9000, \
-        178.0000, 178.1000, 178.2000, 178.3000]
+    lats = [-39.7000, -39.6000, -39.5000, -39.4000, -39.3000, -39.2000, \
+        -39.1000, -39.0000, -38.9000, -38.8000, -38.7000, -38.6000, -38.5000, \
+        -38.4000, -38.3000, -38.2000, -38.1000, -38.0000]
+    lons = [176.6000, 176.7000, 176.8000, 176.9000, 177.0000, 177.1000, \
+        177.2000, 177.3000, 177.4000, 177.5000, 177.6000, 177.7000, 177.8000, \
+        177.9000, 178.0000, 178.1000, 178.2000, 178.3000]
     direction = 'e'
     radius_GPS = 50
+
+    events = [{'time':2010.083, 'latmin':-38.318212852, 'latmax':-38.218212852}, \
+        {'time':2010.083, 'latmin':-39.70787439, 'latmax':-39.102563727}, \
+        {'time':2010.250, 'latmin':-39.202563727, 'latmax':-38.58533692384}, \
+        {'time':2010.500, 'latmin':-38.12141492, 'latmax':-38.02141492}, \
+        {'time':2010.625, 'latmin':-39.202563727, 'latmax':-39.102563727}, \
+        {'time':2011.333, 'latmin':-38.12141492, 'latmax':-38.02141492}, \
+        {'time':2011.333, 'latmin':-38.318212852, 'latmax':-38.218212852}, \
+        {'time':2011.667, 'latmin':-39.70787439, 'latmax':-39.102563727}, \
+        {'time':2011.750, 'latmin':-38.318212852, 'latmax':-38.02141492}, \
+        {'time':2011.958, 'latmin':-38.68533692384, 'latmax':-38.58533692384}, \
+        {'time':2012.208, 'latmin':-38.68533692384, 'latmax':-38.02141492}, \
+        {'time':2012.625, 'latmin':-38.68533692384, 'latmax':-38.02141492}, \
+        {'time':2013.000, 'latmin':-38.12141492, 'latmax':-38.02141492}, \
+        {'time':2013.167, 'latmin':-39.70787439, 'latmax':-39.102563727}, \
+        {'time':2013.500, 'latmin':-39.202563727, 'latmax':-38.58533692384}, \
+        {'time':2013.583, 'latmin':-38.318212852, 'latmax':-38.02141492}, \
+        {'time':2013.750, 'latmin':-39.202563727, 'latmax':-39.102563727}, \
+        {'time':2013.958, 'latmin':-38.318212852, 'latmax':-38.02141492}, \
+        {'time':2014.417, 'latmin':-38.68533692384, 'latmax':-38.218212852}, \
+        {'time':2014.750, 'latmin':-39.202563727, 'latmax':-38.58533692384}, \
+        {'time':2014.875, 'latmin':-38.318212852, 'latmax':-38.218212852}, \
+        {'time':2015.000, 'latmin':-39.202563727, 'latmax':-39.102563727}, \
+        {'time':2015.000, 'latmin':-39.70787439, 'latmax':-39.60787439}, \
+        {'time':2015.083, 'latmin':-38.12141492, 'latmax':-38.02141492}, \
+        {'time':2015.125, 'latmin':-38.68533692384, 'latmax':-38.58533692384}, \
+        {'time':2015.500, 'latmin':-38.318212852, 'latmax':-38.02141492}]
+
+    possible_events = [{'time':2010.583, 'latmin':-38.68533692384, 'latmax':-38.58533692384}, \
+        {'time':2011.000, 'latmin':-38.68533692384, 'latmax':-38.58533692384}, \
+        {'time':2013.000, 'latmin':-38.68533692384, 'latmax':-38.218212852}, \
+        {'time':2014.250, 'latmin':-38.12141492, 'latmax':-38.02141492}]
 
     # For GPS data
     # Level 10: 0.3 - Level 9: 0.4 - Level 8: 0.4 - Level 7: 0.5 - Level 6: 0.3 - Level 5: 0.3 - Level 4: 0.3
     # Level 7-8: 0.7 - Level 6-7-8: 0.8 - Level 5-6-7-8: 0.8 - Level 5-6-7: 0.6 - Level 5-6: 0.4 - Level 6-7: 0.5
 
-    chosen_GPS = 0.5
-    chosen_tremor = 0.01
-    J = [6, 7]
+    chosen_GPS = 0.8
+    J = [6, 7, 8]
 
-    plot_GPS(station_file, lats, lons, direction, radius_GPS, J, chosen_GPS)
+    plot_GPS(station_file, lats, lons, direction, radius_GPS, J, chosen_GPS, events, possible_events)
