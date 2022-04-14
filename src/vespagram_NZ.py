@@ -125,7 +125,7 @@ def compute_wavelets(station_file, direction, wavelet, J):
         
         # Save figure
         plt.tight_layout()
-        plt.savefig('MODWT_GPS_NZ/' + station + '_' + direction + '.pdf', format='pdf')
+        plt.savefig('MODWT_GPS_NZ/' + station + '_' + direction + '.eps', format='eps')
         plt.close(1)
 
 if __name__ == '__main__':

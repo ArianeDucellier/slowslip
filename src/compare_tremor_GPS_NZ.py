@@ -144,21 +144,21 @@ def plot_GPS(station_file, lats, lons, direction, radius_GPS, J, threshold, even
                 for i in range(0, len(jumps) + 1):
                     x0 = begin_times[i]
                     dx = end_times[i] - begin_times[i]
-                    if disps_slowslip[begin_jumps[i]] > 0:
-                        ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
-                    else:
-                        ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
+#                    if disps_slowslip[begin_jumps[i]] > 0:
+#                        ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
+#                    else:
+#                        ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
 
             plt.plot(times_stacked, lat + 0.1 * disps_stacked, color='black')
 
     # Add slow slip events from Todd and Schwartz (2016)
-#    for event in events:
-#        plt.plot([event['time'], event['time']], \
-#            [event['latmin'], event['latmax']], color='red', linewidth=4)
-#    for event in possible_events:
-#        plt.plot([event['time'], event['time']], \
-#            [event['latmin'], event['latmax']], color='red', linewidth=4, \
-#            linestyle='dotted')
+    for event in events:
+        plt.plot([event['time'], event['time']], \
+            [event['latmin'], event['latmax']], color='grey', linewidth=4)
+    for event in possible_events:
+        plt.plot([event['time'], event['time']], \
+            [event['latmin'], event['latmax']], color='grey', linewidth=4, \
+            linestyle='dotted')
 
     plt.xlim([tmin, tmax])
     plt.xlabel('Time (years)', fontsize=24)
@@ -170,8 +170,8 @@ def plot_GPS(station_file, lats, lons, direction, radius_GPS, J, threshold, even
 #        format(J + 1), fontsize=24)
     plt.title('Details at levels {} of MODWT of GPS data'. \
         format(J), fontsize=24)
-#    plt.savefig('GPS_NZ_detail_' + str(J + 1) + '.pdf', format='pdf')
-    plt.savefig('GPS_NZ_detail.pdf', format='pdf')
+#    plt.savefig('GPS_NZ_detail_' + str(J + 1) + '.eps', format='eps')
+    plt.savefig('GPS_NZ_detail.eps', format='eps')
     plt.close(1)
 
 if __name__ == '__main__':

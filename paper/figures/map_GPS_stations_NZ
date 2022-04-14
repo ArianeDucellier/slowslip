@@ -132,7 +132,28 @@ cat << END >> names.dat
 176.44059928 -40.01420523 WPUK
 END
 
-gmt pstext names.dat -R$Rop -J$Jop -F+f12p -O >> $output
+gmt pstext names.dat -R$Rop -J$Jop -F+f12p -O -K >> $output
+
+# Large map
+set x1 = 165
+set x2 = 180
+set y1 = -47
+set y2 = -34
+set Rop = $x1/$x2/$y1/$y2
+set Jop = m177.5/-38.9/0.3
+
+gmt pscoast -R$Rop -J$Jop -Ba5f2::WESN -W0.1p -G255/255/224 -S224/255/255 -Lf-124/46.5/48/200 -Df -Na -X1.5 -Y12.5 -O -K >> $output
+
+# Limits of small map
+cat << END >> square.dat
+176 -40.4
+176 -37.4
+179 -37.4
+179 -40.4
+176 -40.4
+END
+
+gmt psxy square.dat -R$Rop -J$Jop -Wthicker,black -O >> $output
 
 rm mytext.dat
 rm stations.dat

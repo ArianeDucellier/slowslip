@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -33,6 +33,13 @@ G.C. Beroza and S.~Ide.
 \newblock Slow earthquakes and nonvolcanic tremor.
 \newblock \emph{Annu. Rev. Earth Planet. Sci.}, 39:\penalty0 271--296, 2011.
 
+\bibitem[Delahaye et~al.(2009)Delahaye, Townend, Reyners, and Rogers]{DEL_2009}
+E.J. Delahaye, J.~Townend, M.E. Reyners, and G.~Rogers.
+\newblock Microseismicity but no tremor accompanying slow slip in the
+  {Hikurangi} subduction zone, {New} {Zealand}.
+\newblock \emph{Earth and Planetary Science Letters}, 277:\penalty0 21--28,
+  2009.
+
 \bibitem[Frank(2016)]{FRA_2016}
 W.B. Frank.
 \newblock Slow slip hidden in the noise: The intermittence of tectonic release.
@@ -65,6 +72,11 @@ Y.~Hiramatsu, T.~Watanabe, and K.~Obara.
   interface.
 \newblock \emph{Geophysical Research Letters}, 35:\penalty0 L13304, 2008.
 
+\bibitem[Ide(2012)]{IDE_2012}
+S.~Ide.
+\newblock Variety and spatial heterogeneity of tectonic tremor worldwide.
+\newblock \emph{Journal of Geophysical Research}, 117:\penalty0 B03302, 2012.
+
 \bibitem[Jiang et~al.(2012)Jiang, Wdowinski, Dixon, Hackl, Protti, and
   Gonzalez]{JIA_2012}
 Y.~Jiang, S.~Wdowinski, T.~H. Dixon, M.~Hackl, M.~Protti, and V.~Gonzalez.
@@ -72,6 +84,12 @@ Y.~Jiang, S.~Wdowinski, T.~H. Dixon, M.~Hackl, M.~Protti, and V.~Gonzalez.
   observations, 2002-2011.
 \newblock \emph{Geochemistry, Geophysics, Geosystems}, 13:\penalty0 Q04006,
   2012.
+
+\bibitem[Kim et~al.(2011)Kim, Schwartz, and Bannister]{KIM_2011}
+M.J. Kim, S.Y. Schwartz, and S.~Bannister.
+\newblock Non‐volcanic tremor associated with the {March} 2010 {Gisborne}
+  slow slip event at the {Hikurangi} subduction margin, {New} {Zealand}.
+\newblock \emph{Geophysical Research Letters}, 38:\penalty0 L14301, 2011.
 
 \bibitem[Kumar and Foufoula-Georgiou(1997)]{KUM_1997}
 P.~Kumar and E.~Foufoula-Georgiou.
@@ -98,11 +116,18 @@ T.~Nishimura, T.~Matsuzawa, and K.~Obara.
 \newblock \emph{Journal of Geophysical Research: Solid Earth}, 118:\penalty0
   3112--3125, 2013.
 
-\bibitem[Obara(2002)]{OBA_2002}
-K.~Obara.
-\newblock Nonvolcanic deep tremor associated with subduction in southwest
-  {Japan}.
-\newblock \emph{Science}, 296\penalty0 (5573):\penalty0 1679--1681, 2002.
+\bibitem[Nuyen and Schmidt(2021)]{NUY_2021}
+C.~P. Nuyen and D.~A. Schmidt.
+\newblock Filling the gap in {Cascadia}: The emergence of low‐amplitude
+  long‐term slow slip.
+\newblock \emph{Geochemistry, Geophysics, Geosystems}, 22\penalty0
+  (3):\penalty0 e2020GC009477, 2021.
+
+\bibitem[Obara et~al.(2004)Obara, Hirose, Yamamizu, and Kasahara]{OBA_2004}
+K.~Obara, H.~Hirose, F.~Yamamizu, and K.~Kasahara.
+\newblock Episodic slow slip events accompanied by non-volcanic tremors in
+  southwest {Japan} subduction zone.
+\newblock \emph{Geophysical Research Letters}, 31:\penalty0 L23602, 2004.
 
 \bibitem[Ohtani et~al.(2010)Ohtani, McGuire, and Segall]{OHT_2010}
 R.~Ohtani, J.J. McGuire, and P.~Segall.
@@ -192,6 +217,19 @@ L.~M. Wallace, J.~Beavan, S.~Bannister, and C.~Williams.
 \newblock \emph{Journal of Geophysical Research: Solid Earth}, 117:\penalty0
   B11402, 2012.
 
+\bibitem[Wallace and Beavan(2010)]{WAL_2010}
+L.M. Wallace and J.~Beavan.
+\newblock Diverse slow slip behavior at the {Hikurangi} subduction margin,
+  {New} {Zealand}.
+\newblock \emph{Journal of Geophysical Research}, 115:\penalty0 B12402, 2010.
+
+\bibitem[Wallace and Eberhart-Phillips(2013)]{WAL_2013}
+L.M. Wallace and D.~Eberhart-Phillips.
+\newblock Newly observed, deep slow slip events at the central {Hikurangi}
+  margin, {New} {Zealand}: Implications for downdip variability of slow slip
+  and tremor, and relationship to seismic structure.
+\newblock \emph{Geophysical Research Letters}, 40:\penalty0 5393--5398, 2013.
+
 \bibitem[Wech(2010)]{WEC_2010}
 A.G. Wech.
 \newblock Interactive tremor monitoring.
@@ -212,5 +250,14 @@ M.~Wei, J.J. McGuire, and E.~Richardson.
 P.~Wessel and W.~H.~F. Smith.
 \newblock Free software helps map and display data.
 \newblock \emph{EOS Trans. AGU}, 72:\penalty0 441, 1991.
+
+\bibitem[Williams et~al.(2013)Williams, Eberhart-Phillips, Bannister, Barker,
+  Henrys, Reyners, and Sutherland]{WIL_2013}
+C.~A. Williams, D.~Eberhart-Phillips, S.~Bannister, D.~H. Barker, S.~Henrys,
+  M.~Reyners, and R.~Sutherland.
+\newblock Revised interface geometry for the {Hikurangi} subduction zone, {New}
+  {Zealand}.
+\newblock \emph{Seismological Research Letters}, 84\penalty0 (6):\penalty0
+  1066--1073, 2013.
 
 \end{thebibliography}

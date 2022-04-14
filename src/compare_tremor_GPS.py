@@ -437,9 +437,9 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
     pylab.rcParams.update(params)
 
     for event in events:
-        plt.axvline(event, color='red', linewidth=2)
-    for event in small_events:
-        plt.axvline(event, color='blue', linewidth=1)
+        plt.axvline(event, color='black', linewidth=2)
+#    for event in small_events:
+#        plt.axvline(event, color='blue', linewidth=1)
 
     # Loop on latitude and longitude
     for index, (lat, lon) in enumerate(zip(lats, lons)):
@@ -466,10 +466,9 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
 
         # Read output files from wavelet transform
         for (station, lon_sta, lat_sta) in zip(sub_stations['name'], sub_stations['longitude'], sub_stations['latitude']):
-            filename = 'MODWT_GPS_longer/' + dataset + '_' + station + '_' + direction + '.pkl'
+            filename = 'MODWT_GPS_mode/' + dataset + '_' + station + '_' + direction + '.pkl'
             (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
             if ((np.min(time) <= 2021.5) and (np.max(time) >= 2006.0)):
-                print(index, station)
                 times.append(time)
                 disps.append(disp)
                 Ws.append(W)
@@ -563,7 +562,7 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
     plt.title('Details at levels {} of MODWT of GPS data'. \
         format(J), fontsize=24)
 #    plt.savefig('GPS_longer_detail_' + str(J + 1) + '.eps', format='eps')
-    plt.savefig('GPS_longer_detail.eps', format='eps')
+    plt.savefig('GPS_mode_detail.eps', format='eps')
     plt.close(1)
 
 def plot_tremor(lats, J, threshold, events, small_events):
@@ -957,7 +956,7 @@ if __name__ == '__main__':
 
     thresh_GPS = np.arange(0.1, 1.6, 0.1)
     thresh_tremor = np.arange(0.001, 0.011, 0.001)
-    chosen_GPS = 0.7
+    chosen_GPS = 0.8
     chosen_tremor = 0.01
     J = [6, 7, 8]
 

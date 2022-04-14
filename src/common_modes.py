@@ -2,9 +2,16 @@
 Script to compute common modes for GPS stations
 """
 
+import matplotlib.pylab as pylab
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import pickle
+
+from math import cos, floor, pi, sin, sqrt
+
+import DWT
+from MODWT import get_DS, get_scaling, pyramid
 
 def detrend(time, disp):
     """
@@ -17,7 +24,7 @@ def detrend(time, disp):
         disp_detrend[i] = np.mean(disp[indices])
     return disp_detrend
 
-def stack(station_file, dataset, direction, lat_min, lat_max):
+def stack(station_file, dataset, direction, lat_min, lat_max, lon_min, lon_max):
     """
     Stack all GPS stations within a latitude bin
     """
@@ -26,7 +33,8 @@ def stack(station_file, dataset, direction, lat_min, lat_max):
         engine='python')
     stations.columns = ['name', 'longitude', 'latitude']
     subset = stations.loc[(stations['latitude'] >= lat_min) & \
-                          (stations['latitude'] <= lat_max)]
+                          (stations['latitude'] <= lat_max) & \
+                          (stations['longitude'] >= 0.5 * (lon_min + lon_max))]
 
     # Stack the detrended signal over GPS stations
     times = []
@@ -36,7 +44,6 @@ def stack(station_file, dataset, direction, lat_min, lat_max):
         data = np.loadtxt(filename, skiprows=26)
         time = data[:, 0]
         disp = data[:, 1]
-        disp = detrend(time, disp)
         times.append(time)
         disps.append(disp)
 
@@ -72,18 +79,20 @@ def stack(station_file, dataset, direction, lat_min, lat_max):
                 nsta = nsta + 1
                 disp_interp = np.interp(time_subset, time[indices], disp[indices])
                 disp_subset = disp_subset + disp_interp
-            disp_subset = disp_subset / nsta
+        disp_subset = disp_subset / nsta
         time_stack.append(time_subset)
         disp_stack.append(disp_subset)
     time_subset = np.concatenate(time_stack)
     disp_subset = np.concatenate(disp_stack)
     return(time_subset, disp_subset)
 
-def compute_common_modes(station_file, dataset, direction, latitudes):
+def compute_common_modes(station_file, dataset, direction, latitudes, longitudes):
     """
     """
     for i in range(0, len(latitudes) - 1):
-        (time, disp) = stack(station_file, dataset, direction, latitudes[i], latitudes[i + 1])
+        (time, disp) = stack(station_file, dataset, direction, latitudes[i], latitudes[i + 1], \
+            longitudes[i], longitudes[i + 1])
+        disp = detrend(time, disp)
         filename = 'common_modes/' + 'lat_' + str(i) + '.pkl'
         pickle.dump([time, disp, latitudes[i], latitudes[i + 1]], open(filename, 'wb'))
 
@@ -174,7 +183,7 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
 
         # Remove common modes
         i0 = 0
-        for i in range(0, len(latitudes - 1)):
+        for i in range(0, len(latitudes) - 1):
             if ((latitude >= latitudes[i]) & (latitude <= latitudes[i + 1])):
                 i0 = i
         filename = 'common_modes/' + 'lat_' + str(i0) + '.pkl'
@@ -190,11 +199,64 @@ def compute_wavelets(station_file, lats, lons, radius, direction, dataset, \
         filename = 'MODWT_GPS_mode/' + dataset + '_' + station + '_' + direction + '.pkl'
         pickle.dump([time, disp, W, V, D, S], open(filename, 'wb'))
 
+        # Start figure
+        params = {'xtick.labelsize':24,
+                  'ytick.labelsize':24}
+        pylab.rcParams.update(params)   
+        fig = plt.figure(1, figsize=(10, 3 * (J + 3)))
+
+        maxD = max([np.max(Dj) for Dj in D])
+        minD = min([np.min(Dj) for Dj in D])
+
+        # Plot data
+        plt.subplot2grid((J + 2, 1), (0, 0))
+        plt.plot(time, disp, 'k', label='Data')
+        plt.xlim([2006.0, 2021.5])
+        plt.ylim([np.min(disp), np.max(disp)])
+        plt.legend(loc=3, fontsize=20)
+        # Plot details
+        for j in range(0, J):
+            plt.subplot2grid((J + 2, 1), (j + 1, 0))
+            plt.plot(time, D[j], 'k', label='D' + str(j + 1))
+            plt.xlim([2006.0, 2021.5])
+            plt.ylim(minD, maxD)
+            plt.legend(loc=3, fontsize=20)
+        # Plot smooth
+        plt.subplot2grid((J + 2, 1), (J + 1, 0))
+        plt.plot(time, S[J], 'k', label='S' + str(J))
+        plt.xlim([2006.0, 2021.5])
+        plt.ylim([np.min(disp), np.max(disp)])
+        plt.legend(loc=3, fontsize=20)
+        plt.xlabel('Time (years)', fontsize=24)
+        
+        # Save figure
+        plt.tight_layout()
+        plt.savefig('MODWT_GPS_mode/' + dataset + '_' + station + '_' + \
+            direction + '.eps', format='eps')
+        plt.close(1)
+
 if __name__ == '__main__':
 
     station_file = '../data/PANGA/stations.txt'
     direction = 'lon'
     dataset = 'cleaned'
     latitudes = np.array([46, 46.5, 47, 47.5, 48, 48.5, 49, 49.5, 50])
+    longitudes = np.array([-121.44977915, -121.43793693, -121.42577458, \
+       -121.44646117, -121.76248528, -122.36442489, -122.66268742, \
+       -122.64874964, -122.63441767])
 
-    compute_common_modes(station_file, dataset, direction, latitudes)
+#    compute_common_modes(station_file, dataset, direction, latitudes, longitudes)
+
+    lats = [47.20000, 47.30000, 47.40000, 47.50000, 47.60000, 47.70000, \
+        47.80000, 47.90000, 48.00000, 48.10000, 48.20000, 48.30000, 48.40000, \
+        48.50000, 48.60000, 48.70000]
+    lons = [-122.74294, -122.73912, -122.75036, -122.77612, -122.81591, \
+        -122.86920, -122.93549, -123.01425, -123.10498, -123.20716, \
+        -123.32028, -123.44381, -123.57726, -123.72011, -123.87183, \
+        -124.03193]
+    radius_GPS = 50
+    wavelet = 'LA8'
+    J = 10
+
+    compute_wavelets(station_file, lats, lons, radius_GPS, direction, dataset, \
+      wavelet, J, latitudes)
