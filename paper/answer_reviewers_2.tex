@@ -1,0 +1,113 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage[lmargin=1 in, rmargin=1 in, tmargin=1 in, bmargin=1 in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{times}
+\usepackage{xcolor}
+
+\begin{document}
+
+\textbf{Reviewer 1}
+
+\bigskip
+
+\textit{In "Detection of slow slip events using wavelet analysis of GNSS recordings", the authors propose a methodology for detecting slow slip events using a wavelet decomposition of GNSS time series. In Cascadia, the results of this method are corroborated by examining a wavelet decomposition of tremor time series over the same region and time span. Comparison of results from the application of the methodology using both GNSS and tremor time series shows that slow slip events are detectable at approximately the same time in both data sets for slow slip events down to around Mw 6.0.  As an example of the utility of this approach it is then applied to GNSS time series in New Zealand.} \\
+
+\textit{It is clear from the author's responses to the initial review that this manuscript has been greatly improved. Some questions still remain for me. In particular, how would one choose the wavelet threshold parameters for subduction zones without tremor and where slow slip event amplitudes in GNSS time series are much larger or much smaller than those in Cascadia and New Zealand. It seems that the success seen in utilizing the wavelet parameters derived for Cascadia with the New Zealand time series mostly stems from the similarity in GNSS signal amplitudes (as noted by the authors on lines 604-607). Even under this condition, the exact wavelet detail levels to stack are, in fact, different for Cascadia and New Zealand - a result stemming primarily from the differences in slow slip recurrence intervals between the two subduction zones. How would a researcher determine which wavelet levels to stack unless they already knew when the slow slip events were?}
+
+\bigskip
+
+We think the best way to choose which wavelet details to stack is to look individually at each level detail. The researcher should then look for spatially coherent patterns and a high signal-to-noise ratio. The researcher should think about the expected direction of the slow slip and look for a clear sequence of alternating positive and negative peaks in the direction of the plate motion. The datasets we used have a sampling rate of one observation per day. For a smaller sampling interval, the researcher should look at higher level details. The time between big slow slip events is about 12 months for northern Cascadia and 18 months for New Zealand. For shorter time between events, the researcher should look at lower level wavelet details (5, 6, 7). For longer time between events, the researcher should look at higher level wavelet details (up to 9 or 10). We added a few sentences in the text.
+
+\bigskip
+
+\textit{While this approach is interesting, it does not seem to provide any new insight into the slow slip process nor does it seem to be able to uncover slow slip offsets not otherwise obvious to the naked eye (e.g. buried in the noise). To that end, it provides results no different than previous approaches to recognizing slow slip events. While this may sound like a harsh criticism, in my mind, the main utility of this wavelet approach is to provide a more objective way of identifying and demarcating slow slip events in GNSS time series. For example, it could be used to provide a starting point for identifying slow slip events in a large dataset, thereby saving future investigators time. In the interest of informing the research community of the results of this approach, I would recommend publication of this manuscript.} \\
+
+\textit{Additional questions. Line numbers refer to the manuscript with the bolded changes:} \\
+
+\textit{line 363-365: Wouldn't there be a unit for the wavelet decomposition? If it is the wavelet transform of cumulative tremor count shouldn't the unit still be cumulative tremor count even if a linear trend was removed? In a GNSS time series, the units are mm no matter whether a linear trend has been removed or not.}
+
+\bigskip
+
+The unit would be the fraction of tremor in a day divided by the total number of days. The average value is 1 divided by the total number of days. The threshold we used is about 10 times the average rate. We modified the text.
+
+\bigskip
+
+\textit{line 646-648: slow slip events at the beginning and end of a time series are not readily detectable due to edge effects in the wavelet transform. For each detail level, how much of the time series is eliminated? In other words, assuming one data point per day, at detail level 8, how long is the window of valid data? How about for level 6?}
+
+\bigskip
+
+If we denote $L$ the length of the base wavelet filter used for the wavelet decomposition (in our study, we used a Least Asymmetric wavelet filter of length $L = 8$, see Percival and Walden, 2000, section 4.8, page 107) and $j$ the level of the wavelet detail, the length of the wavelet filter at level $j$ used to compute the wavelet detail $D_j$ is:
+
+\begin{equation*}
+L_j = \left( 2^j - 1 \right) \left( L - 1 \right) + 1
+\end{equation*}
+
+If we have a time series of length $X_t \left( t = 0, \cdots , N - 1 \right)$, the wavelet coefficients of the detail at level $j$ affected by the boundary conditions at the edges would be the coefficients with indices $t = 0 , \cdots , L_j - 2$ or $t = N - L_j + 1 , \cdots, N - 1$ (see Percival and Walden, 2000, section 5.11, page 199). We get $L_j = 442$ for $j = 6$, $L_j = 890$ for $j = 7$ and $L_j = 1786$ for $j = 8$. In practice, the part of the wavelet details affected by the boundary conditions is much shorter than that. We added a figure in the supplement comparing the wavelet details computed when using only the data between 2008 and 2012 and the wavelet details computed when using the entire time series from 2000 to 2021. Even at level 8 only about 6 months of data on each side are effected by the boundary conditions. We added a paragraph in the text.
+
+\bigskip
+
+\textbf{Reviewer 2}
+
+\bigskip
+
+\textit{I thank the authors for the careful revisions and the brand new application to New Zealand. All of my comments have been adequately addressed, and I think this manuscript should be accepted for publication.} \\
+
+\textit{I have just a few very minor comments, noted below, that I jotted down while rereading the manuscript:
+\begin{itemize}
+\item L547 backwards -> towards
+\item L564-566 "tremor is not as robust" is not very clear; it would be simpler to state that no long-term or high-resolution catalog exists
+\item L595 point -> location
+\item L602-604 best to cite actual numbers here rather than just "bigger"
+\item L667 ween -> seen
+\item Figure 2 longitudinal -> east-west
+\item Figure 5 units for the tremor threshold
+\end{itemize}
+}
+
+\bigskip
+
+We modified these sentences in the text.
+
+\bigskip
+
+\textbf{Editor-in-Chief}
+
+\bigskip
+
+\textit{I am a bit concerned about your wording "good correlation", which you use in KP 2, in the abstract, and throughout the text. I understand where it comes from. However, this is a vague statement. What is a "good" correlation? Can you quantify this correlation by a correlation coefficient? Also, from my understanding of your study, you really examine 'temporal correlation", where correlation is perhaps better stated as "agreement". I kindly ask you to review your paper in this context, and consider rephrasing "correlation", or include some precise wording/definition of how want use this term. But recall: a "correlation" should be statistically quantifiable.}
+
+\bigskip
+
+We replaced "correlation" by "agreement" in the text.
+
+\bigskip
+
+\textit{Are these given in full sentences? Do they accurately describe the problem you are addressing, state the main findings and conclusions of your paper? Are they enticing to motivate potential readers to read your paper in detail?}
+
+\bigskip
+
+We modified Key Points 2 and 3.
+
+\bigskip
+
+\textit{Many figures can be simplified and thereby improved visually by removing redundant information/labels/axis; this may also help to reduce their dimensions to make the more suited for printing/publishing. For example:
+\begin{itemize}
+\item Fig 1: remove redundant x-axis labels in panels 'data' to 'D10'.
+\item Fig 2: remove redundant x-axis labels in panels 'data' to 'D10'. Perhaps try to resize panel widths for an optimized single-column printing
+\item Fig 3: add latitude and longitude labels
+\item Fig 4: remove redundant labels; move x-axis unit 'Time (years)' from top to bottom panel; see also Fig 2
+\end{itemize}
+}
+
+\bigskip
+
+We modified the figures.
+
+\end{document}

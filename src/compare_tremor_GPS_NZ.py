@@ -20,7 +20,7 @@ import DWT
 from MODWT import get_DS, get_scaling, pyramid
 
 
-def plot_GPS(station_file, lats, lons, direction, radius_GPS, J, threshold, events, possible_events):
+def plot_GPS(station_file, lats, lons, direction, radius_GPS, J, threshold, events, possible_events, MODWT_events):
     """
     """
     # Read station file
@@ -30,8 +30,8 @@ def plot_GPS(station_file, lats, lons, direction, radius_GPS, J, threshold, even
     # Time limits
 #    tmin = 2000 + 909 / 365.25
 #    tmax = 2000 + 8127 / 365.25
-    tmin = 2010.0
-    tmax = 2016.0
+    tmin = 2016.0
+    tmax = 2022.0
 
     a = 6378.136
     e = 0.006694470
@@ -144,21 +144,32 @@ def plot_GPS(station_file, lats, lons, direction, radius_GPS, J, threshold, even
                 for i in range(0, len(jumps) + 1):
                     x0 = begin_times[i]
                     dx = end_times[i] - begin_times[i]
-#                    if disps_slowslip[begin_jumps[i]] > 0:
-#                        ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
-#                    else:
-#                        ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
+                    if disps_slowslip[begin_jumps[i]] > 0:
+                        ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
+                    else:
+                        ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
 
             plt.plot(times_stacked, lat + 0.1 * disps_stacked, color='black')
 
+#            np.savetxt('files_NZ/GPS_NZ_detail_' + str(J + 1) + '_loc_' + \
+#                str(index) + '.txt', np.transpose(np.vstack([times_stacked, disps_stacked])))
+
     # Add slow slip events from Todd and Schwartz (2016)
-    for event in events:
-        plt.plot([event['time'], event['time']], \
-            [event['latmin'], event['latmax']], color='grey', linewidth=4)
-    for event in possible_events:
-        plt.plot([event['time'], event['time']], \
-            [event['latmin'], event['latmax']], color='grey', linewidth=4, \
-            linestyle='dotted')
+#    for event in events:
+#        plt.plot([event['time'], event['time']], \
+#            [event['latmin'], event['latmax']], color='orange', linewidth=7)
+#    for event in possible_events:
+#        plt.plot([event['time'], event['time']], \
+#            [event['latmin'], event['latmax']], color='orange', linewidth=7, \
+#            linestyle='dotted')
+
+    # Add slow slip events from MODWT
+    for event in MODWT_events:
+        if event[4] == 1:
+            plt.plot([event[0], event[1]], [event[2], event[3]], color='green', linewidth=5)
+        else:
+            plt.plot([event[0], event[1]], [event[2], event[3]], color='green', linewidth=5, \
+                linestyle='dotted')
 
     plt.xlim([tmin, tmax])
     plt.xlabel('Time (years)', fontsize=24)
@@ -166,12 +177,12 @@ def plot_GPS(station_file, lats, lons, direction, radius_GPS, J, threshold, even
     plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
     plt.ylabel('Latitude', fontsize=24)
     plt.yticks(fontsize=24)
-#    plt.title('Detail at level {:d} of MODWT of GPS data'. \
+#    plt.title('Detail at level {:d} of MODWT of GPS data from New Zealand'. \
 #        format(J + 1), fontsize=24)
-    plt.title('Details at levels {} of MODWT of GPS data'. \
+    plt.title('Details at levels {} of MODWT of GPS data from New Zealand'. \
         format(J), fontsize=24)
 #    plt.savefig('GPS_NZ_detail_' + str(J + 1) + '.eps', format='eps')
-    plt.savefig('GPS_NZ_detail.eps', format='eps')
+    plt.savefig('GPS_NZ_details.eps', format='eps')
     plt.close(1)
 
 if __name__ == '__main__':
@@ -218,6 +229,43 @@ if __name__ == '__main__':
         {'time':2013.000, 'latmin':-38.68533692384, 'latmax':-38.218212852}, \
         {'time':2014.250, 'latmin':-38.12141492, 'latmax':-38.02141492}]
 
+# 2010 - 2016
+#    MODWT_events = [[2010.07, 2010.05, -39.12, -39.67, 1], \
+#        [2010.22, 2010.19, -38.07, -39.12, 1], \
+#        [2010.76, 2010.75, -39.41, -39.73, 1], \
+#        [2011.37, 2011.36, -38.02, -38.22, 2], \
+#        [2011.71, 2011.74, -37.97, -38.41, 1], \
+#        [2011.71, 2011.67, -38.91, -39.73, 1], \
+#        [2011.95, 2011.92, -38.16, -38.84, 1], \
+#        [2012.63, 2012.63, -39.42, -39.62, 2], \
+#        [2012.66, 2012.64, -38.02, -38.53, 1], \
+#        [2012.96, 2012.95, -37.98, -38.32, 1], \
+#        [2013.15, 2013.16, -38.87, -39.72, 1], \
+#        [2013.57, 2013.55, -38.01, -38.62, 1], \
+#        [2013.74, 2013.74, -38.77, -38.97, 2], \
+#        [2013.93, 2013.92, -37.98, -38.17, 2], \
+#        [2013.91, 2013.95, -39.37, -39.73, 1], \
+#        [2014.78, 2014.79, -38.03, -39.03, 1], \
+#        [2014.96, 2015.00, -39.07, -39.72, 1], \
+#        [2015.53, 2015.53, -39.42, -39.72, 1], \
+#        [2015.52, 2015.55, -37.97, -38.43, 1], \
+#        [2015.78, 2015.79, -38.77, -39.37, 1]]
+
+# 2016 - 2022
+    MODWT_events = [[2016.84, 2016.90, -37.96, -39.72, 1], \
+        [2017.10, 2017.10, -38.78, -39.00, 2], \
+        [2017.73, 2017.78, -37.98, -38.51, 1], \
+        [2018.04, 2018.06, -38.58, -39.07, 1], \
+        [2018.64, 2018.63, -37.97, -38.27, 2], \
+        [2019.26, 2019.33, -37.97, -39.73, 1], \
+        [2020.09, 2020.12, -37.97, -38.23, 2], \
+        [2020.34, 2020.35, -37.96, -39.72, 1], \
+        [2020.33, 2020.33, -37.96, -38.10, 2], \
+        [2020.32, 2020.32, -38.62, -38.79, 2], \
+        [2020.37, 2020.36, -39.35, -39.70, 2], \
+        [2021.11, 2021.11, -39.51, -39.64, 2], \
+        [2021.47, 2021.39, -38.08, -39.72, 1]]
+
     # For GPS data
     # Level 10: 0.3 - Level 9: 0.4 - Level 8: 0.4 - Level 7: 0.5 - Level 6: 0.3 - Level 5: 0.3 - Level 4: 0.3
     # Level 7-8: 0.7 - Level 6-7-8: 0.8 - Level 5-6-7-8: 0.8 - Level 5-6-7: 0.6 - Level 5-6: 0.4 - Level 6-7: 0.5
@@ -225,4 +273,4 @@ if __name__ == '__main__':
     chosen_GPS = 0.8
     J = [6, 7, 8]
 
-    plot_GPS(station_file, lats, lons, direction, radius_GPS, J, chosen_GPS, events, possible_events)
+    plot_GPS(station_file, lats, lons, direction, radius_GPS, J, chosen_GPS, events, possible_events, MODWT_events)

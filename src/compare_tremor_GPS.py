@@ -420,7 +420,8 @@ def plot_correlations():
 
 
 
-def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, threshold, events, small_events):
+def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, \
+    threshold, events, small_events, possible_events, MODWT_events):
     """
     """
     # Read station file
@@ -436,8 +437,8 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
               'ytick.labelsize':24}
     pylab.rcParams.update(params)
 
-    for event in events:
-        plt.axvline(event, color='black', linewidth=2)
+#    for event in events:
+#        plt.axvline(event, color='black', linewidth=2)
 #    for event in small_events:
 #        plt.axvline(event, color='blue', linewidth=1)
 
@@ -466,7 +467,7 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
 
         # Read output files from wavelet transform
         for (station, lon_sta, lat_sta) in zip(sub_stations['name'], sub_stations['longitude'], sub_stations['latitude']):
-            filename = 'MODWT_GPS_mode/' + dataset + '_' + station + '_' + direction + '.pkl'
+            filename = 'MODWT_GPS/' + dataset + '_' + station + '_' + direction + '.pkl'
             (time, disp, W, V, D, S) = pickle.load(open(filename, 'rb'))
             if ((np.min(time) <= 2021.5) and (np.max(time) >= 2006.0)):
                 times.append(time)
@@ -534,21 +535,34 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
             difference = np.diff(times_slowslip)
             jumps = np.where(difference > 1.5 / 365.25)[0]
             
-            if len(jumps > 0):
-                begin_jumps = np.insert(jumps + 1, 0, 0)
-                end_jumps = np.append(jumps, len(times_slowslip) - 1)
-                begin_times = times_slowslip[begin_jumps]
-                end_times = times_slowslip[end_jumps]
+#            if len(jumps > 0):
+#                begin_jumps = np.insert(jumps + 1, 0, 0)
+#                end_jumps = np.append(jumps, len(times_slowslip) - 1)
+#                begin_times = times_slowslip[begin_jumps]
+#                end_times = times_slowslip[end_jumps]
 
-                for i in range(0, len(jumps) + 1):
-                    x0 = begin_times[i]
-                    dx = end_times[i] - begin_times[i]
-                    if disps_slowslip[begin_jumps[i]] > 0:
-                        ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
-                    else:
-                        ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
+#                for i in range(0, len(jumps) + 1):
+#                    x0 = begin_times[i]
+#                    dx = end_times[i] - begin_times[i]
+#                    if disps_slowslip[begin_jumps[i]] > 0:
+#                        ax.add_patch(Rectangle((x0, lat + 0.01), dx, 0.03, facecolor='red'))
+#                    else:
+#                        ax.add_patch(Rectangle((x0, lat - 0.04), dx, 0.03, facecolor='blue'))
 
             plt.plot(times_stacked, lat + 0.1 * disps_stacked, color='black')
+
+#    for event in possible_events:
+#        ax.add_patch(Rectangle((event[0], lats[0] - 0.05), \
+#            event[1] - event[0], lats[-1] - lats[0] + 0.1, fill=None, \
+#            edgecolor='red', linewidth=3))
+
+    # Add slow slip events from MODWT
+    for event in MODWT_events:
+        if event[4] == 1:
+            plt.plot([event[0], event[1]], [event[2], event[3]], color='green', linewidth=5)
+        else:
+            plt.plot([event[0], event[1]], [event[2], event[3]], color='green', linewidth=5, \
+                linestyle='dotted')
 
     plt.xlim([2006.0, 2021.5])
 #    plt.xlim([2006.75, 2017.50])
@@ -557,12 +571,12 @@ def plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, thresh
     plt.ylim([min(lats) - 0.15, max(lats) + 0.15])
     plt.ylabel('Latitude', fontsize=24)
     plt.yticks(fontsize=24)
-#    plt.title('Detail at level {:d} of MODWT of GPS data'. \
+#    plt.title('Detail at level {:d} of MODWT of GPS data from Cascadia'. \
 #        format(J + 1), fontsize=24)
-    plt.title('Details at levels {} of MODWT of GPS data'. \
+    plt.title('Details at levels {} of MODWT of GPS data from Cascadia'. \
         format(J), fontsize=24)
 #    plt.savefig('GPS_longer_detail_' + str(J + 1) + '.eps', format='eps')
-    plt.savefig('GPS_mode_detail.eps', format='eps')
+    plt.savefig('GPS_longer_details.eps', format='eps')
     plt.close(1)
 
 def plot_tremor(lats, J, threshold, events, small_events):
@@ -893,8 +907,12 @@ def plot_ROC_curve(station_file, lats, lons, dataset, direction, \
         level_blue = blue(thresh_tremor[j], np.min(thresh_tremor), np.max(thresh_tremor))
         cmap = generateCmap([(level_red, level_green, level_blue), \
             (0.5 * level_red, 0.5 * level_green, 0.5 * level_blue)])
-        plt.scatter(1 - specificity[0:5, j], sensitivity[0:5, j], c=1 - specificity[0:5, j], cmap=cmap)
+        plt.scatter(1 - specificity[:, j], sensitivity[:, j], c=1 - specificity[:, j], cmap=cmap)
     plt.plot(1 - specificity[i0, j0], sensitivity[i0, j0], 'kx', markersize=20)
+    plt.annotate('0.001', (0.3, 0.4), fontsize=24)
+    plt.annotate('0.01', (0.3, 0.9), fontsize=24)
+    plt.annotate('0.1 mm', (0.9, 0.8), fontsize=24)
+    plt.annotate('1.5 mm', (0.1, 0.1), fontsize=24)
     plt.xlabel('False positive rate', fontsize=24)
     plt.xticks(fontsize=24)
     plt.xlim([0, 1])
@@ -931,6 +949,25 @@ if __name__ == '__main__':
         2019.2329, 2019.8767, 2020.7923, 2020.8552, 2021.0904]
     small_events = [2007.06, 2007.08, 2008.38, 2009.16, 2009.36, 2010.63, \
         2011.66, 2012.69, 2013.74, 2014.69, 2014.93, 2016.03, 2017.13, 2017.22]
+    possible_events = [[2007.3, 2007.5], [2010.0, 2010.3], \
+        [2012.0, 2012.2], [2020.0, 2020.2]]
+    MODWT_events = [[2007.10, 2007.06, 48.72, 47.16, 1], \
+        [2008.40, 2008.30, 48.73, 47.35, 1], \
+        [2009.44, 2009.35, 48.73, 47.92, 1], \
+        [2010.15, 2010.12, 48.73, 47.32, 1], \
+        [2010.64, 2010.61, 48.72, 47.17, 1], \
+        [2011.61, 2011.57, 48.68, 47.18, 1], \
+        [2012.65, 2012.65, 48.74, 47.76, 1], \
+        [2013.75, 2013.71, 48.73, 47.47, 1], \
+        [2014.89, 2014.90, 48.73, 47.79, 1], \
+        [2015.98, 2016.09, 48.73, 47.20, 1], \
+        [2017.24, 2017.17, 48.72, 47.38, 1], \
+        [2018.48, 2018.50, 48.72, 48.09, 1], \
+        [2018.36, 2018.35, 47.93, 47.48, 1], \
+        [2019.34, 2019.32, 47.72, 47.17, 2], \
+        [2019.91, 2019.90, 48.72, 48.47, 2], \
+        [2020.83, 2020.79, 48.13, 47.18, 1], \
+        [2021.11, 2021.12, 48.75, 48.48, 2]]
 
 #    radius_tremor = 50
 #    wavelet = 'LA8'
@@ -960,12 +997,13 @@ if __name__ == '__main__':
     chosen_tremor = 0.01
     J = [6, 7, 8]
 
-    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, chosen_GPS, events, small_events)
+#    plot_GPS(station_file, lats, lons, dataset, direction, radius_GPS, J, \
+#        chosen_GPS, events, small_events, possible_events, MODWT_events)
     
 #    plot_tremor(lats, J, chosen_tremor, events, small_events)
     
 #    (TP, TN, FP, FN) = find_false_detections(station_file, lats, lons, dataset, direction, \
 #        radius_GPS, J, chosen_GPS, chosen_tremor, events, True)
     
-#    (sensitivity, specificity) = plot_ROC_curve(station_file, lats, lons, dataset, direction, \
-#        radius_GPS, J, thresh_GPS, thresh_tremor, events, chosen_GPS, chosen_tremor)
+    (sensitivity, specificity) = plot_ROC_curve(station_file, lats, lons, dataset, direction, \
+        radius_GPS, J, thresh_GPS, thresh_tremor, events, chosen_GPS, chosen_tremor)

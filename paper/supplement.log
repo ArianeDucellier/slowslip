@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  14 APR 2022 04:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  29 JUN 2022 05:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -171,7 +171,17 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 (/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (./supplement.aux)
+) (./supplement.aux
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
+)
 \openout1 = `supplement.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -186,8 +196,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
-
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
 \scratchdimen=\dimen119
@@ -258,79 +267,113 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package epstopdf Info: Source file: <figures/DS_10.eps>
-(epstopdf)                    date: 2022-03-09 19:41:04
-(epstopdf)                    size: 227756 bytes
-(epstopdf)             Output file: <figures/DS_10-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-04-06 22:16:16
-(epstopdf)                    size: 47260 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/DS_10-eps-converte
-d-to.pdf figures/DS_10.eps>
+Package epstopdf Info: Source file: <figures/boundaries.eps>
+(epstopdf)                    date: 2022-06-28 06:28:35
+(epstopdf)                    size: 419239 bytes
+(epstopdf)             Output file: <figures/boundaries-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-06-29 05:40:58
+(epstopdf)                    size: 79260 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/boundaries-eps-con
+verted-to.pdf figures/boundaries.eps>
 (epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/DS_10-eps-converted-to.pdf, id=1, 433.62pt x 1734.48pt>
+<figures/boundaries-eps-converted-to.pdf, id=1, 2168.1pt x 867.24pt>
+File: figures/boundaries-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/boundaries-eps-converted-to.pdf>
+Package pdftex.def Info: figures/boundaries-eps-converted-to.pdf used on input 
+line 31.
+(pdftex.def)             Requested size: 345.0pt x 137.99371pt.
+Package epstopdf Info: Source file: <figures/DS_10.eps>
+(epstopdf)                    date: 2022-06-29 05:44:09
+(epstopdf)                    size: 226988 bytes
+(epstopdf)             Output file: <figures/DS_10-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-06-29 05:44:43
+(epstopdf)                    size: 48279 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/DS_10-eps-converte
+d-to.pdf figures/DS_10.eps>
+(epstopdf)             \includegraphics on input line 37.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/DS_10-eps-converted-to.pdf, id=3, 2168.1pt x 1734.48pt>
 File: figures/DS_10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/DS_10-eps-converted-to.pdf>
 Package pdftex.def Info: figures/DS_10-eps-converted-to.pdf used on input line 
-31.
-(pdftex.def)             Requested size: 128.0374pt x 512.14355pt.
-
-
-LaTeX Warning: Float too large for page by 70.64355pt on input line 34.
-
+37.
+(pdftex.def)             Requested size: 345.0pt x 275.98744pt.
 Package epstopdf Info: Source file: <figures/GPS_mode_details_6-7-8.eps>
 (epstopdf)                    date: 2022-04-14 03:48:47
 (epstopdf)                    size: 530568 bytes
 (epstopdf)             Output file: <figures/GPS_mode_details_6-7-8-eps-convert
 ed-to.pdf>
+(epstopdf)                    date: 2022-04-14 04:01:09
+(epstopdf)                    size: 144613 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_mode_details_6
 -7-8-eps-converted-to.pdf figures/GPS_mode_details_6-7-8.eps>
-(epstopdf)             \includegraphics on input line 37.
-runsystem(repstopdf --outfile=figures/GPS_mode_details_6-7-8-eps-converted-to.p
-df figures/GPS_mode_details_6-7-8.eps)...executed safely (allowed).
+(epstopdf)             \includegraphics on input line 43.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figures/GPS_mode_details_6-7-8-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2022-04-14 04:01:09
-(epstopdf)                    size: 144613 bytes.
-
-<figures/GPS_mode_details_6-7-8-eps-converted-to.pdf, id=3, 1156.32pt x 578.16p
+<figures/GPS_mode_details_6-7-8-eps-converted-to.pdf, id=5, 1156.32pt x 578.16p
 t>
 File: figures/GPS_mode_details_6-7-8-eps-converted-to.pdf Graphic file (type pd
 f)
  <use figures/GPS_mode_details_6-7-8-eps-converted-to.pdf>
 Package pdftex.def Info: figures/GPS_mode_details_6-7-8-eps-converted-to.pdf us
-ed on input line 37.
+ed on input line 43.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
- [1
+Package epstopdf Info: Source file: <figures/GPS_longer_details_6-7-8_events.ep
+s>
+(epstopdf)                    date: 2022-04-30 22:47:47
+(epstopdf)                    size: 438809 bytes
+(epstopdf)             Output file: <figures/GPS_longer_details_6-7-8_events-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2022-04-30 22:50:57
+(epstopdf)                    size: 139824 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_details
+_6-7-8_events-eps-converted-to.pdf figures/GPS_longer_details_6-7-8_events.eps>
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <./f
-igures/DS_10-eps-converted-to.pdf>] [3 <./figures/GPS_mode_details_6-7-8-eps-co
-nverted-to.pdf>] (./supplement.aux)
+(epstopdf)             \includegraphics on input line 49.
+Package epstopdf Info: Output file is already uptodate.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+<figures/GPS_longer_details_6-7-8_events-eps-converted-to.pdf, id=7, 1156.32pt 
+x 578.16pt>
+File: figures/GPS_longer_details_6-7-8_events-eps-converted-to.pdf Graphic file
+ (type pdf)
+ <use figures/GPS_longer_details_6-7-8_events-eps-converted-to.pdf>
+Package pdftex.def Info: figures/GPS_longer_details_6-7-8_events-eps-converted-
+to.pdf used on input line 49.
+(pdftex.def)             Requested size: 345.0pt x 172.49655pt.
+
+[1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2 <./figures/boundaries-eps-converted-to.pdf>] [3 <./figures/DS_10-eps-convert
+ed-to.pdf>] [4 <./figures/GPS_mode_details_6-7-8-eps-converted-to.pdf> <./figur
+es/GPS_longer_details_6-7-8_events-eps-converted-to.pdf>] (./supplement.aux)
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3138 strings out of 493117
- 41859 string characters out of 6135433
- 104083 words of memory out of 5000000
- 6548 multiletter control sequences out of 15000+600000
+ 3148 strings out of 493117
+ 42342 string characters out of 6135433
+ 105122 words of memory out of 5000000
+ 6556 multiletter control sequences out of 15000+600000
  9192 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,26p,652b,264s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,6n,26p,658b,264s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
 cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on supplement.pdf (3 pages, 264040 bytes).
+Output written on supplement.pdf (4 pages, 479005 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 199 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

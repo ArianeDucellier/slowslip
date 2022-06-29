@@ -134,31 +134,48 @@ def compute_wavelets_tremor(station_file, lats, lons, dataset, direction, \
         params = {'xtick.labelsize':24,
                   'ytick.labelsize':24}
         pylab.rcParams.update(params)   
-        fig = plt.figure(1, figsize=(10, 3 * (J + 3)))
+#        fig = plt.figure(1, figsize=(10, 3 * (J + 3)))
+        fig = plt.figure(1, figsize=(30, 3 * 4))
 
         maxD = max([np.max(Dj) for Dj in D])
         minD = min([np.min(Dj) for Dj in D])
 
         # Plot data
-        plt.subplot2grid((J + 2, 1), (0, 0))
+#        plt.subplot2grid((J + 2, 1), (0, 0))
+        ax = plt.subplot2grid((4, 3), (0, 0))
         plt.plot(times_stacked, tremor_detrend, 'k', label='Data')
-        plt.xlabel('Time (years)', fontsize=24)
         plt.xlim([2006.0, 2021.5])
         plt.ylim([np.min(tremor_detrend), np.max(tremor_detrend)])
         plt.legend(loc=3, fontsize=20)
+        ax.axes.xaxis.set_ticklabels([])
         # Plot details
         for j in range(0, J):
-            plt.subplot2grid((J + 2, 1), (j + 1, 0))
+#            plt.subplot2grid((J + 2, 1), (j + 1, 0))
+            if j < 3:
+                ax = plt.subplot2grid((4, 3), (j + 1, 0))
+            elif j < 7:
+                ax = plt.subplot2grid((4, 3), (j - 3, 1))
+            else:
+                ax = plt.subplot2grid((4, 3), (j - 7, 2))
             plt.plot(times_stacked, D[j], 'k', label='D' + str(j + 1))
             plt.xlim([2006.0, 2021.5])
             plt.ylim(minD, maxD)
             plt.legend(loc=3, fontsize=20)
+            if ((j == 2) or (j == 6)):
+                plt.xlabel('Time (years)', fontsize=24)
+            else:
+                ax.axes.xaxis.set_ticklabels([])
+            if j >= 3:
+                ax.axes.yaxis.set_ticklabels([])
         # Plot smooth
-        plt.subplot2grid((J + 2, 1), (J + 1, 0))
+#        plt.subplot2grid((J + 2, 1), (J + 1, 0))
+        ax = plt.subplot2grid((4, 3), (3, 2))
         plt.plot(times_stacked, S[J], 'k', label='S' + str(J))
         plt.xlim([2006.0, 2021.5])
         plt.ylim([np.min(tremor_detrend), np.max(tremor_detrend)])
         plt.legend(loc=3, fontsize=20)
+        plt.xlabel('Time (years)', fontsize=24)
+        ax.axes.yaxis.set_ticklabels([])
         
         # Save figure
         plt.tight_layout()

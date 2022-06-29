@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  14 APR 2022 04:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.15)  29 JUN 2022 05:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -206,6 +206,12 @@ LaTeX Warning: Label `pngfiguresample' multiply defined.
 
 LaTeX Warning: Label `pngfiguresample' multiply defined.
 
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
+
+LaTeX Warning: Label `pngfiguresample' multiply defined.
+
 )
 \openout1 = `paper_bssa_annotated.aux'.
 
@@ -312,6 +318,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
  []
 
 [3]
+Overfull \hbox (1.00053pt too wide) in paragraph at lines 49--50
+[]\OT1/cmr/m/n/10 In Cas-ca-dia, there are ro-bust sig-nals in both slow slip a
+nd tremor  [Hawthorne
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
@@ -366,22 +378,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
-
- []
-
-[13]
 Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
@@ -391,107 +388,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-[14]
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
-[19]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
-Missing character: There is no ‚ in font cmbx10!
-Missing character: There is no Ä in font cmbx10!
-Missing character: There is no ô in font cmbx10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
 [20]
 Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-[21]
-Missing character: There is no ‚ in font cmbx10!
-Missing character: There is no Ä in font cmbx10!
-Missing character: There is no ô in font cmbx10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+[21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-[23] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+[23]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-[25] [26] (./paper_bssa_annotated.bbl
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ê in font cmr10!
- [27]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ê in font cmr10!
- [28]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ê in font cmr10!
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+[26] [27] (./paper_bssa_annotated.bbl [28]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ê in font cmr10!
@@ -502,6 +496,18 @@ Missing character: There is no ê in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ê in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ê in font cmr10!
  [30]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -509,118 +515,127 @@ Missing character: There is no ê in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ê in font cmr10!
- [31]) [32]
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ê in font cmr10!
+ [31]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ê in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ê in font cmr10!
+ [32]) [33]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
- []
-
-[33]
-Overfull \hbox (41.11185pt too wide) in paragraph at lines 192--215
- [][] 
- []
-
-
-Overfull \hbox (84.47307pt too wide) in paragraph at lines 246--268
- [][] 
  []
 
 [34]
-Overfull \hbox (3.82472pt too wide) in paragraph at lines 276--277
+Overfull \hbox (41.11185pt too wide) in paragraph at lines 202--225
+ [][] 
+ []
+
+
+Overfull \hbox (84.47307pt too wide) in paragraph at lines 256--278
+ [][] 
+ []
+
+
+Overfull \hbox (31.41727pt too wide) in paragraph at lines 283--306
+ [][] 
+ []
+
+[35] [36] [37] [38] [39]
+Overfull \hbox (3.82472pt too wide) in paragraph at lines 369--370
 []\OT1/cmr/m/n/10 Figure 1. Demon-stra-tion of a wavelet de-com-po-si-tion for 
 a syn-thetic dataset.
  []
 
-[35] [36] [37] [38]
+[40
+
+] [41] [42] [43] [44]
 Package epstopdf Info: Source file: <figures/500_DS.eps>
-(epstopdf)                    date: 2021-12-01 22:08:58
-(epstopdf)                    size: 349757 bytes
+(epstopdf)                    date: 2022-06-13 21:36:28
+(epstopdf)                    size: 337805 bytes
 (epstopdf)             Output file: <figures/500_DS-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-03-07 06:29:31
-(epstopdf)                    size: 72977 bytes
+(epstopdf)                    date: 2022-06-13 23:16:19
+(epstopdf)                    size: 73884 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/500_DS-eps-convert
 ed-to.pdf figures/500_DS.eps>
-(epstopdf)             \includegraphics on input line 307.
+(epstopdf)             \includegraphics on input line 404.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/500_DS-eps-converted-to.pdf, id=140, 1445.4pt x 2818.53pt>
+<figures/500_DS-eps-converted-to.pdf, id=159, 1445.4pt x 2601.72pt>
 File: figures/500_DS-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/500_DS-eps-converted-to.pdf>
 Package pdftex.def Info: figures/500_DS-eps-converted-to.pdf used on input line
- 307.
-(pdftex.def)             Requested size: 284.52756pt x 554.83653pt.
+ 404.
+(pdftex.def)             Requested size: 312.9803pt x 563.3685pt.
 
 
-LaTeX Warning: Float too large for page by 88.78098pt on input line 310.
+LaTeX Warning: Float too large for page by 97.31294pt on input line 407.
 
 Package epstopdf Info: Source file: <figures/cleaned_PGC5_lon.eps>
-(epstopdf)                    date: 2021-10-25 20:21:02
-(epstopdf)                    size: 598445 bytes
+(epstopdf)                    date: 2022-06-13 21:48:50
+(epstopdf)                    size: 580261 bytes
 (epstopdf)             Output file: <figures/cleaned_PGC5_lon-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2021-10-25 20:21:26
-(epstopdf)                    size: 153613 bytes
+(epstopdf)                    date: 2022-06-13 23:16:21
+(epstopdf)                    size: 167613 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/cleaned_PGC5_lon-e
 ps-converted-to.pdf figures/cleaned_PGC5_lon.eps>
-(epstopdf)             \includegraphics on input line 313.
+(epstopdf)             \includegraphics on input line 410.
 Package epstopdf Info: Output file is already uptodate.
-<figures/cleaned_PGC5_lon-eps-converted-to.pdf, id=142, 722.7pt x 2818.53pt>
+<figures/cleaned_PGC5_lon-eps-converted-to.pdf, id=161, 2168.1pt x 867.24pt>
 File: figures/cleaned_PGC5_lon-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/cleaned_PGC5_lon-eps-converted-to.pdf>
 Package pdftex.def Info: figures/cleaned_PGC5_lon-eps-converted-to.pdf used on 
-input line 313.
-(pdftex.def)             Requested size: 142.26378pt x 554.83653pt.
-
-
-LaTeX Warning: Float too large for page by 52.78098pt on input line 316.
-
+input line 410.
+(pdftex.def)             Requested size: 345.0pt x 137.99371pt.
 Package epstopdf Info: Source file: <figures/map_GPS_stations.eps>
-(epstopdf)                    date: 2021-10-09 19:34:25
-(epstopdf)                    size: 2802563 bytes
+(epstopdf)                    date: 2022-06-13 22:04:54
+(epstopdf)                    size: 2806793 bytes
 (epstopdf)             Output file: <figures/map_GPS_stations-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2021-10-09 19:34:25
-(epstopdf)                    size: 7406582 bytes
+(epstopdf)                    date: 2022-06-13 23:16:30
+(epstopdf)                    size: 7406593 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/map_GPS_stations-e
 ps-converted-to.pdf figures/map_GPS_stations.eps>
-(epstopdf)             \includegraphics on input line 319.
+(epstopdf)             \includegraphics on input line 416.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/map_GPS_stations-eps-converted-to.pdf, id=144, 597.23125pt x 845.1575p
+<figures/map_GPS_stations-eps-converted-to.pdf, id=163, 597.23125pt x 845.1575p
 t>
 File: figures/map_GPS_stations-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/map_GPS_stations-eps-converted-to.pdf>
 Package pdftex.def Info: figures/map_GPS_stations-eps-converted-to.pdf used on 
-input line 319.
+input line 416.
 (pdftex.def)             Requested size: 345.0pt x 488.2186pt.
 Package epstopdf Info: Source file: <figures/tremor_13.eps>
-(epstopdf)                    date: 2022-03-09 19:26:48
-(epstopdf)                    size: 310155 bytes
+(epstopdf)                    date: 2022-06-13 23:14:47
+(epstopdf)                    size: 301631 bytes
 (epstopdf)             Output file: <figures/tremor_13-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-04-06 22:16:17
-(epstopdf)                    size: 80269 bytes
+(epstopdf)                    date: 2022-06-13 23:16:32
+(epstopdf)                    size: 86477 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_13-eps-conv
 erted-to.pdf figures/tremor_13.eps>
-(epstopdf)             \includegraphics on input line 325.
+(epstopdf)             \includegraphics on input line 422.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/tremor_13-eps-converted-to.pdf, id=146, 722.7pt x 2818.53pt>
+<figures/tremor_13-eps-converted-to.pdf, id=165, 2168.1pt x 867.24pt>
 File: figures/tremor_13-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/tremor_13-eps-converted-to.pdf>
 Package pdftex.def Info: figures/tremor_13-eps-converted-to.pdf used on input l
-ine 325.
-(pdftex.def)             Requested size: 142.26378pt x 554.83653pt.
-
-
-LaTeX Warning: Float too large for page by 53.33653pt on input line 328.
-
+ine 422.
+(pdftex.def)             Requested size: 345.0pt x 137.99371pt.
 Package epstopdf Info: Source file: <figures/GPS_longer_detail_8.eps>
 (epstopdf)                    date: 2021-10-23 21:56:44
 (epstopdf)                    size: 303511 bytes
@@ -630,15 +645,15 @@ to.pdf>
 (epstopdf)                    size: 82006 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_detail_
 8-eps-converted-to.pdf figures/GPS_longer_detail_8.eps>
-(epstopdf)             \includegraphics on input line 331.
+(epstopdf)             \includegraphics on input line 428.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/GPS_longer_detail_8-eps-converted-to.pdf, id=148, 1156.32pt x 578.16pt
+<figures/GPS_longer_detail_8-eps-converted-to.pdf, id=167, 1156.32pt x 578.16pt
 >
 File: figures/GPS_longer_detail_8-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/GPS_longer_detail_8-eps-converted-to.pdf>
 Package pdftex.def Info: figures/GPS_longer_detail_8-eps-converted-to.pdf used 
-on input line 331.
+on input line 428.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/tremor_longer_detail_8.eps>
 (epstopdf)                    date: 2021-10-23 21:56:45
@@ -649,16 +664,16 @@ ed-to.pdf>
 (epstopdf)                    size: 71354 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_longer_deta
 il_8-eps-converted-to.pdf figures/tremor_longer_detail_8.eps>
-(epstopdf)             \includegraphics on input line 333.
+(epstopdf)             \includegraphics on input line 430.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/tremor_longer_detail_8-eps-converted-to.pdf, id=150, 1156.32pt x 578.1
+<figures/tremor_longer_detail_8-eps-converted-to.pdf, id=169, 1156.32pt x 578.1
 6pt>
 File: figures/tremor_longer_detail_8-eps-converted-to.pdf Graphic file (type pd
 f)
  <use figures/tremor_longer_detail_8-eps-converted-to.pdf>
 Package pdftex.def Info: figures/tremor_longer_detail_8-eps-converted-to.pdf us
-ed on input line 333.
+ed on input line 430.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/GPS_longer_detail_7.eps>
 (epstopdf)                    date: 2021-10-23 22:14:30
@@ -669,15 +684,15 @@ to.pdf>
 (epstopdf)                    size: 106324 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_detail_
 7-eps-converted-to.pdf figures/GPS_longer_detail_7.eps>
-(epstopdf)             \includegraphics on input line 339.
+(epstopdf)             \includegraphics on input line 436.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/GPS_longer_detail_7-eps-converted-to.pdf, id=152, 1156.32pt x 578.16pt
+<figures/GPS_longer_detail_7-eps-converted-to.pdf, id=171, 1156.32pt x 578.16pt
 >
 File: figures/GPS_longer_detail_7-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/GPS_longer_detail_7-eps-converted-to.pdf>
 Package pdftex.def Info: figures/GPS_longer_detail_7-eps-converted-to.pdf used 
-on input line 339.
+on input line 436.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/tremor_longer_detail_7.eps>
 (epstopdf)                    date: 2021-10-23 22:14:31
@@ -688,16 +703,16 @@ ed-to.pdf>
 (epstopdf)                    size: 90177 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_longer_deta
 il_7-eps-converted-to.pdf figures/tremor_longer_detail_7.eps>
-(epstopdf)             \includegraphics on input line 341.
+(epstopdf)             \includegraphics on input line 438.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/tremor_longer_detail_7-eps-converted-to.pdf, id=154, 1156.32pt x 578.1
+<figures/tremor_longer_detail_7-eps-converted-to.pdf, id=173, 1156.32pt x 578.1
 6pt>
 File: figures/tremor_longer_detail_7-eps-converted-to.pdf Graphic file (type pd
 f)
  <use figures/tremor_longer_detail_7-eps-converted-to.pdf>
 Package pdftex.def Info: figures/tremor_longer_detail_7-eps-converted-to.pdf us
-ed on input line 341.
+ed on input line 438.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/GPS_longer_detail_6.eps>
 (epstopdf)                    date: 2021-10-23 22:20:26
@@ -708,15 +723,15 @@ to.pdf>
 (epstopdf)                    size: 153086 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_detail_
 6-eps-converted-to.pdf figures/GPS_longer_detail_6.eps>
-(epstopdf)             \includegraphics on input line 347.
+(epstopdf)             \includegraphics on input line 444.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/GPS_longer_detail_6-eps-converted-to.pdf, id=156, 1156.32pt x 578.16pt
+<figures/GPS_longer_detail_6-eps-converted-to.pdf, id=175, 1156.32pt x 578.16pt
 >
 File: figures/GPS_longer_detail_6-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/GPS_longer_detail_6-eps-converted-to.pdf>
 Package pdftex.def Info: figures/GPS_longer_detail_6-eps-converted-to.pdf used 
-on input line 347.
+on input line 444.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/tremor_longer_detail_6.eps>
 (epstopdf)                    date: 2021-10-23 22:20:26
@@ -727,54 +742,54 @@ ed-to.pdf>
 (epstopdf)                    size: 106856 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_longer_deta
 il_6-eps-converted-to.pdf figures/tremor_longer_detail_6.eps>
-(epstopdf)             \includegraphics on input line 349.
+(epstopdf)             \includegraphics on input line 446.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/tremor_longer_detail_6-eps-converted-to.pdf, id=158, 1156.32pt x 578.1
+<figures/tremor_longer_detail_6-eps-converted-to.pdf, id=177, 1156.32pt x 578.1
 6pt>
 File: figures/tremor_longer_detail_6-eps-converted-to.pdf Graphic file (type pd
 f)
  <use figures/tremor_longer_detail_6-eps-converted-to.pdf>
 Package pdftex.def Info: figures/tremor_longer_detail_6-eps-converted-to.pdf us
-ed on input line 349.
+ed on input line 446.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/ROC_6-7-8.eps>
-(epstopdf)                    date: 2022-04-02 23:21:45
-(epstopdf)                    size: 42491 bytes
+(epstopdf)                    date: 2022-04-30 23:21:29
+(epstopdf)                    size: 44500 bytes
 (epstopdf)             Output file: <figures/ROC_6-7-8-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-04-06 22:16:19
-(epstopdf)                    size: 39335 bytes
+(epstopdf)                    date: 2022-04-30 23:26:22
+(epstopdf)                    size: 40541 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/ROC_6-7-8-eps-conv
 erted-to.pdf figures/ROC_6-7-8.eps>
-(epstopdf)             \includegraphics on input line 355.
+(epstopdf)             \includegraphics on input line 452.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/ROC_6-7-8-eps-converted-to.pdf, id=160, 578.16pt x 578.16pt>
+<figures/ROC_6-7-8-eps-converted-to.pdf, id=179, 578.16pt x 578.16pt>
 File: figures/ROC_6-7-8-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/ROC_6-7-8-eps-converted-to.pdf>
 Package pdftex.def Info: figures/ROC_6-7-8-eps-converted-to.pdf used on input l
-ine 355.
+ine 452.
 (pdftex.def)             Requested size: 345.0pt x 344.99312pt.
-Package epstopdf Info: Source file: <figures/GPS_longer_detail_6-7-8.eps>
-(epstopdf)                    date: 2021-10-23 23:10:47
-(epstopdf)                    size: 530541 bytes
-(epstopdf)             Output file: <figures/GPS_longer_detail_6-7-8-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2021-10-24 00:05:26
-(epstopdf)                    size: 144454 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_detail_
-6-7-8-eps-converted-to.pdf figures/GPS_longer_detail_6-7-8.eps>
-(epstopdf)             \includegraphics on input line 361.
+Package epstopdf Info: Source file: <figures/GPS_longer_details_6-7-8.eps>
+(epstopdf)                    date: 2022-04-30 22:46:39
+(epstopdf)                    size: 532548 bytes
+(epstopdf)             Output file: <figures/GPS_longer_details_6-7-8-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2022-04-30 22:49:30
+(epstopdf)                    size: 145585 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_details
+_6-7-8-eps-converted-to.pdf figures/GPS_longer_details_6-7-8.eps>
+(epstopdf)             \includegraphics on input line 458.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/GPS_longer_detail_6-7-8-eps-converted-to.pdf, id=162, 1156.32pt x 578.
-16pt>
-File: figures/GPS_longer_detail_6-7-8-eps-converted-to.pdf Graphic file (type p
-df)
- <use figures/GPS_longer_detail_6-7-8-eps-converted-to.pdf>
-Package pdftex.def Info: figures/GPS_longer_detail_6-7-8-eps-converted-to.pdf u
-sed on input line 361.
+<figures/GPS_longer_details_6-7-8-eps-converted-to.pdf, id=181, 1156.32pt x 578
+.16pt>
+File: figures/GPS_longer_details_6-7-8-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use figures/GPS_longer_details_6-7-8-eps-converted-to.pdf>
+Package pdftex.def Info: figures/GPS_longer_details_6-7-8-eps-converted-to.pdf 
+used on input line 458.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/tremor_longer_detail_6-7-8.eps>
 (epstopdf)                    date: 2021-10-23 23:10:47
@@ -785,16 +800,16 @@ verted-to.pdf>
 (epstopdf)                    size: 103812 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/tremor_longer_deta
 il_6-7-8-eps-converted-to.pdf figures/tremor_longer_detail_6-7-8.eps>
-(epstopdf)             \includegraphics on input line 363.
+(epstopdf)             \includegraphics on input line 460.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/tremor_longer_detail_6-7-8-eps-converted-to.pdf, id=164, 1156.32pt x 5
+<figures/tremor_longer_detail_6-7-8-eps-converted-to.pdf, id=183, 1156.32pt x 5
 78.16pt>
 File: figures/tremor_longer_detail_6-7-8-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use figures/tremor_longer_detail_6-7-8-eps-converted-to.pdf>
 Package pdftex.def Info: figures/tremor_longer_detail_6-7-8-eps-converted-to.pd
-f used on input line 363.
+f used on input line 460.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/GPS_michel_detail_5.eps>
 (epstopdf)                    date: 2021-12-15 07:55:42
@@ -805,15 +820,38 @@ to.pdf>
 (epstopdf)                    size: 165185 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_michel_detail_
 5-eps-converted-to.pdf figures/GPS_michel_detail_5.eps>
-(epstopdf)             \includegraphics on input line 369.
+(epstopdf)             \includegraphics on input line 466.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/GPS_michel_detail_5-eps-converted-to.pdf, id=166, 1156.32pt x 578.16pt
+<figures/GPS_michel_detail_5-eps-converted-to.pdf, id=185, 1156.32pt x 578.16pt
 >
 File: figures/GPS_michel_detail_5-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/GPS_michel_detail_5-eps-converted-to.pdf>
 Package pdftex.def Info: figures/GPS_michel_detail_5-eps-converted-to.pdf used 
-on input line 369.
+on input line 466.
+(pdftex.def)             Requested size: 345.0pt x 172.49655pt.
+Package epstopdf Info: Source file: <figures/GPS_longer_details_6-7-8_slowslip.
+eps>
+(epstopdf)                    date: 2022-04-30 23:02:37
+(epstopdf)                    size: 439963 bytes
+(epstopdf)             Output file: <figures/GPS_longer_details_6-7-8_slowslip-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2022-04-30 23:03:26
+(epstopdf)                    size: 140094 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/GPS_longer_details
+_6-7-8_slowslip-eps-converted-to.pdf figures/GPS_longer_details_6-7-8_slowslip.
+eps>
+(epstopdf)             \includegraphics on input line 472.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/GPS_longer_details_6-7-8_slowslip-eps-converted-to.pdf, id=187, 1156.3
+2pt x 578.16pt>
+File: figures/GPS_longer_details_6-7-8_slowslip-eps-converted-to.pdf Graphic fi
+le (type pdf)
+
+<use figures/GPS_longer_details_6-7-8_slowslip-eps-converted-to.pdf>
+Package pdftex.def Info: figures/GPS_longer_details_6-7-8_slowslip-eps-converte
+d-to.pdf used on input line 472.
 (pdftex.def)             Requested size: 345.0pt x 172.49655pt.
 Package epstopdf Info: Source file: <figures/map_GPS_stations_NZ.eps>
 (epstopdf)                    date: 2022-04-13 18:17:03
@@ -824,88 +862,105 @@ to.pdf>
 (epstopdf)                    size: 108369 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/map_GPS_stations_N
 Z-eps-converted-to.pdf figures/map_GPS_stations_NZ.eps>
-(epstopdf)             \includegraphics on input line 375.
+(epstopdf)             \includegraphics on input line 478.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/map_GPS_stations_NZ-eps-converted-to.pdf, id=168, 597.23125pt x 845.15
+<figures/map_GPS_stations_NZ-eps-converted-to.pdf, id=189, 597.23125pt x 845.15
 75pt>
 File: figures/map_GPS_stations_NZ-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/map_GPS_stations_NZ-eps-converted-to.pdf>
 Package pdftex.def Info: figures/map_GPS_stations_NZ-eps-converted-to.pdf used 
-on input line 375.
+on input line 478.
 (pdftex.def)             Requested size: 345.0pt x 488.2186pt.
-Package epstopdf Info: Source file: <figures/GPS_NZ_details_6-7-8_without_event
-s.eps>
-(epstopdf)                    date: 2022-04-13 18:04:03
-(epstopdf)                    size: 373367 bytes
-(epstopdf)             Output file: <figures/GPS_NZ_details_6-7-8_without_event
-s-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-04-13 22:03:34
-(epstopdf)                    size: 106624 bytes
+Package epstopdf Info: Source file: <figures/GPS_NZ_details_6-7-8.eps>
+(epstopdf)                    date: 2022-04-30 22:57:12
+(epstopdf)                    size: 376654 bytes
+(epstopdf)             Output file: <figures/GPS_NZ_details_6-7-8-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2022-04-30 22:58:58
+(epstopdf)                    size: 108196 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_NZ_details_6-7
--8_without_events-eps-converted-to.pdf figures/GPS_NZ_details_6-7-8_without_eve
-nts.eps>
-(epstopdf)             \includegraphics on input line 381.
+-8-eps-converted-to.pdf figures/GPS_NZ_details_6-7-8.eps>
+(epstopdf)             \includegraphics on input line 484.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/GPS_NZ_details_6-7-8_without_events-eps-converted-to.pdf, id=170, 1156
-.32pt x 650.43pt>
-File: figures/GPS_NZ_details_6-7-8_without_events-eps-converted-to.pdf Graphic 
-file (type pdf)
+<figures/GPS_NZ_details_6-7-8-eps-converted-to.pdf, id=191, 1156.32pt x 650.43p
+t>
+File: figures/GPS_NZ_details_6-7-8-eps-converted-to.pdf Graphic file (type pdf)
 
-<use figures/GPS_NZ_details_6-7-8_without_events-eps-converted-to.pdf>
-Package pdftex.def Info: figures/GPS_NZ_details_6-7-8_without_events-eps-conver
-ted-to.pdf used on input line 381.
+ <use figures/GPS_NZ_details_6-7-8-eps-converted-to.pdf>
+Package pdftex.def Info: figures/GPS_NZ_details_6-7-8-eps-converted-to.pdf used
+ on input line 484.
 (pdftex.def)             Requested size: 345.0pt x 194.05862pt.
-Package epstopdf Info: Source file: <figures/GPS_NZ_details_6-7-8_only_events.e
-ps>
-(epstopdf)                    date: 2022-04-13 18:05:03
-(epstopdf)                    size: 316121 bytes
-(epstopdf)             Output file: <figures/GPS_NZ_details_6-7-8_only_events-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2022-04-13 22:03:35
-(epstopdf)                    size: 103390 bytes
+Package epstopdf Info: Source file: <figures/GPS_NZ_details_6-7-8_events.eps>
+(epstopdf)                    date: 2022-04-30 22:56:05
+(epstopdf)                    size: 319412 bytes
+(epstopdf)             Output file: <figures/GPS_NZ_details_6-7-8_events-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2022-04-30 22:58:59
+(epstopdf)                    size: 104921 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/GPS_NZ_details_6-7
--8_only_events-eps-converted-to.pdf figures/GPS_NZ_details_6-7-8_only_events.ep
-s>
-(epstopdf)             \includegraphics on input line 383.
+-8_events-eps-converted-to.pdf figures/GPS_NZ_details_6-7-8_events.eps>
+(epstopdf)             \includegraphics on input line 486.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/GPS_NZ_details_6-7-8_only_events-eps-converted-to.pdf, id=172, 1156.32
-pt x 650.43pt>
-File: figures/GPS_NZ_details_6-7-8_only_events-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use figures/GPS_NZ_details_6-7-8_only_events-eps-converted-to.pdf>
-Package pdftex.def Info: figures/GPS_NZ_details_6-7-8_only_events-eps-converted
--to.pdf used on input line 383.
+<figures/GPS_NZ_details_6-7-8_events-eps-converted-to.pdf, id=193, 1156.32pt x 
+650.43pt>
+File: figures/GPS_NZ_details_6-7-8_events-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use figures/GPS_NZ_details_6-7-8_events-eps-converted-to.pdf>
+Package pdftex.def Info: figures/GPS_NZ_details_6-7-8_events-eps-converted-to.p
+df used on input line 486.
 (pdftex.def)             Requested size: 345.0pt x 194.05862pt.
- [39]
-[40 <./figures/500_DS-eps-converted-to.pdf>] [41 <./figures/cleaned_PGC5_lon-ep
-s-converted-to.pdf>] [42 <./figures/map_GPS_stations-eps-converted-to.pdf>]
-[43 <./figures/tremor_13-eps-converted-to.pdf>] [44 <./figures/GPS_longer_detai
-l_8-eps-converted-to.pdf> <./figures/tremor_longer_detail_8-eps-converted-to.pd
-f>] [45 <./figures/GPS_longer_detail_7-eps-converted-to.pdf> <./figures/tremor_
-longer_detail_7-eps-converted-to.pdf>] [46 <./figures/GPS_longer_detail_6-eps-c
-onverted-to.pdf> <./figures/tremor_longer_detail_6-eps-converted-to.pdf>]
-[47 <./figures/ROC_6-7-8-eps-converted-to.pdf>] [48 <./figures/GPS_longer_detai
-l_6-7-8-eps-converted-to.pdf> <./figures/tremor_longer_detail_6-7-8-eps-convert
-ed-to.pdf>] [49 <./figures/GPS_michel_detail_5-eps-converted-to.pdf>] [50 <./fi
-gures/map_GPS_stations_NZ-eps-converted-to.pdf>] [51 <./figures/GPS_NZ_details_
-6-7-8_without_events-eps-converted-to.pdf> <./figures/GPS_NZ_details_6-7-8_only
-_events-eps-converted-to.pdf>] (./paper_bssa_annotated.aux)
+Package epstopdf Info: Source file: <figures/GPS_NZ_details_6-7-8_2016-2022.eps
+>
+(epstopdf)                    date: 2022-04-30 22:58:21
+(epstopdf)                    size: 338803 bytes
+(epstopdf)             Output file: <figures/GPS_NZ_details_6-7-8_2016-2022-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2022-04-30 22:59:01
+(epstopdf)                    size: 99976 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/GPS_NZ_details_6-7
+-8_2016-2022-eps-converted-to.pdf figures/GPS_NZ_details_6-7-8_2016-2022.eps>
+(epstopdf)             \includegraphics on input line 492.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/GPS_NZ_details_6-7-8_2016-2022-eps-converted-to.pdf, id=195, 1156.32pt
+ x 650.43pt>
+File: figures/GPS_NZ_details_6-7-8_2016-2022-eps-converted-to.pdf Graphic file 
+(type pdf)
+ <use figures/GPS_NZ_details_6-7-8_2016-2022-eps-converted-to.pdf>
+Package pdftex.def Info: figures/GPS_NZ_details_6-7-8_2016-2022-eps-converted-t
+o.pdf used on input line 492.
+(pdftex.def)             Requested size: 345.0pt x 194.05862pt.
+
+[45] [46 <./figures/500_DS-eps-converted-to.pdf>] [47 <./figures/cleaned_PGC5_l
+on-eps-converted-to.pdf>] [48 <./figures/map_GPS_stations-eps-converted-to.pdf>
+] [49 <./figures/tremor_13-eps-converted-to.pdf>] [50 <./figures/GPS_longer_det
+ail_8-eps-converted-to.pdf> <./figures/tremor_longer_detail_8-eps-converted-to.
+pdf>] [51 <./figures/GPS_longer_detail_7-eps-converted-to.pdf> <./figures/tremo
+r_longer_detail_7-eps-converted-to.pdf>] [52 <./figures/GPS_longer_detail_6-eps
+-converted-to.pdf> <./figures/tremor_longer_detail_6-eps-converted-to.pdf>]
+[53 <./figures/ROC_6-7-8-eps-converted-to.pdf>] [54 <./figures/GPS_longer_detai
+ls_6-7-8-eps-converted-to.pdf> <./figures/tremor_longer_detail_6-7-8-eps-conver
+ted-to.pdf>] [55 <./figures/GPS_michel_detail_5-eps-converted-to.pdf> <./figure
+s/GPS_longer_details_6-7-8_slowslip-eps-converted-to.pdf>] [56 <./figures/map_G
+PS_stations_NZ-eps-converted-to.pdf>] [57 <./figures/GPS_NZ_details_6-7-8-eps-c
+onverted-to.pdf> <./figures/GPS_NZ_details_6-7-8_events-eps-converted-to.pdf>]
+[58 <./figures/GPS_NZ_details_6-7-8_2016-2022-eps-converted-to.pdf>]
+(./paper_bssa_annotated.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3374 strings out of 493117
- 48066 string characters out of 6135433
- 115349 words of memory out of 5000000
- 6758 multiletter control sequences out of 15000+600000
+ 3384 strings out of 493117
+ 48564 string characters out of 6135433
+ 133310 words of memory out of 5000000
+ 6766 multiletter control sequences out of 15000+600000
  12317 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,27p,2652b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,27p,2286b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -923,10 +978,10 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on paper_bssa_annotated.pdf (51 pages, 9321533 bytes).
+Output written on paper_bssa_annotated.pdf (58 pages, 9593606 bytes).
 PDF statistics:
- 864 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
+ 996 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 188 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

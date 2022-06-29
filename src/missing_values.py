@@ -1,6 +1,7 @@
 """ Script to look at MODWT of GPS data
 with different methods to fill in missing values """
 
+import matplotlib.pylab as pylab
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -54,10 +55,15 @@ np.random.seed(0)
 # Loop on missing values
 gaps = [605, 790]
 
+params = {'xtick.labelsize':24,
+          'ytick.labelsize':24}
+pylab.rcParams.update(params) 
+
 # Loop on length of gap
 for n in range(1, nmax, nstep):
 
-    plt.figure(1, figsize=(len(gaps) * 3, (J + 2) * 2))
+#    plt.figure(1, figsize=(len(gaps) * 3, (J + 2) * 2))
+    plt.figure(1, figsize=(30, 3 * 4 * len(gaps)))
 
     for count, gap in enumerate(gaps):
         disp_interp = np.copy(disp)
@@ -81,29 +87,51 @@ for n in range(1, nmax, nstep):
         [W, V] = pyramid(disp_interp, name, J)
         (D, S) = get_DS(disp_interp, W, name, J)
 
+        maxD = max([np.max(Dj) for Dj in D])
+        minD = min([np.min(Dj) for Dj in D])
+
         # Plot data
-        ax = plt.subplot2grid((J + 2, len(gaps)), (0, count))
+#        ax = plt.subplot2grid((J + 2, len(gaps)), (0, count))
+        ax = plt.subplot2grid((4 * len(gaps), 3), (4 * count + 0, 0))
         ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%.1f'))
         plt.plot(time, disp_interp, 'r')
         plt.plot(time, disp, 'k', label='Data')
         plt.xlim(np.min(time[gap - 100]), np.max(time[gap + n + 99]))
-        plt.legend(loc=1)        
+        plt.ylim([np.min(disp), np.max(disp)])
+        plt.legend(loc=3, fontsize=20)
+        ax.axes.xaxis.set_ticklabels([])       
         # Plot details at each level
         for j in range(0, J):
-            ax = plt.subplot2grid((J + 2, len(gaps)), (j + 1, count))
+#            ax = plt.subplot2grid((J + 2, len(gaps)), (j + 1, count))
+            if j < 3:
+                ax = plt.subplot2grid((4 * len(gaps), 3), (4 * count + j + 1, 0))
+            elif j < 7:
+                ax = plt.subplot2grid((4 * len(gaps), 3), (4 * count + j - 3, 1))
+            else:
+                ax = plt.subplot2grid((4 * len(gaps), 3), (4 * count + j - 7, 2))
             ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%.1f'))
             plt.plot(time, D[j], 'r')
             plt.plot(time, D0[j], 'k', label='D' + str(j + 1))
             plt.xlim(np.min(time[gap - 100]), np.max(time[gap + n + 99]))
-            plt.legend(loc=1)
+            plt.ylim(minD, maxD)
+            plt.legend(loc=3, fontsize=20)
+            if ((j == 2) or (j == 6)):
+                plt.xlabel('Time (years)', fontsize=24)
+            else:
+                ax.axes.xaxis.set_ticklabels([])
+            if j >= 3:
+                ax.axes.yaxis.set_ticklabels([])
         # Plot scaling coefficients for the last level
-        ax = plt.subplot2grid((J + 2, len(gaps)), (J + 1, count))
+#        ax = plt.subplot2grid((J + 2, len(gaps)), (J + 1, count))
+        ax = plt.subplot2grid((4 * len(gaps), 3), (4 * count + 3, 2))
         ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%.1f'))
         plt.plot(time, S[J], 'r')
         plt.plot(time, S0[J], 'k', label='S' + str(J))
         plt.xlim(np.min(time[gap - 100]), np.max(time[gap + n + 99]))
-        plt.legend(loc=1)
-        plt.xlabel('Time (years)', fontsize=14)
+        plt.ylim([np.min(disp), np.max(disp)])
+        plt.legend(loc=3, fontsize=20)
+        ax.axes.yaxis.set_ticklabels([])
+        plt.xlabel('Time (years)', fontsize=24)
 
     plt.tight_layout()
     plt.savefig('missing_values/' + filling + '/DS_' + str(n) + '.eps', format='eps')

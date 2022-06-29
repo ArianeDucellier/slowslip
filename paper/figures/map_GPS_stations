@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-set output = map_GPS_stations_slides.eps
+set output = map_GPS_stations.eps
 
 # Small map
 set x1 = -125
@@ -10,7 +10,7 @@ set y2 = 49
 set Rop = $x1/$x2/$y1/$y2
 set Jop = m-124/48/6.0
 
-gmt pscoast -R$Rop -J$Jop -Ba1f0.5::WESN -W0.1p -G255/255/224 -S224/255/255 -Lf-124/47.25/48/100 -Df -Na -Y5 -P -K >! $output
+gmt pscoast -R$Rop -J$Jop -Ba1f0.5:"Longitude"::WESN -W0.1p -G255/255/224 -S224/255/255 -Lf-124/47.25/48/100 -Df -Na -Y5 -P -K >! $output
 
 gmt psxy tremor.dat -R$Rop -J$Jop -Sc0.03 -Ggrey -O -K >> $output
 
@@ -138,7 +138,7 @@ cat << END >> names.dat
 -124.6131 48.5443 PTRF
 END
 
-#gmt pstext names.dat -R$Rop -J$Jop -F+f12p -O >> $output
+gmt pstext names.dat -R$Rop -J$Jop -F+f12p -O >> $output
 
 rm mytext.dat
 rm stations.dat
