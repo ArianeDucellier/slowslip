@@ -1,18 +1,18 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper_bssa.aux
-The style file: plainnat.bst
+The style file: plainnat_modif.bst
 Database file #1: bibliography.bib
 You've used 40 entries,
             2773 wiz_defined-function locations,
-            864 strings with 11783 characters,
+            864 strings with 11790 characters,
 and the built_in function-call counts, 19370 in all, are:
 = -- 1686
 > -- 1159
 < -- 19
 + -- 391
 - -- 351
-* -- 1656
+* -- 1674
 := -- 3016
 add.period$ -- 121
 call.type$ -- 40
@@ -28,7 +28,7 @@ int.to.str$ -- 1
 missing$ -- 40
 newline$ -- 208
 num.names$ -- 160
-pop$ -- 408
+pop$ -- 390
 preamble$ -- 1
 purify$ -- 197
 quote$ -- 0

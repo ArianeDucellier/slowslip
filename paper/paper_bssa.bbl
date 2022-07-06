@@ -5,43 +5,46 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Aguiar et~al.(2009)Aguiar, Melbourne, and Scrivner]{AGU_2009}
-A.C. Aguiar, T.I. Melbourne, and C.W. Scrivner.
+\bibitem[Aguiar et~al.(2009)Aguiar, A., Melbourne, T., and Scrivner,
+  C.]{AGU_2009}
+Aguiar, A., Melbourne, T., and Scrivner, C.
 \newblock Moment release rate of {Cascadia} tremor constrained by {GPS}.
 \newblock \emph{J. Geophys. Res.}, 114:\penalty0 B00A05, 2009.
 
-\bibitem[Alba et~al.(2019)Alba, Weldon, Livelybrooks, and Schmidt]{ALB_2019}
-S.~Alba, R.~J. Weldon, D.~Livelybrooks, and D.~A. Schmidt.
+\bibitem[Alba et~al.(2019)Alba, S., Weldon, R.~J., Livelybrooks, D., and
+  Schmidt, D.~A.]{ALB_2019}
+Alba, S., Weldon, R.~J., Livelybrooks, D., and Schmidt, D.~A.
 \newblock Cascadia {ETS} events seen in tidal records (1980--2011).
 \newblock \emph{Bull. Seismol. Soc. Am.}, 109\penalty0 (2):\penalty0 812--821,
   2019.
 
-\bibitem[Audet and Kim(2016)]{AUD_2016}
-P.~Audet and Y.H. Kim.
+\bibitem[Audet and Kim(2016)Audet, P. and Kim, Y.]{AUD_2016}
+Audet, P. and Kim, Y.
 \newblock Teleseismic constraints on the geological environment of deep
   episodic slow earthquakes in subduction zone forearcs: A review.
 \newblock \emph{Tectonophysics}, 670:\penalty0 1--15, 2016.
 
-\bibitem[Bartlow(2020)]{BAR_2020}
-N.~M. Bartlow.
+\bibitem[Bartlow(2020)Bartlow, N.~M.]{BAR_2020}
+Bartlow, N.~M.
 \newblock A long‐term view of episodic tremor and slip in {Cascadia}.
 \newblock \emph{Geophysical Research Letters}, 43\penalty0 (3):\penalty0
   e2019GL085303, 2020.
 
-\bibitem[Beroza and Ide(2011)]{BER_2011}
-G.C. Beroza and S.~Ide.
+\bibitem[Beroza and Ide(2011)Beroza, G. and Ide, S.]{BER_2011}
+Beroza, G. and Ide, S.
 \newblock Slow earthquakes and nonvolcanic tremor.
 \newblock \emph{Annu. Rev. Earth Planet. Sci.}, 39:\penalty0 271--296, 2011.
 
-\bibitem[Delahaye et~al.(2009)Delahaye, Townend, Reyners, and Rogers]{DEL_2009}
-E.J. Delahaye, J.~Townend, M.E. Reyners, and G.~Rogers.
+\bibitem[Delahaye et~al.(2009)Delahaye, E., Townend, J., Reyners, M., and
+  Rogers, G.]{DEL_2009}
+Delahaye, E., Townend, J., Reyners, M., and Rogers, G.
 \newblock Microseismicity but no tremor accompanying slow slip in the
   {Hikurangi} subduction zone, {New} {Zealand}.
 \newblock \emph{Earth and Planetary Science Letters}, 277:\penalty0 21--28,
   2009.
 
-\bibitem[Frank(2016)]{FRA_2016}
-W.B. Frank.
+\bibitem[Frank(2016)Frank, W.]{FRA_2016}
+Frank, W.
 \newblock Slow slip hidden in the noise: The intermittence of tectonic release.
 \newblock \emph{Geophys. Res. Lett.}, 43:\penalty0 10125--10133, 2016.
 
@@ -52,209 +55,217 @@ W.B. Frank.
 \newblock {Pacific Northwest Geodetic Array (PANGA)}, 1996.
 \newblock URL \url{http://www.panga.cwu.edu/}.
 
-\bibitem[Hall et~al.(2018)Hall, Houston, and Schmidt]{HAL_2018}
-K.~Hall, H.~Houston, and D.~Schmidt.
+\bibitem[Hall et~al.(2018)Hall, K., Houston, H., and Schmidt, D.]{HAL_2018}
+Hall, K., Houston, H., and Schmidt, D.
 \newblock Spatial comparisons of tremor and slow slip as a constraint on fault
   strength in the northern {Cascadia} subduction zone.
 \newblock \emph{Geochemistry, Geophysics, Geosystems}, 19\penalty0
   (8):\penalty0 2706--2718, 2018.
 
-\bibitem[Hawthorne and Rubin(2013)]{HAW_2013}
-J.~C. Hawthorne and A.~M. Rubin.
+\bibitem[Hawthorne and Rubin(2013)Hawthorne, J.~C. and Rubin, A.~M.]{HAW_2013}
+Hawthorne, J.~C. and Rubin, A.~M.
 \newblock Short‐time scale correlation between slow slip and tremor in
   {Cascadia}.
 \newblock \emph{Journal of Geophysical Research: Solid Earth}, 118:\penalty0
   1316--1329, 2013.
 
-\bibitem[Hiramatsu et~al.(2008)Hiramatsu, Watanabe, and Obara]{HIR_2008}
-Y.~Hiramatsu, T.~Watanabe, and K.~Obara.
+\bibitem[Hiramatsu et~al.(2008)Hiramatsu, Y., Watanabe, T., and Obara,
+  K.]{HIR_2008}
+Hiramatsu, Y., Watanabe, T., and Obara, K.
 \newblock Deep low‐frequency tremors as a proxy for slip monitoring at plate
   interface.
 \newblock \emph{Geophysical Research Letters}, 35:\penalty0 L13304, 2008.
 
-\bibitem[Ide(2012)]{IDE_2012}
-S.~Ide.
+\bibitem[Ide(2012)Ide, S.]{IDE_2012}
+Ide, S.
 \newblock Variety and spatial heterogeneity of tectonic tremor worldwide.
 \newblock \emph{Journal of Geophysical Research}, 117:\penalty0 B03302, 2012.
 
-\bibitem[Jiang et~al.(2012)Jiang, Wdowinski, Dixon, Hackl, Protti, and
-  Gonzalez]{JIA_2012}
-Y.~Jiang, S.~Wdowinski, T.~H. Dixon, M.~Hackl, M.~Protti, and V.~Gonzalez.
+\bibitem[Jiang et~al.(2012)Jiang, Y., Wdowinski, S., Dixon, T.~H., Hackl, M.,
+  Protti, M., and Gonzalez, V.]{JIA_2012}
+Jiang, Y., Wdowinski, S., Dixon, T.~H., Hackl, M., Protti, M., and Gonzalez, V.
 \newblock Slow slip events in {Costa} {Rica} detected by continuous {GPS}
   observations, 2002-2011.
 \newblock \emph{Geochemistry, Geophysics, Geosystems}, 13:\penalty0 Q04006,
   2012.
 
-\bibitem[Kim et~al.(2011)Kim, Schwartz, and Bannister]{KIM_2011}
-M.J. Kim, S.Y. Schwartz, and S.~Bannister.
+\bibitem[Kim et~al.(2011)Kim, M., Schwartz, S., and Bannister, S.]{KIM_2011}
+Kim, M., Schwartz, S., and Bannister, S.
 \newblock Non‐volcanic tremor associated with the {March} 2010 {Gisborne}
   slow slip event at the {Hikurangi} subduction margin, {New} {Zealand}.
 \newblock \emph{Geophysical Research Letters}, 38:\penalty0 L14301, 2011.
 
-\bibitem[Kumar and Foufoula-Georgiou(1997)]{KUM_1997}
-P.~Kumar and E.~Foufoula-Georgiou.
+\bibitem[Kumar and Foufoula-Georgiou(1997)Kumar, P. and Foufoula-Georgiou,
+  E.]{KUM_1997}
+Kumar, P. and Foufoula-Georgiou, E.
 \newblock Wavelet analysis for geophysical applications.
 \newblock \emph{Rev. Geophys.}, 35\penalty0 (4):\penalty0 385--412, 1997.
 
-\bibitem[Li et~al.(2016)Li, Freymueller, and McCaffrey]{LI_2016}
-S.~Li, J.~Freymueller, and R.~McCaffrey.
+\bibitem[Li et~al.(2016)Li, S., Freymueller, J., and McCaffrey, R.]{LI_2016}
+Li, S., Freymueller, J., and McCaffrey, R.
 \newblock Slow slip events and time‐dependent variations in locking beneath
   {Lower} {Cook} {Inlet} of the {Alaska}‐{Aleutian} subduction zone.
 \newblock \emph{Journal of Geophysical Research: Solid Earth}, 121:\penalty0
   1060--1079, 2016.
 
-\bibitem[Michel et~al.(2019)Michel, Gualandi, and Avouac]{MIC_2019}
-S.~Michel, A.~Gualandi, and J.-P. Avouac.
+\bibitem[Michel et~al.(2019)Michel, S., Gualandi, A., and Avouac,
+  J.-P.]{MIC_2019}
+Michel, S., Gualandi, A., and Avouac, J.-P.
 \newblock Interseismic coupling and slow slip events on the {Cascadia}
   megathrust.
 \newblock \emph{Pure Appl. Geophys.}, 176:\penalty0 3867--3891, 2019.
 
-\bibitem[Nishimura et~al.(2013)Nishimura, Matsuzawa, and Obara]{NIS_2013}
-T.~Nishimura, T.~Matsuzawa, and K.~Obara.
+\bibitem[Nishimura et~al.(2013)Nishimura, T., Matsuzawa, T., and Obara,
+  K.]{NIS_2013}
+Nishimura, T., Matsuzawa, T., and Obara, K.
 \newblock Detection of short‐term slow slip events along the {Nankai}
   {Trough}, southwest {Japan}, using {GNSS} data.
 \newblock \emph{Journal of Geophysical Research: Solid Earth}, 118:\penalty0
   3112--3125, 2013.
 
-\bibitem[Nuyen and Schmidt(2021)]{NUY_2021}
-C.~P. Nuyen and D.~A. Schmidt.
+\bibitem[Nuyen and Schmidt(2021)Nuyen, C.~P. and Schmidt, D.~A.]{NUY_2021}
+Nuyen, C.~P. and Schmidt, D.~A.
 \newblock Filling the gap in {Cascadia}: The emergence of low‐amplitude
   long‐term slow slip.
 \newblock \emph{Geochemistry, Geophysics, Geosystems}, 22\penalty0
   (3):\penalty0 e2020GC009477, 2021.
 
-\bibitem[Obara et~al.(2004)Obara, Hirose, Yamamizu, and Kasahara]{OBA_2004}
-K.~Obara, H.~Hirose, F.~Yamamizu, and K.~Kasahara.
+\bibitem[Obara et~al.(2004)Obara, K., Hirose, H., Yamamizu, F., and Kasahara,
+  K.]{OBA_2004}
+Obara, K., Hirose, H., Yamamizu, F., and Kasahara, K.
 \newblock Episodic slow slip events accompanied by non-volcanic tremors in
   southwest {Japan} subduction zone.
 \newblock \emph{Geophysical Research Letters}, 31:\penalty0 L23602, 2004.
 
-\bibitem[Ohtani et~al.(2010)Ohtani, McGuire, and Segall]{OHT_2010}
-R.~Ohtani, J.J. McGuire, and P.~Segall.
+\bibitem[Ohtani et~al.(2010)Ohtani, R., McGuire, J., and Segall, P.]{OHT_2010}
+Ohtani, R., McGuire, J., and Segall, P.
 \newblock Network strain filter: A new tool for monitoring and detecting
   transient deformation signals in {GPS} arrays.
 \newblock \emph{J. Geophys. Res.}, 115:\penalty0 B12418, 2010.
 
-\bibitem[Percival and Walden(2000)]{PER_2000}
-D.B. Percival and A.T. Walden.
+\bibitem[Percival and Walden(2000)Percival, D. and Walden, A.]{PER_2000}
+Percival, D. and Walden, A.
 \newblock \emph{Wavelet {Methods} for {Time} {Series} {Analysis}}.
 \newblock Cambridge {Series} in {Statistical} and {Probabilistic}
   {Mathematics}. Cambridge {University} {Press}, New York, NY, USA, 2000.
 
-\bibitem[Preston et~al.(2003)Preston, Creager, Crosson, Brocher, and
-  Trehu]{PRE_2003}
-L.A. Preston, K.C. Creager, R.S. Crosson, T.M. Brocher, and A.M. Trehu.
+\bibitem[Preston et~al.(2003)Preston, L., Creager, K., Crosson, R., Brocher,
+  T., and Trehu, A.]{PRE_2003}
+Preston, L., Creager, K., Crosson, R., Brocher, T., and Trehu, A.
 \newblock Intraslab earthquakes: Dehydration of the {Cascadia slab}.
 \newblock \emph{Science}, 302:\penalty0 1197--1200, 2003.
 
-\bibitem[Radiguet et~al.(2012)Radiguet, Cotton, Vergnolle, Campillo,
-  Walpersdorf, Cotte, and Kostoglodov]{RAD_2012}
-M.~Radiguet, F.~Cotton, M.~Vergnolle, M.~Campillo, A.~Walpersdorf, N.~Cotte,
-  and V.~Kostoglodov.
+\bibitem[Radiguet et~al.(2012)Radiguet, M., Cotton, F., Vergnolle, M.,
+  Campillo, M., Walpersdorf, A., Cotte, N., and Kostoglodov, V.]{RAD_2012}
+Radiguet, M., Cotton, F., Vergnolle, M., Campillo, M., Walpersdorf, A., Cotte,
+  N., and Kostoglodov, V.
 \newblock Slow slip events and strain accumulation in the {Guerrero} gap,
   {Mexico}.
 \newblock \emph{Journal of Geophysical Research: Solid Earth}, 117:\penalty0
   B04305, 2012.
 
-\bibitem[Rogers and Dragert(2003)]{ROG_2003}
-G.~Rogers and H.~Dragert.
+\bibitem[Rogers and Dragert(2003)Rogers, G. and Dragert, H.]{ROG_2003}
+Rogers, G. and Dragert, H.
 \newblock Tremor and slip on the {Cascadia} subduction zone: The chatter of
   silent slip.
 \newblock \emph{Science}, 300\penalty0 (5627):\penalty0 1942--1943, 2003.
 
-\bibitem[Schmidt and Gao(2010)]{SCH_2010}
-D.~A. Schmidt and H.~Gao.
+\bibitem[Schmidt and Gao(2010)Schmidt, D.~A. and Gao, H.]{SCH_2010}
+Schmidt, D.~A. and Gao, H.
 \newblock Source parameters and time‐dependent slip distributions of slow
   slip events on the {Cascadia} subduction zone from 1998 to 2008.
 \newblock \emph{Journal of Geophysical Research: Solid Earth}, 115:\penalty0
   B00A18, 2010.
 
-\bibitem[Shelly et~al.(2007)Shelly, Beroza, and Ide]{SHE_2007_nature}
-D.R. Shelly, G.C. Beroza, and S.~Ide.
+\bibitem[Shelly et~al.(2007)Shelly, D., Beroza, G., and Ide,
+  S.]{SHE_2007_nature}
+Shelly, D., Beroza, G., and Ide, S.
 \newblock Non-volcanic tremor and low-frequency earthquake swarms.
 \newblock \emph{Nature}, 446:\penalty0 305--307, 2007.
 
-\bibitem[Szeliga et~al.(2004)Szeliga, Melbourne, Miller, and
-  Santillan]{SZE_2004}
-W.~Szeliga, T.I. Melbourne, M.M. Miller, and V.M. Santillan.
+\bibitem[Szeliga et~al.(2004)Szeliga, W., Melbourne, T., Miller, M., and
+  Santillan, V.]{SZE_2004}
+Szeliga, W., Melbourne, T., Miller, M., and Santillan, V.
 \newblock Southern {Cascadia} episodic slow earthquakes.
 \newblock \emph{Geophys. Res. Lett.}, 31:\penalty0 L16602, 2004.
 
-\bibitem[Szeliga et~al.(2008)Szeliga, Melbourne, Santillan, and
-  Miller]{SZE_2008}
-W.~Szeliga, T.~Melbourne, M.~Santillan, and M.~Miller.
+\bibitem[Szeliga et~al.(2008)Szeliga, W., Melbourne, T., Santillan, M., and
+  Miller, M.]{SZE_2008}
+Szeliga, W., Melbourne, T., Santillan, M., and Miller, M.
 \newblock {GPS} constraints on 34 slow slip events within the {Cascadia}
   subduction zone, 1997-2005.
 \newblock \emph{J. Geophys. Res.}, 113:\penalty0 B04404, 2008.
 
-\bibitem[Todd and Schwartz(2016)]{TOD_2016}
-E.K. Todd and S.Y. Schwartz.
+\bibitem[Todd and Schwartz(2016)Todd, E. and Schwartz, S.]{TOD_2016}
+Todd, E. and Schwartz, S.
 \newblock Tectonic tremor along the northern {Hikurangi} {Margin}, {New}
   {Zealand}, between 2010 and 2015.
 \newblock \emph{J. Geophys. Res. Solid Earth}, 121:\penalty0 8706--8719, 2016.
 
-\bibitem[Vergnolle et~al.(2010)Vergnolle, Walpersdorf, Kostoglodov, Tregoning,
-  Santiago, Cotte, and Franco]{VER_2010}
-M.~Vergnolle, A.~Walpersdorf, V.~Kostoglodov, P.~Tregoning, J.~A. Santiago,
-  N.~Cotte, and S.~I. Franco.
+\bibitem[Vergnolle et~al.(2010)Vergnolle, M., Walpersdorf, A., Kostoglodov, V.,
+  Tregoning, P., Santiago, J.~A., Cotte, N., and Franco, S.~I.]{VER_2010}
+Vergnolle, M., Walpersdorf, A., Kostoglodov, V., Tregoning, P., Santiago,
+  J.~A., Cotte, N., and Franco, S.~I.
 \newblock Slow slip events in {Mexico} revised from the processing of 11 year
   {GPS} observations.
 \newblock \emph{Journal of Geophysical Research: Solid Earth}, 115:\penalty0
   B08403, 2010.
 
-\bibitem[Wallace(2020)]{WAL_2020}
-L.~M. Wallace.
+\bibitem[Wallace(2020)Wallace, L.~M.]{WAL_2020}
+Wallace, L.~M.
 \newblock Slow slip events in {New} {Zealand}.
 \newblock \emph{Annual Review of Earth and Planetary Sciences}, 48:\penalty0
   175--203, 2020.
 
-\bibitem[Wallace et~al.(2012)Wallace, Beavan, Bannister, and
-  Williams]{WAL_2012}
-L.~M. Wallace, J.~Beavan, S.~Bannister, and C.~Williams.
+\bibitem[Wallace et~al.(2012)Wallace, L.~M., Beavan, J., Bannister, S., and
+  Williams, C.]{WAL_2012}
+Wallace, L.~M., Beavan, J., Bannister, S., and Williams, C.
 \newblock Simultaneous long‐term and short‐term slow slip events at the
   {Hikurangi} subduction margin, {New} {Zealand}: Implications for processes
   that control slow slip event occurrence, duration, and migration.
 \newblock \emph{Journal of Geophysical Research: Solid Earth}, 117:\penalty0
   B11402, 2012.
 
-\bibitem[Wallace and Beavan(2010)]{WAL_2010}
-L.M. Wallace and J.~Beavan.
+\bibitem[Wallace and Beavan(2010)Wallace, L. and Beavan, J.]{WAL_2010}
+Wallace, L. and Beavan, J.
 \newblock Diverse slow slip behavior at the {Hikurangi} subduction margin,
   {New} {Zealand}.
 \newblock \emph{Journal of Geophysical Research}, 115:\penalty0 B12402, 2010.
 
-\bibitem[Wallace and Eberhart-Phillips(2013)]{WAL_2013}
-L.M. Wallace and D.~Eberhart-Phillips.
+\bibitem[Wallace and Eberhart-Phillips(2013)Wallace, L. and Eberhart-Phillips,
+  D.]{WAL_2013}
+Wallace, L. and Eberhart-Phillips, D.
 \newblock Newly observed, deep slow slip events at the central {Hikurangi}
   margin, {New} {Zealand}: Implications for downdip variability of slow slip
   and tremor, and relationship to seismic structure.
 \newblock \emph{Geophysical Research Letters}, 40:\penalty0 5393--5398, 2013.
 
-\bibitem[Wech(2010)]{WEC_2010}
-A.G. Wech.
+\bibitem[Wech(2010)Wech, A.]{WEC_2010}
+Wech, A.
 \newblock Interactive tremor monitoring.
 \newblock \emph{Seismol. Res. Lett.}, 81\penalty0 (4):\penalty0 664--669, 2010.
 
-\bibitem[Wech(2016)]{WEC_2016}
-A.G. Wech.
+\bibitem[Wech(2016)Wech, A.]{WEC_2016}
+Wech, A.
 \newblock Extending {Alaska}'s plate boundary; tectonic tremor generated by
   {Yakutat} subduction.
 \newblock \emph{Geology}, 44\penalty0 (7):\penalty0 587--590, 2016.
 
-\bibitem[Wei et~al.(2012)Wei, McGuire, and Richardson]{WEI_2012}
-M.~Wei, J.J. McGuire, and E.~Richardson.
+\bibitem[Wei et~al.(2012)Wei, M., McGuire, J., and Richardson, E.]{WEI_2012}
+Wei, M., McGuire, J., and Richardson, E.
 \newblock A slow slip event in the south central {Alaska} {Subduction} {Zone}.
 \newblock \emph{Geophys. Res. Lett.}, 39:\penalty0 L15309, 2012.
 
-\bibitem[Wessel and Smith(1991)]{WES_1991}
-P.~Wessel and W.~H.~F. Smith.
+\bibitem[Wessel and Smith(1991)Wessel, P. and Smith, W. H.~F.]{WES_1991}
+Wessel, P. and Smith, W. H.~F.
 \newblock Free software helps map and display data.
 \newblock \emph{EOS Trans. AGU}, 72:\penalty0 441, 1991.
 
-\bibitem[Williams et~al.(2013)Williams, Eberhart-Phillips, Bannister, Barker,
-  Henrys, Reyners, and Sutherland]{WIL_2013}
-C.~A. Williams, D.~Eberhart-Phillips, S.~Bannister, D.~H. Barker, S.~Henrys,
-  M.~Reyners, and R.~Sutherland.
+\bibitem[Williams et~al.(2013)Williams, C.~A., Eberhart-Phillips, D.,
+  Bannister, S., Barker, D.~H., Henrys, S., Reyners, M., and Sutherland,
+  R.]{WIL_2013}
+Williams, C.~A., Eberhart-Phillips, D., Bannister, S., Barker, D.~H., Henrys,
+  S., Reyners, M., and Sutherland, R.
 \newblock Revised interface geometry for the {Hikurangi} subduction zone, {New}
   {Zealand}.
 \newblock \emph{Seismological Research Letters}, 84\penalty0 (6):\penalty0
