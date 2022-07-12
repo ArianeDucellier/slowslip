@@ -25,15 +25,15 @@
 
 \maketitle
 
-\section*{Key points}
-
-\begin{itemize}
-\item We use a wavelet-based signal processing method to detect transients in GNSS data, such as slow slip events.
-\item In Northern Cascadia, there is good agreement between detections of slow slip using GNSS data and using tremor data.
-\item The method can be applied as a starting point to identify slow slip without prior information. New Zealand is shown as on example.
-\end{itemize}
-
-\newpage
+%\section*{Key points}
+%
+%\begin{itemize}
+%\item We use a wavelet-based signal processing method to detect transients in GNSS data, such as slow slip events.
+%\item In Northern Cascadia, there is good agreement between detections of slow slip using GNSS data and using tremor data.
+%\item The method can be applied as a starting point to identify slow slip without prior information. New Zealand is shown as an example.
+%\end{itemize}
+%
+%\newpage
 
 \doublespacing
 
@@ -170,11 +170,11 @@ In this paper, we develop and test a new approach for detecting transient events
 
 \section*{Data and Resources}
 
-The GPS recordings used for this analysis can be downloaded from the PANGA website ~\citep{PANGA} \url{http://www.panga.cwu.edu/} and the Geonet website \url{https://www.geonet.org.nz/}. The Python scripts used to analyze the data and make the figures can be found on the first author's Github account \url{https://github.com/ArianeDucellier/slowslip}. Figures 3 and 12 were created using GMT ~\citep{WES_1991}. The Supplementary Material contains three figures showing the effects of boundary conditions, missing data and common modes, and a figure showing four additional small displacements detected in the GPS data.
+The GPS recordings used for this analysis can be downloaded from the PANGA website ~\citep{PANGA} \url{http://www.panga.cwu.edu/} and the Geonet website \url{https://www.geonet.org.nz/}. The Python scripts used to analyze the data and make the figures can be found on the first author's Github account \url{https://github.com/ArianeDucellier/slowslip}. Figures 3 and 12 were created using GMT ~\citep{WES_1991}. Supplemental Material for this article includes three figures showing the effects of boundary conditions, missing data and common modes, and a figure showing four additional small displacements detected in the GPS data.
 
 \section*{Acknowledgements}
 
-The authors would like to thank two anonymous reviewers and the Associate Editor Jeanne Hardebeck, whose comments greatly helped improve the manuscript. This work was funded by the grant from the National Science Foundation EAR-1358512. A.D. would like to thank Professor Donald Percival for introducing her to wavelet methods during his excellent class on Wavelets: Data Analysis, Algorithms and Theory taught at University of Washington.   
+The authors would like to thank two anonymous reviewers, the Associate Editor Jeanne Hardebeck and the Editor-in-Chief P. Martin Mai, whose comments greatly helped improve the manuscript. This work was funded by the grant from the National Science Foundation EAR-1358512. A.D. would like to thank Professor Donald Percival for introducing her to wavelet methods during his excellent class on Wavelets: Data Analysis, Algorithms and Theory taught at University of Washington.   
 
 \section*{Declaration of Competing Interests}
 
@@ -187,7 +187,7 @@ The authors declare no competing interests.
 
 \section*{Addresses}
 
-Ariane Ducellier. University of Washington, Department of Earth and Space Sciences, Box 351310, 4000 15th Avenue NE Seattle, WA 98195-1310. \\
+Ariane Ducellier. University of Washington, Department of Earth and Space Sciences, Box 351310, 4000 15th Avenue NE Seattle, WA 98195-1310. \href{mailto:ariane.ducellier.pro@gmail.com}{ariane.ducellier.pro@gmail.com}\\
 
 Kenneth C. Creager. University of Washington, Department of Earth and Space Sciences, Box 351310, 4000 15th Avenue NE Seattle, WA 98195-1310. \\
 
@@ -397,102 +397,102 @@ start time & end time & start latitude & end latitude & \\
 
 \end {itemize}
 
-\newpage
-
-\section*{Figures}
-
-\begin{figure}
-\noindent\includegraphics[width=11cm, trim={0cm 0cm 0cm 0cm},clip]{figures/500_DS.eps}
-\caption{Demonstration of a wavelet decomposition for a synthetic dataset. A synthetic time series is created (top row) with steps of period 500 days, and transient durations of 2 days (left), 5 days, 10 days, and 20 days (right). The resulting details and smooths are shown in increasing level. The amplitude of the synthetic time series is normalized to 1, and the details and smooths show the relative amplitude.}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/cleaned_PGC5_lon.eps}
-\caption{Top left: East-west displacement recorded at GPS station PGC5. The resulting details and smooth of the wavelet decomposition are shown in increasing level from top to bottom and from left to right.}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/map_GPS_stations.eps}
-\caption{GPS stations used in this study (black triangles). The black line represents the 40 km depth contour of the plate boundary model by ~\citet{PRE_2003}. The red triangles are the locations where we stack the GPS data. The small grey dots are all the tremor locations from the PNSN catalog.}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_13.eps}
-\caption{Details and smooth of the wavelet decomposition of the detrended cumulative tremor count around the third northernmost red triangles on Figure 3 (latitude 48.5).}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_longer_detail_8.eps}
-
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_longer_detail_8.eps}
-\caption{Top: Stacked 8th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 red triangles indicated in Figure 3. Bottom: 8th level detail multiplied by -1 of the cumulative tremor count in a 50 km radius of a given point for the same 16 locations. The black lines represent the timings of the ETS events from Table 1. We mark by a red rectangle every time where the amplitude is higher than a threshold of 0.4 mm (for the GPS) or 0.003 (for the tremor, that is about 17 times the average value of the signal). We mark by a blue rectangle every time where the amplitude is lower than minus the threshold.}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_longer_detail_7.eps}
-
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_longer_detail_7.eps}
-\caption{Top: Stacked 7th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 red triangles indicated in Figure 3. Bottom: 7th level detail multiplied by -1 of the cumulative tremor count in a 50 km radius of a given point for the same 16 locations. The black lines represent the timings of the ETS events from Table 1. We mark by a red rectangle every time where the amplitude is higher than a threshold of 0.5 mm (for the GPS) or 0.01 (for the tremor, that is about 56 times the average value of the signal). We mark by a blue rectangle every time where the amplitude is lower than minus the threshold.}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_longer_detail_6.eps}
-
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_longer_detail_6.eps}
-\caption{Top: Stacked 6th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 red triangles indicated in Figure 3. Bottom: 6th level detail multiplied by -1 of the cumulative tremor count in a 50 km radius of a given point for the same 16 locations. The black lines represent the timings of the ETS events from Table 1. We mark by a red rectangle every time where the amplitude is higher than a threshold of 0.3 mm (for the GPS) or 0.009 (for the tremor, that is about 51 times the average value of the signal). We mark by a blue rectangle every time where the amplitude is lower than minus the threshold.}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/ROC_6-7-8.eps}
-\caption{ROC curve for the sum of the 6th, 7th, and 8th level details of the wavelet decomposition. Each dot represents the true positive rate of event detections and the false positive rate of event detections for a given pair of thresholds (for the GPS and for the tremor). The black cross marks the true positive rate and the false positive rate obtained with the thresholds used to make Figure 9. The values of the threshold are color-coded. Reds (bottom curve) correspond to the lowest value of the threshold for the tremor (0.001), while oranges, greens, blues, purples correspond to increasing values of the threshold for the tremor (up to 0.01, top curve). The brightest colors (bottom left) correspond to the highest values of the threshold for the GPS (1.5 mm), while the darker colors (top right) correspond to decreasing values of the threshold for the GPS (0.1 mm).}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_longer_details_6-7-8.eps}
-
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_longer_detail_6-7-8.eps}
-\caption{Top: Stacked sum of the 6th, 7th and 8th levels details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 red triangles indicated in Figure 3. Bottom: Sum of the 6th, 7th and 8th levels detail multiplied by -1 of the cumulative tremor count in a 50 km radius of a given point for the same 16 locations. The black lines represent the timings of the ETS events from Table 1. We mark by a red rectangle every time where the amplitude is higher than a threshold of 0.8 mm (for the GPS) or 0.01 (for the tremor, that is about 56 times the average value of the signal). We mark by a blue rectangle every time where the amplitude is lower than minus the threshold.}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_michel_detail_5.eps}
-\caption{Top: Stacked 5th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 red triangles indicated in Figure 3. The red lines represent the timings of the ETS events from Table 1. The blue lines represent the timings of the magnitude 5 events from the catalog of ~\citet{MIC_2019}.}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_longer_details_6-7-8_slowslip.eps}
-\caption{Same as top panel of Figure 9: Stacked sum of the 6th, 7th and 8th levels details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 red triangles indicated in Figure 3. We mark with a green bar the slow slip events from Table 4 detected with the wavelet method. Full lines correspond to robust detections (1 in Table 4) and dotted lines to less robust detections (2 in Table 4).}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/map_GPS_stations_NZ.eps}
-\caption{GPS stations used for the slow slip detection in New Zealand (black triangles). The red triangles are the locations where we stack the GPS data. They are located close to the 20 km depth contour of the plate boundary from ~\citet{WIL_2013}.}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_NZ_details_6-7-8.eps}
-
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_NZ_details_6-7-8_events.eps}
-\caption{Top: Sum of the stacked 6th, 7th and 8th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 18 red triangles indicated in Figure 12. The time period covered is 2010-2016. We mark by a red rectangle every time where the amplitude is higher than a threshold equal to 0.8 mm. We mark by a blue rectangle every time where the amplitude is lower than minus the threshold. Bottom: Sum of the stacked 6th, 7th and 8th level details of the wavelet decomposition. We mark with an orange bar the slow slip events detected by ~\citet{TOD_2016} and with a green bar the slow slip events from Table 5 detected with the wavelet method. Full lines correspond to robust detections (1 in Table 5) and dotted lines to less robust detections (2 in Table 5).}
-\label{pngfiguresample}
-\end{figure}
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_NZ_details_6-7-8_2016-2022.eps}
-\caption{Top: Sum of the stacked 6th, 7th and 8th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 18 red triangles indicated in Figure 12. The time period covered in 2016-2022. We mark by a red rectangle every time where the amplitude is higher than a threshold equal to 0.8 mm. We mark by a blue rectangle every time where the amplitude is lower than minus the threshold. We mark with a green bar the slow slip events from Table 6 detected with the wavelet method. Full lines correspond to robust detections (1 in Table 6) and dotted lines to less robust detections (2 in Table 6).}
-\label{pngfiguresample}
-\end{figure}
+%\newpage
+%
+%\section*{Figures}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=11cm, trim={0cm 0cm 0cm 0cm},clip]{figures/500_DS.eps}
+%\caption{Demonstration of a wavelet decomposition for a synthetic dataset. A synthetic time series is created (top row) with steps of period 500 days, and transient durations of 2 days (left), 5 days, 10 days, and 20 days (right). The resulting details and smooths are shown in increasing level. The amplitude of the synthetic time series is normalized to 1, and the details and smooths show the relative amplitude.}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/cleaned_PGC5_lon.eps}
+%\caption{Top left: East-west displacement recorded at GPS station PGC5. The resulting details and smooth of the wavelet decomposition are shown in increasing level from top to bottom and from left to right.}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/map_GPS_stations.eps}
+%\caption{GPS stations used in this study (black triangles). The black line represents the 40 km depth contour of the plate boundary model by ~\citet{PRE_2003}. The red triangles are the locations where we stack the GPS data. The small grey dots are all the tremor locations from the PNSN catalog.}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_13.eps}
+%\caption{Details and smooth of the wavelet decomposition of the detrended cumulative tremor count around the third northernmost red triangles on Figure 3 (latitude 48.5).}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_longer_detail_8.eps}
+%
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_longer_detail_8.eps}
+%\caption{Top: Stacked 8th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 red triangles indicated in Figure 3. Bottom: 8th level detail multiplied by -1 of the cumulative tremor count in a 50 km radius of a given point for the same 16 locations. The black lines represent the timings of the ETS events from Table 1. We mark by a red rectangle every time where the amplitude is higher than a threshold of 0.4 mm (for the GPS) or 0.003 (for the tremor, that is about 17 times the average value of the signal). We mark by a blue rectangle every time where the amplitude is lower than minus the threshold.}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_longer_detail_7.eps}
+%
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_longer_detail_7.eps}
+%\caption{Top: Stacked 7th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 red triangles indicated in Figure 3. Bottom: 7th level detail multiplied by -1 of the cumulative tremor count in a 50 km radius of a given point for the same 16 locations. The black lines represent the timings of the ETS events from Table 1. We mark by a red rectangle every time where the amplitude is higher than a threshold of 0.5 mm (for the GPS) or 0.01 (for the tremor, that is about 56 times the average value of the signal). We mark by a blue rectangle every time where the amplitude is lower than minus the threshold.}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_longer_detail_6.eps}
+%
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_longer_detail_6.eps}
+%\caption{Top: Stacked 6th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 red triangles indicated in Figure 3. Bottom: 6th level detail multiplied by -1 of the cumulative tremor count in a 50 km radius of a given point for the same 16 locations. The black lines represent the timings of the ETS events from Table 1. We mark by a red rectangle every time where the amplitude is higher than a threshold of 0.3 mm (for the GPS) or 0.009 (for the tremor, that is about 51 times the average value of the signal). We mark by a blue rectangle every time where the amplitude is lower than minus the threshold.}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/ROC_6-7-8.eps}
+%\caption{ROC curve for the sum of the 6th, 7th, and 8th level details of the wavelet decomposition. Each dot represents the true positive rate of event detections and the false positive rate of event detections for a given pair of thresholds (for the GPS and for the tremor). The black cross marks the true positive rate and the false positive rate obtained with the thresholds used to make Figure 9. The values of the threshold are color-coded. Reds (bottom curve) correspond to the lowest value of the threshold for the tremor (0.001), while oranges, greens, blues, purples correspond to increasing values of the threshold for the tremor (up to 0.01, top curve). The brightest colors (bottom left) correspond to the highest values of the threshold for the GPS (1.5 mm), while the darker colors (top right) correspond to decreasing values of the threshold for the GPS (0.1 mm).}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_longer_details_6-7-8.eps}
+%
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/tremor_longer_detail_6-7-8.eps}
+%\caption{Top: Stacked sum of the 6th, 7th and 8th levels details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 red triangles indicated in Figure 3. Bottom: Sum of the 6th, 7th and 8th levels detail multiplied by -1 of the cumulative tremor count in a 50 km radius of a given point for the same 16 locations. The black lines represent the timings of the ETS events from Table 1. We mark by a red rectangle every time where the amplitude is higher than a threshold of 0.8 mm (for the GPS) or 0.01 (for the tremor, that is about 56 times the average value of the signal). We mark by a blue rectangle every time where the amplitude is lower than minus the threshold.}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_michel_detail_5.eps}
+%\caption{Top: Stacked 5th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 red triangles indicated in Figure 3. The red lines represent the timings of the ETS events from Table 1. The blue lines represent the timings of the magnitude 5 events from the catalog of ~\citet{MIC_2019}.}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_longer_details_6-7-8_slowslip.eps}
+%\caption{Same as top panel of Figure 9: Stacked sum of the 6th, 7th and 8th levels details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 16 red triangles indicated in Figure 3. We mark with a green bar the slow slip events from Table 4 detected with the wavelet method. Full lines correspond to robust detections (1 in Table 4) and dotted lines to less robust detections (2 in Table 4).}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/map_GPS_stations_NZ.eps}
+%\caption{GPS stations used for the slow slip detection in New Zealand (black triangles). The red triangles are the locations where we stack the GPS data. They are located close to the 20 km depth contour of the plate boundary from ~\citet{WIL_2013}.}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_NZ_details_6-7-8.eps}
+%
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_NZ_details_6-7-8_events.eps}
+%\caption{Top: Sum of the stacked 6th, 7th and 8th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 18 red triangles indicated in Figure 12. The time period covered is 2010-2016. We mark by a red rectangle every time where the amplitude is higher than a threshold equal to 0.8 mm. We mark by a blue rectangle every time where the amplitude is lower than minus the threshold. Bottom: Sum of the stacked 6th, 7th and 8th level details of the wavelet decomposition. We mark with an orange bar the slow slip events detected by ~\citet{TOD_2016} and with a green bar the slow slip events from Table 5 detected with the wavelet method. Full lines correspond to robust detections (1 in Table 5) and dotted lines to less robust detections (2 in Table 5).}
+%\label{pngfiguresample}
+%\end{figure}
+%
+%\begin{figure}
+%\noindent\includegraphics[width=\textwidth, trim={0cm 0cm 0cm 0cm},clip]{figures/GPS_NZ_details_6-7-8_2016-2022.eps}
+%\caption{Top: Sum of the stacked 6th, 7th and 8th level details of the wavelet decomposition of the displacement over all the GPS stations located in a 50 km radius of a given point, for the 18 red triangles indicated in Figure 12. The time period covered in 2016-2022. We mark by a red rectangle every time where the amplitude is higher than a threshold equal to 0.8 mm. We mark by a blue rectangle every time where the amplitude is lower than minus the threshold. We mark with a green bar the slow slip events from Table 6 detected with the wavelet method. Full lines correspond to robust detections (1 in Table 6) and dotted lines to less robust detections (2 in Table 6).}
+%\label{pngfiguresample}
+%\end{figure}
 
 \end{document}
